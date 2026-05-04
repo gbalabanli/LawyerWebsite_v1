@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gbalabanli.github.io/LawyerWebsite_v1/sitemap-index.xml
