@@ -1,0 +1,29 @@
+:root[data-template='classic-legal'] {
+	--font-heading: 'Merriweather', Georgia, serif;
+	--font-body: 'Source Serif 4', 'Times New Roman', serif;
+	--page-bg: #f7f3ea;
+	--surface-bg: linear-gradient(160deg, #ffffff 0%, #f4eee2 100%);
+	--card-bg: #fffaf1;
+	--header-bg: color-mix(in srgb, #f7f3ea 92%, #ffffff 8%);
+	--footer-bg: #ece4d4;
+	--color-text: #1d2125;
+	--color-muted: #555954;
+	--color-border: #c8bba4;
+	--nav-active-bg: #e7dcc8;
+	--eyebrow-bg: #e8dbc4;
+	--eyebrow-text: #3f3425;
+	--button-primary-bg: #2b3a4a;
+	--button-primary-text: #f6f6f6;
+	--button-secondary-border: #876f49;
+	--button-secondary-text: #54442a;
+	--pill-bg: #e4d8c3;
+	--pill-text: #4f4230;
+	--input-bg: #fffdfa;
+	--radius-sm: 0.45rem;
+	--radius-md: 0.75rem;
+	--radius-lg: 1rem;
+	--space-5: 1rem;
+	--space-7: 2rem;
+	--space-8: 2.6rem;
+	--space-9: 3.1rem;
+}

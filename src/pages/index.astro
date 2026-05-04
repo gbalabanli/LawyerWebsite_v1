@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import CTA from '../components/CTA.astro';
+import { getWhatsAppLink, siteConfig } from '../config/site';
+import { withBase } from '../utils/routing';
+
+const waConsultationLink = getWhatsAppLink(
+	'Hello, I want to request a legal consultation about my case.'
+);
+---
+
+<BaseLayout
+	title={`Landing | ${siteConfig.brand.name}`}
+	description="Legal services page with clear practice areas and fast WhatsApp contact."
+	pathname="/"
+>
+	<Hero
+		eyebrow="Landing"
+		title={siteConfig.brand.tagline}
+		summary="Clear legal strategy, responsive communication, and practical next steps from first contact to resolution."
+		primaryLabel="Message on WhatsApp"
+		primaryHref={waConsultationLink}
+		secondaryLabel="Read Law Blog"
+		secondaryHref={withBase('/blog')}
+	/>
+
+	<Section title="Practice Areas" lead="Focused legal services for day-to-day legal needs.">
+		<div class="grid">
+			<Card title="Civil Litigation" text="Representation in disputes with evidence-driven case strategy and realistic timelines." />
+			<Card title="Contract Review" text="Preventive legal checks for employment, vendor, lease, and service contracts." />
+			<Card title="Business Advisory" text="Ongoing counsel for legal risk reduction, governance, and compliance planning." />
+		</div>
+	</Section>
+
+	<Section title="Trust Signals" lead="What clients value in the working process.">
+		<div class="grid">
+			<Card
+				span="span-6"
+				title="Transparent Process"
+				text="You receive a clear first-step roadmap, required documents list, and expected legal milestones."
+			/>
+			<Card
+				span="span-6"
+				title="Practical Communication"
+				text="Complex legal topics are translated into actionable options so decisions are faster and better informed."
+			/>
+		</div>
+	</Section>
+
+	<CTA
+		title="Need Immediate Legal Direction?"
+		text="Start with a concise intake on WhatsApp and get guidance on your best next legal step."
+		buttonLabel="Start WhatsApp Intake"
+		buttonHref={waConsultationLink}
+	/>
+</BaseLayout>

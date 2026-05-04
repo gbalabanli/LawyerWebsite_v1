@@ -1,0 +1,15 @@
+---
+interface Props {
+	title: string;
+	text: string;
+	span?: 'span-4' | 'span-6';
+}
+
+const { title, text, span = 'span-4' } = Astro.props;
+---
+
+<article class={`card ${span}`}>
+	<h3>{title}</h3>
+	<p>{text}</p>
+	<slot />
+</article>

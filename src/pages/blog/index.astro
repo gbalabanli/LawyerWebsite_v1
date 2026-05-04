@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Section from '../../components/Section.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { siteConfig } from '../../config/site';
+import { withBase } from '../../utils/routing';
+
+const posts = (await getCollection('posts')).sort(
+	(a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+const allTags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
+---
+
+<BaseLayout
+	title={`Blog | ${siteConfig.brand.name}`}
+	description="Law blog with practical legal insights, updates, and educational articles."
+	pathname="/blog"
+>
+	<Section title="Blog Main" lead="Law-focused articles designed for clients and business owners.">
+		<div class="filters">
+			<input id="blog-search" class="input" type="search" placeholder="Search posts..." aria-label="Search blog posts" />
+			<select id="tag-filter" class="select" aria-label="Filter by tag">
+				<option value="">All tags</option>
+				{allTags.map((tag) => <option value={tag}>{tag}</option>)}
+			</select>
+		</div>
+
+		<div class="blog-list" id="blog-list">
+			{
+				posts.map((post) => (
+					<div
+						data-post
+						data-title={post.data.title.toLowerCase()}
+						data-description={post.data.description.toLowerCase()}
+						data-tags={post.data.tags.join('|').toLowerCase()}
+					>
+						<BlogCard
+							title={post.data.title}
+							description={post.data.description}
+							dateText={post.data.date.toLocaleDateString('en-US', {
+								year: 'numeric',
+								month: 'short',
+								day: 'numeric',
+							})}
+							author={post.data.author}
+							tags={post.data.tags}
+							href={withBase(`/blog/${post.id}`)}
+						/>
+					</div>
+				))
+			}
+		</div>
+
+		<p class="pagination-note">Pagination style: Page 1 of 1</p>
+	</Section>
+
+	<script>
+		const searchEl = document.querySelector('#blog-search');
+		const tagEl = document.querySelector('#tag-filter');
+		const postEls = [...document.querySelectorAll('[data-post]')];
+
+		const applyFilter = () => {
+			const searchValue = (searchEl?.value || '').toLowerCase().trim();
+			const tagValue = (tagEl?.value || '').toLowerCase().trim();
+
+			for (const item of postEls) {
+				const title = item.getAttribute('data-title') || '';
+				const description = item.getAttribute('data-description') || '';
+				const tags = item.getAttribute('data-tags') || '';
+
+				const matchesText =
+					!searchValue || title.includes(searchValue) || description.includes(searchValue);
+				const matchesTag = !tagValue || tags.includes(tagValue);
+
+				item.style.display = matchesText && matchesTag ? 'block' : 'none';
+			}
+		};
+
+		searchEl?.addEventListener('input', applyFilter);
+		tagEl?.addEventListener('change', applyFilter);
+	</script>
+</BaseLayout>

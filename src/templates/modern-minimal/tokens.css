@@ -1,0 +1,29 @@
+:root[data-template='modern-minimal'] {
+	--font-heading: 'Space Grotesk', 'Segoe UI', sans-serif;
+	--font-body: 'Manrope', 'Segoe UI', sans-serif;
+	--page-bg: #f2f5f8;
+	--surface-bg: linear-gradient(180deg, #ffffff 0%, #f2f8ff 100%);
+	--card-bg: #ffffff;
+	--header-bg: color-mix(in srgb, #eef2f6 90%, #ffffff 10%);
+	--footer-bg: #e8edf2;
+	--color-text: #131a22;
+	--color-muted: #4d5865;
+	--color-border: #c7d3de;
+	--nav-active-bg: #dde8f3;
+	--eyebrow-bg: #dce9f6;
+	--eyebrow-text: #183858;
+	--button-primary-bg: #0f5f8f;
+	--button-primary-text: #eefaff;
+	--button-secondary-border: #376891;
+	--button-secondary-text: #174265;
+	--pill-bg: #e3edf8;
+	--pill-text: #1d4567;
+	--input-bg: #fbfdff;
+	--radius-sm: 0.6rem;
+	--radius-md: 0.95rem;
+	--radius-lg: 1.2rem;
+	--space-5: 1rem;
+	--space-7: 2rem;
+	--space-8: 2.7rem;
+	--space-9: 3.2rem;
+}

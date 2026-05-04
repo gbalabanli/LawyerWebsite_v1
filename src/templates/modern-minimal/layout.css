@@ -1,0 +1,15 @@
+:root[data-template='modern-minimal'] body {
+	background-image:
+		radial-gradient(circle at 98% 8%, rgb(34 102 154 / 10%), transparent 36%),
+		radial-gradient(circle at 3% 90%, rgb(89 150 194 / 13%), transparent 35%);
+}
+
+:root[data-template='modern-minimal'] .hero {
+	box-shadow: 0 10px 26px rgb(50 82 120 / 8%);
+}
+
+:root[data-template='modern-minimal'] .brand {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}

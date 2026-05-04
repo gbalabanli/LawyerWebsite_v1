@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import CTA from '../components/CTA.astro';
+import { getWhatsAppLink, siteConfig } from '../config/site';
+
+const waContactLink = getWhatsAppLink(
+	'Hello, I would like to contact your office regarding a legal question.'
+);
+---
+
+<BaseLayout
+	title={`Contact Me | ${siteConfig.brand.name}`}
+	description="Primary contact page with WhatsApp, email, phone, and office location."
+	pathname="/contact"
+>
+	<Section title="Contact Me" lead="Fastest response channel is WhatsApp.">
+		<div class="contact-grid">
+			<Card
+				span="span-6"
+				title="Primary Contact"
+				text="Send your legal question on WhatsApp with brief context and preferred contact time."
+			>
+				<div class="button-row">
+					<a class="btn btn-primary" href={waContactLink}>Message on WhatsApp</a>
+				</div>
+			</Card>
+			<Card span="span-6" title="Office Details" text="Alternative channels for formal communication.">
+				<div class="info-row">
+					<span>Email: {siteConfig.contact.email}</span>
+					<span>Phone: {siteConfig.contact.phoneDisplay}</span>
+					<span>Address: {siteConfig.contact.address}</span>
+				</div>
+			</Card>
+		</div>
+	</Section>
+
+	<Section title="Static Intake Placeholder" lead="Optional form fields for future third-party form backend integration.">
+		<div class="grid">
+			<Card
+				span="span-6"
+				title="Recommended Fields"
+				text="Name, phone, legal category, short summary, and urgency level can be added later without server code."
+			/>
+			<Card
+				span="span-6"
+				title="Current Setup"
+				text="This static version prioritizes WhatsApp-based intake for speed and zero backend maintenance."
+			/>
+		</div>
+	</Section>
+
+	<CTA
+		title="Ready to Start?"
+		text="Share your matter details and documents timeline to receive a practical next-step suggestion."
+		buttonLabel="Open WhatsApp"
+		buttonHref={waContactLink}
+	/>
+</BaseLayout>

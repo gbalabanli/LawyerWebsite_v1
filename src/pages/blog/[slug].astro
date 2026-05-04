@@ -1,0 +1,116 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTA from '../../components/CTA.astro';
+import { getWhatsAppLink, siteConfig } from '../../config/site';
+import { withBase } from '../../utils/routing';
+
+interface StaticPath {
+	params: { slug: string };
+	props: { post: CollectionEntry<'posts'> };
+}
+
+export async function getStaticPaths(): Promise<StaticPath[]> {
+	const posts = await getCollection('posts');
+
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+
+const sortedPosts = (await getCollection('posts')).sort(
+	(a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const relatedPosts = sortedPosts
+	.filter((item) => item.id !== post.id)
+	.filter((item) => item.data.tags.some((tag) => post.data.tags.includes(tag)))
+	.slice(0, 3);
+
+const articleSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: post.data.title,
+	description: post.data.description,
+	datePublished: post.data.date.toISOString(),
+	author: {
+		'@type': 'Person',
+		name: post.data.author,
+	},
+	publisher: {
+		'@type': 'Organization',
+		name: siteConfig.brand.name,
+	},
+	mainEntityOfPage: `${siteConfig.seo.siteUrl}/blog/${post.id}`,
+};
+---
+
+<BaseLayout
+	title={`${post.data.title} | ${siteConfig.brand.name}`}
+	description={post.data.description}
+	pathname={`/blog/${post.id}`}
+	ogType="article"
+	article={{ publishedTime: post.data.date.toISOString(), tags: post.data.tags }}
+>
+	<article class="article">
+		<p class="eyebrow">Blog Post</p>
+		<h1>{post.data.title}</h1>
+		<div class="blog-meta">
+			<span>
+				{post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+			</span>
+			<span>{post.data.author}</span>
+		</div>
+		<div class="meta-list">
+			{post.data.tags.map((tag) => <span class="meta-pill">{tag}</span>)}
+		</div>
+
+		{
+			headings.length > 0 && (
+				<aside class="toc">
+					<h2>Contents</h2>
+					<ul>
+						{headings.map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}
+					</ul>
+				</aside>
+			)
+		}
+
+		<div class="article-content">
+			<Content />
+		</div>
+	</article>
+
+	{
+		relatedPosts.length > 0 && (
+			<section class="section">
+				<div class="section-heading">
+					<h2>Related Posts</h2>
+					<p class="section-lead">Continue with related legal topics.</p>
+				</div>
+				<div class="blog-list">
+					{relatedPosts.map((related) => (
+						<article class="card blog-card">
+							<h3><a href={withBase(`/blog/${related.id}`)}>{related.data.title}</a></h3>
+							<p>{related.data.description}</p>
+						</article>
+					))}
+				</div>
+			</section>
+		)
+	}
+
+	<CTA
+		title="Need Legal Advice on This Topic?"
+		text="Describe your situation and goals on WhatsApp to receive practical next steps."
+		buttonLabel="Discuss on WhatsApp"
+		buttonHref={getWhatsAppLink(`Hello, I read your blog post about ${post.data.title}. I need advice.`)}
+	/>
+
+	<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+</BaseLayout>

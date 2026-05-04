@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import CTA from '../components/CTA.astro';
+import { getWhatsAppLink, siteConfig } from '../config/site';
+
+const waCaseLink = getWhatsAppLink('Hello, I want to discuss my legal matter and timeline.');
+---
+
+<BaseLayout
+	title={`About Me | ${siteConfig.brand.name}`}
+	description="Attorney profile, qualifications, legal focus, and working style."
+	pathname="/about"
+>
+	<Section title="About Me" lead={siteConfig.brand.aboutLong}>
+		<div class="grid">
+			<Card
+				span="span-6"
+				title="Profile"
+				text="Attorney Aydin advises clients on civil and commercial legal matters, balancing litigation readiness with negotiated outcomes."
+			/>
+			<Card
+				span="span-6"
+				title="Working Style"
+				text="I focus on early risk analysis, clear options, and disciplined documentation to keep legal matters efficient and predictable."
+			/>
+		</div>
+	</Section>
+
+	<Section title="Qualifications and Focus" lead="Core strengths relevant to client outcomes.">
+		<div class="grid">
+			<Card title="Courtroom Preparation" text="Structured evidence review and argument planning for stronger procedural positioning." />
+			<Card title="Contract Precision" text="Detailed drafting and review to reduce ambiguity, disputes, and enforcement risk." />
+			<Card title="Client-Centered Guidance" text="Communication adapted to your situation, priorities, and decision timeline." />
+		</div>
+	</Section>
+
+	<CTA
+		title="Discuss Your Matter"
+		text="Share a short summary on WhatsApp and receive an initial direction for next legal actions."
+		buttonLabel="Contact via WhatsApp"
+		buttonHref={waCaseLink}
+	/>
+</BaseLayout>
