@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from '../config/site';
+import HelpDeskPopup from '../components/HelpDeskPopup.astro';
 import { withBase } from '../utils/routing';
 import '../styles/base.css';
 import '../templates/classic-legal/tokens.css';
@@ -117,5 +118,6 @@ const legalServiceSchema = {
 				</div>
 			</footer>
 		</div>
+		<HelpDeskPopup />
 	</body>
 </html>

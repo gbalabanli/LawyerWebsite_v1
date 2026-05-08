@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTA from '../../components/CTA.astro';
-import { getWhatsAppLink, siteConfig } from '../../config/site';
+import { helpDeskTriggerHref, siteConfig } from '../../config/site';
 import { withBase } from '../../utils/routing';
 
 interface StaticPath {
@@ -107,9 +107,9 @@ const articleSchema = {
 
 	<CTA
 		title="Need Legal Advice on This Topic?"
-		text="Describe your situation and goals on WhatsApp to receive practical next steps."
-		buttonLabel="Discuss on WhatsApp"
-		buttonHref={getWhatsAppLink(`Hello, I read your blog post about ${post.data.title}. I need advice.`)}
+		text="Open the help desk, share your full name and situation, then continue in WhatsApp with the details already filled in."
+		buttonLabel="Open Help Desk"
+		buttonHref={helpDeskTriggerHref}
 	/>
 
 	<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />

@@ -4,25 +4,21 @@ import Hero from '../components/Hero.astro';
 import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
-import { getWhatsAppLink, siteConfig } from '../config/site';
+import { helpDeskTriggerHref, siteConfig } from '../config/site';
 import { withBase } from '../utils/routing';
-
-const waConsultationLink = getWhatsAppLink(
-	'Hello, I want to request a legal consultation about my case.'
-);
 ---
 
 <BaseLayout
 	title={`Landing | ${siteConfig.brand.name}`}
-	description="Legal services page with clear practice areas and fast WhatsApp contact."
+	description="Legal services page with clear practice areas and a fast consultation intake."
 	pathname="/"
 >
 	<Hero
 		eyebrow="Landing"
 		title={siteConfig.brand.tagline}
 		summary="Clear legal strategy, responsive communication, and practical next steps from first contact to resolution."
-		primaryLabel="Message on WhatsApp"
-		primaryHref={waConsultationLink}
+		primaryLabel="Start Consultation"
+		primaryHref={helpDeskTriggerHref}
 		secondaryLabel="Read Law Blog"
 		secondaryHref={withBase('/blog')}
 	/>
@@ -52,8 +48,8 @@ const waConsultationLink = getWhatsAppLink(
 
 	<CTA
 		title="Need Immediate Legal Direction?"
-		text="Start with a concise intake on WhatsApp and get guidance on your best next legal step."
-		buttonLabel="Start WhatsApp Intake"
-		buttonHref={waConsultationLink}
+		text="Open the help desk, share your full name and summary, then continue in WhatsApp with your details prefilled."
+		buttonLabel="Open Help Desk"
+		buttonHref={helpDeskTriggerHref}
 	/>
 </BaseLayout>

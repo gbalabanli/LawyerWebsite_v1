@@ -1,0 +1,238 @@
+---
+import { helpDeskTriggerHref, siteConfig } from '../config/site';
+---
+
+<div
+	id="help-desk"
+	class="help-desk"
+	data-help-desk-root
+	data-help-desk-trigger={helpDeskTriggerHref}
+>
+	<button
+		type="button"
+		class="help-desk-launcher btn btn-primary"
+		data-help-desk-toggle
+		aria-expanded="false"
+		aria-controls="help-desk-panel"
+		aria-haspopup="dialog"
+	>
+		{siteConfig.helpDesk.launcherLabel}
+	</button>
+
+	<button
+		type="button"
+		class="help-desk-overlay"
+		data-help-desk-overlay
+		aria-label="Close help desk"
+		hidden
+	></button>
+
+	<section
+		id="help-desk-panel"
+		class="help-desk-panel"
+		data-help-desk-panel
+		role="dialog"
+		aria-modal="true"
+		aria-labelledby="help-desk-title"
+		hidden
+	>
+		<div class="help-desk-header">
+			<div>
+				<p class="eyebrow">Live Help Desk</p>
+				<h2 id="help-desk-title">{siteConfig.helpDesk.panelTitle}</h2>
+			</div>
+			<button type="button" class="help-desk-close" data-help-desk-close aria-label="Close help desk">
+				<span aria-hidden="true">x</span>
+			</button>
+		</div>
+
+		<p class="help-desk-copy">{siteConfig.helpDesk.introText}</p>
+
+		<form class="help-desk-form" data-help-desk-form novalidate>
+			<label class="help-desk-field" for="help-desk-full-name">
+				<span>Name and Surname</span>
+				<input
+					id="help-desk-full-name"
+					class="input"
+					type="text"
+					name="fullName"
+					autocomplete="name"
+					placeholder="Aydin Yilmaz"
+					required
+				/>
+			</label>
+
+			<label class="help-desk-field" for="help-desk-message">
+				<span>Your Message</span>
+				<textarea
+					id="help-desk-message"
+					class="input textarea"
+					name="message"
+					rows="5"
+					placeholder="Briefly describe your legal matter and what you need help with."
+					required
+				></textarea>
+			</label>
+
+			<p class="help-desk-error" data-help-desk-error role="alert" hidden></p>
+
+			<div class="button-row help-desk-actions">
+				<button type="submit" class="btn btn-primary" data-help-desk-submit>
+					{siteConfig.helpDesk.submitLabel}
+				</button>
+				<button type="button" class="btn btn-secondary" data-help-desk-close>
+					Close
+				</button>
+			</div>
+		</form>
+	</section>
+	<script>
+		import { getHelpDeskWhatsAppLink } from '../config/site';
+
+		const root = document.querySelector('[data-help-desk-root]');
+
+		if (root instanceof HTMLElement) {
+			const launcher = root.querySelector('[data-help-desk-toggle]');
+			const overlay = root.querySelector('[data-help-desk-overlay]');
+			const panel = root.querySelector('[data-help-desk-panel]');
+			const form = root.querySelector('[data-help-desk-form]');
+			const error = root.querySelector('[data-help-desk-error]');
+			const fullNameInput = root.querySelector('#help-desk-full-name');
+			const messageInput = root.querySelector('#help-desk-message');
+			const submitButton = root.querySelector('[data-help-desk-submit]');
+			const closeButtons = [...root.querySelectorAll('[data-help-desk-close]')];
+			const triggerHref = root.dataset.helpDeskTrigger || '#help-desk';
+			const submitLabel = submitButton instanceof HTMLButtonElement ? submitButton.textContent || 'Open WhatsApp' : 'Open WhatsApp';
+			let lastTrigger = launcher instanceof HTMLElement ? launcher : null;
+			let isOpen = false;
+
+			const setError = (message = '') => {
+				if (!(error instanceof HTMLElement)) {
+					return;
+				}
+
+				error.textContent = message;
+				error.hidden = !message;
+			};
+
+			const setOpen = (open) => {
+				if (!(launcher instanceof HTMLElement) || !(overlay instanceof HTMLElement) || !(panel instanceof HTMLElement)) {
+					return;
+				}
+
+				isOpen = open;
+				root.classList.toggle('is-open', open);
+				document.body.classList.toggle('help-desk-open', open);
+				launcher.setAttribute('aria-expanded', String(open));
+				overlay.hidden = !open;
+				panel.hidden = !open;
+
+				if (open) {
+					setError();
+					if (fullNameInput instanceof HTMLInputElement) {
+						fullNameInput.focus();
+					}
+					return;
+				}
+
+				if (submitButton instanceof HTMLButtonElement) {
+					submitButton.disabled = false;
+					submitButton.textContent = submitLabel;
+				}
+
+				(lastTrigger instanceof HTMLElement ? lastTrigger : launcher).focus();
+			};
+
+			const openDesk = (trigger) => {
+				lastTrigger = trigger instanceof HTMLElement ? trigger : launcher instanceof HTMLElement ? launcher : null;
+				setOpen(true);
+			};
+
+			if (launcher instanceof HTMLButtonElement) {
+				launcher.addEventListener('click', () => {
+					if (isOpen) {
+						setOpen(false);
+						return;
+					}
+
+					openDesk(launcher);
+				});
+			}
+
+			if (overlay instanceof HTMLButtonElement) {
+				overlay.addEventListener('click', () => setOpen(false));
+			}
+
+			for (const button of closeButtons) {
+				if (button instanceof HTMLButtonElement) {
+					button.addEventListener('click', () => setOpen(false));
+				}
+			}
+
+			document.addEventListener('click', (event) => {
+				if (!(event.target instanceof Element)) {
+					return;
+				}
+
+				const trigger = event.target.closest(`a[href="${triggerHref}"]`);
+				if (!(trigger instanceof HTMLAnchorElement)) {
+					return;
+				}
+
+				event.preventDefault();
+				openDesk(trigger);
+			});
+
+			window.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && isOpen) {
+					event.preventDefault();
+					setOpen(false);
+				}
+			});
+
+			if (
+				form instanceof HTMLFormElement &&
+				fullNameInput instanceof HTMLInputElement &&
+				messageInput instanceof HTMLTextAreaElement
+			) {
+				form.addEventListener('submit', (event) => {
+					event.preventDefault();
+					setError();
+
+					const fullName = fullNameInput.value.trim();
+					const message = messageInput.value.trim();
+
+					if (!fullName || !message) {
+						setError('Please add your full name and a short message before continuing.');
+						if (!fullName) {
+							fullNameInput.focus();
+							return;
+						}
+
+						messageInput.focus();
+						return;
+					}
+
+					if (submitButton instanceof HTMLButtonElement) {
+						submitButton.disabled = true;
+						submitButton.textContent = 'Opening WhatsApp...';
+					}
+
+					const link = getHelpDeskWhatsAppLink({
+						fullName,
+						message,
+						pageUrl: window.location.href,
+					});
+					const popup = window.open(link, '_blank', 'noopener,noreferrer');
+
+					if (!popup) {
+						window.location.assign(link);
+					}
+
+					form.reset();
+					setOpen(false);
+				});
+			}
+		}
+	</script>
+</div>

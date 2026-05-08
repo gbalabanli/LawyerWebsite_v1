@@ -17,6 +17,10 @@ body {
 	line-height: 1.6;
 }
 
+body.help-desk-open {
+	overflow: hidden;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -296,13 +300,113 @@ img {
 }
 
 .input,
-.select {
+.select,
+.textarea {
 	padding: 0.6rem 0.75rem;
 	border: 1px solid var(--color-border);
 	border-radius: var(--radius-sm);
 	background: var(--input-bg);
 	color: var(--color-text);
 	min-width: 220px;
+}
+
+.textarea {
+	resize: vertical;
+	min-height: 140px;
+}
+
+.help-desk {
+	position: fixed;
+	right: 1rem;
+	bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+	z-index: 30;
+}
+
+.help-desk-overlay {
+	position: fixed;
+	inset: 0;
+	border: 0;
+	background: rgba(15, 23, 42, 0.45);
+	padding: 0;
+	cursor: pointer;
+}
+
+.help-desk-panel {
+	position: fixed;
+	right: 1rem;
+	bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+	width: min(420px, calc(100vw - 1.5rem));
+	max-height: calc(100vh - 2rem);
+	overflow-y: auto;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	background: var(--surface-bg);
+	padding: 1.25rem;
+	box-shadow: 0 24px 60px rgba(15, 23, 42, 0.2);
+}
+
+.help-desk-launcher {
+	min-width: 160px;
+	box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.help-desk-header {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.help-desk-header h2 {
+	margin: 0.35rem 0 0;
+	font-family: var(--font-heading);
+	font-size: 1.4rem;
+	line-height: 1.2;
+}
+
+.help-desk-close {
+	width: 2.25rem;
+	height: 2.25rem;
+	border: 1px solid var(--color-border);
+	border-radius: 999px;
+	background: transparent;
+	color: var(--color-text);
+	cursor: pointer;
+}
+
+.help-desk-copy {
+	margin: 1rem 0 0;
+	color: var(--color-muted);
+}
+
+.help-desk-form {
+	display: grid;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.help-desk-field {
+	display: grid;
+	gap: 0.45rem;
+}
+
+.help-desk-field span {
+	font-weight: 600;
+}
+
+.help-desk-field .input {
+	width: 100%;
+	min-width: 0;
+}
+
+.help-desk-error {
+	margin: 0;
+	color: #b42318;
+	font-size: 0.95rem;
+}
+
+.help-desk-actions {
+	justify-content: flex-start;
 }
 
 .pagination-note {
@@ -318,5 +422,25 @@ img {
 
 	.card.span-6 {
 		grid-column: span 6;
+	}
+}
+
+@media (max-width: 719px) {
+	.help-desk {
+		right: 0.75rem;
+		left: 0.75rem;
+		bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+	}
+
+	.help-desk-panel {
+		right: 0.75rem;
+		left: 0.75rem;
+		bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
+		width: auto;
+		max-height: calc(100vh - 7rem);
+	}
+
+	.help-desk-launcher {
+		width: 100%;
 	}
 }

@@ -1,4 +1,4 @@
-import type { SiteConfig } from '../types/site';
+import type { HelpDeskWhatsAppInput, SiteConfig } from '../types/site';
 
 const publicSiteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://example-lawyer.github.io';
 
@@ -21,13 +21,28 @@ export const siteConfig: SiteConfig = {
 	},
 	contact: {
 		phoneDisplay: '+90 555 123 45 67',
-		whatsappNumberE164: '905551234567',
+		whatsappNumberE164: '905301178034',
 		email: 'contact@examplelaw.com',
 		address: 'Istanbul, Turkiye',
 	},
+	helpDesk: {
+		launcherLabel: 'Live Help',
+		panelTitle: 'Start Your Legal Intake',
+		introText: 'Share your full name and a short summary. We will open WhatsApp with your details prefilled.',
+		submitLabel: 'Continue in WhatsApp',
+		defaultMessageIntro: 'Hello, I would like to discuss a legal matter.',
+	},
 };
 
-export const getWhatsAppLink = (message: string): string => {
-	const encoded = encodeURIComponent(message);
+export const helpDeskTriggerHref = '#help-desk';
+
+export const getHelpDeskWhatsAppLink = ({
+	fullName,
+	message,
+	pageUrl,
+	intro = siteConfig.helpDesk.defaultMessageIntro,
+}: HelpDeskWhatsAppInput): string => {
+	const payload = [intro, `Name: ${fullName}`, `Page: ${pageUrl}`, 'Message:', message].join('\n');
+	const encoded = encodeURIComponent(payload);
 	return `https://wa.me/${siteConfig.contact.whatsappNumberE164}?text=${encoded}`;
 };

@@ -21,6 +21,13 @@ export interface SiteConfig {
 		email: string;
 		address: string;
 	};
+	helpDesk: {
+		launcherLabel: string;
+		panelTitle: string;
+		introText: string;
+		submitLabel: string;
+		defaultMessageIntro: string;
+	};
 }
 
 export interface BlogPostFrontmatter {
@@ -32,4 +39,11 @@ export interface BlogPostFrontmatter {
 	coverImage?: string;
 	// Astro reserves slug in schema, but frontmatter may still define it.
 	slug?: string;
+}
+
+export interface HelpDeskWhatsAppInput {
+	fullName: string;
+	message: string;
+	pageUrl: string;
+	intro?: string;
 }

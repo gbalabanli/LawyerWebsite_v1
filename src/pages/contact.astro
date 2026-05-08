@@ -3,27 +3,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
-import { getWhatsAppLink, siteConfig } from '../config/site';
-
-const waContactLink = getWhatsAppLink(
-	'Hello, I would like to contact your office regarding a legal question.'
-);
+import { helpDeskTriggerHref, siteConfig } from '../config/site';
 ---
 
 <BaseLayout
 	title={`Contact Me | ${siteConfig.brand.name}`}
-	description="Primary contact page with WhatsApp, email, phone, and office location."
+	description="Primary contact page with help desk intake, office details, and direct contact information."
 	pathname="/contact"
 >
-	<Section title="Contact Me" lead="Fastest response channel is WhatsApp.">
+	<Section title="Contact Me" lead="Use the help desk for the fastest intake, then continue in WhatsApp with your details prefilled.">
 		<div class="contact-grid">
 			<Card
 				span="span-6"
 				title="Primary Contact"
-				text="Send your legal question on WhatsApp with brief context and preferred contact time."
+				text="Open the help desk, add your full name and a short summary, and continue in WhatsApp."
 			>
 				<div class="button-row">
-					<a class="btn btn-primary" href={waContactLink}>Message on WhatsApp</a>
+					<a class="btn btn-primary" href={helpDeskTriggerHref}>Open Help Desk</a>
 				</div>
 			</Card>
 			<Card span="span-6" title="Office Details" text="Alternative channels for formal communication.">
@@ -36,25 +32,10 @@ const waContactLink = getWhatsAppLink(
 		</div>
 	</Section>
 
-	<Section title="Static Intake Placeholder" lead="Optional form fields for future third-party form backend integration.">
-		<div class="grid">
-			<Card
-				span="span-6"
-				title="Recommended Fields"
-				text="Name, phone, legal category, short summary, and urgency level can be added later without server code."
-			/>
-			<Card
-				span="span-6"
-				title="Current Setup"
-				text="This static version prioritizes WhatsApp-based intake for speed and zero backend maintenance."
-			/>
-		</div>
-	</Section>
-
 	<CTA
 		title="Ready to Start?"
-		text="Share your matter details and documents timeline to receive a practical next-step suggestion."
-		buttonLabel="Open WhatsApp"
-		buttonHref={waContactLink}
+		text="Share your full name and a concise matter summary in the help desk to open a ready-to-send WhatsApp message."
+		buttonLabel="Open Help Desk"
+		buttonHref={helpDeskTriggerHref}
 	/>
 </BaseLayout>

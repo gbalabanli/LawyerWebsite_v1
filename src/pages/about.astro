@@ -3,9 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
-import { getWhatsAppLink, siteConfig } from '../config/site';
-
-const waCaseLink = getWhatsAppLink('Hello, I want to discuss my legal matter and timeline.');
+import { helpDeskTriggerHref, siteConfig } from '../config/site';
 ---
 
 <BaseLayout
@@ -38,8 +36,8 @@ const waCaseLink = getWhatsAppLink('Hello, I want to discuss my legal matter and
 
 	<CTA
 		title="Discuss Your Matter"
-		text="Share a short summary on WhatsApp and receive an initial direction for next legal actions."
-		buttonLabel="Contact via WhatsApp"
-		buttonHref={waCaseLink}
+		text="Use the help desk to share your full name and a short case summary before continuing in WhatsApp."
+		buttonLabel="Open Help Desk"
+		buttonHref={helpDeskTriggerHref}
 	/>
 </BaseLayout>
