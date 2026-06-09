@@ -63,7 +63,15 @@ This file defines project-specific execution and editing guidance for agents wor
   - user/organization pages (`https://<user>.github.io`)
   - project pages (`https://<user>.github.io/<repo>`)
 
-## 7) Editing guidelines for agents
+## 7) Turkish character encoding (common pitfall)
+
+- **NEVER use `\uXXXX` escape sequences in `.astro` HTML templates.** These only work in JavaScript/frontmatter context. In the HTML template (outside `---` blocks), `\u0131` prints as literal `\u0131`, not `ı`.
+- **Always write actual UTF-8 characters** directly in `.astro` files (e.g., `ı`, `ş`, `ü`, `ğ`, `ö`, `ç`, `İ`, `Ş`, `Ü`, `Ğ`, `Ö`, `Ç`).
+- In frontmatter JS strings, `\uXXXX` escapes DO work, but prefer writing actual characters for consistency so that text can be moved between frontmatter and template without breakage.
+- **PowerShell encoding trap**: PowerShell's `Set-Content` defaults to non-UTF8 encoding and corrupts Turkish characters. Use `[System.IO.File]::WriteAllText(path, content, [System.Text.Encoding]::UTF8)` or Node.js `fs.writeFileSync(path, content, 'utf8')` instead.
+- **How to check**: After writing Turkish text, verify the source file bytes with `[System.IO.File]::ReadAllBytes(path)` — a correct `ı` is `C4 B1`, `ş` is `C5 9F`, `ü` is `C3 BC`. If you see `5C 75 30 31 33 31` (`\u0131` as literal ASCII), it's broken.
+
+## 8) Editing guidelines for agents
 
 - Prefer modifying shared components/layout before page-specific duplication.
 - Keep copy professional and legally neutral (no guarantees, no legal outcomes promised).
@@ -73,7 +81,7 @@ This file defines project-specific execution and editing guidance for agents wor
 - After structural changes, run:
   - `npm run build`
 
-## 8) Quick change playbooks
+## 9) Quick change playbooks
 
 - Change active template:
   - update `siteConfig.template` in `src/config/site.ts`
