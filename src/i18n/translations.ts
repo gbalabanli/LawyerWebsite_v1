@@ -73,12 +73,12 @@ export const translations = {
 			heroSummary: '\u0130stanbul merkezli medeni hukuk ve ticari hukuk alanlar\u0131nda \u00e7al\u0131\u015fan avukat.',
 			profileTitle: 'Profil',
 			profileText:
-				'Av. Bar\u0131\u015f C. Balabanl\u0131, medeni ve ticari hukuki konularda bireysel ve kurumsal m\u00fc\u015fterilere dan\u0131\u015fmanl\u0131k yapar, dava haz\u0131rl\u0131\u011f\u0131 ile m\u00fczakere \u00e7\u00f6z\u00fcmlerini dengeler. Hukuki s\u00fcre\u00e7lerin her a\u015famas\u0131nda m\u00fcvekkillerine stratejik rehberlik sunar.',
+				'Av. Bar\u0131\u015f C. Balabanl\u0131, Kadir Has \u00dcniversitesi Hukuk Fak\u00fcltesi\u2019nden 2020 y\u0131l\u0131nda mezun olmu\u015ftur. Ekim Law Firm\u2019de staj ve RS Hukuk\u2019ta avukat olarak \u00e7al\u0131\u015ft\u0131ktan sonra 2025 y\u0131l\u0131nda Balabanl\u0131 Hukuk B\u00fcrosu\u2019nu kurmu\u015ftur. Medeni ve ticari hukuk alanlar\u0131nda bireysel ve kurumsal m\u00fcvekkillerine dan\u0131\u015fmanl\u0131k yapmakta, dava haz\u0131rl\u0131\u011f\u0131 ile m\u00fczakere \u00e7\u00f6z\u00fcmlerini dengelemektedir.',
 			workingStyleTitle: '\u00c7al\u0131\u015fma Tarz\u0131',
 			workingStyleText:
 				'Her dosyada erken risk analizi, net se\u00e7enekler ve disiplinli belgeleme ile hukuki s\u00fcreci verimli ve \u00f6ng\u00f6r\u00fclebilir k\u0131lmaya odaklan\u0131r\u0131m. M\u00fcvekkillerimin ihtiya\u00e7lar\u0131n\u0131 anlamak ve onlara \u00f6zel \u00e7\u00f6z\u00fcmler \u00fcretmek \u00f6nceli\u011fimdir.',
 			eduTitle: 'E\u011fitim',
-			eduText: '\u0130stanbul \u00dcniversitesi Hukuk Fak\u00fcltesi mezunudur. Mezuniyet sonras\u0131 ticaret hukuku, medeni usul hukuku ve fikri m\u00fclkiyet hukuku alanlar\u0131nda \u00e7e\u015fitli sertifika programlar\u0131na kat\u0131lm\u0131\u015ft\u0131r.',
+			eduText: 'Kadir Has \u00dcniversitesi Hukuk Fak\u00fcltesi, Lisans (2014\u20132020). Mezuniyet sonras\u0131 ticaret hukuku, medeni usul hukuku ve fikri m\u00fclkiyet hukuku alanlar\u0131nda \u00e7e\u015fitli sertifika programlar\u0131na kat\u0131lm\u0131\u015ft\u0131r.',
 			membershipTitle: 'Mesleki \u00dcyelikler',
 			membershipText: '\u0130stanbul Barosu ve T\u00fcrkiye Barolar Birli\u011fi nezdinde kay\u0131tl\u0131 olarak faaliyet g\u00f6stermektedir.',
 			langTitle: 'Diller',
@@ -217,12 +217,12 @@ export const translations = {
 			heroSummary: 'Istanbul-based attorney practicing in civil and commercial law.',
 			profileTitle: 'Profile',
 			profileText:
-				'Attorney Bar\u0131\u015f C. Balabanl\u0131 advises individual and corporate clients on civil and commercial legal matters, balancing litigation readiness with negotiated outcomes. He provides strategic guidance at every stage of the legal process.',
+				'Attorney Bar\u0131\u015f C. Balabanl\u0131 graduated from Kadir Has University Faculty of Law in 2020. After completing his legal internship at Ekim Law Firm and working as an attorney at RS Hukuk, he founded Balabanl\u0131 Law Office in 2025. He provides individual and corporate clients with legal counsel in civil and commercial matters, balancing litigation readiness with negotiated outcomes.',
 			workingStyleTitle: 'Working Style',
 			workingStyleText:
 				'I focus on early risk analysis, clear options, and disciplined documentation to keep legal matters efficient and predictable. Understanding my clients\u2019 needs and crafting tailored solutions is my priority.',
 			eduTitle: 'Education',
-			eduText: 'Graduate of Istanbul University Faculty of Law. Completed certificate programs in commercial law, civil procedure, and intellectual property law.',
+			eduText: 'Kadir Has University Faculty of Law, Bachelor\u2019s Degree (2014\u20132020). Completed certificate programs in commercial law, civil procedure, and intellectual property law.',
 			membershipTitle: 'Professional Memberships',
 			membershipText: 'Registered with the Istanbul Bar Association and the Turkish Bar Association.',
 			langTitle: 'Languages',
