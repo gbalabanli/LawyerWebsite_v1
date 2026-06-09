@@ -44,9 +44,7 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang, base
 		if (mapped) return basePath !== '/' ? `${basePath}${mapped}`.replace(/\/+/g, '/') : mapped;
 
 		if (pathnameWithoutBase.startsWith('/blog/')) {
-			const slug = pathnameWithoutBase.replace('/blog/', '');
-			const path = `/en/blog/${slug}`;
-			return basePath !== '/' ? `${basePath}${path}`.replace(/\/+/g, '/') : path;
+			return basePath !== '/' ? `${basePath}/en/blog`.replace(/\/+/g, '/') : '/en/blog';
 		}
 	}
 
@@ -55,9 +53,7 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang, base
 		if (mapped) return basePath !== '/' ? `${basePath}${mapped}`.replace(/\/+/g, '/') : mapped;
 
 		if (pathnameWithoutBase.startsWith('/en/blog/')) {
-			const slug = pathnameWithoutBase.replace('/en/blog/', '');
-			const path = `/blog/${slug}`;
-			return basePath !== '/' ? `${basePath}${path}`.replace(/\/+/g, '/') : path;
+			return basePath !== '/' ? `${basePath}/blog`.replace(/\/+/g, '/') : '/blog';
 		}
 	}
 
