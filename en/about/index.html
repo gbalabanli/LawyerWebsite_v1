@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en" data-template="classic-legal"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v6.2.2"><title>About Me | Aydin Law Office</title><meta name="description" content="Attorney profile, qualifications, legal focus, and working style."><link rel="canonical" href="https://gbalabanli.github.io/en/about"><link rel="alternate" hreflang="en" href="https://gbalabanli.github.io/en/about"><link rel="alternate" hreflang="tr" href="https://gbalabanli.github.io/hakkimda"><meta property="og:site_name" content="Aydin Law Office"><meta property="og:type" content="website"><meta property="og:title" content="About Me | Aydin Law Office"><meta property="og:description" content="Attorney profile, qualifications, legal focus, and working style."><meta property="og:url" content="https://gbalabanli.github.io/en/about"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="About Me | Aydin Law Office"><meta name="twitter:description" content="Attorney profile, qualifications, legal focus, and working style."><link rel="icon" type="image/svg+xml" href="/LawyerWebsite_v1/favicon.svg"><link rel="icon" href="/LawyerWebsite_v1/favicon.ico"><script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"Aydin Law Office","description":"Lawyer website covering legal services, attorney profile, and educational blog posts on law topics.","url":"https://gbalabanli.github.io/LawyerWebsite_v1","email":"contact@examplelaw.com","telephone":"+90 555 123 45 67","address":{"@type":"PostalAddress","addressLocality":"Istanbul, Turkiye"},"areaServed":"Turkey"}</script><link rel="stylesheet" href="/LawyerWebsite_v1/_astro/BaseLayout.BrLdvadr.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="container header-row"> <a class="brand" href="/LawyerWebsite_v1/en/">Aydin Law Office</a> <nav class="nav" aria-label="Primary"> <a href="/LawyerWebsite_v1/en/"> Home </a><a href="/LawyerWebsite_v1/en/about" aria-current="page"> About Me </a><a href="/LawyerWebsite_v1/en/contact"> Contact Me </a><a href="/LawyerWebsite_v1/en/blog"> Blog </a> </nav> <nav class="lang-switcher" aria-label="Language"> <span class="lang-switcher-item" data-active="false"> <a href="/LawyerWebsite_v1/LawyerWebsite_v1/hakkimda">TR</a> </span> <span class="lang-divider" aria-hidden="true">|</span> <span class="lang-switcher-item" data-active="true"> <span>EN</span> </span> </nav> </div> </header> <main class="main-content"> <div class="container">  <section class="section"> <div class="section-heading"> <h2>About Me</h2> <p class="section-lead">I represent clients in civil and commercial matters with a focus on practical outcomes, transparent communication, and careful preparation.</p> </div>  <div class="grid"> <article class="card span-6"> <h3>Profile</h3> <p>Attorney Aydin advises clients on civil and commercial legal matters, balancing litigation readiness with negotiated outcomes.</p>  </article> <article class="card span-6"> <h3>Working Style</h3> <p>I focus on early risk analysis, clear options, and disciplined documentation to keep legal matters efficient and predictable.</p>  </article> </div>  </section> <section class="section"> <div class="section-heading"> <h2>Qualifications and Focus</h2> <p class="section-lead">Core strengths relevant to client outcomes.</p> </div>  <div class="grid"> <article class="card span-4"> <h3>Courtroom Preparation</h3> <p>Structured evidence review and argument planning for stronger procedural positioning.</p>  </article> <article class="card span-4"> <h3>Contract Precision</h3> <p>Detailed drafting and review to reduce ambiguity, disputes, and enforcement risk.</p>  </article> <article class="card span-4"> <h3>Client-Centered Guidance</h3> <p>Communication adapted to your situation, priorities, and decision timeline.</p>  </article> </div>  </section> <section class="cta-box"> <h2>Discuss Your Matter</h2> <p>Use the help desk to share your full name and a short case summary before continuing in WhatsApp.</p> <div class="button-row"> <a class="btn btn-primary" href="#help-desk">Open Help Desk</a> </div> </section>  </div> </main> <footer class="site-footer"> <div class="container footer-row"> <p>Aydin Law Office</p> <p>Istanbul, Turkiye</p> <p>v.0.0.1</p> <p>&copy; 2026 All rights reserved.</p> </div> </footer> </div> <div id="help-desk" class="help-desk" data-help-desk-root data-help-desk-trigger="#help-desk"> <button type="button" class="help-desk-launcher btn btn-primary" data-help-desk-toggle aria-expanded="false" aria-controls="help-desk-panel" aria-haspopup="dialog"> Live Help </button> <button type="button" class="help-desk-overlay" data-help-desk-overlay aria-label="Close help desk" hidden></button> <section id="help-desk-panel" class="help-desk-panel" data-help-desk-panel role="dialog" aria-modal="true" aria-labelledby="help-desk-title" hidden> <div class="help-desk-header"> <div> <p class="eyebrow">Live Help Desk</p> <h2 id="help-desk-title">Start Your Legal Intake</h2> </div> <button type="button" class="help-desk-close" data-help-desk-close aria-label="Close help desk"> <span aria-hidden="true">x</span> </button> </div> <p class="help-desk-copy">Share your full name and a short summary. We will open WhatsApp with your details prefilled.</p> <form class="help-desk-form" data-help-desk-form novalidate> <label class="help-desk-field" for="help-desk-full-name"> <span>Name and Surname</span> <input id="help-desk-full-name" class="input" type="text" name="fullName" autocomplete="name" placeholder="Aydin Yilmaz" required> </label> <label class="help-desk-field" for="help-desk-message"> <span>Your Message</span> <textarea id="help-desk-message" class="input textarea" name="message" rows="5" placeholder="Briefly describe your legal matter and what you need help with." required></textarea> </label> <p class="help-desk-error" data-help-desk-error role="alert" hidden></p> <div class="button-row help-desk-actions"> <button type="submit" class="btn btn-primary" data-help-desk-submit> Continue in WhatsApp </button> <button type="button" class="btn btn-secondary" data-help-desk-close> Close </button> </div> </form> </section> <script>(function(){const lang = "en";
+const errorEmpty = "Please add your full name and a short message before continuing.";
+const openingWhatsApp = "Opening WhatsApp...";
+
+		import { getHelpDeskWhatsAppLink } from '../config/site';
+
+		const root = document.querySelector('[data-help-desk-root]');
+
+		if (root instanceof HTMLElement) {
+			const launcher = root.querySelector('[data-help-desk-toggle]');
+			const overlay = root.querySelector('[data-help-desk-overlay]');
+			const panel = root.querySelector('[data-help-desk-panel]');
+			const form = root.querySelector('[data-help-desk-form]');
+			const error = root.querySelector('[data-help-desk-error]');
+			const fullNameInput = root.querySelector('#help-desk-full-name');
+			const messageInput = root.querySelector('#help-desk-message');
+			const submitButton = root.querySelector('[data-help-desk-submit]');
+			const closeButtons = [...root.querySelectorAll('[data-help-desk-close]')];
+			const triggerHref = root.dataset.helpDeskTrigger || '#help-desk';
+			const submitLabel = submitButton instanceof HTMLButtonElement ? submitButton.textContent || 'WhatsApp' : 'WhatsApp';
+			let lastTrigger = launcher instanceof HTMLElement ? launcher : null;
+			let isOpen = false;
+
+			const setError = (message = '') => {
+				if (!(error instanceof HTMLElement)) {
+					return;
+				}
+
+				error.textContent = message;
+				error.hidden = !message;
+			};
+
+			const setOpen = (open) => {
+				if (!(launcher instanceof HTMLElement) || !(overlay instanceof HTMLElement) || !(panel instanceof HTMLElement)) {
+					return;
+				}
+
+				isOpen = open;
+				root.classList.toggle('is-open', open);
+				document.body.classList.toggle('help-desk-open', open);
+				launcher.setAttribute('aria-expanded', String(open));
+				overlay.hidden = !open;
+				panel.hidden = !open;
+
+				if (open) {
+					setError();
+					if (fullNameInput instanceof HTMLInputElement) {
+						fullNameInput.focus();
+					}
+					return;
+				}
+
+				if (submitButton instanceof HTMLButtonElement) {
+					submitButton.disabled = false;
+					submitButton.textContent = submitLabel;
+				}
+
+				(lastTrigger instanceof HTMLElement ? lastTrigger : launcher).focus();
+			};
+
+			const openDesk = (trigger) => {
+				lastTrigger = trigger instanceof HTMLElement ? trigger : launcher instanceof HTMLElement ? launcher : null;
+				setOpen(true);
+			};
+
+			if (launcher instanceof HTMLButtonElement) {
+				launcher.addEventListener('click', () => {
+					if (isOpen) {
+						setOpen(false);
+						return;
+					}
+
+					openDesk(launcher);
+				});
+			}
+
+			if (overlay instanceof HTMLButtonElement) {
+				overlay.addEventListener('click', () => setOpen(false));
+			}
+
+			for (const button of closeButtons) {
+				if (button instanceof HTMLButtonElement) {
+					button.addEventListener('click', () => setOpen(false));
+				}
+			}
+
+			document.addEventListener('click', (event) => {
+				if (!(event.target instanceof Element)) {
+					return;
+				}
+
+				const trigger = event.target.closest(`a[href="${triggerHref}"]`);
+				if (!(trigger instanceof HTMLAnchorElement)) {
+					return;
+				}
+
+				event.preventDefault();
+				openDesk(trigger);
+			});
+
+			window.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && isOpen) {
+					event.preventDefault();
+					setOpen(false);
+				}
+			});
+
+			if (
+				form instanceof HTMLFormElement &&
+				fullNameInput instanceof HTMLInputElement &&
+				messageInput instanceof HTMLTextAreaElement
+			) {
+				form.addEventListener('submit', (event) => {
+					event.preventDefault();
+					setError();
+
+					const fullName = fullNameInput.value.trim();
+					const message = messageInput.value.trim();
+
+					if (!fullName || !message) {
+						setError(errorEmpty);
+						if (!fullName) {
+							fullNameInput.focus();
+							return;
+						}
+
+						messageInput.focus();
+						return;
+					}
+
+					if (submitButton instanceof HTMLButtonElement) {
+						submitButton.disabled = true;
+						submitButton.textContent = openingWhatsApp;
+					}
+
+					const link = getHelpDeskWhatsAppLink(lang, {
+						fullName,
+						message,
+						pageUrl: window.location.href,
+					});
+					const popup = window.open(link, '_blank', 'noopener,noreferrer');
+
+					if (!popup) {
+						window.location.assign(link);
+					}
+
+					form.reset();
+					setOpen(false);
+				});
+			}
+		}
+	})();</script> </div> </body></html>
