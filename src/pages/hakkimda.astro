@@ -16,12 +16,13 @@ const lang: Lang = 'tr';
 	pathname="/hakkimda"
 	lang={lang}
 >
-	<section class="hero">
-		<div>
+	<section class="profile-hero">
+		<div class="profile-hero-text">
 			<p class="eyebrow">{t(lang, 'about.eyebrow')}</p>
 			<h1>{t(lang, 'about.heroTitle')}</h1>
 			<p>{t(lang, 'about.heroSummary')}</p>
 		</div>
+		<img class="profile-photo" src="/images/profile.jpg" alt="Av. Bar\u0131\u015f C. Balabanl\u0131" width="160" height="160" loading="lazy" />
 	</section>
 
 	<Section title={t(lang, 'about.profileTitle')} lead={siteConfig.brand.aboutLong[lang]}>
