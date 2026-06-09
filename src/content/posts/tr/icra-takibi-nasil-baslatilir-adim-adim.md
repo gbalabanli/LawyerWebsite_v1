@@ -1,8 +1,8 @@
----
+﻿---
 title: "İcra Takibi Nasıl Başlatılır? Adım Adım Rehber"
 description: "İcra takibi nasıl başlatılır? Adım adım süreç, gerekli belgeler, 2026 harçları ve ödeme emri itiraz süresi. Alacağınızı tahsil edin."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["icra-tahsilat", "dava-sureci"]
 lang: "tr"
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 title: "E-Spor Turnuva İkramiyesi Dağıtımında Hukuki Haklar"
 description: "E-spor turnuvalarında kazanılan ikramiye ve ödüllerin dağıtımında oyuncu, takım ve organizatör arasındaki hukuki haklar ve sık karşılaşılan sorunlar."
 date: 2026-07-23
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["espor", "odul", "sozlesme"]
 lang: "tr"
 slug: "espor-ikramiye-dagitimi-hukuki-haklar"

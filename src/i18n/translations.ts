@@ -8,6 +8,13 @@ export const translations = {
 		},
 		footer: {
 			rights: 'T\u00fcm haklar\u0131 sakl\u0131d\u0131r.',
+			barAssociation: '\u0130stanbul Barosu',
+			barUnion: 'T\u00fcrkiye Barolar Birli\u011fi',
+			legalAid: 'Adli Yard\u0131m',
+			privacy: 'Gizlilik Politikas\u0131',
+			disclaimer: 'Yasal Uyar\u0131',
+			practiceAreas: 'Hizmet Alanlar\u0131',
+			quickLinks: 'H\u0131zl\u0131 Linkler',
 		},
 		helpDesk: {
 			launcherLabel: 'Canl\u0131 Destek',
@@ -61,7 +68,7 @@ export const translations = {
 			eyebrow: 'Hakk\u0131mda',
 			profileTitle: 'Profil',
 			profileText:
-				'Avukat Ayd\u0131n, medeni ve ticari hukuki konularda m\u00fc\u015fterilere dan\u0131\u015fmanl\u0131k yapar, dava haz\u0131rl\u0131\u011f\u0131 ile m\u00fczakere sonu\u00e7lar\u0131n\u0131 dengeler.',
+				'Av. Bar\u0131\u015f C. Balabanl\u0131, medeni ve ticari hukuki konularda m\u00fc\u015fterilere dan\u0131\u015fmanl\u0131k yapar, dava haz\u0131rl\u0131\u011f\u0131 ile m\u00fczakere sonu\u00e7lar\u0131n\u0131 dengeler.',
 			workingStyleTitle: '\u00c7al\u0131\u015fma Tarz\u0131',
 			workingStyleText:
 				'Erken risk analizi, a\u00e7\u0131k se\u00e7enekler ve disiplinli belgeleme \u00fczerinde odaklanarak hukuki konular\u0131 verimli ve \u00f6ng\u00f6r\u00fclebilir tutar\u0131m.',
@@ -123,6 +130,13 @@ export const translations = {
 		},
 		footer: {
 			rights: 'All rights reserved.',
+			barAssociation: 'Istanbul Bar Association',
+			barUnion: 'Turkish Bar Association',
+			legalAid: 'Legal Aid',
+			privacy: 'Privacy Policy',
+			disclaimer: 'Disclaimer',
+			practiceAreas: 'Practice Areas',
+			quickLinks: 'Quick Links',
 		},
 		helpDesk: {
 			launcherLabel: 'Live Help',
@@ -175,7 +189,7 @@ export const translations = {
 			eyebrow: 'About Me',
 			profileTitle: 'Profile',
 			profileText:
-				'Attorney Aydin advises clients on civil and commercial legal matters, balancing litigation readiness with negotiated outcomes.',
+				'Attorney Bar\u0131\u015f C. Balabanl\u0131 advises clients on civil and commercial legal matters, balancing litigation readiness with negotiated outcomes.',
 			workingStyleTitle: 'Working Style',
 			workingStyleText:
 				'I focus on early risk analysis, clear options, and disciplined documentation to keep legal matters efficient and predictable.',

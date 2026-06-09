@@ -1,8 +1,8 @@
----
+﻿---
 title: "Şirket Sözleşmesi Değişikliği: Prosedür ve Dikkat Edilmesi Gerekenler"
 description: "Limited veya anonim şirket esas sözleşme değişikliği süreci, genel kurul kararı, tescil başvurusu ve gerekli belgelere dair rehber."
 date: 2026-07-25
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["sirketler", "sozlesme", "ticaret-sicil"]
 lang: "tr"
 slug: "sirket-sozlesmesi-degisikligi-prosedur"

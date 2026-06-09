@@ -1,8 +1,8 @@
----
+﻿---
 title: "Pre-Litigation Strategy: What to Prepare First"
 description: "How early evidence planning and communication records can improve your position before filing a case."
 date: 2026-03-28
-author: "Attorney Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["litigation", "evidence", "civil-law"]
 lang: "en"
 slug: "pre-litigation-strategy-what-to-prepare-first"

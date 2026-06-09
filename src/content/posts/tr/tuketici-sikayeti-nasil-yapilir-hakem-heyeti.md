@@ -1,8 +1,8 @@
----
+﻿---
 title: "Tüketici Şikayeti Nasıl Yapılır? Hakem Heyeti Başvuru Rehberi"
 description: "Tüketici şikayeti nasıl yapılır? Hakem heyeti başvurusu, tüketici mahkemesi süreci, örnek dilekçe ve 2026 güncel parasal sınırlar."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["tuketici-haklari", "dava-sureci"]
 lang: "tr"
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 title: "Haksız İşten Çıkarılma: Dava Süreci ve Haklarınız"
 description: "Haksız işten çıkarıldınız mı? İşe iade davası, kıdem/ihbar tazminatı ve arabuluculuk süreci. Adım adım dava rehberi."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["is-hukuku", "dava-sureci"]
 lang: "tr"
 ---

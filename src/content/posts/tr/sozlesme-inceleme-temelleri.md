@@ -1,8 +1,8 @@
----
+﻿---
 title: "İmzalamadan Önce Sözleşme İnceleme Temelleri"
 description: "Uyuşmazlıkları ve gizli yükümlülükleri azaltmak için hukuki sözleşmeleri inceleme uygulamalı kontrol listesi."
 date: 2026-04-12
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["sozlesmeler", "risk-yonetimi", "ticaret-hukuku"]
 lang: "tr"
 ---

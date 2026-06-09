@@ -1,8 +1,8 @@
----
+﻿---
 title: "Arabuluculuk Süreci Nedir, Nasıl İşler?"
 description: "Arabuluculuk nedir, nasıl işler? Zorunlu arabuluculuk hangi davalarda var, ücreti ne kadar? 2026 güncel rehber."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["dava-sureci", "alternatif-cozum"]
 lang: "tr"
 ---

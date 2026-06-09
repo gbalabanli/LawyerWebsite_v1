@@ -129,11 +129,38 @@ const legalServiceSchema = {
 				</div>
 			</main>
 			<footer class="site-footer">
-				<div class="container footer-row">
-					<p>{siteConfig.brand.name}</p>
-					<p>{siteConfig.contact.address}</p>
-					<p>{siteConfig.version}</p>
-					<p>&copy; {new Date().getFullYear()} {rightsText}</p>
+				<div class="container footer-grid">
+					<div class="footer-col footer-brand">
+						<p class="footer-heading">{siteConfig.brand.name}</p>
+						<p>{siteConfig.contact.address}</p>
+						<p>{siteConfig.contact.phoneDisplay}</p>
+						<p>{siteConfig.contact.email}</p>
+						<p class="footer-version">{siteConfig.version}</p>
+					</div>
+					<div class="footer-col">
+						<p class="footer-heading">{t(lang, 'footer.quickLinks')}</p>
+						<nav aria-label="Footer">
+							{
+								nav.map((item) => (
+									<a href={withBase(item.href)}>{t(lang, `nav.${item.key}`)}</a>
+								))
+							}
+						</nav>
+					</div>
+					<div class="footer-col">
+						<p class="footer-heading">{t(lang, 'footer.practiceAreas')}</p>
+						<a href={withBase(lang === 'tr' ? '/blog' : '/en/blog')}>{t(lang, 'nav.blog')}</a>
+					</div>
+					<div class="footer-col">
+						<p class="footer-heading">Kurumsal</p>
+						<a href="https://www.istanbulbarosu.org.tr/" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.barAssociation')}</a>
+						<a href="https://www.barinobirligi.org.tr/" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.barUnion')}</a>
+						<a href="https://www.adalet.gov.tr/" target="_blank" rel="noopener noreferrer">T.C. Adalet Bakanlığı</a>
+						<a href="https://www.adliyardim.org/" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.legalAid')}</a>
+					</div>
+				</div>
+				<div class="container footer-bottom">
+					<p>&copy; {new Date().getFullYear()} {siteConfig.brand.name} — {rightsText}</p>
 				</div>
 			</footer>
 		</div>

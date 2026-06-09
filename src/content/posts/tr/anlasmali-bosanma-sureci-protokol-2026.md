@@ -1,8 +1,8 @@
----
+﻿---
 title: "Anlaşmalı Boşanma Süreci ve Protokol Hazırlığı (2026)"
 description: "Anlaşmalı boşanma nasıl olur? Şartlar, gerekli belgeler, boşanma protokolü ve 2026 güncel harçlar. Adım adım rehber."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["aile-hukuku"]
 lang: "tr"
 ---

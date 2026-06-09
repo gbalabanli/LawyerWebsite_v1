@@ -3,42 +3,42 @@ import { defaultLang, type Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
 import { translations } from '../i18n/translations';
 
-const publicSiteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://example-lawyer.github.io';
+const publicSiteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://gbalabanli.github.io/LawyerWebsite_v1';
 
 export const siteConfig: SiteConfig = {
 	template: 'classic-legal',
 	version: 'v.0.0.1',
 	brand: {
-		name: 'Aydin Law Office',
+		name: 'Balabanlı Hukuk Bürosu',
 		tagline: {
-			tr: 'Bireyler ve \u0130\u015fletmeler i\u00e7in Stratejik Hukuki Dan\u0131\u015fmanl\u0131k',
+			tr: 'Bireyler ve İşletmeler için Stratejik Hukuki Danışmanlık',
 			en: 'Strategic Legal Counsel for Individuals and Businesses',
 		},
 		aboutShort: {
-			tr: 'Dava, s\u00f6zle\u015fmeler ve dan\u0131\u015fmanl\u0131k hizmetleri a\u00e7\u0131k bir s\u00fcre\u00e7 ile.',
+			tr: 'Dava, sözleşmeler ve danışmanlık hizmetleri açık bir süreç ile.',
 			en: 'Litigation, contracts, and advisory services with a clear process.',
 		},
 		aboutLong: {
-			tr: 'M\u00fcvekkillerimi medeni ve ticari konularda temsil ediyorum; pratik sonu\u00e7lar, \u015feffaf ileti\u015fim ve dikkatli haz\u0131rl\u0131k odak noktam.',
+			tr: 'Müvekkillerimi medeni ve ticari konularda temsil ediyorum; pratik sonuçlar, şeffaf iletişim ve dikkatli hazırlık odak noktam.',
 			en: 'I represent clients in civil and commercial matters with a focus on practical outcomes, transparent communication, and careful preparation.',
 		},
 	},
 	seo: {
 		siteUrl: publicSiteUrl,
 		defaultTitle: {
-			tr: 'Aydin Law Office | Avukat Web Sitesi',
-			en: 'Aydin Law Office | Lawyer Website',
+			tr: 'Balabanlı Hukuk Bürosu | Avukat Barış C. Balabanlı',
+			en: 'Balabanlı Law Office | Attorney Barış C. Balabanlı',
 		},
 		defaultDescription: {
-			tr: 'Hukuki hizmetler, avukat profili ve hukuk konular\u0131nda e\u011fitici blog yaz\u0131lar\u0131 sunan avukat web sitesi.',
-			en: 'Lawyer website covering legal services, attorney profile, and educational blog posts on law topics.',
+			tr: 'İstanbul merkezli Balabanlı Hukuk Bürosu, medeni hukuk ve ticari hukuk alanlarında uzman avukatlık hizmeti sunar.',
+			en: 'Balabanlı Law Office, based in Istanbul, provides expert legal services in civil and commercial law.',
 		},
 	},
 	contact: {
 		phoneDisplay: '+90 555 123 45 67',
 		whatsappNumberE164: '905301178034',
-		email: 'contact@examplelaw.com',
-		address: 'Istanbul, Turkiye',
+		email: 'info@balabanlihukuk.com',
+		address: 'İstanbul, Türkiye',
 	},
 };
 

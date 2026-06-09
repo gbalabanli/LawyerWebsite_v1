@@ -1,8 +1,8 @@
----
+﻿---
 title: "Ödenmemiş Fatura Tahsilatı İçin Yasal Yollar"
 description: "Ödenmemiş faturalar için yasal yollar: ihtarname, arabuluculuk ve icra takibi. Adım adım tahsilat rehberi ve 2026 güncel faiz oranları."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["icra-tahsilat", "ticari-hukuk"]
 lang: "tr"
 ---

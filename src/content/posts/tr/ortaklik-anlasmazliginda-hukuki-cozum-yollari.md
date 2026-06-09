@@ -1,8 +1,8 @@
----
+﻿---
 title: "Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları"
 description: "Şirket ortağınızla anlaşmazlık mı yaşıyorsunuz? Ortaklıktan çıkma, fesih, arabuluculuk ve dava seçenekleri. Hukuki çözüm rehberi."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["sirket-hukuku", "dava-sureci"]
 lang: "tr"
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 title: "Ticari Kira Sözleşmesinde Dikkat Edilmesi Gerekenler"
 description: "İş yeri kira sözleşmesi yaparken dikkat edilmesi gerekenler: kefalet, kira artışı, tahliye taahhüdü ve TBK hükümleri. Pratik rehber."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["gayrimenkul", "sozlesme"]
 lang: "tr"
 ---

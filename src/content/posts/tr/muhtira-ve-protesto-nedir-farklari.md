@@ -1,8 +1,8 @@
----
+﻿---
 title: "Muhtıra ve Protesto Nedir? Farkları Nelerdir?"
 description: "Muhtıra ile protesto arasındaki fark nedir? Protesto nasıl çekilir, süresi ne kadar, iptali mümkün mü? Ticari alacaklarda kritik rehber."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["icra-tahsilat", "ticari-hukuk"]
 lang: "tr"
 ---

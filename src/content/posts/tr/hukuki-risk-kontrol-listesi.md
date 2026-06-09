@@ -2,7 +2,7 @@
 title: "Küçük İşletmeler için Hukuki Risk Kontrol Listesi"
 description: "Sözleşmeler, istihdam ve iç kontrolleri kapsayan küçük ekipler için aylık hukuki kontrol listesi."
 date: 2026-02-19
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["ticaret-hukuku", "uyum", "risk-yonetimi"]
 lang: "tr"
 ---

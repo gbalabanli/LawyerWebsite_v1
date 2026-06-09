@@ -1,8 +1,8 @@
----
+﻿---
 title: "KOBİ'ler İçin Hukuki Risk Yönetimi Rehberi"
 description: "KOBİ'nizi bekleyen 7 kritik hukuki risk: sözleşme, iş hukuku, alacak, KVKK ve daha fazlası. Riskleri tanıyın, önleminizi alın."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["sirket-hukuku", "risk-yonetimi"]
 lang: "tr"
 ---

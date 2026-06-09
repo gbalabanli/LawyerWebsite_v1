@@ -1,8 +1,8 @@
----
+﻿---
 title: "Kıdem Tazminatı Hesaplama 2026: Haklarınız ve Tavan Tutarı"
 description: "2026 kıdem tazminatı nasıl hesaplanır? Güncel tavan tutarı, hesaplama formülü, örnekler ve tazminat alma şartları."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["is-hukuku", "tazminat"]
 lang: "tr"
 ---

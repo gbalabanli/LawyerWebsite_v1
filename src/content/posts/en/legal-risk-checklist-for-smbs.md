@@ -1,8 +1,8 @@
----
+﻿---
 title: "Legal Risk Checklist for Small Businesses"
 description: "A monthly legal checklist for small teams covering contracts, employment, and internal controls."
 date: 2026-02-19
-author: "Attorney Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["business-law", "compliance", "risk-management"]
 lang: "en"
 slug: "legal-risk-checklist-for-small-businesses"

@@ -1,8 +1,8 @@
----
+﻿---
 title: "Anonim Şirket Kuruluşu 2026: Adım Adım Rehber"
 description: "Anonim şirket nasıl kurulur? 2026 güncel sermaye şartı, esas sözleşme hazırlığı, MERSİS başvurusu ve kuruluş masrafları. Adım adım rehber."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["sirket-hukuku"]
 lang: "tr"
 ---

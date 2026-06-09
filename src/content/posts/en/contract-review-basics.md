@@ -1,8 +1,8 @@
----
+﻿---
 title: "Contract Review Basics Before You Sign"
 description: "A practical checklist for reviewing legal contracts to reduce disputes and hidden obligations."
 date: 2026-04-12
-author: "Attorney Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["contracts", "risk-management", "business-law"]
 lang: "en"
 slug: "contract-review-basics-before-you-sign"

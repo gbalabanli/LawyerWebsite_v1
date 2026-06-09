@@ -1,8 +1,8 @@
----
+﻿---
 title: "Dava Öncesi Strateji: İlk Ne Hazırlanmalı?"
 description: "Erken kanıt planlaması ve iletişim kayıtlarının dava açmadan önce konumunuzu nasıl güçlendirebileceği."
 date: 2026-03-28
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["dava", "kanit", "medeni-hukuk"]
 lang: "tr"
 ---

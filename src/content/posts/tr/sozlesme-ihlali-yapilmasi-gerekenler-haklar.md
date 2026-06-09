@@ -1,8 +1,8 @@
----
+﻿---
 title: "Sözleşme İhlali Durumunda Haklarınız ve Yapılması Gerekenler"
 description: "Sözleşme ihlali durumunda ne yapmalısınız? Tazminat hakkı, fesih süreci ve yasal adımlar — pratik rehber ve örnek olaylarla anlatım."
 date: 2026-06-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["sozlesme", "dava-sureci"]
 lang: "tr"
 ---

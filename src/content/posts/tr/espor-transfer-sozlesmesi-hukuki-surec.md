@@ -1,8 +1,8 @@
----
+﻿---
 title: "E-Spor Transferi: Hukuki Süreç ve Dikkat Edilmesi Gerekenler"
 description: "E-spor oyuncu transferinde sözleşme feshi, buyout bedeli, TESFED lisans işlemleri ve kulüpler arası anlaşma süreçlerine dair hukuki rehber."
 date: 2026-07-09
-author: "Avukat Aydin"
+author: "Av. Barış C. Balabanlı"
 tags: ["espor", "transfer", "sozlesme"]
 lang: "tr"
 slug: "espor-transfer-sozlesmesi-hukuki-surec"
