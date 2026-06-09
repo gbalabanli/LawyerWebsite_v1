@@ -4,6 +4,7 @@ import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
 import { helpDeskTriggerHref, siteConfig } from '../config/site';
+import { withBase } from '../utils/routing';
 import { t } from '../i18n/ui';
 import type { Lang } from '../i18n/ui';
 
@@ -22,7 +23,7 @@ const lang: Lang = 'tr';
 			<h1>{t(lang, 'about.heroTitle')}</h1>
 			<p>{t(lang, 'about.heroSummary')}</p>
 		</div>
-		<img class="profile-photo" src="/images/profile.jpg" alt="Av. Bar\u0131\u015f C. Balabanl\u0131" width="160" height="160" loading="lazy" />
+		<img class="profile-photo" src={withBase('/images/profile.jpg')} alt="Av. Bar\u0131\u015f C. Balabanl\u0131" width="160" height="160" loading="lazy" />
 	</section>
 
 	<Section title={t(lang, 'about.profileTitle')} lead={siteConfig.brand.aboutLong[lang]}>

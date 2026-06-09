@@ -8,9 +8,8 @@ import { t } from '../../i18n/ui';
 import type { Lang } from '../../i18n/ui';
 
 const lang: Lang = 'en';
-const whatsappUrl = `https://wa.me/${siteConfig.contact.whatsappNumberE164}`;
-const mailtoUrl = `mailto:${siteConfig.contact.email}`;
-const mapsUrl = 'https://maps.google.com/?q=Istanbul+Turkiye';
+const mapsUrl = 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cab9ae529fa8d3:0x3626d5a13f4e3375';
+const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4%B1-515b2020a';
 ---
 
 <BaseLayout
@@ -40,8 +39,6 @@ const mapsUrl = 'https://maps.google.com/?q=Istanbul+Turkiye';
 			</Card>
 			<Card span="span-6" title={t(lang, 'contact.officeTitle')} text={t(lang, 'contact.officeText')}>
 				<div class="info-row">
-					<span><strong>{t(lang, 'contact.emailLabel')}:</strong> {siteConfig.contact.email}</span>
-					<span><strong>{t(lang, 'contact.phoneLabel')}:</strong> {siteConfig.contact.phoneDisplay}</span>
 					<span><strong>{t(lang, 'contact.addressLabel')}:</strong> {siteConfig.contact.address}</span>
 					<a class="btn btn-secondary" href={mapsUrl} target="_blank" rel="noopener noreferrer">{t(lang, 'contact.mapLink')}</a>
 				</div>
@@ -51,17 +48,17 @@ const mapsUrl = 'https://maps.google.com/?q=Istanbul+Turkiye';
 
 	<Section title={t(lang, 'contact.directTitle')} lead={t(lang, 'contact.directText')}>
 		<div class="grid">
-			<Card title={t(lang, 'contact.whatsappTitle')} text={t(lang, 'contact.whatsappText')}>
+			<Card title="Submit a Form" text="Send your legal consultation request via form, we\u2019ll respond on WhatsApp.">
 				<div class="button-row">
-					<a class="btn btn-primary" href={whatsappUrl} target="_blank" rel="noopener noreferrer">{t(lang, 'contact.whatsappButton')}</a>
-				</div>
-			</Card>
-			<Card title={t(lang, 'contact.emailTitle')} text={t(lang, 'contact.emailText')}>
-				<div class="button-row">
-					<a class="btn btn-secondary" href={mailtoUrl}>{t(lang, 'contact.emailButton')}</a>
+					<a class="btn btn-primary" href={helpDeskTriggerHref}>Fill the Form</a>
 				</div>
 			</Card>
 			<Card title={t(lang, 'contact.hoursTitle')} text={t(lang, 'contact.hoursText')} />
+			<Card title="LinkedIn" text="Av. Bar\u0131\u015f C. Balabanl\u0131">
+				<div class="button-row">
+					<a class="btn btn-secondary" href={linkedinUrl} target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+				</div>
+			</Card>
 		</div>
 	</Section>
 
