@@ -7,9 +7,11 @@ const posts = defineCollection({
 		title: z.string(),
 		description: z.string().max(170),
 		date: z.coerce.date(),
-		author: z.string().default('Attorney Aydin'),
+		author: z.string().default('Avukat Aydin'),
 		tags: z.array(z.string()).default([]),
 		coverImage: z.string().optional(),
+		slug: z.string().optional(),
+		lang: z.enum(['tr', 'en']).default('tr'),
 	}),
 });
 

@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Section from '../../components/Section.astro';
+import Card from '../../components/Card.astro';
+import CTA from '../../components/CTA.astro';
+import { helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { t } from '../../i18n/ui';
+import type { Lang } from '../../i18n/ui';
+
+const lang: Lang = 'en';
+---
+
+<BaseLayout
+	title={`${t(lang, 'about.eyebrow')} | ${siteConfig.brand.name}`}
+	description="Attorney profile, qualifications, legal focus, and working style."
+	pathname="/en/about"
+	lang={lang}
+>
+	<Section title={t(lang, 'about.eyebrow')} lead={siteConfig.brand.aboutLong[lang]}>
+		<div class="grid">
+			<Card
+				span="span-6"
+				title={t(lang, 'about.profileTitle')}
+				text={t(lang, 'about.profileText')}
+			/>
+			<Card
+				span="span-6"
+				title={t(lang, 'about.workingStyleTitle')}
+				text={t(lang, 'about.workingStyleText')}
+			/>
+		</div>
+	</Section>
+
+	<Section title={t(lang, 'about.qualTitle')} lead={t(lang, 'about.qualLead')}>
+		<div class="grid">
+			<Card title={t(lang, 'about.courtroomTitle')} text={t(lang, 'about.courtroomText')} />
+			<Card title={t(lang, 'about.contractTitle')} text={t(lang, 'about.contractText')} />
+			<Card title={t(lang, 'about.clientTitle')} text={t(lang, 'about.clientText')} />
+		</div>
+	</Section>
+
+	<CTA
+		title={t(lang, 'about.ctaTitle')}
+		text={t(lang, 'about.ctaText')}
+		buttonLabel={t(lang, 'about.ctaButton')}
+		buttonHref={helpDeskTriggerHref}
+	/>
+</BaseLayout>

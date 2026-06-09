@@ -1,15 +1,15 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Section from '../../components/Section.astro';
-import BlogCard from '../../components/BlogCard.astro';
-import { siteConfig } from '../../config/site';
-import { withBase } from '../../utils/routing';
-import { t, getDateLocale, type Lang } from '../../i18n/ui';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Section from '../../../components/Section.astro';
+import BlogCard from '../../../components/BlogCard.astro';
+import { siteConfig } from '../../../config/site';
+import { withBase } from '../../../utils/routing';
+import { t, getDateLocale, type Lang } from '../../../i18n/ui';
 
-const lang: Lang = 'tr';
+const lang: Lang = 'en';
 const posts = (await getCollection('posts'))
-	.filter((post) => (post.data.lang ?? 'tr') === 'tr')
+	.filter((post) => post.data.lang === 'en')
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const allTags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 const dateLocale = getDateLocale(lang);
@@ -17,8 +17,8 @@ const dateLocale = getDateLocale(lang);
 
 <BaseLayout
 	title={`${t(lang, 'blog.eyebrow')} | ${siteConfig.brand.name}`}
-	description="M\u00fcvekkiller ve i\u015f sahipleri i\u00e7in pratik hukuki i\u00e7g\u00f6r\u00fcler, g\u00fcncellemeler ve e\u011fitici makaleler."
-	pathname="/blog"
+	description="Law blog with practical legal insights, updates, and educational articles."
+	pathname="/en/blog"
 	lang={lang}
 >
 	<Section title={t(lang, 'blog.eyebrow')} lead={t(lang, 'blog.lead')}>
@@ -49,7 +49,7 @@ const dateLocale = getDateLocale(lang);
 							})}
 							author={post.data.author}
 							tags={post.data.tags}
-							href={withBase(`/blog/${post.id.replace(/^tr\//, '')}`)}
+							href={withBase(`/en/blog/${post.id.replace(/^en\//, '')}`)}
 						/>
 					</div>
 				))

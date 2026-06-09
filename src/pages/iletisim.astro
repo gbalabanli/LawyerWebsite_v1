@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import CTA from '../components/CTA.astro';
+import { helpDeskTriggerHref, siteConfig } from '../config/site';
+import { t } from '../i18n/ui';
+import type { Lang } from '../i18n/ui';
+
+const lang: Lang = 'tr';
+---
+
+<BaseLayout
+	title={`${t(lang, 'contact.eyebrow')} | ${siteConfig.brand.name}`}
+	description="Destek masas\u0131 ba\u015fvurusu, ofis bilgileri ve do\u011frudan ileti\u015fim bilgileri ile ana ileti\u015fim sayfas\u0131."
+	pathname="/iletisim"
+	lang={lang}
+>
+	<Section title={t(lang, 'contact.eyebrow')} lead={t(lang, 'contact.lead')}>
+		<div class="contact-grid">
+			<Card
+				span="span-6"
+				title={t(lang, 'contact.primaryTitle')}
+				text={t(lang, 'contact.primaryText')}
+			>
+				<div class="button-row">
+					<a class="btn btn-primary" href={helpDeskTriggerHref}>{t(lang, 'contact.primaryButton')}</a>
+				</div>
+			</Card>
+			<Card span="span-6" title={t(lang, 'contact.officeTitle')} text={t(lang, 'contact.officeText')}>
+				<div class="info-row">
+					<span>{t(lang, 'contact.emailLabel')} {siteConfig.contact.email}</span>
+					<span>{t(lang, 'contact.phoneLabel')} {siteConfig.contact.phoneDisplay}</span>
+					<span>{t(lang, 'contact.addressLabel')} {siteConfig.contact.address}</span>
+				</div>
+			</Card>
+		</div>
+	</Section>
+
+	<CTA
+		title={t(lang, 'contact.ctaTitle')}
+		text={t(lang, 'contact.ctaText')}
+		buttonLabel={t(lang, 'contact.ctaButton')}
+		buttonHref={helpDeskTriggerHref}
+	/>
+</BaseLayout>

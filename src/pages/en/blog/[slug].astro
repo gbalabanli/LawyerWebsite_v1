@@ -1,11 +1,11 @@
 ---
 import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import CTA from '../../components/CTA.astro';
-import { helpDeskTriggerHref, siteConfig } from '../../config/site';
-import { withBase } from '../../utils/routing';
-import { t, getDateLocale, type Lang } from '../../i18n/ui';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CTA from '../../../components/CTA.astro';
+import { helpDeskTriggerHref, siteConfig } from '../../../config/site';
+import { withBase } from '../../../utils/routing';
+import { t, getDateLocale, type Lang } from '../../../i18n/ui';
 
 interface StaticPath {
 	params: { slug: string };
@@ -14,10 +14,10 @@ interface StaticPath {
 
 export async function getStaticPaths(): Promise<StaticPath[]> {
 	const posts = await getCollection('posts');
-	const trPosts = posts.filter((post) => (post.data.lang ?? 'tr') === 'tr');
+	const enPosts = posts.filter((post) => post.data.lang === 'en');
 
-	return trPosts.map((post) => {
-		const slug = post.id.replace(/^tr\//, '');
+	return enPosts.map((post) => {
+		const slug = post.id.replace(/^en\//, '');
 		return {
 			params: { slug },
 			props: { post },
@@ -25,12 +25,12 @@ export async function getStaticPaths(): Promise<StaticPath[]> {
 	});
 }
 
-const lang: Lang = 'tr';
+const lang: Lang = 'en';
 const { post } = Astro.props;
 const { Content, headings } = await render(post);
 
 const sortedPosts = (await getCollection('posts'))
-	.filter((p) => (p.data.lang ?? 'tr') === 'tr')
+	.filter((p) => p.data.lang === 'en')
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const relatedPosts = sortedPosts
@@ -54,14 +54,14 @@ const articleSchema = {
 		'@type': 'Organization',
 		name: siteConfig.brand.name,
 	},
-	mainEntityOfPage: `${siteConfig.seo.siteUrl}/blog/${post.id.replace(/^tr\//, '')}`,
+	mainEntityOfPage: `${siteConfig.seo.siteUrl}/en/blog/${post.id.replace(/^en\//, '')}`,
 };
 ---
 
 <BaseLayout
 	title={`${post.data.title} | ${siteConfig.brand.name}`}
 	description={post.data.description}
-	pathname={`/blog/${post.id.replace(/^tr\//, '')}`}
+	pathname={`/en/blog/${post.id.replace(/^en\//, '')}`}
 	ogType="article"
 	lang={lang}
 	article={{ publishedTime: post.data.date.toISOString(), tags: post.data.tags }}
@@ -105,7 +105,7 @@ const articleSchema = {
 				<div class="blog-list">
 					{relatedPosts.map((related) => (
 						<article class="card blog-card">
-							<h3><a href={withBase(`/blog/${related.id.replace(/^tr\//, '')}`)}>{related.data.title}</a></h3>
+							<h3><a href={withBase(`/en/blog/${related.id.replace(/^en\//, '')}`)}>{related.data.title}</a></h3>
 							<p>{related.data.description}</p>
 						</article>
 					))}

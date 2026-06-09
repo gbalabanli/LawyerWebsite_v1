@@ -1,0 +1,32 @@
+---
+import { getAlternatePath, getAlternateLangs, type Lang } from '../i18n/utils';
+import { withBase } from '../utils/routing';
+
+interface Props {
+	lang: Lang;
+	pathname: string;
+}
+
+const { lang, pathname } = Astro.props;
+const basePath = import.meta.env.BASE_URL || '/';
+const altLang = getAlternateLangs(lang)[0];
+const altHref = getAlternatePath(pathname, altLang, basePath);
+---
+
+<nav class="lang-switcher" aria-label="Language">
+	<span class="lang-switcher-item" data-active={lang === 'tr'}>
+		{lang === 'tr' ? (
+			<span>TR</span>
+		) : (
+			<a href={withBase(altHref === '/en/' ? '/' : getAlternatePath(pathname, 'tr', basePath))}>TR</a>
+		)}
+	</span>
+	<span class="lang-divider" aria-hidden="true">|</span>
+	<span class="lang-switcher-item" data-active={lang === 'en'}>
+		{lang === 'en' ? (
+			<span>EN</span>
+		) : (
+			<a href={withBase(altHref)}>EN</a>
+		)}
+	</span>
+</nav>

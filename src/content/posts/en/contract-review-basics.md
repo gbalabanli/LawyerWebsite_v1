@@ -4,6 +4,7 @@ description: "A practical checklist for reviewing legal contracts to reduce disp
 date: 2026-04-12
 author: "Attorney Aydin"
 tags: ["contracts", "risk-management", "business-law"]
+lang: "en"
 slug: "contract-review-basics-before-you-sign"
 ---
 

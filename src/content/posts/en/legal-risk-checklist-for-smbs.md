@@ -4,6 +4,7 @@ description: "A monthly legal checklist for small teams covering contracts, empl
 date: 2026-02-19
 author: "Attorney Aydin"
 tags: ["business-law", "compliance", "risk-management"]
+lang: "en"
 slug: "legal-risk-checklist-for-small-businesses"
 ---
 

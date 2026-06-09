@@ -82,6 +82,43 @@ img {
 	background: var(--nav-active-bg);
 }
 
+.lang-switcher {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	font-size: 0.88rem;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	white-space: nowrap;
+	margin-left: 0.5rem;
+}
+
+.lang-switcher a {
+	padding: 0.2rem 0.35rem;
+	border-radius: var(--radius-sm, 4px);
+	color: var(--color-muted, inherit);
+	transition: color 0.15s, background 0.15s;
+}
+
+.lang-switcher a:hover {
+	color: var(--color-text, inherit);
+	background: var(--nav-active-bg, rgba(0, 0, 0, 0.05));
+}
+
+.lang-switcher-item[data-active='true'] span {
+	color: var(--color-text, inherit);
+	opacity: 0.95;
+}
+
+.lang-switcher-item[data-active='false'] span {
+	color: var(--color-muted, inherit);
+}
+
+.lang-divider {
+	color: var(--color-border, #ccc);
+	font-weight: 400;
+}
+
 .main-content {
 	padding: var(--space-7) 0 var(--space-9);
 }

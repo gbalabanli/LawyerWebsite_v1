@@ -1,12 +1,21 @@
 ---
-import { helpDeskTriggerHref, siteConfig } from '../config/site';
+import { siteConfig } from '../config/site';
+import { t, type Lang } from '../i18n/ui';
+import { translations } from '../i18n/translations';
+
+interface Props {
+	lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = translations[lang].helpDesk;
 ---
 
 <div
 	id="help-desk"
 	class="help-desk"
 	data-help-desk-root
-	data-help-desk-trigger={helpDeskTriggerHref}
+	data-help-desk-trigger="#help-desk"
 >
 	<button
 		type="button"
@@ -16,14 +25,14 @@ import { helpDeskTriggerHref, siteConfig } from '../config/site';
 		aria-controls="help-desk-panel"
 		aria-haspopup="dialog"
 	>
-		{siteConfig.helpDesk.launcherLabel}
+		{ui.launcherLabel}
 	</button>
 
 	<button
 		type="button"
 		class="help-desk-overlay"
 		data-help-desk-overlay
-		aria-label="Close help desk"
+		aria-label={ui.overlayAriaLabel}
 		hidden
 	></button>
 
@@ -38,38 +47,38 @@ import { helpDeskTriggerHref, siteConfig } from '../config/site';
 	>
 		<div class="help-desk-header">
 			<div>
-				<p class="eyebrow">Live Help Desk</p>
-				<h2 id="help-desk-title">{siteConfig.helpDesk.panelTitle}</h2>
+				<p class="eyebrow">{ui.eyebrow}</p>
+				<h2 id="help-desk-title">{ui.panelTitle}</h2>
 			</div>
-			<button type="button" class="help-desk-close" data-help-desk-close aria-label="Close help desk">
+			<button type="button" class="help-desk-close" data-help-desk-close aria-label={ui.overlayAriaLabel}>
 				<span aria-hidden="true">x</span>
 			</button>
 		</div>
 
-		<p class="help-desk-copy">{siteConfig.helpDesk.introText}</p>
+		<p class="help-desk-copy">{ui.introText}</p>
 
 		<form class="help-desk-form" data-help-desk-form novalidate>
 			<label class="help-desk-field" for="help-desk-full-name">
-				<span>Name and Surname</span>
+				<span>{ui.nameLabel}</span>
 				<input
 					id="help-desk-full-name"
 					class="input"
 					type="text"
 					name="fullName"
 					autocomplete="name"
-					placeholder="Aydin Yilmaz"
+					placeholder={ui.namePlaceholder}
 					required
 				/>
 			</label>
 
 			<label class="help-desk-field" for="help-desk-message">
-				<span>Your Message</span>
+				<span>{ui.messageLabel}</span>
 				<textarea
 					id="help-desk-message"
 					class="input textarea"
 					name="message"
 					rows="5"
-					placeholder="Briefly describe your legal matter and what you need help with."
+					placeholder={ui.messagePlaceholder}
 					required
 				></textarea>
 			</label>
@@ -78,15 +87,15 @@ import { helpDeskTriggerHref, siteConfig } from '../config/site';
 
 			<div class="button-row help-desk-actions">
 				<button type="submit" class="btn btn-primary" data-help-desk-submit>
-					{siteConfig.helpDesk.submitLabel}
+					{ui.submitLabel}
 				</button>
 				<button type="button" class="btn btn-secondary" data-help-desk-close>
-					Close
+					{ui.closeLabel}
 				</button>
 			</div>
 		</form>
 	</section>
-	<script>
+	<script define:vars={{ lang, errorEmpty: translations[lang].helpDesk.errorEmpty, openingWhatsApp: translations[lang].helpDesk.openingWhatsApp }}>
 		import { getHelpDeskWhatsAppLink } from '../config/site';
 
 		const root = document.querySelector('[data-help-desk-root]');
@@ -102,7 +111,7 @@ import { helpDeskTriggerHref, siteConfig } from '../config/site';
 			const submitButton = root.querySelector('[data-help-desk-submit]');
 			const closeButtons = [...root.querySelectorAll('[data-help-desk-close]')];
 			const triggerHref = root.dataset.helpDeskTrigger || '#help-desk';
-			const submitLabel = submitButton instanceof HTMLButtonElement ? submitButton.textContent || 'Open WhatsApp' : 'Open WhatsApp';
+			const submitLabel = submitButton instanceof HTMLButtonElement ? submitButton.textContent || 'WhatsApp' : 'WhatsApp';
 			let lastTrigger = launcher instanceof HTMLElement ? launcher : null;
 			let isOpen = false;
 
@@ -203,7 +212,7 @@ import { helpDeskTriggerHref, siteConfig } from '../config/site';
 					const message = messageInput.value.trim();
 
 					if (!fullName || !message) {
-						setError('Please add your full name and a short message before continuing.');
+						setError(errorEmpty);
 						if (!fullName) {
 							fullNameInput.focus();
 							return;
@@ -215,10 +224,10 @@ import { helpDeskTriggerHref, siteConfig } from '../config/site';
 
 					if (submitButton instanceof HTMLButtonElement) {
 						submitButton.disabled = true;
-						submitButton.textContent = 'Opening WhatsApp...';
+						submitButton.textContent = openingWhatsApp;
 					}
 
-					const link = getHelpDeskWhatsAppLink({
+					const link = getHelpDeskWhatsAppLink(lang, {
 						fullName,
 						message,
 						pageUrl: window.location.href,

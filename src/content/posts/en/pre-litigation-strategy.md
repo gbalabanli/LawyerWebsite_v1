@@ -4,6 +4,7 @@ description: "How early evidence planning and communication records can improve 
 date: 2026-03-28
 author: "Attorney Aydin"
 tags: ["litigation", "evidence", "civil-law"]
+lang: "en"
 slug: "pre-litigation-strategy-what-to-prepare-first"
 ---
 

@@ -1,7 +1,11 @@
 ---
 import { siteConfig } from '../config/site';
 import HelpDeskPopup from '../components/HelpDeskPopup.astro';
+import LangSwitcher from '../components/LangSwitcher.astro';
 import { withBase } from '../utils/routing';
+import { t, type Lang } from '../i18n/ui';
+import { translations } from '../i18n/translations';
+import { getAlternatePath } from '../i18n/utils';
 import '../styles/base.css';
 import '../templates/classic-legal/tokens.css';
 import '../templates/classic-legal/layout.css';
@@ -13,6 +17,7 @@ interface Props {
 	description?: string;
 	pathname?: string;
 	ogType?: 'website' | 'article';
+	lang?: Lang;
 	article?: {
 		publishedTime?: string;
 		modifiedTime?: string;
@@ -21,10 +26,11 @@ interface Props {
 }
 
 const {
-	title = siteConfig.seo.defaultTitle,
-	description = siteConfig.seo.defaultDescription,
+	title = siteConfig.seo.defaultTitle.tr,
+	description = siteConfig.seo.defaultDescription.tr,
 	pathname = Astro.url.pathname,
 	ogType = 'website',
+	lang = 'tr',
 	article,
 } = Astro.props;
 const basePath = import.meta.env.BASE_URL || '/';
@@ -34,20 +40,29 @@ const pathnameWithoutBase =
 		: pathname;
 
 const canonicalUrl = new URL(pathname, siteConfig.seo.siteUrl).toString();
+const altLang: Lang = lang === 'tr' ? 'en' : 'tr';
+const alternateUrl = new URL(
+	getAlternatePath(pathnameWithoutBase, altLang, '/'),
+	siteConfig.seo.siteUrl,
+).toString();
+
 const nav = [
-	{ href: '/', label: 'Landing' },
-	{ href: '/about', label: 'About Me' },
-	{ href: '/contact', label: 'Contact Me' },
-	{ href: '/blog', label: 'Blog' },
+	{ href: lang === 'tr' ? '/' : '/en/', key: 'home' as const },
+	{ href: lang === 'tr' ? '/hakkimda' : '/en/about', key: 'about' as const },
+	{ href: lang === 'tr' ? '/iletisim' : '/en/contact', key: 'contact' as const },
+	{ href: lang === 'tr' ? '/blog' : '/en/blog', key: 'blog' as const },
 ];
 const faviconSvg = withBase('/favicon.svg');
 const faviconIco = withBase('/favicon.ico');
+const htmlLang = lang === 'tr' ? 'tr' : 'en';
+const ogLocale = translations[lang].seo.locale;
+const rightsText = translations[lang].footer.rights;
 
 const legalServiceSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'LegalService',
 	name: siteConfig.brand.name,
-	description: siteConfig.seo.defaultDescription,
+	description: siteConfig.seo.defaultDescription[lang],
 	url: siteConfig.seo.siteUrl,
 	email: siteConfig.contact.email,
 	telephone: siteConfig.contact.phoneDisplay,
@@ -60,7 +75,7 @@ const legalServiceSchema = {
 ---
 
 <!doctype html>
-<html lang="en" data-template={siteConfig.template}>
+<html lang={htmlLang} data-template={siteConfig.template}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,12 +83,14 @@ const legalServiceSchema = {
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonicalUrl} />
+		<link rel="alternate" hreflang={lang === 'tr' ? 'tr' : 'en'} href={canonicalUrl} />
+		<link rel="alternate" hreflang={altLang} href={alternateUrl} />
 		<meta property="og:site_name" content={siteConfig.brand.name} />
 		<meta property="og:type" content={ogType} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalUrl} />
-		<meta property="og:locale" content={siteConfig.seo.locale} />
+		<meta property="og:locale" content={ogLocale} />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
@@ -92,16 +109,17 @@ const legalServiceSchema = {
 		<div class="site-shell">
 			<header class="site-header">
 				<div class="container header-row">
-					<a class="brand" href={withBase('/')}>{siteConfig.brand.name}</a>
+					<a class="brand" href={withBase(lang === 'tr' ? '/' : '/en/')}>{siteConfig.brand.name}</a>
 					<nav class="nav" aria-label="Primary">
 						{
 							nav.map((item) => (
 								<a href={withBase(item.href)} aria-current={pathnameWithoutBase === item.href ? 'page' : undefined}>
-									{item.label}
+									{t(lang, `nav.${item.key}`)}
 								</a>
 							))
 						}
 					</nav>
+					<LangSwitcher lang={lang} pathname={pathnameWithoutBase} />
 				</div>
 			</header>
 			<main class="main-content">
@@ -114,10 +132,10 @@ const legalServiceSchema = {
 					<p>{siteConfig.brand.name}</p>
 					<p>{siteConfig.contact.address}</p>
 					<p>{siteConfig.version}</p>
-					<p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+					<p>&copy; {new Date().getFullYear()} {rightsText}</p>
 				</div>
 			</footer>
 		</div>
-		<HelpDeskPopup />
+		<HelpDeskPopup lang={lang} />
 	</body>
 </html>

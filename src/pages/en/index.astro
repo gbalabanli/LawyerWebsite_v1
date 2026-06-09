@@ -1,21 +1,21 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
-import Section from '../components/Section.astro';
-import Card from '../components/Card.astro';
-import CTA from '../components/CTA.astro';
-import { helpDeskTriggerHref, siteConfig } from '../config/site';
-import { withBase } from '../utils/routing';
-import { t } from '../i18n/ui';
-import type { Lang } from '../i18n/ui';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import Section from '../../components/Section.astro';
+import Card from '../../components/Card.astro';
+import CTA from '../../components/CTA.astro';
+import { helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { withBase } from '../../utils/routing';
+import { t } from '../../i18n/ui';
+import type { Lang } from '../../i18n/ui';
 
-const lang: Lang = 'tr';
+const lang: Lang = 'en';
 ---
 
 <BaseLayout
 	title={`${t(lang, 'index.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Hukuki hizmetler, uygulama alanlar\u0131 ve h\u0131zl\u0131 dan\u0131\u015fmanl\u0131k ba\u015fvurusu sunan sayfa."
-	pathname="/"
+	description="Legal services page with clear practice areas and a fast consultation intake."
+	pathname="/en/"
 	lang={lang}
 >
 	<Hero
@@ -25,7 +25,7 @@ const lang: Lang = 'tr';
 		primaryLabel={t(lang, 'index.primaryLabel')}
 		primaryHref={helpDeskTriggerHref}
 		secondaryLabel={t(lang, 'index.secondaryLabel')}
-		secondaryHref={withBase('/blog')}
+		secondaryHref={withBase('/en/blog')}
 	/>
 
 	<Section title={t(lang, 'index.practiceTitle')} lead={t(lang, 'index.practiceLead')}>

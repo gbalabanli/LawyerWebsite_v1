@@ -1,3 +1,5 @@
+import type { Lang } from '../i18n/ui';
+
 export type TemplateName = 'classic-legal' | 'modern-minimal';
 
 export interface SiteConfig {
@@ -5,28 +7,20 @@ export interface SiteConfig {
 	version: string;
 	brand: {
 		name: string;
-		tagline: string;
-		aboutShort: string;
-		aboutLong: string;
+		tagline: Record<Lang, string>;
+		aboutShort: Record<Lang, string>;
+		aboutLong: Record<Lang, string>;
 	};
 	seo: {
 		siteUrl: string;
-		defaultTitle: string;
-		defaultDescription: string;
-		locale: string;
+		defaultTitle: Record<Lang, string>;
+		defaultDescription: Record<Lang, string>;
 	};
 	contact: {
 		phoneDisplay: string;
 		whatsappNumberE164: string;
 		email: string;
 		address: string;
-	};
-	helpDesk: {
-		launcherLabel: string;
-		panelTitle: string;
-		introText: string;
-		submitLabel: string;
-		defaultMessageIntro: string;
 	};
 }
 
@@ -37,8 +31,8 @@ export interface BlogPostFrontmatter {
 	author: string;
 	tags: string[];
 	coverImage?: string;
-	// Astro reserves slug in schema, but frontmatter may still define it.
 	slug?: string;
+	lang: Lang;
 }
 
 export interface HelpDeskWhatsAppInput {
