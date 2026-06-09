@@ -1,5 +1,5 @@
 ---
-import { siteConfig } from '../config/site';
+import { helpDeskTriggerHref, siteConfig } from '../config/site';
 import HelpDeskPopup from '../components/HelpDeskPopup.astro';
 import LangSwitcher from '../components/LangSwitcher.astro';
 import { withBase } from '../utils/routing';
@@ -132,9 +132,8 @@ const legalServiceSchema = {
 				<div class="container footer-grid">
 					<div class="footer-col footer-brand">
 						<p class="footer-heading">{siteConfig.brand.name}</p>
-						<p>{siteConfig.contact.address}</p>
-						<p>{siteConfig.contact.phoneDisplay}</p>
-						<p>{siteConfig.contact.email}</p>
+						<p>Eski Bağdat Caddesi Altıntepe 34840 İstanbul / Türkiye</p>
+						<a class="btn btn-primary" href={helpDeskTriggerHref}>{t(lang, 'footer.liveSupport')}</a>
 						<p class="footer-version">{siteConfig.version}</p>
 					</div>
 					<div class="footer-col">

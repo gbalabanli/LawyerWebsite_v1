@@ -38,7 +38,7 @@ export const siteConfig: SiteConfig = {
 		phoneDisplay: '+90 555 123 45 67',
 		whatsappNumberE164: '905301178034',
 		email: 'info@balabanlihukuk.com',
-		address: 'İstanbul, Türkiye',
+		address: 'Eski Bağdat Caddesi Altıntepe 34840 İstanbul / Türkiye',
 	},
 };
 

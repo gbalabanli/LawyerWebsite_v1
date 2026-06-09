@@ -17,6 +17,7 @@ export const translations = {
 			practiceAreas: 'Hizmet Alanlar\u0131',
 			quickLinks: 'H\u0131zl\u0131 Linkler',
 			institutions: 'Yetkili Kurumlar',
+			liveSupport: 'Canlı Destek',
 		},
 		helpDesk: {
 			launcherLabel: 'Canl\u0131 Destek',
@@ -161,6 +162,7 @@ export const translations = {
 			practiceAreas: 'Practice Areas',
 			quickLinks: 'Quick Links',
 			institutions: 'Authorized Institutions',
+			liveSupport: 'Live Support',
 		},
 		helpDesk: {
 			launcherLabel: 'Live Help',
