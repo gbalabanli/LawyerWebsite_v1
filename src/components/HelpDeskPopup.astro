@@ -95,9 +95,7 @@ const ui = translations[lang].helpDesk;
 			</div>
 		</form>
 	</section>
-	<script define:vars={{ lang, errorEmpty: translations[lang].helpDesk.errorEmpty, openingWhatsApp: translations[lang].helpDesk.openingWhatsApp }}>
-		import { getHelpDeskWhatsAppLink } from '../config/site';
-
+	<script define:vars={{ whatsappNumber: siteConfig.contact.whatsappNumberE164, intro: translations[lang].helpDesk.whatsappIntro, errorEmpty: translations[lang].helpDesk.errorEmpty, openingWhatsApp: translations[lang].helpDesk.openingWhatsApp }}>
 		const root = document.querySelector('[data-help-desk-root]');
 
 		if (root instanceof HTMLElement) {
@@ -227,11 +225,14 @@ const ui = translations[lang].helpDesk;
 						submitButton.textContent = openingWhatsApp;
 					}
 
-					const link = getHelpDeskWhatsAppLink(lang, {
-						fullName,
+					const payload = [
+						intro,
+						`Name: ${fullName}`,
+						`Page: ${window.location.href}`,
+						'Message:',
 						message,
-						pageUrl: window.location.href,
-					});
+					].join('\n');
+					const link = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(payload)}`;
 					const popup = window.open(link, '_blank', 'noopener,noreferrer');
 
 					if (!popup) {
