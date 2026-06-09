@@ -41,8 +41,9 @@ const pathnameWithoutBase =
 
 const canonicalUrl = new URL(pathname, siteConfig.seo.siteUrl).toString();
 const altLang: Lang = lang === 'tr' ? 'en' : 'tr';
+const altPathRaw = getAlternatePath(pathnameWithoutBase, altLang);
 const alternateUrl = new URL(
-	getAlternatePath(pathnameWithoutBase, altLang, '/'),
+	basePath !== '/' ? `${basePath}${altPathRaw}`.replace(/\/+/g, '/') : altPathRaw,
 	siteConfig.seo.siteUrl,
 ).toString();
 

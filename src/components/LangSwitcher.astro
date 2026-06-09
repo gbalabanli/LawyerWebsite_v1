@@ -9,8 +9,14 @@ interface Props {
 
 const { lang, pathname } = Astro.props;
 const basePath = import.meta.env.BASE_URL || '/';
+const pathnameWithoutBase =
+	basePath !== '/' && pathname.startsWith(basePath)
+		? pathname.slice(basePath.length) || '/'
+		: pathname;
+
 const altLang = getAlternateLangs(lang)[0];
-const altHref = getAlternatePath(pathname, altLang, basePath);
+const trHref = getAlternatePath(pathnameWithoutBase, 'tr');
+const enHref = getAlternatePath(pathnameWithoutBase, 'en');
 ---
 
 <nav class="lang-switcher" aria-label="Language">
@@ -18,7 +24,7 @@ const altHref = getAlternatePath(pathname, altLang, basePath);
 		{lang === 'tr' ? (
 			<span>TR</span>
 		) : (
-			<a href={withBase(altHref === '/en/' ? '/' : getAlternatePath(pathname, 'tr', basePath))}>TR</a>
+			<a href={withBase(trHref)}>TR</a>
 		)}
 	</span>
 	<span class="lang-divider" aria-hidden="true">|</span>
@@ -26,7 +32,7 @@ const altHref = getAlternatePath(pathname, altLang, basePath);
 		{lang === 'en' ? (
 			<span>EN</span>
 		) : (
-			<a href={withBase(altHref)}>EN</a>
+			<a href={withBase(enHref)}>EN</a>
 		)}
 	</span>
 </nav>

@@ -19,12 +19,7 @@ export function getLocalizedPath(pageKey: string, lang: Lang): string {
 	return routeMap[lang]?.[pageKey] ?? '/';
 }
 
-export function getAlternatePath(currentPathname: string, targetLang: Lang, basePath: string = '/'): string {
-	const pathnameWithoutBase =
-		basePath !== '/' && currentPathname.startsWith(basePath)
-			? currentPathname.slice(basePath.length) || '/'
-			: currentPathname;
-
+export function getAlternatePath(currentPathname: string, targetLang: Lang): string {
 	const trToEn: Record<string, string> = {
 		'/': '/en/',
 		'/hakkimda': '/en/about',
@@ -40,24 +35,24 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang, base
 	};
 
 	if (targetLang === 'en') {
-		const mapped = trToEn[pathnameWithoutBase];
-		if (mapped) return basePath !== '/' ? `${basePath}${mapped}`.replace(/\/+/g, '/') : mapped;
+		const mapped = trToEn[currentPathname];
+		if (mapped) return mapped;
 
-		if (pathnameWithoutBase.startsWith('/blog/')) {
-			return basePath !== '/' ? `${basePath}/en/blog`.replace(/\/+/g, '/') : '/en/blog';
+		if (currentPathname.startsWith('/blog/')) {
+			return '/en/blog';
 		}
 	}
 
 	if (targetLang === 'tr') {
-		const mapped = enToTr[pathnameWithoutBase];
-		if (mapped) return basePath !== '/' ? `${basePath}${mapped}`.replace(/\/+/g, '/') : mapped;
+		const mapped = enToTr[currentPathname];
+		if (mapped) return mapped;
 
-		if (pathnameWithoutBase.startsWith('/en/blog/')) {
-			return basePath !== '/' ? `${basePath}/blog`.replace(/\/+/g, '/') : '/blog';
+		if (currentPathname.startsWith('/en/blog/')) {
+			return '/blog';
 		}
 	}
 
-	return basePath !== '/' ? `${basePath}/` : '/';
+	return '/';
 }
 
 export function getAlternateLangs(currentLang: Lang): Lang[] {
