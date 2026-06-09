@@ -1,7 +1,7 @@
 ﻿---
 title: "Limited Şirket Müdür Değişikliği: Adım Adım Süreç"
 description: "Limited şirket müdür değişikliğinde izlenmesi gereken adımlar: genel kurul, istifa, ticaret sicil başvurusu ve gerekli belgeler."
-date: 2026-07-18
+date: 2026-06-01
 author: "Av. Barış C. Balabanlı"
 tags: ["sirketler", "ticaret-sicil", "limited-sirket"]
 lang: "tr"

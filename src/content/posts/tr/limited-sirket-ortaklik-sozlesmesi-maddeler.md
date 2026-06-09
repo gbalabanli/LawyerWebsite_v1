@@ -1,7 +1,7 @@
 ﻿---
 title: "Limited Şirket Ortaklık Sözleşmesi: Olması Gereken Maddeler"
 description: "Limited şirket ortaklık sözleşmesinde bulunması gereken kritik maddeler: kar paylaşımı, oy hakları, ayrılma ve uyuşmazlık çözüm yolları."
-date: 2026-07-02
+date: 2026-04-28
 author: "Av. Barış C. Balabanlı"
 tags: ["sirketler", "sozlesme", "limited-sirket"]
 lang: "tr"

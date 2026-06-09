@@ -1,7 +1,7 @@
 ﻿---
 title: "E-Spor Sporcu Sözleşmesinde Olması Gereken 10 Madde"
 description: "Profesyonel e-spor oyuncuları için sözleşmede mutlaka bulunması gereken on kritik madde: maaş, ikramiye, transfer, fesih ve daha fazlası."
-date: 2026-06-25
+date: 2026-03-30
 author: "Av. Barış C. Balabanlı"
 tags: ["espor", "sozlesme", "spor-hukuku"]
 lang: "tr"

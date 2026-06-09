@@ -1,7 +1,7 @@
 ﻿---
 title: "E-Spor Oyuncusu: İş Sözleşmesi mi, Hizmet Sözleşmesi mi?"
 description: "E-spor oyuncularının kulüple kurduğu hukuki ilişkinin iş sözleşmesi mi yoksa hizmet sözleşmesi mi olduğu tartışması ve pratik sonuçları."
-date: 2026-07-02
+date: 2026-04-15
 author: "Av. Barış C. Balabanlı"
 tags: ["espor", "is-hukuku", "sozlesme"]
 lang: "tr"

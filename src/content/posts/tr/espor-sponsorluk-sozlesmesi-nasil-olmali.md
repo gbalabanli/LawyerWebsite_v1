@@ -1,7 +1,7 @@
 ﻿---
 title: "E-Spor Sponsorluk Sözleşmesi Nasıl Olmalı?"
 description: "E-spor takımları ve oyuncuları için sponsorluk sözleşmesinde yer alması gereken maddeler: marka kullanımı, performans kriterleri ve fesih hakları."
-date: 2026-07-16
+date: 2026-05-10
 author: "Av. Barış C. Balabanlı"
 tags: ["espor", "sponsorluk", "sozlesme"]
 lang: "tr"

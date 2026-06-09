@@ -1,7 +1,7 @@
 ﻿---
 title: "Şirket Yönetim Kurulu Sorumluluğu ve Hukuki Riskler"
 description: "Anonim şirket yönetim kurulu üyelerinin görevleri, hukuki sorumlulukları ve karşılaşabilecekleri risklere dair pratik rehber."
-date: 2026-07-04
+date: 2026-04-05
 author: "Av. Barış C. Balabanlı"
 tags: ["sirketler", "yonetim", "sorumluluk"]
 lang: "tr"
