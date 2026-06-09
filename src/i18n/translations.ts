@@ -16,6 +16,7 @@ export const translations = {
 			disclaimer: 'Yasal Uyar\u0131',
 			practiceAreas: 'Hizmet Alanlar\u0131',
 			quickLinks: 'H\u0131zl\u0131 Linkler',
+			institutions: 'Yetkili Kurumlar',
 		},
 		helpDesk: {
 			launcherLabel: 'Canl\u0131 Destek',
@@ -159,6 +160,7 @@ export const translations = {
 			disclaimer: 'Disclaimer',
 			practiceAreas: 'Practice Areas',
 			quickLinks: 'Quick Links',
+			institutions: 'Authorized Institutions',
 		},
 		helpDesk: {
 			launcherLabel: 'Live Help',
