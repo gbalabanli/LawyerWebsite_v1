@@ -80,7 +80,7 @@ const serviceAreas: ServiceArea[] = [
 
 <BaseLayout
 	title={`${t(lang, 'index.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Hukuki hizmetler, uygulama alanlar\u0131 ve h\u0131zl\u0131 dan\u0131\u015fmanl\u0131k ba\u015fvurusu sunan sayfa."
+	description="Hukuki hizmetler, uygulama alanları ve hızlı danışmanlık başvurusu sunan sayfa."
 	pathname="/"
 	lang={lang}
 >
@@ -103,7 +103,7 @@ const serviceAreas: ServiceArea[] = [
 						<h3>{area.title}</h3>
 						<p>{area.description}</p>
 						<a class="service-link" href={withBase('/blog?tag=' + area.tag)}>
-							Devam\u0131 <span aria-hidden="true">&rarr;</span>
+							Devamı <span aria-hidden="true">&rarr;</span>
 						</a>
 					</article>
 				))
@@ -129,51 +129,51 @@ const serviceAreas: ServiceArea[] = [
 	<Section title={t(lang, 'index.faqTitle')} lead={t(lang, 'index.faqLead')}>
 		<div class="faq-list" id="faq-list">
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">Bo\u015fanma davas\u0131 ne kadar s\u00fcrer ve nelere dikkat edilmelidir?</summary>
+				<summary class="faq-question">Boşanma davası ne kadar sürer ve nelere dikkat edilmelidir?</summary>
 				<div class="faq-answer">
-					<p>Anla\u015fmal\u0131 bo\u015fanma davalar\u0131 genellikle 2\u20133 ay i\u00e7inde sonu\u00e7lan\u0131rken, \u00e7eki\u015fmeli bo\u015fanma davalar\u0131 delil durumuna g\u00f6re 1\u20132 y\u0131l s\u00fcrebilir. Bo\u015fanma s\u00fcrecinde velayet, nafaka, maddi-manevi tazminat ve mal rejiminin tasfiyesi gibi hususlar\u0131n dava a\u00e7\u0131lmadan \u00f6nce de\u011ferlendirilmesi \u00f6nemlidir.</p>
+					<p>Anlaşmalı boşanma davaları genellikle 2–3 ay içinde sonuçlanırken, çekişmeli boşanma davaları delil durumuna göre 1–2 yıl sürebilir. Boşanma sürecinde velayet, nafaka, maddi-manevi tazminat ve mal rejiminin tasfiyesi gibi hususların dava açılmadan önce değerlendirilmesi önemlidir.</p>
 				</div>
 			</details>
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">Miras payla\u015f\u0131m\u0131 nas\u0131l yap\u0131l\u0131r ve veraset ilam\u0131 nedir?</summary>
+				<summary class="faq-question">Miras paylaşımı nasıl yapılır ve veraset ilamı nedir?</summary>
 				<div class="faq-answer">
-					<p>Miras payla\u015f\u0131m\u0131 i\u00e7in \u00f6ncelikle sulh hukuk mahkemesinden veraset ilam\u0131 (miras\u00e7\u0131l\u0131k belgesi) al\u0131n\u0131r. Bu belge miras\u00e7\u0131lar\u0131 ve pay oranlar\u0131n\u0131 resmile\u015ftirir. Miras\u00e7\u0131lar aras\u0131nda anla\u015fma sa\u011flanamazsa, ortakl\u0131\u011f\u0131n giderilmesi davas\u0131 a\u00e7\u0131larak malvarl\u0131\u011f\u0131 sat\u0131l\u0131r ve bedeli payla\u015ft\u0131r\u0131l\u0131r.</p>
+					<p>Miras paylaşımı için öncelikle sulh hukuk mahkemesinden veraset ilamı (mirasçılık belgesi) alınır. Bu belge mirasçıları ve pay oranlarını resmileştirir. Mirasçılar arasında anlaşma sağlanamazsa, ortaklığın giderilmesi davası açılarak malvarlığı satılır ve bedeli paylaştırılır.</p>
 				</div>
 			</details>
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">Limited \u015firket kurmak i\u00e7in hangi ad\u0131mlar izlenmelidir?</summary>
+				<summary class="faq-question">Limited şirket kurmak için hangi adımlar izlenmelidir?</summary>
 				<div class="faq-answer">
-					<p>Limited \u015firket kurulu\u015fu i\u00e7in \u00f6ncelikle \u015firket s\u00f6zle\u015fmesi haz\u0131rlan\u0131r, noter onay\u0131 yap\u0131l\u0131r ve ticaret sicil m\u00fcd\u00fcrl\u00fc\u011f\u00fcne ba\u015fvurulur. Ticaret sicil gazetesinde ilan sonras\u0131 \u015firket t\u00fczel ki\u015filik kazan\u0131r. T\u00fcm s\u00fcre\u00e7 ortalama 1\u20132 hafta i\u00e7inde tamamlanabilir. Kurulu\u015f a\u015famas\u0131nda ortaklar aras\u0131 ili\u015fkilerin s\u00f6zle\u015fmeyle netle\u015ftirilmesi ileride \u00e7\u0131kabilecek uyu\u015fmazl\u0131klar\u0131 \u00f6nler.</p>
+					<p>Limited şirket kuruluşu için öncelikle şirket sözleşmesi hazırlanır, noter onayı yapılır ve ticaret sicil müdürlüğüne başvurulur. Ticaret sicil gazetesinde ilan sonrası şirket tüzel kişilik kazanır. Tüm süreç ortalama 1–2 hafta içinde tamamlanabilir. Kuruluş aşamasında ortaklar arası ilişkilerin sözleşmeyle netleştirilmesi ileride çıkabilecek uyuşmazlıkları önler.</p>
 				</div>
 			</details>
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">Marka tescili neden \u00f6nemlidir ve nas\u0131l yap\u0131l\u0131r?</summary>
+				<summary class="faq-question">Marka tescili neden önemlidir ve nasıl yapılır?</summary>
 				<div class="faq-answer">
-					<p>Marka tescili, markan\u0131z\u0131 \u00fc\u00e7\u00fcnc\u00fc ki\u015filerin kullan\u0131m\u0131na kar\u015f\u0131 korur ve hukuki uyu\u015fmazl\u0131klarda size m\u00fcnhas\u0131r hak sa\u011flar. T\u00fcrk Patent ve Marka Kurumu\u2019na yap\u0131lan ba\u015fvuru, inceleme ve yay\u0131n s\u00fcrecinin ard\u0131ndan tescil edilir. S\u00fcre\u00e7 yakla\u015f\u0131k 6\u201312 ay s\u00fcrer ve tescil 10 y\u0131l s\u00fcreyle ge\u00e7erlidir.</p>
+					<p>Marka tescili, markanızı üçüncü kişilerin kullanımına karşı korur ve hukuki uyuşmazlıklarda size münhasır hak sağlar. Türk Patent ve Marka Kurumu’na yapılan başvuru, inceleme ve yayın sürecinin ardından tescil edilir. Süreç yaklaşık 6–12 ay sürer ve tescil 10 yıl süreyle geçerlidir.</p>
 				</div>
 			</details>
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">K\u0131dem tazminat\u0131na hangi durumlarda hak kazan\u0131l\u0131r?</summary>
+				<summary class="faq-question">Kıdem tazminatına hangi durumlarda hak kazanılır?</summary>
 				<div class="faq-answer">
-					<p>K\u0131dem tazminat\u0131, en az bir y\u0131l \u00e7al\u0131\u015fm\u0131\u015f i\u015f\u00e7inin i\u015f s\u00f6zle\u015fmesinin belirli durumlarda sona ermesi halinde \u00f6denir. \u0130\u015f\u00e7inin kendi iste\u011fiyle istifa etmesi genel olarak tazminat hakk\u0131 do\u011furmazken, i\u015fveren taraf\u0131ndan haks\u0131z fesih, i\u015f\u00e7inin hakl\u0131 feshi, askerlik, emeklilik veya evlilik (\u00e7al\u0131\u015fan kad\u0131n i\u00e7in) gibi durumlarda k\u0131dem tazminat\u0131 \u00f6denir.</p>
+					<p>Kıdem tazminatı, en az bir yıl çalışmış işçinin iş sözleşmesinin belirli durumlarda sona ermesi halinde ödenir. İşçinin kendi isteğiyle istifa etmesi genel olarak tazminat hakkı doğurmazken, işveren tarafından haksız fesih, işçinin haklı feshi, askerlik, emeklilik veya evlilik (çalışan kadın için) gibi durumlarda kıdem tazminatı ödenir.</p>
 				</div>
 			</details>
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">Kira uyu\u015fmazl\u0131klar\u0131nda kirac\u0131 ve malik hangi haklara sahiptir?</summary>
+				<summary class="faq-question">Kira uyuşmazlıklarında kiracı ve malik hangi haklara sahiptir?</summary>
 				<div class="faq-answer">
-					<p>Kirac\u0131n\u0131n en \u00f6nemli hakk\u0131 kira s\u00f6zle\u015fmesi boyunca ta\u015f\u0131nmaz\u0131 kullanma ve kira art\u0131\u015f\u0131n\u0131n kanuni s\u0131n\u0131rlar i\u00e7inde kalmas\u0131n\u0131 talep etmektir. Malik ise kira bedelinin \u00f6denmemesi, gereksinim veya yeniden in\u015fa sebebiyle tahliye davas\u0131 a\u00e7abilir. Kira uyu\u015fmazl\u0131klar\u0131nda arabuluculuk dava \u015fart\u0131 olup, s\u00fcrecin ba\u015f\u0131nda uzla\u015fma yoluna gidilmesi zorunludur.</p>
+					<p>Kiracının en önemli hakkı kira sözleşmesi boyunca taşınmazı kullanma ve kira artışının kanuni sınırlar içinde kalmasını talep etmektir. Malik ise kira bedelinin ödenmemesi, gereksinim veya yeniden inşa sebebiyle tahliye davası açabilir. Kira uyuşmazlıklarında arabuluculuk dava şartı olup, sürecin başında uzlaşma yoluna gidilmesi zorunludur.</p>
 				</div>
 			</details>
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">Ticari s\u00f6zle\u015fmelerde bulunmas\u0131 gereken temel unsurlar nelerdir?</summary>
+				<summary class="faq-question">Ticari sözleşmelerde bulunması gereken temel unsurlar nelerdir?</summary>
 				<div class="faq-answer">
-					<p>Ticari s\u00f6zle\u015fmelerde taraflar\u0131n kimlik bilgileri, s\u00f6zle\u015fme konusu, bedel ve \u00f6deme ko\u015fullar\u0131, teslimat \u015fartlar\u0131, gizlilik h\u00fck\u00fcmleri, uyu\u015fmazl\u0131k durumunda yetkili mahkeme ve uygulanacak hukuk a\u00e7\u0131k\u00e7a belirtilmelidir. Eksik veya belirsiz h\u00fck\u00fcmler ileride ciddi uyu\u015fmazl\u0131klara yol a\u00e7abilir. Bu nedenle her s\u00f6zle\u015fmenin bir avukat taraf\u0131ndan incelenmesi \u00f6nerilir.</p>
+					<p>Ticari sözleşmelerde tarafların kimlik bilgileri, sözleşme konusu, bedel ve ödeme koşulları, teslimat şartları, gizlilik hükümleri, uyuşmazlık durumunda yetkili mahkeme ve uygulanacak hukuk açıkça belirtilmelidir. Eksik veya belirsiz hükümler ileride ciddi uyuşmazlıklara yol açabilir. Bu nedenle her sözleşmenin bir avukat tarafından incelenmesi önerilir.</p>
 				</div>
 			</details>
 			<details class="faq-item" name="faq">
-				<summary class="faq-question">\u0130cra takibi nas\u0131l ba\u015flat\u0131l\u0131r ve hangi a\u015famalardan olu\u015fur?</summary>
+				<summary class="faq-question">İcra takibi nasıl başlatılır ve hangi aşamalardan oluşur?</summary>
 				<div class="faq-answer">
-					<p>\u0130cra takibi, alacakl\u0131n\u0131n yetkili icra dairesine ba\u015fvurusu ile ba\u015flar. Bor\u00e7luya g\u00f6nderilen \u00f6deme emrine itiraz edilmezse takip kesinle\u015fir ve haciz a\u015famas\u0131na ge\u00e7ilir. Bor\u00e7lu itiraz ederse takip durur ve alacakl\u0131n\u0131n itiraz\u0131n kald\u0131r\u0131lmas\u0131 veya menfi tespit davas\u0131 a\u00e7mas\u0131 gerekir. \u0130cra takibinde zaman\u0131nda hareket etmek alacak tahsilat\u0131nda kritik \u00f6neme sahiptir.</p>
+					<p>İcra takibi, alacaklının yetkili icra dairesine başvurusu ile başlar. Borçluya gönderilen ödeme emrine itiraz edilmezse takip kesinleşir ve haciz aşamasına geçilir. Borçlu itiraz ederse takip durur ve alacaklının itirazın kaldırılması veya menfi tespit davası açması gerekir. İcra takibinde zamanında hareket etmek alacak tahsilatında kritik öneme sahiptir.</p>
 				</div>
 			</details>
 		</div>
@@ -284,7 +284,7 @@ const serviceAreas: ServiceArea[] = [
 	}
 
 	.faq-item[open] .faq-question::after {
-		content: '\u2212';
+		content: '−';
 	}
 
 	.faq-answer {
