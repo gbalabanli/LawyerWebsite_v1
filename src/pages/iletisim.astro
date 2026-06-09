@@ -8,16 +8,27 @@ import { t } from '../i18n/ui';
 import type { Lang } from '../i18n/ui';
 
 const lang: Lang = 'tr';
+const whatsappUrl = `https://wa.me/${siteConfig.contact.whatsappNumberE164}`;
+const mailtoUrl = `mailto:${siteConfig.contact.email}`;
+const mapsUrl = 'https://maps.google.com/?q=Istanbul+Turkiye';
 ---
 
 <BaseLayout
 	title={`${t(lang, 'contact.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Destek masas\u0131 ba\u015fvurusu, ofis bilgileri ve do\u011frudan ileti\u015fim bilgileri ile ana ileti\u015fim sayfas\u0131."
+	description="\u0130leti\u015fim sayfas\u0131: WhatsApp, e-posta, telefon ve ofis bilgileri ile hukuki dan\u0131\u015fmanl\u0131k ba\u015fvurusu."
 	pathname="/iletisim"
 	lang={lang}
 >
-	<Section title={t(lang, 'contact.eyebrow')} lead={t(lang, 'contact.lead')}>
-		<div class="contact-grid">
+	<section class="hero">
+		<div>
+			<p class="eyebrow">{t(lang, 'contact.eyebrow')}</p>
+			<h1>{siteConfig.brand.name}</h1>
+			<p>{t(lang, 'contact.lead')}</p>
+		</div>
+	</section>
+
+	<Section title={t(lang, 'contact.primaryTitle')}>
+		<div class="grid">
 			<Card
 				span="span-6"
 				title={t(lang, 'contact.primaryTitle')}
@@ -29,11 +40,28 @@ const lang: Lang = 'tr';
 			</Card>
 			<Card span="span-6" title={t(lang, 'contact.officeTitle')} text={t(lang, 'contact.officeText')}>
 				<div class="info-row">
-					<span>{t(lang, 'contact.emailLabel')} {siteConfig.contact.email}</span>
-					<span>{t(lang, 'contact.phoneLabel')} {siteConfig.contact.phoneDisplay}</span>
-					<span>{t(lang, 'contact.addressLabel')} {siteConfig.contact.address}</span>
+					<span><strong>{t(lang, 'contact.emailLabel')}:</strong> {siteConfig.contact.email}</span>
+					<span><strong>{t(lang, 'contact.phoneLabel')}:</strong> {siteConfig.contact.phoneDisplay}</span>
+					<span><strong>{t(lang, 'contact.addressLabel')}:</strong> {siteConfig.contact.address}</span>
+					<a class="btn btn-secondary" href={mapsUrl} target="_blank" rel="noopener noreferrer">{t(lang, 'contact.mapLink')}</a>
 				</div>
 			</Card>
+		</div>
+	</Section>
+
+	<Section title={t(lang, 'contact.directTitle')} lead={t(lang, 'contact.directText')}>
+		<div class="grid">
+			<Card title={t(lang, 'contact.whatsappTitle')} text={t(lang, 'contact.whatsappText')}>
+				<div class="button-row">
+					<a class="btn btn-primary" href={whatsappUrl} target="_blank" rel="noopener noreferrer">{t(lang, 'contact.whatsappButton')}</a>
+				</div>
+			</Card>
+			<Card title={t(lang, 'contact.emailTitle')} text={t(lang, 'contact.emailText')}>
+				<div class="button-row">
+					<a class="btn btn-secondary" href={mailtoUrl}>{t(lang, 'contact.emailButton')}</a>
+				</div>
+			</Card>
+			<Card title={t(lang, 'contact.hoursTitle')} text={t(lang, 'contact.hoursText')} />
 		</div>
 	</Section>
 
