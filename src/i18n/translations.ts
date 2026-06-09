@@ -90,8 +90,8 @@ export const translations = {
 			contractTitle: 'S\u00f6zle\u015fme Hassasiyeti',
 			contractText:
 				'Belirsizli\u011fi, uyu\u015fmazl\u0131klar\u0131 ve uygulama riskini azaltmak i\u00e7in ayr\u0131nt\u0131l\u0131 haz\u0131rlama ve inceleme.',
-			clientTitle: 'M\u00fc\u015feri Odakl\u0131 Rehberlik',
-			clientText: '\u0130leti\u015fim, durumunuza, \u00f6nceliklerinize ve karar zaman \u00e7izelgenize g\u00f6re uyarlan\u0131r.',
+			clientTitle: 'Ki\u015fiye \u00d6zel Dan\u0131\u015fmanl\u0131k',
+			clientText: '\u0130leti\u015fim, hukuki durumunuza, \u00f6nceliklerinize ve karar takviminize g\u00f6re \u015fekillendirilir.',
 			ctaTitle: 'Konunuzu G\u00f6r\u00fc\u015f\u00fcn',
 			ctaText:
 				'Destek masas\u0131n\u0131 kullanarak ad\u0131n\u0131z\u0131 ve k\u0131sa bir vaka \u00f6zeti payla\u015f\u0131n, ard\u0131ndan WhatsApp ile devam edin.',
