@@ -66,6 +66,8 @@ export const translations = {
 			ctaText:
 				'Destek masas\u0131n\u0131 a\u00e7\u0131n, ad\u0131n\u0131z\u0131 ve \u00f6zetinizi payla\u015f\u0131n, ard\u0131ndan bilgileriniz \u00f6nceden doldurulmu\u015f olarak WhatsApp ile devam edin.',
 			ctaButton: 'Destek Masas\u0131n\u0131 A\u00e7',
+			faqTitle: 'S\u0131k\u00e7a Sorulanlar',
+			faqLead: 'Her hizmet alan\u0131m\u0131zla ilgili en \u00e7ok merak edilen sorular ve yan\u0131tlar\u0131.',
 		},
 		about: {
 			eyebrow: 'Hakk\u0131mda',

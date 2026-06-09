@@ -11,7 +11,7 @@ export const siteConfig: SiteConfig = {
 	brand: {
 		name: 'Balabanlı Hukuk Bürosu',
 		tagline: {
-			tr: 'Bireyler ve İşletmeler için Stratejik Hukuki Danışmanlık',
+			tr: 'Her Hukuki Sorunda, Stratejik \u00c7\u00f6z\u00fcm Orta\u011f\u0131n\u0131z',
 			en: 'Strategic Legal Counsel for Individuals and Businesses',
 		},
 		aboutShort: {
