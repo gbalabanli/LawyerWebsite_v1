@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
 import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
@@ -43,17 +44,17 @@ const lang: Lang = 'tr';
 
 	<Section title={t(lang, 'about.eduTitle')}>
 		<div class="grid">
-			<Card title={t(lang, 'about.eduTitle')} text={t(lang, 'about.eduText')} />
-			<Card title={t(lang, 'about.membershipTitle')} text={t(lang, 'about.membershipText')} />
-			<Card title={t(lang, 'about.langTitle')} text={t(lang, 'about.langText')} />
+			<Card icon="graduation-cap" title={t(lang, 'about.eduTitle')} text={t(lang, 'about.eduText')} />
+			<Card icon="award" title={t(lang, 'about.membershipTitle')} text={t(lang, 'about.membershipText')} />
+			<Card icon="globe" title={t(lang, 'about.langTitle')} text={t(lang, 'about.langText')} />
 		</div>
 	</Section>
 
 	<Section title={t(lang, 'about.qualTitle')} lead={t(lang, 'about.qualLead')}>
 		<div class="grid">
-			<Card title={t(lang, 'about.courtroomTitle')} text={t(lang, 'about.courtroomText')} />
-			<Card title={t(lang, 'about.contractTitle')} text={t(lang, 'about.contractText')} />
-			<Card title={t(lang, 'about.clientTitle')} text={t(lang, 'about.clientText')} />
+			<Card icon="scale" title={t(lang, 'about.courtroomTitle')} text={t(lang, 'about.courtroomText')} />
+			<Card icon="scroll" title={t(lang, 'about.contractTitle')} text={t(lang, 'about.contractText')} />
+			<Card icon="handshake" title={t(lang, 'about.clientTitle')} text={t(lang, 'about.clientText')} />
 		</div>
 	</Section>
 

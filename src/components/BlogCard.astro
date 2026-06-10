@@ -1,4 +1,6 @@
 ---
+import Icon from '../components/Icon.astro';
+
 interface Props {
 	title: string;
 	description: string;
@@ -15,10 +17,10 @@ const { title, description, dateText, author, tags, href } = Astro.props;
 	<h3><a href={href}>{title}</a></h3>
 	<p>{description}</p>
 	<div class="blog-meta">
-		<span>{dateText}</span>
-		<span>{author}</span>
+		<span><Icon name="calendar" size={14} />{dateText}</span>
+		<span><Icon name="user" size={14} />{author}</span>
 	</div>
 	<div class="meta-list">
-		{tags.map((tag) => <span class="meta-pill">{tag}</span>)}
+		{tags.map((tag) => <span class="meta-pill"><Icon name="tag" size={12} />{tag}</span>)}
 	</div>
 </article>

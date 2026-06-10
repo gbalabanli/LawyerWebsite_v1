@@ -1,6 +1,23 @@
 :root[data-template='classic-legal'] {
 	--font-heading: 'Merriweather', Georgia, serif;
 	--font-body: 'Source Serif 4', 'Times New Roman', serif;
+	--font-size-xs: 0.78rem;
+	--font-size-sm: 0.85rem;
+	--font-size-base: 0.9rem;
+	--font-size-md: 0.95rem;
+	--font-size-lg: 1rem;
+	--font-size-xl: 1.1rem;
+	--font-size-2xl: 1.4rem;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--line-height-tight: 1.2;
+	--line-height-normal: 1.6;
+	--line-height-relaxed: 1.65;
+	--letter-spacing-tight: 0.02em;
+	--letter-spacing-normal: 0.03em;
+	--letter-spacing-wide: 0.05em;
 	--page-bg: #f7f3ea;
 	--surface-bg: linear-gradient(160deg, #ffffff 0%, #f4eee2 100%);
 	--card-bg: #fffaf1;

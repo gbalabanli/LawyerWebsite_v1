@@ -1,15 +1,26 @@
 ---
+import Icon from '../components/Icon.astro';
+
 interface Props {
 	title: string;
 	text: string;
 	span?: 'span-4' | 'span-6';
+	icon?: string;
 }
 
-const { title, text, span = 'span-4' } = Astro.props;
+const { title, text, span = 'span-4', icon } = Astro.props;
 ---
 
 <article class={`card ${span}`}>
+	{icon && <div class="card-icon"><Icon name={icon} size={28} /></div>}
 	<h3>{title}</h3>
 	<p>{text}</p>
 	<slot />
 </article>
+
+<style>
+	.card-icon {
+		margin-bottom: 0.6rem;
+		color: var(--button-secondary-text);
+	}
+</style>

@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
 import CTA from '../../components/CTA.astro';
 import { helpDeskTriggerHref, siteConfig } from '../../config/site';
 import { withBase } from '../../utils/routing';
@@ -70,13 +71,11 @@ const articleSchema = {
 		<p class="eyebrow">{t(lang, 'blog.postEyebrow')}</p>
 		<h1>{post.data.title}</h1>
 		<div class="blog-meta">
-			<span>
-				{post.data.date.toLocaleDateString(dateLocale, { year: 'numeric', month: 'long', day: 'numeric' })}
-			</span>
-			<span>{post.data.author}</span>
+			<span><Icon name="calendar" size={14} />{post.data.date.toLocaleDateString(dateLocale, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+			<span><Icon name="user" size={14} />{post.data.author}</span>
 		</div>
 		<div class="meta-list">
-			{post.data.tags.map((tag) => <span class="meta-pill">{tag}</span>)}
+			{post.data.tags.map((tag) => <span class="meta-pill"><Icon name="tag" size={12} />{tag}</span>)}
 		</div>
 
 		{

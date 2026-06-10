@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
 import Section from '../../components/Section.astro';
 import BlogCard from '../../components/BlogCard.astro';
 import { siteConfig } from '../../config/site';
@@ -23,11 +24,17 @@ const dateLocale = getDateLocale(lang);
 >
 	<Section title={t(lang, 'blog.eyebrow')} lead={t(lang, 'blog.lead')}>
 		<div class="filters">
-			<input id="blog-search" class="input" type="search" placeholder={t(lang, 'blog.searchPlaceholder')} aria-label="Search blog posts" />
-			<select id="tag-filter" class="select" aria-label="Filter by tag">
-				<option value="">{t(lang, 'blog.allTags')}</option>
-				{allTags.map((tag) => <option value={tag}>{tag}</option>)}
-			</select>
+			<div class="filter-field">
+				<Icon name="search" size={16} />
+				<input id="blog-search" class="input" type="search" placeholder={t(lang, 'blog.searchPlaceholder')} aria-label="Search blog posts" />
+			</div>
+			<div class="filter-field">
+				<Icon name="filter" size={16} />
+				<select id="tag-filter" class="select" aria-label="Filter by tag">
+					<option value="">{t(lang, 'blog.allTags')}</option>
+					{allTags.map((tag) => <option value={tag}>{tag}</option>)}
+				</select>
+			</div>
 		</div>
 
 		<div class="blog-list" id="blog-list">

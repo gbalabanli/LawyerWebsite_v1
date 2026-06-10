@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
 import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
@@ -33,14 +34,16 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 				title={t(lang, 'contact.primaryTitle')}
 				text={t(lang, 'contact.primaryText')}
 			>
+				<div class="contact-card-icon"><Icon name="message-circle" size={28} /></div>
 				<div class="button-row">
 					<a class="btn btn-primary" href={helpDeskTriggerHref}>{t(lang, 'contact.primaryButton')}</a>
 				</div>
 			</Card>
 			<Card span="span-6" title={t(lang, 'contact.officeTitle')} text={t(lang, 'contact.officeText')}>
+				<div class="contact-card-icon"><Icon name="map-pin" size={28} /></div>
 				<div class="info-row">
-					<span><strong>{t(lang, 'contact.addressLabel')}:</strong> {siteConfig.contact.address}</span>
-					<a class="btn btn-secondary" href={mapsUrl} target="_blank" rel="noopener noreferrer">{t(lang, 'contact.mapLink')}</a>
+					<span><Icon name="map-pin" size={14} /><strong>{t(lang, 'contact.addressLabel')}:</strong> {siteConfig.contact.address}</span>
+					<a class="btn btn-secondary" href={mapsUrl} target="_blank" rel="noopener noreferrer"><Icon name="external-link" size={14} />{t(lang, 'contact.mapLink')}</a>
 				</div>
 			</Card>
 		</div>
@@ -48,15 +51,19 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 
 	<Section title={t(lang, 'contact.directTitle')} lead={t(lang, 'contact.directText')}>
 		<div class="grid">
-			<Card title="Form G\u00f6nder" text="Hukuki dan\u0131\u015fmanl\u0131k talebinizi form doldurarak iletin, WhatsApp \u00fczerinden yan\u0131tlayal\u0131m.">
+			<Card title="Form Gönder" text="Hukuki danışmanlık talebinizi form doldurarak iletin, WhatsApp üzerinden yanıtlayalım.">
+				<div class="contact-card-icon"><Icon name="mail" size={28} /></div>
 				<div class="button-row">
 					<a class="btn btn-primary" href={helpDeskTriggerHref}>Formu Doldur</a>
 				</div>
 			</Card>
-			<Card title={t(lang, 'contact.hoursTitle')} text={t(lang, 'contact.hoursText')} />
-			<Card title="LinkedIn" text="Av. Bar\u0131\u015f C. Balabanl\u0131">
+			<Card title={t(lang, 'contact.hoursTitle')} text={t(lang, 'contact.hoursText')}>
+				<div class="contact-card-icon"><Icon name="clock" size={28} /></div>
+			</Card>
+			<Card title="LinkedIn" text="Av. Barış C. Balabanlı">
+				<div class="contact-card-icon"><Icon name="linkedin" size={28} /></div>
 				<div class="button-row">
-					<a class="btn btn-secondary" href={linkedinUrl} target="_blank" rel="noopener noreferrer">LinkedIn'de G\u00f6r</a>
+					<a class="btn btn-secondary" href={linkedinUrl} target="_blank" rel="noopener noreferrer"><Icon name="external-link" size={14} />LinkedIn'de Gör</a>
 				</div>
 			</Card>
 		</div>

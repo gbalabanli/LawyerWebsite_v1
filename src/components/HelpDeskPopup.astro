@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from '../config/site';
+import Icon from '../components/Icon.astro';
 import { t, type Lang } from '../i18n/ui';
 import { translations } from '../i18n/translations';
 
@@ -25,7 +26,7 @@ const ui = translations[lang].helpDesk;
 		aria-controls="help-desk-panel"
 		aria-haspopup="dialog"
 	>
-		{ui.launcherLabel}
+		{ui.launcherLabel} <Icon name="message-circle" size={18} />
 	</button>
 
 	<button
@@ -51,7 +52,7 @@ const ui = translations[lang].helpDesk;
 				<h2 id="help-desk-title">{ui.panelTitle}</h2>
 			</div>
 			<button type="button" class="help-desk-close" data-help-desk-close aria-label={ui.overlayAriaLabel}>
-				<span aria-hidden="true">x</span>
+				<Icon name="x" />
 			</button>
 		</div>
 

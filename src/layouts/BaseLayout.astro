@@ -1,6 +1,7 @@
 ---
 import { helpDeskTriggerHref, siteConfig } from '../config/site';
 import HelpDeskPopup from '../components/HelpDeskPopup.astro';
+import Icon from '../components/Icon.astro';
 import LangSwitcher from '../components/LangSwitcher.astro';
 import { withBase } from '../utils/routing';
 import { t, type Lang } from '../i18n/ui';
@@ -102,6 +103,9 @@ const legalServiceSchema = {
 				<meta property="article:tag" content={tag} />
 			))
 		}
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet" />
 		<link rel="icon" type="image/svg+xml" href={faviconSvg} />
 		<link rel="icon" href={faviconIco} />
 		<script type="application/ld+json" set:html={JSON.stringify(legalServiceSchema)} />
@@ -132,8 +136,10 @@ const legalServiceSchema = {
 				<div class="container footer-grid">
 					<div class="footer-col footer-brand">
 						<p class="footer-heading">{siteConfig.brand.name}</p>
-						<p>Eski Bağdat Caddesi Altıntepe 34840 İstanbul / Türkiye</p>
-						<a class="btn btn-primary" href={helpDeskTriggerHref}>{t(lang, 'footer.liveSupport')}</a>
+						<span class="footer-contact-row"><Icon name="map-pin" size={14} />{siteConfig.contact.address}</span>
+						<span class="footer-contact-row"><Icon name="phone" size={14} />{siteConfig.contact.phoneDisplay}</span>
+						<span class="footer-contact-row"><Icon name="mail" size={14} />{siteConfig.contact.email}</span>
+						<a class="btn btn-primary" href={helpDeskTriggerHref}><Icon name="message-circle" size={16} />{t(lang, 'footer.liveSupport')}</a>
 						<p class="footer-version">{siteConfig.version}</p>
 					</div>
 					<div class="footer-col">
@@ -152,10 +158,10 @@ const legalServiceSchema = {
 					</div>
 					<div class="footer-col">
 						<p class="footer-heading">{t(lang, 'footer.institutions')}</p>
-						<a href="https://www.istanbulbarosu.org.tr/" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.barAssociation')}</a>
-						<a href="https://www.barobirlik.org.tr/" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.barUnion')}</a>
-						<a href="https://www.istanbulbarosu.org.tr/ucrettarifeleri" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.feeTariffs')}</a>
-						<a href="https://www.istanbulbarosu.org.tr/kategori/adli-yardim" target="_blank" rel="noopener noreferrer">{t(lang, 'footer.legalAid')}</a>
+						<a href="https://www.istanbulbarosu.org.tr/" target="_blank" rel="noopener noreferrer"><Icon name="external-link" size={12} />{t(lang, 'footer.barAssociation')}</a>
+						<a href="https://www.barobirlik.org.tr/" target="_blank" rel="noopener noreferrer"><Icon name="external-link" size={12} />{t(lang, 'footer.barUnion')}</a>
+						<a href="https://www.istanbulbarosu.org.tr/ucrettarifeleri" target="_blank" rel="noopener noreferrer"><Icon name="external-link" size={12} />{t(lang, 'footer.feeTariffs')}</a>
+						<a href="https://www.istanbulbarosu.org.tr/kategori/adli-yardim" target="_blank" rel="noopener noreferrer"><Icon name="external-link" size={12} />{t(lang, 'footer.legalAid')}</a>
 					</div>
 				</div>
 				<div class="container footer-bottom">
