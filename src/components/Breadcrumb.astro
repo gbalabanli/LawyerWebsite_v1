@@ -1,0 +1,121 @@
+---
+import { withBase } from '../utils/routing';
+import { serviceAreas } from '../config/services';
+
+interface Crumb {
+	href: string;
+	label: string;
+}
+
+interface Props {
+	pathname: string;
+	lang?: 'tr' | 'en';
+}
+
+const { pathname, lang = 'tr' } = Astro.props;
+const basePath = import.meta.env.BASE_URL || '/';
+const p = basePath !== '/' && pathname.startsWith(basePath) ? pathname.slice(basePath.length - 1) : pathname;
+
+const homeLabel = lang === 'en' ? 'Home' : 'Ana Sayfa';
+const homeHref = lang === 'en' ? '/en/' : '/';
+
+const pathMap: Record<string, Record<string, string>> = {
+	'/hakkimda': { tr: 'Hakkımda', en: 'About' },
+	'/iletisim': { tr: 'İletişim', en: 'Contact' },
+	'/blog': { tr: 'Blog', en: 'Blog' },
+	'/hizmetler': { tr: 'Hizmetler', en: 'Services' },
+};
+
+const serviceLabelMap: Record<string, Record<string, string>> = {};
+for (const area of serviceAreas) {
+	serviceLabelMap[area.slug] = { tr: area.title, en: area.title };
+}
+
+const segments = p.split('/').filter(Boolean);
+const crumbs: Crumb[] = [{ href: withBase(homeHref), label: homeLabel }];
+
+if (segments.length > 0) {
+	const segmentsWithoutLang = segments.filter((s) => s !== 'en');
+	let accumulated = '';
+
+	for (let i = 0; i < segmentsWithoutLang.length; i++) {
+		const seg = segmentsWithoutLang[i];
+		accumulated += '/' + seg;
+		const isLast = i === segmentsWithoutLang.length - 1;
+
+		let label: string | undefined;
+		if (pathMap[accumulated]) {
+			label = pathMap[accumulated][lang];
+		} else if (i > 0 && serviceLabelMap[seg]) {
+			label = serviceLabelMap[seg][lang];
+		}
+
+		if (label) {
+			crumbs.push({
+				href: isLast ? '' : withBase(accumulated),
+				label,
+			});
+		}
+	}
+}
+---
+
+{
+	crumbs.length > 1 && (
+		<nav aria-label={lang === 'en' ? 'Breadcrumb' : 'Sayfa yolu'} class="breadcrumb">
+			<ol>
+				{
+					crumbs.map((crumb, i) => (
+						<li>
+							{i > 0 && <span aria-hidden="true" class="bc-sep">/</span>}
+							{crumb.href ? (
+								<a href={crumb.href}>{crumb.label}</a>
+							) : (
+								<span aria-current="page">{crumb.label}</span>
+							)}
+						</li>
+					))
+				}
+			</ol>
+		</nav>
+	)
+}
+
+<style>
+	.breadcrumb {
+		margin-bottom: var(--space-5, 2rem);
+		font-size: var(--font-size-sm, 0.875rem);
+		color: var(--color-muted, #666);
+		overflow-x: auto;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.3rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.breadcrumb a {
+		color: var(--color-muted, #666);
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb a[aria-current='page'],
+	.breadcrumb span[aria-current='page'] {
+		color: var(--color-text, #111);
+		font-weight: var(--font-weight-semibold, 600);
+	}
+
+	.bc-sep {
+		margin: 0 0.15rem;
+		user-select: none;
+	}
+</style>

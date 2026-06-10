@@ -82,6 +82,63 @@ img {
 	background: var(--nav-active-bg);
 }
 
+.nav-dropdown {
+	position: relative;
+}
+
+.nav-dropdown > a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.2rem;
+}
+
+.nav-dropdown > a::after {
+	content: '';
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	background: currentColor;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat center;
+	mask-size: contain;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat center;
+	-webkit-mask-size: contain;
+	transition: transform 0.2s;
+}
+
+.nav-dropdown:hover > a::after {
+	transform: rotate(180deg);
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 200px;
+	background: var(--header-bg, #fff);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	padding: 0.5rem 0;
+	z-index: 10;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu a {
+	display: block;
+	padding: 0.45rem 1rem;
+	border-radius: 0;
+	white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+	background: var(--nav-active-bg);
+}
+
 .lang-switcher {
 	display: flex;
 	align-items: center;

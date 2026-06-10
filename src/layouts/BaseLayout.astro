@@ -2,11 +2,13 @@
 import { helpDeskTriggerHref, siteConfig } from '../config/site';
 import HelpDeskPopup from '../components/HelpDeskPopup.astro';
 import Icon from '../components/Icon.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import LangSwitcher from '../components/LangSwitcher.astro';
 import { withBase } from '../utils/routing';
 import { t, type Lang } from '../i18n/ui';
 import { translations } from '../i18n/translations';
 import { getAlternatePath } from '../i18n/utils';
+import { serviceAreas } from '../config/services';
 import '../styles/base.css';
 import '../templates/classic-legal/tokens.css';
 import '../templates/classic-legal/layout.css';
@@ -51,9 +53,11 @@ const alternateUrl = new URL(
 const nav = [
 	{ href: lang === 'tr' ? '/' : '/en/', key: 'home' as const },
 	{ href: lang === 'tr' ? '/hakkimda' : '/en/about', key: 'about' as const },
+	{ href: lang === 'tr' ? '/hizmetler' : '/en/services', key: 'services' as const },
 	{ href: lang === 'tr' ? '/iletisim' : '/en/contact', key: 'contact' as const },
 	{ href: lang === 'tr' ? '/blog' : '/en/blog', key: 'blog' as const },
 ];
+const servicesBase = lang === 'tr' ? '/hizmetler' : '/en/services';
 const faviconSvg = withBase('/favicon.svg');
 const faviconIco = withBase('/favicon.ico');
 const htmlLang = lang === 'tr' ? 'tr' : 'en';
@@ -117,11 +121,26 @@ const legalServiceSchema = {
 					<a class="brand" href={withBase(lang === 'tr' ? '/' : '/en/')}>{siteConfig.brand.name}</a>
 					<nav class="nav" aria-label="Primary">
 						{
-							nav.map((item) => (
-								<a href={withBase(item.href)} aria-current={pathnameWithoutBase === item.href ? 'page' : undefined}>
-									{t(lang, `nav.${item.key}`)}
-								</a>
-							))
+							nav.map((item) =>
+								item.key === 'services' ? (
+									<div class="nav-dropdown">
+										<a href={withBase(item.href)} aria-current={pathnameWithoutBase.startsWith('/hizmetler') || pathnameWithoutBase.startsWith('/en/services') ? 'page' : undefined}>
+											{t(lang, `nav.${item.key}`)}
+										</a>
+										<div class="dropdown-menu">
+											{
+												serviceAreas.map((area) => (
+													<a href={withBase(`${servicesBase}/${area.slug}`)}>{area.title}</a>
+												))
+											}
+										</div>
+									</div>
+								) : (
+									<a href={withBase(item.href)} aria-current={pathnameWithoutBase === item.href ? 'page' : undefined}>
+										{t(lang, `nav.${item.key}`)}
+									</a>
+								),
+							)
 						}
 					</nav>
 					<LangSwitcher lang={lang} pathname={pathnameWithoutBase} />
@@ -129,6 +148,7 @@ const legalServiceSchema = {
 			</header>
 			<main class="main-content">
 				<div class="container">
+					<Breadcrumb pathname={pathnameWithoutBase} lang={lang} />
 					<slot />
 				</div>
 			</main>
@@ -153,7 +173,11 @@ const legalServiceSchema = {
 					</div>
 					<div class="footer-col">
 						<p class="footer-heading">{t(lang, 'footer.practiceAreas')}</p>
-						<a href={withBase(lang === 'tr' ? '/blog' : '/en/blog')}>{t(lang, 'nav.blog')}</a>
+						{
+							serviceAreas.map((area) => (
+								<a href={withBase(`${servicesBase}/${area.slug}`)}>{area.title}</a>
+							))
+						}
 					</div>
 					<div class="footer-col">
 						<p class="footer-heading">{t(lang, 'footer.institutions')}</p>

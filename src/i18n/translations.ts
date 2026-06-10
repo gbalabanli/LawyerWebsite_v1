@@ -3,6 +3,7 @@ export const translations = {
 		nav: {
 			home: 'Ana Sayfa',
 			about: 'Hakk\u0131mda',
+			services: 'Hizmetler',
 			contact: '\u0130leti\u015fim',
 			blog: 'Blog',
 		},
@@ -150,6 +151,7 @@ export const translations = {
 		nav: {
 			home: 'Home',
 			about: 'About Me',
+			services: 'Services',
 			contact: 'Contact Me',
 			blog: 'Blog',
 		},

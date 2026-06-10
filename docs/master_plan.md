@@ -3,14 +3,14 @@
 ## Planning Metadata
 - Last Updated: 2026-06-10
 - Planning Horizon: Q2–Q3 2026
-- Overall Status: Planned
+- Overall Status: Phase 01 Complete, Phase 02 Ready
 
 ## Project Goal
 Sitenin iç link yapısını ve SEO altyapısını güçlendirerek Google'da hizmet alanı bazlı long-tail anahtar kelimelerde görünürlüğü artırmak. Mevcut 4 sayfalık rota seti, practice area detay sayfalarıyla genişletilecek, breadcrumb navigasyonu ve iki yönlü iç link ağı kurulacak, schema markup çeşitlendirilecek.
 
 ## Current Status Snapshot
-- **Tamamlanmış:** 4 ana sayfa + blog sistemi (40+ yazı), 9 service area kartı (homepage), Icon.astro, BaseLayout schema (LegalService), Article schema (blog post), hreflang, canonical, sitemap
-- **Eksik:** Practice area detay sayfaları, breadcrumb, FAQPage/Person/BreadcrumbList schema, blog ↔ practice area çapraz linkleri, header/footer'daki hizmet navigasyonu
+- **Tamamlanmış:** Phase 01 (9 practice area detay sayfası + /hizmetler index), 4 ana sayfa + blog sistemi (40+ yazı), 9 service area kartı (homepage), Icon.astro, BaseLayout schema (LegalService), Article schema (blog post), hreflang, canonical, sitemap
+- **Eksik:** breadcrumb, FAQPage/Person/BreadcrumbList schema, blog ↔ practice area çapraz linkleri, header/footer'daki hizmet navigasyonu
 
 ## Success Criteria
 - `npm run build` sorunsuz çalışır (56+ page)
@@ -54,7 +54,7 @@ Sitenin iç link yapısını ve SEO altyapısını güçlendirerek Google'da hiz
 
 | Phase | Status | Goal | Depends On | Document |
 | --- | --- | --- | --- | --- |
-| Phase 01 | Planned | 9 practice area detay sayfası oluştur | None | [phase-01-practice-area-pages.md](phases/phase-01-practice-area-pages.md) |
+| Phase 01 | Completed | 9 practice area detay sayfası oluştur | None | [phase-01-practice-area-pages.md](phases/phase-01-practice-area-pages.md) |
 | Phase 02 | Planned | Breadcrumb + header/footer navigasyon | Phase 01 | [phase-02-navigation-breadcrumbs.md](phases/phase-02-navigation-breadcrumbs.md) |
 | Phase 03 | Planned | Blog ↔ Practice Area cross-link ağı | Phase 01, Phase 02 | [phase-03-internal-link-network.md](phases/phase-03-internal-link-network.md) |
 | Phase 04 | Planned | FAQPage, Person, BreadcrumbList schema | Phase 02 | [phase-04-schema-structured-data.md](phases/phase-04-schema-structured-data.md) |
