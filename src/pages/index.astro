@@ -6,84 +6,12 @@ import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
 import { helpDeskTriggerHref, siteConfig } from '../config/site';
+import { serviceAreas } from '../config/services';
 import { withBase } from '../utils/routing';
 import { t } from '../i18n/ui';
 import type { Lang } from '../i18n/ui';
 
 const lang: Lang = 'tr';
-
-interface ServiceArea {
-	title: string;
-	tag: string;
-	description: string;
-	icon: string;
-}
-
-const serviceAreas: ServiceArea[] = [
-	{
-		title: 'Aile Hukuku',
-		tag: 'aile-hukuku',
-		description:
-			'Bo\u015fanma, velayet, nafaka ve mal rejimi davalar\u0131 ba\u015fta olmak \u00fczere aile hukuku kaynakl\u0131 uyu\u015fmazl\u0131klarda hukuki dan\u0131\u015fmanl\u0131k ve dava takibi.',
-		icon: 'family',
-	},
-	{
-		title: 'Miras Hukuku',
-		tag: 'miras-hukuku',
-		description:
-			'Veraset ilam\u0131, vasiyetname d\u00fczenlenmesi, tenkis davas\u0131, muris muvazaas\u0131 ve miras\u0131n reddi i\u015flemlerinde hukuki destek.',
-		icon: 'scroll',
-	},
-	{
-		title: '\u015eirketler Hukuku',
-		tag: 'sirketler-hukuku',
-		description:
-			'Limited ve anonim \u015firket kurulu\u015fu, ortakl\u0131k s\u00f6zle\u015fmeleri, y\u00f6netim kurulu kararlar\u0131 ve hisse devir i\u015flemleri.',
-		icon: 'building',
-	},
-	{
-		title: 'Fikri M\u00fclkiyet',
-		tag: 'fikri-mulkiyet',
-		description:
-			'Marka tescili ve korunmas\u0131, patent ba\u015fvurusu, end\u00fcstriyel tasar\u0131m ve fikri m\u00fclkiyet haklar\u0131n\u0131n ihlali durumunda hukuki ba\u015fvuru yollar\u0131.',
-		icon: 'bulb',
-	},
-	{
-		title: '\u0130\u015f Hukuku',
-		tag: 'is-hukuku',
-		description:
-			'K\u0131dem ve ihbar tazminat\u0131 hesaplama, i\u015fe iade davalar\u0131, i\u015f s\u00f6zle\u015fmesi feshi ve i\u015f\u00e7i-i\u015fveren uyu\u015fmazl\u0131klar\u0131nda arabuluculuk ve dava s\u00fcreci.',
-		icon: 'briefcase',
-	},
-	{
-		title: 'Gayrimenkul Hukuku',
-		tag: 'gayrimenkul',
-		description:
-			'Tapu iptali ve tescil davalar\u0131, kira uyu\u015fmazl\u0131klar\u0131, tahliye talepleri ve ortakl\u0131\u011f\u0131n giderilmesi (izale-i \u015f\u00fcyu) s\u00fcre\u00e7leri.',
-		icon: 'house',
-	},
-	{
-		title: 'Ticaret Hukuku',
-		tag: 'ticaret-hukuku',
-		description:
-			'Ticari s\u00f6zle\u015fmeler, ticari i\u015flere ili\u015fkin uyu\u015fmazl\u0131klar, haks\u0131z rekabet ve ticari ihtarname s\u00fcre\u00e7lerinde dan\u0131\u015fmanl\u0131k.',
-		icon: 'scale',
-	},
-	{
-		title: '\u0130cra ve Tahsilat',
-		tag: 'icra-tahsilat',
-		description:
-			'\u0130cra takibi ba\u015flatma ve takip, \u00f6denmemi\u015f fatura ve senet tahsilat\u0131, haciz i\u015flemleri ve icra ceza davalar\u0131.',
-		icon: 'coin',
-	},
-	{
-		title: 'E-Spor Hukuku',
-		tag: 'espor',
-		description:
-			'E-spor oyuncu s\u00f6zle\u015fmeleri, transfer s\u00fcre\u00e7leri, sponsorluk anla\u015fmalar\u0131, turnuva \u00f6d\u00fcl da\u011f\u0131t\u0131m\u0131 ve e-spor ekosistemindeki hukuki ihtiya\u00e7lara y\u00f6nelik dan\u0131\u015fmanl\u0131k.',
-		icon: 'gamepad',
-	},
-];
 ---
 
 <BaseLayout
@@ -110,7 +38,7 @@ const serviceAreas: ServiceArea[] = [
 						<div class="service-icon-wrap"><Icon name={area.icon} /></div>
 						<h3>{area.title}</h3>
 						<p>{area.description}</p>
-						<a class="service-link" href={withBase('/blog?tag=' + area.tag)}>
+						<a class="service-link" href={withBase('/hizmetler/' + area.slug)}>
 							Devamı <Icon name="arrow-right" size={14} />
 						</a>
 					</article>
