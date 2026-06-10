@@ -6,9 +6,6 @@ interface Props {
 }
 
 const { name, size = 24, ariaHidden = true } = Astro.props;
-const s = `width="${size}" height="${size}"`;
-const attr = `xmlns="http://www.w3.org/2000/svg" ${s} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"`;
-const hidden = ariaHidden ? 'aria-hidden="true"' : '';
 
 const icons: Record<string, string> = {
 	family: '<path d="M12 21v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6"/><circle cx="7.5" cy="4.5" r="2.5"/><path d="M22 21v-6a2 2 0 0 0-2-2h-3"/><path d="M17 4.5a2.5 2.5 0 0 1 0 5"/><path d="M12 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>',
@@ -46,4 +43,16 @@ const icons: Record<string, string> = {
 const inner = icons[name] || '<circle cx="12" cy="12" r="8"/><path d="M12 8v.01"/><path d="M9.5 10.5L12 8l2.5 2.5"/><path d="M12 16v-3"/>';
 ---
 
-<svg {attr} set:html={inner} {hidden}>
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="1.5"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	set:html={inner}
+	aria-hidden={ariaHidden ? "true" : undefined}
+>
