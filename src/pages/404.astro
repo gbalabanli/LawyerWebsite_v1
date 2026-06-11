@@ -5,27 +5,51 @@ import { helpDeskTriggerHref, siteConfig } from '../config/site';
 import { withBase } from '../utils/routing';
 import type { Lang } from '../i18n/ui';
 
-const lang: Lang = 'tr';
+const pathname = Astro.url.pathname;
+const isEn = pathname.startsWith('/en/');
+const lang: Lang = isEn ? 'en' : 'tr';
+
+const t = {
+	title: isEn ? `Page Not Found | ${siteConfig.brand.name}` : `Sayfa Bulunamadı | ${siteConfig.brand.name}`,
+	desc: isEn
+		? 'The page you are looking for could not be found. Return to our homepage or contact us to find the right address.'
+		: 'Aradığınız sayfa bulunamadı veya taşınmış olabilir. Ana sayfamıza dönerek veya bizimle iletişime geçerek doğru adrese yönlenebilirsiniz.',
+	lead: isEn ? "We couldn't find that page." : 'Aradığınız sayfayı bulamadık.',
+	text: isEn
+		? 'It may have been removed, renamed, or is temporarily unavailable. Try one of the links below.'
+		: 'Sayfa kaldırılmış, adresi değişmiş veya geçici olarak kullanılamıyor olabilir. Aşağıdaki bağlantılardan yararlanabilirsiniz.',
+	home: isEn ? 'Home' : 'Ana Sayfa',
+	services: isEn ? 'Practice Areas' : 'Çalışma Alanları',
+	blog: 'Blog',
+	contact: isEn ? 'Contact' : 'İletişim',
+	help1: isEn ? 'Need legal assistance?' : 'Hukuki destek mi gerekiyor?',
+	help2: isEn ? 'Reach us on WhatsApp' : 'WhatsApp üzerinden bize ulaşın',
+};
+
+const homeHref = isEn ? withBase('/en/') : withBase('/');
+const servicesHref = isEn ? withBase('/en/services') : withBase('/hizmetler');
+const blogHref = isEn ? withBase('/en/blog') : withBase('/blog');
+const contactHref = isEn ? withBase('/en/contact') : withBase('/iletisim');
 ---
 
 <BaseLayout
-	title={`Sayfa Bulunamadı | ${siteConfig.brand.name}`}
-	description="Aradığınız sayfa bulunamadı veya taşınmış olabilir. Ana sayfamıza dönerek veya bizimle iletişime geçerek doğru adrese yönlenebilirsiniz."
-	pathname="/404"
+	title={t.title}
+	description={t.desc}
+	pathname={isEn ? '/en/404' : '/404'}
 	lang={lang}
 >
 	<Section>
 		<div class="not-found">
 			<h1 class="not-found-code">404</h1>
-			<p class="not-found-lead">Aradığınız sayfayı bulamadık.</p>
-			<p class="not-found-text">Sayfa kaldırılmış, adresi değişmiş veya geçici olarak kullanılamıyor olabilir. Aşağıdaki bağlantılardan yararlanabilirsiniz.</p>
+			<p class="not-found-lead">{t.lead}</p>
+			<p class="not-found-text">{t.text}</p>
 			<div class="not-found-links">
-				<a href={withBase('/')} class="not-found-btn not-found-btn--primary">Ana Sayfa</a>
-				<a href={withBase('/hizmetler')} class="not-found-btn">Çalışma Alanları</a>
-				<a href={withBase('/blog')} class="not-found-btn">Blog</a>
-				<a href={withBase('/iletisim')} class="not-found-btn">İletişim</a>
+				<a href={homeHref} class="not-found-btn not-found-btn--primary">{t.home}</a>
+				<a href={servicesHref} class="not-found-btn">{t.services}</a>
+				<a href={blogHref} class="not-found-btn">{t.blog}</a>
+				<a href={contactHref} class="not-found-btn">{t.contact}</a>
 			</div>
-			<p class="not-found-help">Hukuki destek mi gerekiyor? <a href={helpDeskTriggerHref} class="not-found-whatsapp">WhatsApp üzerinden bize ulaşın</a>.</p>
+			<p class="not-found-help">{t.help1} <a href={helpDeskTriggerHref} class="not-found-whatsapp">{t.help2}</a>.</p>
 		</div>
 	</Section>
 </BaseLayout>
