@@ -1,46 +1,67 @@
 ---
 title: "Mirasın Reddi (Reddi Miras): Süresi, Dilekçesi ve Sonuçları (2026)"
 description: "Mirasın reddi nedir, kimler reddedebilir, süresi ne kadardır? Reddi miras dilekçesi, mirasın gerçek reddi ve yasal sonuçları — 2026 güncel rehber."
-date: 2026-06-09
+date: 2026-06-11
 author: "Av. Barış C. Balabanlı"
-tags: ["miras-hukuku", "aile-hukuku", "reddi-miras"]
+tags: ["miras-hukuku"]
+links:
+  - text: "Miras Hukuku Hizmetlerimiz"
+    href: "/hizmetler/miras-hukuku"
+  - text: "Veraset İlamı (Mirasçılık Belgesi) Nasıl Alınır? 2026 Güncel Rehber"
+    href: "/blog/veraset-ilami-nasil-alinir-mirascilik-belgesi"
 lang: "tr"
+faq:
+  - q: "Reddi miras süresi ne kadardır?"
+    a: "Yasal mirasçılar için mirasçı olduklarını öğrendikleri tarihten itibaren 3 aydır, mahkeme kararıyla 1 yıl uzatılabilir."
+  - q: "Mirasın reddi nasıl yapılır?"
+    a: "Miras bırakanın son yerleşim yeri Sulh Hukuk Mahkemesi'ne sözlü veya yazılı başvuru yapılarak miras reddedilir."
+  - q: "Reddi mirastan dönülebilir mi?"
+    a: "3 aylık süre içinde dönülebilir ancak süre geçtikten sonra mirasın reddinden dönülemez."
+  - q: "Miras reddedilirse borçlardan kim sorumlu olur?"
+    a: "Mirasçı borçlardan sorumlu olmaz; tereke Sulh Hukuk Mahkemesi tarafından iflas hükümlerine göre tasfiye edilir."
+  - q: "Reddi miras ile mirasçılık sıfatı tamamen sona erer mi?"
+    a: "Evet, reddi miras mirasçılık sıfatını tamamen ortadan kaldırır ve mirasçı hiçbir pay alamaz."
 ---
 
-Mirasın reddi, mirasçının ölen kişinin borçlarından sorumlu olmamak için mirası kabul etmediğini beyan etmesidir. Miras bırakanın borçları mal varlığından fazlaysa veya mirasçı bilinmeyen borçlardan çekiniyorsa reddi miras en güvenli yoldur.
+Mirasın reddi, mirasçının ölen kişinin borçlarından sorumlu olmamak için mirası kabul etmediğini beyan etmesidir (TMK m. 605). Miras bırakanın borçları mal varlığından fazlaysa veya mirasçı bilinmeyen borçlardan çekiniyorsa reddi miras en güvenli yoldur. Reddi miras, mirasçılık sıfatını tamamen ortadan kaldırır ve mirasçı, miras bırakanın mal varlığından hiçbir pay alamaz.
 
-## Mirasın reddi süresi ne kadar?
+## Reddi miras süresi ne kadar?
 
-Yasal mirasçılar için reddi miras süresi, mirasçı olduklarını öğrendikleri tarihten itibaren **3 aydır**. Bu süre Sulh Hukuk Mahkemesi'ne başvuruyla en fazla 1 yıl uzatılabilir. Atanmış mirasçılar (vasiyetle mirasçı olanlar) için süre, miras bırakanın ölümünü öğrenmeden itibaren 3 aydır.
+Yasal mirasçılar için reddi miras süresi, mirasçı olduklarını öğrendikleri tarihten itibaren 3 aydır. Bu süre Sulh Hukuk Mahkemesi'ne başvuruyla en fazla 1 yıl uzatılabilir.
 
-Atanmış mirasçı atanmış olduğunu vasiyetnamenin açılması ile öğrenir.
+**Süre hesaplaması:**
+- Yasal mirasçılar: Mirasçı olduklarını öğrendikleri tarihten itibaren 3 ay
+- Atanmış mirasçılar (vasiyetname ile): Vasiyetnamenin açıldığını öğrenmeden itibaren 3 ay
+- Süre uzatma: Mahkeme kararı ile en fazla 1 yıl
+- İvazsız tasarruflarda lehdar: Tasarrufu öğrenmeden itibaren 3 ay
 
-## Gerçek reddi mi, karine reddi mi?
+Sürenin kaçırılması halinde mirasçı, mirası kabul etmiş sayılır ve miras bırakanın borçlarından şahsen sorumlu hale gelir.
+
+## Gerçek reddi ile karine reddi arasındaki fark nedir?
 
 Reddi miras iki şekilde olur:
 
-- **Gerçek reddi (açık ret):** Mirasçının Sulh Hukuk Mahkemesi'ne sözlü veya yazılı beyanı ile mirası reddetmesidir.
-- **Karine reddi:** Mirasçının mirası kabul veya reddetmediği halde ölüm tarihinden itibaren 3 ay içinde terekenin resmi defterinin tutulmasını talep etmemesi ve bu sürede terekeyi fiilen yönetmesidir (MK m.605/II).
+**Gerçek reddi (açık ret - TMK m. 605/I):** Mirasçının Sulh Hukuk Mahkemesi'ne sözlü veya yazılı beyanı ile mirası reddetmesidir. En sık kullanılan yöntemdir.
+
+**Karine reddi (TMK m. 605/II):** Mirasçının mirası kabul veya reddetmediği halde ölüm tarihinden itibaren 3 ay içinde terekenin resmi defterinin tutulmasını talep etmemesi ve bu sürede terekeyi fiilen yönetmesidir.
 
 Dikkat: Mirasçı terekeyi fiilen yönetmeye başlarsa, artık reddi miras hakkını kaybeder.
 
-## Reddi miras başvurusu adım adım
+## Reddi miras başvurusu nasıl yapılır?
 
-1. **Yetkili mahkeme:** Miras bırakanın son yerleşim yeri Sulh Hukuk Mahkemesi
-2. **Başvuru şekli:** Sözlü veya yazılı — sözlü başvuruda tutanak düzenlenir
-3. **Gerekli belgeler:** Nüfus cüzdanı, ölüm belgesi, nüfus kayıt örneği
-4. **Sonuç:** Mahkeme reddi miras talebini tescil eder ve ilgili yerlere bildirir
+Başvuru, miras bırakanın son yerleşim yeri Sulh Hukuk Mahkemesi'ne sözlü veya yazılı olarak yapılır. Sözlü başvuruda tutanak düzenlenir. Gerekli belgeler: nüfus cüzdanı, ölüm belgesi, nüfus kayıt örneği.
 
-Başvurunun kabulü için mahkeme masrafı yatırılır. Mirasın reddine karar verilmesi halinde bu karar, mirasçılar ve alacaklılar bakımından bağlayıcıdır.
+**Başvuru adımları:**
+1. Miras bırakanın son yerleşim yeri Sulh Hukuk Mahkemesi'ne başvuru
+2. Sözlü veya yazılı beyan ile mirasın reddedildiğinin bildirilmesi
+3. Mahkeme masrafının yatırılması
+4. Mahkemenin reddi miras talebini tescil etmesi
+5. Kararın ilgili yerlere bildirilmesi
 
-## Mirasın reddinin sonuçları
+## Mirasın reddinin sonuçları nelerdir?
 
 Miras reddedildiğinde, mirasçı miras bırakanın borçlarından şahsen sorumlu olmaz. Reddedilen miras, miras bırakanın ölümü anında hiç mirasçısı yokmuş gibi Sulh Hukuk Mahkemesi tarafından iflas hükümlerine göre tasfiye edilir.
 
-Önemli: Reddi miras, mirasçılık sıfatını tamamen ortadan kaldırır. Mirasçı, miras bırakanın mal varlığından hiçbir pay alamaz.
-
 ## Mirasın reddinden dönülebilir mi?
 
-Reddi miras beyanı, öğrenme tarihinden itibaren 3 aylık süre içinde yapılmalıdır. Bu süre geçtikten sonra mirasın reddinden dönülemez. Ayrıca mirasçı, mirası kabul ettiğine dair işlemler yapmışsa (örneğin miras bırakanın evinde oturmaya devam etmişse, borçlarını ödemişse) reddi miras hakkını kaybeder.
-
-Mirasın reddi, mirasçının borç yükünden kurtulması için en etkili hukuki yoldur. Ancak süre ve usul kurallarına dikkat edilmelidir.
+Reddi miras beyanı, öğrenme tarihinden itibaren 3 aylık süre içinde yapılmalıdır. Bu süre geçtikten sonra mirasın reddinden dönülemez. Ayrıca mirasçı, mirası kabul ettiğine dair işlemler yapmışsa reddi miras hakkını kaybeder. Mirasın reddi, mirasçının borç yükünden kurtulması için en etkili hukuki yoldur ancak süre ve usul kurallarına dikkat edilmelidir.

@@ -21,6 +21,7 @@ interface Props {
 	pathname?: string;
 	ogType?: 'website' | 'article';
 	lang?: Lang;
+	ogImage?: string;
 	article?: {
 		publishedTime?: string;
 		modifiedTime?: string;
@@ -34,6 +35,7 @@ const {
 	pathname = Astro.url.pathname,
 	ogType = 'website',
 	lang = 'tr',
+	ogImage,
 	article,
 } = Astro.props;
 const basePath = import.meta.env.BASE_URL || '/';
@@ -43,6 +45,11 @@ const pathnameWithoutBase =
 		: pathname;
 
 const canonicalUrl = new URL(pathname, siteConfig.seo.siteUrl).toString();
+const xdefaultPath = lang === 'tr' ? pathname : getAlternatePath(pathnameWithoutBase, 'tr');
+const xdefaultUrl = new URL(
+	basePath !== '/' ? `${basePath}${xdefaultPath}`.replace(/\/+/g, '/') : xdefaultPath,
+	siteConfig.seo.siteUrl,
+).toString();
 const altLang: Lang = lang === 'tr' ? 'en' : 'tr';
 const altPathRaw = getAlternatePath(pathnameWithoutBase, altLang);
 const alternateUrl = new URL(
@@ -58,11 +65,15 @@ const nav = [
 	{ href: lang === 'tr' ? '/blog' : '/en/blog', key: 'blog' as const },
 ];
 const servicesBase = lang === 'tr' ? '/hizmetler' : '/en/services';
+const ogImageRaw = ogImage || siteConfig.seo.ogImage;
+const ogImageUrl = ogImageRaw?.startsWith('http') ? ogImageRaw : new URL(withBase(ogImageRaw), siteConfig.seo.siteUrl).toString();
 const faviconSvg = withBase('/favicon.svg');
 const faviconIco = withBase('/favicon.ico');
 const htmlLang = lang === 'tr' ? 'tr' : 'en';
 const ogLocale = translations[lang].seo.locale;
 const rightsText = translations[lang].footer.rights;
+
+const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID as string | undefined;
 
 const legalServiceSchema = {
 	'@context': 'https://schema.org',
@@ -88,18 +99,22 @@ const legalServiceSchema = {
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<meta name="robots" content="index, follow" />
 		<link rel="canonical" href={canonicalUrl} />
 		<link rel="alternate" hreflang={lang === 'tr' ? 'tr' : 'en'} href={canonicalUrl} />
 		<link rel="alternate" hreflang={altLang} href={alternateUrl} />
+		<link rel="alternate" hreflang="x-default" href={xdefaultUrl} />
 		<meta property="og:site_name" content={siteConfig.brand.name} />
 		<meta property="og:type" content={ogType} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalUrl} />
 		<meta property="og:locale" content={ogLocale} />
+		<meta property="og:image" content={ogImageUrl} />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImageUrl} />
 		{article?.publishedTime && <meta property="article:published_time" content={article.publishedTime} />}
 		{article?.modifiedTime && <meta property="article:modified_time" content={article.modifiedTime} />}
 		{
@@ -112,6 +127,15 @@ const legalServiceSchema = {
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet" />
 		<link rel="icon" type="image/svg+xml" href={faviconSvg} />
 		<link rel="icon" href={faviconIco} />
+		<link rel="apple-touch-icon" href={withBase('/apple-touch-icon.png')} />
+		{
+			ga4Id && (
+				<>
+					<script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`} />
+					<script set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');`} />
+				</>
+			)
+		}
 		<script type="application/ld+json" set:html={JSON.stringify(legalServiceSchema)} />
 	</head>
 	<body>

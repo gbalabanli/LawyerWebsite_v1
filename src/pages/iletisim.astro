@@ -15,7 +15,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 
 <BaseLayout
 	title={`${t(lang, 'contact.eyebrow')} | ${siteConfig.brand.name}`}
-	description="\u0130leti\u015fim sayfas\u0131: WhatsApp, e-posta, telefon ve ofis bilgileri ile hukuki dan\u0131\u015fmanl\u0131k ba\u015fvurusu."
+	description="Balabanlı Hukuk Bürosu iletişim sayfası. WhatsApp, e-posta ve ofis bilgileri üzerinden hukuki danışmanlık randevusu ve başvuru için bize ulaşın."
 	pathname="/iletisim"
 	lang={lang}
 >
@@ -76,3 +76,11 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 		buttonHref={helpDeskTriggerHref}
 	/>
 </BaseLayout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'ContactPage',
+	name: `İletişim | ${siteConfig.brand.name}`,
+	description: 'Balabanlı Hukuk Bürosu iletişim sayfası. WhatsApp, e-posta ve ofis bilgileri.',
+	url: `${siteConfig.seo.siteUrl}/iletisim`,
+})} />

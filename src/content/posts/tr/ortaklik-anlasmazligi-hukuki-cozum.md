@@ -4,8 +4,22 @@ description: "Şirket ortakları arasında çıkan anlaşmazlıklarda başvurula
 date: 2026-05-25
 author: "Av. Barış C. Balabanlı"
 tags: ["sirketler", "uyusmazlik", "ortaklik"]
+links:
+  - text: "Şirketler Hukuku Hizmetlerimiz"
+    href: "/hizmetler/sirketler-hukuku"
+  - text: "Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları"
+    href: "/blog/ortaklik-anlasmazliginda-hukuki-cozum-yollari"
 lang: "tr"
 slug: "ortaklik-anlasmazligi-hukuki-cozum"
+faq:
+  - q: "Ortaklık anlaşmazlığında arabuluculuk zorunlu mu?"
+    a: "Evet, ticari davalarda arabuluculuk dava şartıdır; dava açmadan önce arabulucuya başvurulması gerekir."
+  - q: "Azınlık ortaklar hangi haklara sahiptir?"
+    a: "Bilgi alma, özel denetçi atanması, genel kurulu toplantıya çağırma ve öneri sunma hakları vardır."
+  - q: "Ortaklık anlaşmazlığında çıkarma davası nasıl açılır?"
+    a: "Haklı sebepler varsa azınlık ortak, mahkemeden diğer ortağın şirketten çıkarılmasını talep edebilir."
+  - q: "Şirketin feshi hangi durumlarda talep edilebilir?"
+    a: "Haklı sebeplerin varlığı ve diğer çözüm yollarının tüketilmesi halinde azınlık ortak fesih talep edebilir."
 ---
 
 Ortaklık anlaşmazlıkları şirketlerin en sık karşılaştığı hukuki sorunların başında gelir. Anlaşmazlık çoğu zaman şirketin yönetimini felç eder ve değer kaybına yol açar. Bu noktada hukuki çözüm yöntemlerini bilmek, tıkanan yönetimi hızla aşmanın anahtarıdır.

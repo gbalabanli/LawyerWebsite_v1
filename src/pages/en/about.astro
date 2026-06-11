@@ -13,7 +13,7 @@ const lang: Lang = 'en';
 
 <BaseLayout
 	title={`${t(lang, 'about.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Attorney Bar\u0131\u015f C. Balabanl\u0131 profile, education, professional memberships, and working style."
+	description="Attorney Barış C. Balabanlı profile: legal education, professional memberships, working approach and practice focus in civil and commercial law. Istanbul-based attorney."
 	pathname="/en/about"
 	lang={lang}
 >
@@ -64,3 +64,27 @@ const lang: Lang = 'en';
 		buttonHref={helpDeskTriggerHref}
 	/>
 </BaseLayout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	name: 'Bar\u0131\u015f C. Balabanl\u0131',
+	jobTitle: 'Avukat',
+	description: siteConfig.brand.aboutLong.en,
+	url: `${siteConfig.seo.siteUrl}/en/about`,
+	image: new URL(withBase('/images/profile.jpg'), siteConfig.seo.siteUrl).toString(),
+	sameAs: [
+		'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4%B1-515b2020a',
+	],
+	knowsAbout: [
+		{ '@type': 'LegalService', name: 'Aile Hukuku' },
+		{ '@type': 'LegalService', name: 'Miras Hukuku' },
+		{ '@type': 'LegalService', name: 'Şirketler Hukuku' },
+		{ '@type': 'LegalService', name: 'Fikri Mülkiyet' },
+		{ '@type': 'LegalService', name: 'İş Hukuku' },
+		{ '@type': 'LegalService', name: 'Gayrimenkul Hukuku' },
+		{ '@type': 'LegalService', name: 'Ticaret Hukuku' },
+		{ '@type': 'LegalService', name: 'İcra ve Tahsilat' },
+		{ '@type': 'LegalService', name: 'E-Spor Hukuku' },
+	],
+})} />

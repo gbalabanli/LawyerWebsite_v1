@@ -16,7 +16,7 @@ const lang: Lang = 'tr';
 
 <BaseLayout
 	title={`${t(lang, 'index.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Hukuki hizmetler, uygulama alanları ve hızlı danışmanlık başvurusu sunan sayfa."
+	description="Boşanma, miras, şirketler hukuku, fikri mülkiyet, iş hukuku, gayrimenkul, ticaret hukuku ve e-spor hukuku alanlarında İstanbul merkezli avukatlık hizmeti."
 	pathname="/"
 	lang={lang}
 >
@@ -132,6 +132,85 @@ const lang: Lang = 'tr';
 		buttonHref={helpDeskTriggerHref}
 	/>
 </BaseLayout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: [
+		{
+			'@type': 'Question',
+			name: 'Boşanma davası ne kadar sürer ve nelere dikkat edilmelidir?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'Anlaşmalı boşanma davaları genellikle 2-3 ay içinde sonuçlanırken, çekişmeli boşanma davaları delil durumuna göre 1-2 yıl sürebilir. Boşanma sürecinde velayet, nafaka, maddi-manevi tazminat ve mal rejiminin tasfiyesi gibi hususların dava açılmadan önce değerlendirilmesi önemlidir.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'Miras paylaşımı nasıl yapılır ve veraset ilamı nedir?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'Miras paylaşımı için öncelikle sulh hukuk mahkemesinden veraset ilamı (mirasçılık belgesi) alınır. Bu belge mirasçıları ve pay oranlarını resmileştirir. Mirasçılar arasında anlaşma sağlanamazsa, ortaklığın giderilmesi davası açılarak malvarlığı satılır ve bedeli paylaştırılır.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'Limited şirket kurmak için hangi adımlar izlenmelidir?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'Limited şirket kuruluşu için öncelikle şirket sözleşmesi hazırlanır, noter onayı yapılır ve ticaret sicil müdürlüğüne başvurulur. Ticaret sicil gazetesinde ilan sonrası şirket tüzel kişilik kazanır. Tüm süreç ortalama 1-2 hafta içinde tamamlanabilir.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'Marka tescili neden önemlidir ve nasıl yapılır?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'Marka tescili, markanızı üçüncü kişilerin kullanımına karşı korur ve hukuki uyuşmazlıklarda size münhasır hak sağlar. Türk Patent ve Marka Kurumuna yapılan başvuru, inceleme ve yayın sürecinin ardından tescil edilir. Süreç yaklaşık 6-12 ay sürer ve tescil 10 yıl süreyle geçerlidir.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'Kıdem tazminatına hangi durumlarda hak kazanılır?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'Kıdem tazminatı, en az bir yıl çalışmış işçinin iş sözleşmesinin belirli durumlarda sona ermesi halinde ödenir. İşçinin kendi isteğiyle istifa etmesi genel olarak tazminat hakkı doğurmazken, işveren tarafından haksız fesih, işçinin haklı feshi, askerlik, emeklilik veya evlilik gibi durumlarda kıdem tazminatı ödenir.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'Kira uyuşmazlıklarında kiracı ve malik hangi haklara sahiptir?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'Kiracının en önemli hakkı kira sözleşmesi boyunca taşınmazı kullanma ve kira artışının kanuni sınırlar içinde kalmasını talep etmektir. Malik ise kira bedelinin ödenmemesi, gereksinim veya yeniden inşa sebebiyle tahliye davası açabilir. Kira uyuşmazlıklarında arabuluculuk dava şartıdır.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'Ticari sözleşmelerde bulunması gereken temel unsurlar nelerdir?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'Ticari sözleşmelerde tarafların kimlik bilgileri, sözleşme konusu, bedel ve ödeme koşulları, teslimat şartları, gizlilik hükümleri, uyuşmazlık durumunda yetkili mahkeme ve uygulanacak hukuk açıkça belirtilmelidir. Eksik veya belirsiz hükümler ileride ciddi uyuşmazlıklara yol açabilir.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'İcra takibi nasıl başlatılır ve hangi aşamalardan oluşur?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'İcra takibi, alacaklının yetkili icra dairesine başvurusu ile başlar. Borçluya gönderilen ödeme emrine itiraz edilmezse takip kesinleşir ve haciz aşamasına geçilir. Borçlu itiraz ederse takip durur ve alacaklının itirazın kaldırılması veya menfi tespit davası açması gerekir.',
+			},
+		},
+		{
+			'@type': 'Question',
+			name: 'E-spor oyuncu sözleşmelerinde nelere dikkat edilmelidir?',
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: 'E-spor oyuncu sözleşmelerinde süre, ücret, ödül paylaşımı, gizlilik, yayıncılık hakları ve fesih koşulları açıkça belirtilmelidir. Oyuncunun kulüple arasındaki ilişkinin iş sözleşmesi mi yoksa hizmet sözleşmesi mi olduğu tazminat ve sosyal haklar açısından kritik öneme sahiptir.',
+			},
+		},
+	],
+})} />
 
 <style>
 	.service-grid {

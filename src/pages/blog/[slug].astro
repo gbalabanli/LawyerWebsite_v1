@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Icon from '../../components/Icon.astro';
 import CTA from '../../components/CTA.astro';
 import { helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { serviceAreas } from '../../config/services';
 import { withBase } from '../../utils/routing';
 import { t, getDateLocale, type Lang } from '../../i18n/ui';
 
@@ -41,6 +42,11 @@ const relatedPosts = sortedPosts
 
 const dateLocale = getDateLocale(lang);
 
+const knowsAbout = serviceAreas.map((s) => ({
+	'@type': 'Thing',
+	name: s.title,
+}));
+
 const articleSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Article',
@@ -50,6 +56,9 @@ const articleSchema = {
 	author: {
 		'@type': 'Person',
 		name: post.data.author,
+		jobTitle: 'Avukat',
+		url: `${siteConfig.seo.siteUrl}/hakkimda`,
+		knowsAbout,
 	},
 	publisher: {
 		'@type': 'Organization',
@@ -57,6 +66,35 @@ const articleSchema = {
 	},
 	mainEntityOfPage: `${siteConfig.seo.siteUrl}/blog/${post.id.replace(/^tr\//, '')}`,
 };
+
+const faqSchema = post.data.faq
+	? {
+			'@context': 'https://schema.org',
+			'@type': 'FAQPage',
+			mainEntity: post.data.faq.map((item) => ({
+				'@type': 'Question',
+				name: item.q,
+				acceptedAnswer: {
+					'@type': 'Answer',
+					text: item.a,
+				},
+			})),
+		}
+	: null;
+
+const howToSchema = post.data.howTo
+	? {
+			'@context': 'https://schema.org',
+			'@type': 'HowTo',
+			name: post.data.title,
+			step: post.data.howTo.map((step, i) => ({
+				'@type': 'HowToStep',
+				position: i + 1,
+				name: step.name,
+				text: step.text,
+			})),
+		}
+	: null;
 ---
 
 <BaseLayout
@@ -92,7 +130,60 @@ const articleSchema = {
 		<div class="article-content">
 			<Content />
 		</div>
+
+		{
+			post.data.links && post.data.links.length > 0 && (
+				<div class="post-links">
+					<h3>İlgili Bağlantılar</h3>
+					<ul>
+						{post.data.links.map((link) => (
+							<li><a href={withBase(link.href)}>{link.text}</a></li>
+						))}
+					</ul>
+				</div>
+			)
+		}
+
+		{
+			post.data.faq && post.data.faq.length > 0 && (
+				<section class="section post-faq">
+					<div class="section-heading">
+						<h2>Sıkça Sorulan Sorular</h2>
+					</div>
+					<div class="faq-list">
+						{post.data.faq.map((item) => (
+							<details class="faq-item">
+								<summary>{item.q}</summary>
+								<p>{item.a}</p>
+							</details>
+						))}
+					</div>
+				</section>
+			)
+		}
 	</article>
+
+	{
+		(() => {
+			const matched = serviceAreas.find((a) => post.data.tags.includes(a.tag));
+			return matched
+				? (
+					<section class="section related-service">
+						<div class="section-heading">
+							<h2>İlgili Hizmet</h2>
+						</div>
+						<div class="card rs-card">
+							<h3>{matched.title}</h3>
+							<p>{matched.description}</p>
+							<a class="service-link" href={withBase(`/hizmetler/${matched.slug}`)}>
+								Detaylı Bilgi <Icon name="arrow-right" size={14} />
+							</a>
+						</div>
+					</section>
+				)
+				: null;
+		})()
+	}
 
 	{
 		relatedPosts.length > 0 && (
@@ -121,4 +212,109 @@ const articleSchema = {
 	/>
 
 	<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+	{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+	{howToSchema && <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />}
 </BaseLayout>
+
+<style>
+	.post-links {
+		margin-top: 2rem;
+		padding: 1.25rem;
+		background: var(--surface-bg);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+	}
+
+	.post-links h3 {
+		font-size: 1rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.post-links ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.post-links a {
+		font-weight: 600;
+		font-size: 0.9rem;
+		color: var(--button-secondary-text);
+		text-decoration: none;
+	}
+
+	.post-links a:hover {
+		text-decoration: underline;
+	}
+
+	.related-service {
+		margin-top: 3rem;
+	}
+
+	.rs-card {
+		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.rs-card h3 {
+		font-size: 1.1rem;
+	}
+
+	.rs-card p {
+		font-size: 0.9rem;
+		color: var(--muted-text);
+		line-height: 1.6;
+	}
+
+	.rs-card .service-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: var(--button-secondary-text);
+		text-decoration: none;
+		align-self: flex-start;
+		margin-top: 0.25rem;
+	}
+
+	.rs-card .service-link:hover {
+		text-decoration: underline;
+	}
+
+	.post-faq {
+		margin-top: 3rem;
+	}
+
+	.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.faq-item {
+		padding: 1rem 1.25rem;
+		background: var(--surface-bg);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		cursor: pointer;
+	}
+
+	.faq-item summary {
+		font-weight: 600;
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+
+	.faq-item p {
+		margin-top: 0.75rem;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--muted-text);
+	}
+</style>

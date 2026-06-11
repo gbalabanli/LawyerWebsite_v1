@@ -33,6 +33,7 @@ export const siteConfig: SiteConfig = {
 			tr: 'İstanbul merkezli Balabanlı Hukuk Bürosu, medeni hukuk ve ticari hukuk alanlarında uzman avukatlık hizmeti sunar.',
 			en: 'Balabanlı Law Office, based in Istanbul, provides expert legal services in civil and commercial law.',
 		},
+		ogImage: '/images/og-default.jpg',
 	},
 	contact: {
 		phoneDisplay: '+90 555 123 45 67',

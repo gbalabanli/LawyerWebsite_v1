@@ -17,7 +17,7 @@ const dateLocale = getDateLocale(lang);
 
 <BaseLayout
 	title={`${t(lang, 'blog.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Law blog with practical legal insights, updates, and educational articles."
+	description="Legal insights, guides and educational articles for clients and business owners. Explore topics on family, corporate, IP, labor, real estate, commercial and esports law."
 	pathname="/en/blog"
 	lang={lang}
 >
@@ -58,6 +58,14 @@ const dateLocale = getDateLocale(lang);
 
 		<p class="pagination-note">{t(lang, 'blog.paginationNote')}</p>
 	</Section>
+
+	<script type="application/ld+json" set:html={JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'Blog',
+		name: `${t(lang, 'blog.eyebrow')} | ${siteConfig.brand.name}`,
+		description: 'Legal insights, guides and educational articles for clients and business owners.',
+		url: `${siteConfig.seo.siteUrl}/en/blog`,
+	})} />
 
 	<script>
 		const searchEl = document.querySelector('#blog-search');

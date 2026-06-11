@@ -1,4 +1,5 @@
 ---
+import { siteConfig } from '../config/site';
 import { withBase } from '../utils/routing';
 import { serviceAreas } from '../config/services';
 
@@ -79,6 +80,22 @@ if (segments.length > 0) {
 			</ol>
 		</nav>
 	)
+}
+
+{
+	crumbs.length > 1 && (() => {
+		const breadcrumbSchema = {
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: crumbs.map((crumb, i) => ({
+				'@type': 'ListItem',
+				position: i + 1,
+				name: crumb.label,
+				item: crumb.href ? `${siteConfig.seo.siteUrl}${crumb.href}` : undefined,
+			})),
+		};
+		return <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />;
+	})()
 }
 
 <style>

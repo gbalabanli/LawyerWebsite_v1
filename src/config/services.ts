@@ -65,7 +65,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'Aile Hukuku Avukatı | Boşanma, Velayet ve Nafaka Davaları',
 		seoDescription:
-			'Boşanma, velayet, nafaka ve mal rejimi davalarında uzman aile hukuku avukatı. İstanbul merkezli Balabanlı Hukuk Bürosu, aile hukuku uyuşmazlıklarında hukuki danışmanlık ve dava takibi sunar.',
+			'Boşanma, velayet, nafaka ve mal rejimi davalarında uzman aile hukuku avukatı. İstanbul merkezli Balabanlı Hukuk Bürosu hukuki danışmanlık sunar.',
 	},
 	{
 		slug: 'miras-hukuku',
@@ -119,7 +119,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'Miras Hukuku Avukatı | Veraset İlamı, Tenkis ve Vasiyetname',
 		seoDescription:
-			'Miras hukuku alanında uzman avukat. Veraset ilamı, vasiyetname düzenlenmesi, tenkis davası, muris muvazaası ve mirasın reddi işlemlerinde hukuki destek. İstanbul merkezli hizmet.',
+			'Miras hukuku alanında uzman avukat. Veraset ilamı, vasiyetname, tenkis davası, muris muvazaası ve mirasın reddi işlemlerinde hukuki destek. İstanbul merkezli hizmet.',
 	},
 	{
 		slug: 'sirketler-hukuku',
@@ -169,7 +169,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'Şirketler Hukuku Avukatı | Kuruluş, Ortaklık ve Hisse Devri',
 		seoDescription:
-			'Limited ve anonim şirket kuruluşu, ortaklık sözleşmeleri, hisse devri ve yönetim kurulu kararları alanında uzman şirketler hukuku avukatı. İstanbul merkezli hukuki danışmanlık.',
+			'Limited ve anonim şirket kuruluşu, ortaklık sözleşmeleri, hisse devri ve yönetim kurulu kararları alanında uzman avukat. İstanbul merkezli danışmanlık.',
 	},
 	{
 		slug: 'fikri-mulkiyet',
@@ -223,7 +223,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'Fikri Mülkiyet Avukatı | Marka, Patent ve Tasarım Hukuku',
 		seoDescription:
-			'Marka tescili, patent başvurusu, endüstriyel tasarım ve fikri mülkiyet ihlalleri alanında uzman avukat. İstanbul merkezli Balabanlı Hukuk Bürosu fikri mülkiyet hukuku danışmanlık ve dava takibi.',
+			'Marka tescili, patent başvurusu, endüstriyel tasarım ve fikri mülkiyet ihlalleri alanında uzman avukat. İstanbul merkezli Balabanlı Hukuk Bürosu danışmanlık ve dava takibi.',
 	},
 	{
 		slug: 'is-hukuku',
@@ -273,7 +273,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'İş Hukuku Avukatı | Kıdem Tazminatı ve İşe İade Davaları',
 		seoDescription:
-			'İş hukuku alanında uzman avukat. Kıdem ve ihbar tazminatı, işe iade davaları, iş sözleşmesi feshi ve işçi-işveren uyuşmazlıklarında arabuluculuk ve dava takibi. İstanbul merkezli hizmet.',
+			'İş hukuku alanında uzman avukat. Kıdem ve ihbar tazminatı, işe iade davaları, iş sözleşmesi feshi ve işçi-işveren uyuşmazlıklarında hukuki danışmanlık. İstanbul merkezli hizmet.',
 	},
 	{
 		slug: 'gayrimenkul',
@@ -323,7 +323,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'Gayrimenkul Hukuku Avukatı | Kira ve Tapu Davaları',
 		seoDescription:
-			'Tapu iptali, kira uyuşmazlıkları, tahliye davaları ve ortaklığın giderilmesi alanında uzman gayrimenkul hukuku avukatı. İstanbul merkezli Balabanlı Hukuk Bürosu hukuki danışmanlık ve dava takibi sunar.',
+			'Tapu iptali, kira uyuşmazlıkları, tahliye davaları ve ortaklığın giderilmesinde uzman gayrimenkul avukatı. İstanbul merkezli Balabanlı Hukuk Bürosu danışmanlık hizmeti.',
 	},
 	{
 		slug: 'ticaret-hukuku',
@@ -373,7 +373,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'Ticaret Hukuku Avukatı | Ticari Sözleşme ve Dava Danışmanlığı',
 		seoDescription:
-			'Ticari sözleşmeler, haksız rekabet, ticari ihtarname ve ticari dava takibi alanlarında uzman ticaret hukuku avukatı. İstanbul merkezli Balabanlı Hukuk Bürosu hukuki danışmanlık hizmeti sunar.',
+			'Ticari sözleşmeler, haksız rekabet, ticari ihtarname ve ticari dava takibi alanlarında uzman ticaret hukuku avukatı. İstanbul merkezli hukuki danışmanlık hizmeti.',
 	},
 	{
 		slug: 'icra-tahsilat',
@@ -423,7 +423,7 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'İcra ve Tahsilat Avukatı | İcra Takibi ve Alacak Tahsilatı',
 		seoDescription:
-			'İcra takibi, alacak tahsilatı, haciz işlemleri ve icra ceza davaları alanında uzman avukat. İstanbul merkezli Balabanlı Hukuk Bürosu icra ve tahsilat hukuku alanında hizmet sunar.',
+			'İcra takibi, alacak tahsilatı, haciz işlemleri ve icra ceza davalarında uzman avukat. İstanbul merkezli Balabanlı Hukuk Bürosu icra ve tahsilat hukuku hizmeti sunar.',
 	},
 	{
 		slug: 'espor',
@@ -477,6 +477,6 @@ export const serviceAreas: ServiceArea[] = [
 		],
 		seoTitle: 'E-Spor Hukuku Avukatı | Oyuncu Sözleşmeleri ve Transfer',
 		seoDescription:
-			'E-spor oyuncu sözleşmeleri, transfer süreçleri, sponsorluk anlaşmaları ve turnuva ödül dağıtımı alanında uzman e-spor hukuku avukatı. İstanbul merkezli hukuki danışmanlık hizmeti.',
+			'E-spor oyuncu sözleşmeleri, transfer süreçleri, sponsorluk anlaşmaları ve turnuva ödül dağıtımında uzman e-spor avukatı. İstanbul merkezli hukuki danışmanlık hizmeti.',
 	},
 ];

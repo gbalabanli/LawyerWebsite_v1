@@ -14,7 +14,7 @@ const lang: Lang = 'tr';
 
 <BaseLayout
 	title={`${t(lang, 'about.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Avukat Bar\u0131\u015f C. Balabanl\u0131 profili, e\u011fitim, mesleki \u00fcyelikler ve \u00e7al\u0131\u015fma tarz\u0131."
+	description="Avukat Barış C. Balabanlı profili, eğitim, mesleki üyelikler ve çalışma tarzı. Medeni ve ticari hukuk alanlarında uzman, İstanbul merkezli avukat."
 	pathname="/hakkimda"
 	lang={lang}
 >
@@ -65,3 +65,30 @@ const lang: Lang = 'tr';
 		buttonHref={helpDeskTriggerHref}
 	/>
 </BaseLayout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	name: 'Barış C. Balabanlı',
+	givenName: 'Barış',
+	familyName: 'Balabanlı',
+	jobTitle: 'Avukat',
+	url: siteConfig.seo.siteUrl,
+	email: siteConfig.contact.email,
+	telephone: siteConfig.contact.phoneDisplay,
+	alumniOf: {
+		'@type': 'CollegeOrUniversity',
+		name: 'Kadir Has Üniversitesi Hukuk Fakültesi',
+	},
+	knowsAbout: [
+		{ '@type': 'Thing', name: 'Aile Hukuku' },
+		{ '@type': 'Thing', name: 'Miras Hukuku' },
+		{ '@type': 'Thing', name: 'Şirketler Hukuku' },
+		{ '@type': 'Thing', name: 'Fikri Mülkiyet Hukuku' },
+		{ '@type': 'Thing', name: 'İş Hukuku' },
+		{ '@type': 'Thing', name: 'Gayrimenkul Hukuku' },
+		{ '@type': 'Thing', name: 'Ticaret Hukuku' },
+		{ '@type': 'Thing', name: 'İcra ve Tahsilat Hukuku' },
+		{ '@type': 'Thing', name: 'E-Spor Hukuku' },
+	],
+})} />

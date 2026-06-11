@@ -96,6 +96,19 @@ const relatedPosts = allPosts.slice(0, 4);
 	/>
 </BaseLayout>
 
+<script type="application/ld+json" set:html={JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: area.faq.map((item) => ({
+		'@type': 'Question',
+		name: item.q,
+		acceptedAnswer: {
+			'@type': 'Answer',
+			text: item.a,
+		},
+	})),
+})} />
+
 <style>
 	.area-sections {
 		display: grid;

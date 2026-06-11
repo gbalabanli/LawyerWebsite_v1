@@ -15,6 +15,7 @@ export interface SiteConfig {
 		siteUrl: string;
 		defaultTitle: Record<Lang, string>;
 		defaultDescription: Record<Lang, string>;
+		ogImage: string;
 	};
 	contact: {
 		phoneDisplay: string;
