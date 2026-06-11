@@ -1,6 +1,6 @@
 ﻿---
 title: "Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları"
-description: "Şirket ortağınızla anlaşmazlık mı yaşıyorsunuz? Ortaklıktan çıkma, fesih, arabuluculuk ve dava seçenekleri. Hukuki çözüm rehberi."
+description: "Ortaklıktan çıkma ve çıkarılma, şirketin feshi, kar payı davası ve arabuluculuk süreçleri. TTK m. 638 ve m. 531 kapsamında hukuki çözüm rehberi."
 date: 2026-06-11
 author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku", "dava-sureci"]

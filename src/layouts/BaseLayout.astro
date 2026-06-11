@@ -10,10 +10,15 @@ import { translations } from '../i18n/translations';
 import { getAlternatePath } from '../i18n/utils';
 import { serviceAreas } from '../config/services';
 import '../styles/base.css';
-import '../templates/classic-legal/tokens.css';
-import '../templates/classic-legal/layout.css';
-import '../templates/modern-minimal/tokens.css';
-import '../templates/modern-minimal/layout.css';
+
+const activeTemplate = siteConfig.template;
+if (activeTemplate === 'classic-legal') {
+	await import('../templates/classic-legal/tokens.css');
+	await import('../templates/classic-legal/layout.css');
+} else {
+	await import('../templates/modern-minimal/tokens.css');
+	await import('../templates/modern-minimal/layout.css');
+}
 
 interface Props {
 	title?: string;
@@ -22,6 +27,8 @@ interface Props {
 	ogType?: 'website' | 'article';
 	lang?: Lang;
 	ogImage?: string;
+	robots?: string;
+	lastModified?: string;
 	article?: {
 		publishedTime?: string;
 		modifiedTime?: string;
@@ -36,6 +43,8 @@ const {
 	ogType = 'website',
 	lang = 'tr',
 	ogImage,
+	robots = 'index, follow',
+	lastModified,
 	article,
 } = Astro.props;
 const basePath = import.meta.env.BASE_URL || '/';
@@ -99,7 +108,8 @@ const legalServiceSchema = {
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<meta name="robots" content="index, follow" />
+		<meta name="robots" content={robots} />
+		{lastModified && <meta name="dateModified" content={lastModified} />}
 		<link rel="canonical" href={canonicalUrl} />
 		<link rel="alternate" hreflang={lang === 'tr' ? 'tr' : 'en'} href={canonicalUrl} />
 		<link rel="alternate" hreflang={altLang} href={alternateUrl} />

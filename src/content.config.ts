@@ -7,6 +7,7 @@ const posts = defineCollection({
 		title: z.string(),
 		description: z.string().max(170),
 		date: z.coerce.date(),
+		updated: z.coerce.date().optional(),
 		author: z.string().default('Avukat Aydin'),
 		tags: z.array(z.string()).default([]),
 		coverImage: z.string().optional(),

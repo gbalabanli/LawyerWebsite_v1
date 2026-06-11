@@ -53,6 +53,7 @@ const articleSchema = {
 	headline: post.data.title,
 	description: post.data.description,
 	datePublished: post.data.date.toISOString(),
+	dateModified: (post.data.updated ?? post.data.date).toISOString(),
 	author: {
 		'@type': 'Person',
 		name: post.data.author,
@@ -106,7 +107,7 @@ const howToSchema = post.data.howTo
 	pathname={`/blog/${post.id.replace(/^tr\//, '')}`}
 	ogType="article"
 	lang={lang}
-	article={{ publishedTime: post.data.date.toISOString(), tags: post.data.tags }}
+	article={{ publishedTime: post.data.date.toISOString(), modifiedTime: (post.data.updated ?? post.data.date).toISOString(), tags: post.data.tags }}
 >
 	<article class="article">
 		<p class="eyebrow">{t(lang, 'blog.postEyebrow')}</p>
@@ -151,7 +152,7 @@ const howToSchema = post.data.howTo
 			post.data.faq && post.data.faq.length > 0 && (
 				<section class="section post-faq">
 					<div class="section-heading">
-						<h2>Sıkça Sorulan Sorular</h2>
+						<h2>{t(lang, 'blog.faq.title')}</h2>
 					</div>
 					<div class="faq-list">
 						{post.data.faq.map((item) => (
@@ -161,6 +162,24 @@ const howToSchema = post.data.howTo
 							</details>
 						))}
 					</div>
+				</section>
+			)
+		}
+
+		{
+			post.data.howTo && post.data.howTo.length > 0 && (
+				<section class="section post-howto">
+					<div class="section-heading">
+						<h2>{t(lang, 'blog.howto.title')}</h2>
+					</div>
+					<ol class="howto-list">
+						{post.data.howTo.map((step) => (
+							<li class="howto-step">
+								<h3>{step.name}</h3>
+								<p>{step.text}</p>
+							</li>
+						))}
+					</ol>
 				</section>
 			)
 		}
@@ -316,6 +335,53 @@ const howToSchema = post.data.howTo
 
 	.faq-item p {
 		margin-top: 0.75rem;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--muted-text);
+	}
+
+	.post-howto {
+		margin-top: 3rem;
+	}
+
+	.howto-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		padding: 0;
+		list-style: none;
+		counter-reset: howto-counter;
+	}
+
+	.howto-step {
+		counter-increment: howto-counter;
+		padding: 1.25rem;
+		background: var(--surface-bg);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		position: relative;
+		padding-left: 3.5rem;
+	}
+
+	.howto-step::before {
+		content: counter(howto-counter);
+		position: absolute;
+		left: 1rem;
+		top: 1.25rem;
+		font-family: var(--font-heading);
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: var(--button-secondary-text);
+		line-height: 1;
+	}
+
+	.howto-step h3 {
+		font-size: 1rem;
+		margin: 0 0 0.35rem;
+	}
+
+	.howto-step p {
+		margin: 0;
 		font-size: 0.9rem;
 		line-height: 1.6;
 		color: var(--muted-text);

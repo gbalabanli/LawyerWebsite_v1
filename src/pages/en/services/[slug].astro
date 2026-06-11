@@ -22,7 +22,7 @@ const { area } = Astro.props as { area: ServiceArea };
 const lang: Lang = 'en';
 
 const allPosts = (await getCollection('posts'))
-	.filter((post) => (post.data.lang ?? 'tr') === 'tr' && post.data.tags.includes(area.tag))
+	.filter((post) => (post.data.lang ?? 'tr') === 'en' && post.data.tags.includes(area.tag))
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const relatedPosts = allPosts.slice(0, 4);
 ---
@@ -32,6 +32,7 @@ const relatedPosts = allPosts.slice(0, 4);
 	description={area.seoDescription}
 	pathname={`/en/services/${area.slug}`}
 	lang={lang}
+	lastModified="2026-06-11"
 >
 	<Hero
 		eyebrow={siteConfig.brand.name}

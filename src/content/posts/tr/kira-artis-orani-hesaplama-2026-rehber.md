@@ -1,5 +1,5 @@
 ﻿---
-title: "Kira Artış Oranı Hesaplama 2026: Konut ve Ticari Kira"
+title: "Kira Artış Oranı Nasıl Hesaplanır? Konut ve Ticari Kira Rehberi (2026 Güncel)"
 description: "2026 kira artış oranı nasıl hesaplanır? Konut ve ticari kira artışı, ÜFE/TÜFE oranları, uyarlama davası ve kira tespit davası."
 date: 2026-06-11
 author: "Av. Barış C. Balabanlı"

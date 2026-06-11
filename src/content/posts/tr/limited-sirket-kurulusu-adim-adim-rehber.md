@@ -1,5 +1,5 @@
 ﻿---
-title: "Limited Şirket Kuruluşu: Adım Adım Rehber (2026)"
+title: "Limited Şirket Kuruluşu: Adım Adım Rehber (2026 Güncel)"
 description: "Limited şirket kuruluşu 2026: adım adım başvuru süreci, gerekli belgeler, MERSİS kaydı ve güncel masraflar."
 date: 2026-06-11
 author: "Av. Barış C. Balabanlı"

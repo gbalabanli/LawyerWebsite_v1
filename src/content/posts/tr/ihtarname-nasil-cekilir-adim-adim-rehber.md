@@ -1,5 +1,5 @@
 ﻿---
-title: "İhtarname Nasıl Çekilir? Adım Adım Rehber (2026)"
+title: "İhtarname Nasıl Çekilir? Adım Adım Rehber (2026 Güncel)"
 description: "İhtarname nasıl çekilir, noter ücreti ne kadar, ihtarname örneği nasıl hazırlanır? Adım adım rehber ve 2026 güncel masraflar."
 date: 2026-06-09
 author: "Av. Barış C. Balabanlı"

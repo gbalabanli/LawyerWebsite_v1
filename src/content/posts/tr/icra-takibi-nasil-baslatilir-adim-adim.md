@@ -1,5 +1,5 @@
 ﻿---
-title: "İcra Takibi Nasıl Başlatılır? Adım Adım Rehber"
+title: "İcra Takibi Nasıl Başlatılır? Adım Adım Rehber (2026 Güncel)"
 description: "İcra takibi nasıl başlatılır? Adım adım süreç, gerekli belgeler, 2026 harçları ve ödeme emri itiraz süresi. Alacağınızı tahsil edin."
 date: 2026-06-09
 author: "Av. Barış C. Balabanlı"

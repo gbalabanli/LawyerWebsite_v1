@@ -44,6 +44,7 @@ This file defines project-specific execution and editing guidance for agents wor
 - Optional frontmatter:
   - `coverImage`
   - `slug`
+  - `updated` — set when a post is revised; drives `dateModified` in JSON-LD and meta tags (falls back to `date` if absent)
 - Prefer SEO-safe descriptions (about 140-170 chars).
 
 ## 5) SEO and routing constraints
@@ -52,6 +53,87 @@ This file defines project-specific execution and editing guidance for agents wor
 - Blog post page owns `Article` JSON-LD.
 - Keep `robots.txt` and sitemap generation active.
 - Internal links must remain base-path aware using `src/utils/routing.ts`.
+
+### SEO checklist for pages and blog posts
+
+**Title (`title`):**
+- Keep 50–60 characters, front-load primary keywords.
+- Format: `"Primary Keyword Phrase | Firm Name"` or a natural variation.
+- Every page must have a unique, descriptive title.
+
+**Description (`description`):**
+- Keep 140–170 characters.
+- Include the primary keyword naturally within the first 120 characters.
+- Write for the searcher (what will they find on this page?), not as a generic label.
+- Every page must have a unique description.
+
+**URL / slug:**
+- Use lowercase, kebab-case (`/blog/kira-artis-orani-hesaplama`).
+- Keep it short but descriptive; remove stop words (ve, ile, için, bir, etc.) when possible.
+- Blog slug is auto-derived from the filename (e.g., `kira-artis-orani-hesaplama-2026-rehber.md` → `/blog/kira-artis-orani-hesaplama-2026-rehber/`).
+- Never change a published slug — if you must, add a redirect.
+
+**Hreflang for bilingual posts:**
+- A Turkish post at `/blog/uyusmazlik-cozum/` should have a matching English post at `/en/blog/dispute-resolution/` if one exists.
+- The BaseLayout auto-generates hreflang links from the `lang` prop and the pathname.
+- If only one language exists, the alternate points to the x-default / root, which is acceptable.
+
+**`updated` field:**
+- When revising a published post, add or update `updated: YYYY-MM-DD` in the frontmatter.
+- This drives `article:modified_time`, `dateModified` JSON-LD, and `<meta name="dateModified">`.
+- Without `updated`, `dateModified` falls back to `date` (the original publish date).
+
+**Blog post length:**
+- Aim for 800–1500 words per post.
+- Below 600 words risks being seen as thin content by search engines.
+- Above 2000 words is acceptable for comprehensive guides, but avoid fluff — every section must serve the reader.
+- Structure with clear H2 sections (3–6 per post) for readability and featured snippet opportunities.
+- Use short paragraphs (2–4 sentences), bullet lists, and bold key phrases naturally.
+
+**LLM-friendly features:**
+- Every blog post is automatically listed in `public/llms.txt` — update this file when adding or renaming posts so LLMs can discover them.
+- Structured frontmatter (`faq`, `howTo`, `links`) helps LLMs extract Q&A and step-by-step guides directly from the page — always fill these in when the content includes FAQs or instructions.
+- Use descriptive H2 headings that work as standalone section summaries (LLMs often pull H2 + first paragraph as snippets).
+- The first paragraph should clearly state the problem and what the reader will learn — this is what LLMs use as the page summary.
+- Tags and service area links create a semantic graph that LLMs can traverse to understand the firm's expertise areas.
+
+**HowTo posts:**
+- Posts with step-by-step instructions must include the `howTo` frontmatter array.
+- Each step requires `name` (short title) and `text` (explanation).
+- Steps are rendered as a numbered, visually distinct section on the page using an `<ol>`.
+- Every `howTo` step must also appear in the markdown body with matching H2 headings for full content depth.
+
+**Internal linking:**
+- Every new blog post should link to at least one related service page via `links:` in frontmatter.
+- Every service page auto-links to matching blog posts (filtered by `tags` that match the service area's `tag`).
+- Use `links:` to cross-reference other blog posts when topically relevant.
+- Avoid orphan pages: every page must be reachable from the nav, footer, or a blog index.
+
+**JSON-LD:**
+- Blog posts automatically get `Article` + optional `FAQPage` + optional `HowTo` schema from the frontmatter.
+- When adding FAQ or HowTo data to a post, fill in the `faq` or `howTo` frontmatter fields — schema is generated automatically.
+- Regular pages get `LegalService` schema from the BaseLayout — no manual action needed.
+
+**OG image:**
+- Default OG image is `public/images/og-default.jpg` (54 KB).
+- To override on a specific page, pass an `ogImage` prop to BaseLayout.
+- Recommended OG image size: 1200×630 px.
+
+**Tags:**
+- Tags serve two purposes: (1) client-side blog filtering, (2) connecting posts to service areas.
+- To make a post appear on a service page's "related posts" section, include that service area's `tag` value (defined in `src/config/services.ts`) in the post's `tags`.
+- Tags are NOT rendered as separate archive/tag pages, so no URL bloat risk.
+
+**Language prefix:**
+- Turkish posts must be in `src/content/posts/tr/`.
+- English posts must be in `src/content/posts/en/`.
+- The `lang` field in frontmatter must match the directory (`tr` or `en`).
+- Turkish pages live at `/` (no prefix), English at `/en/`.
+
+**Canonical URL:**
+- Auto-generated from `pathname` prop + `siteConfig.seo.siteUrl`.
+- No manual canonical tag needed unless the page is intentionally a duplicate (avoid this).
+- The 404 pages now use `robots="noindex, nofollow"` and are excluded from the sitemap.
 
 ## 6) Deploy and environment assumptions
 

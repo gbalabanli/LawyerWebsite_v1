@@ -46,6 +46,7 @@ const articleSchema = {
 	headline: post.data.title,
 	description: post.data.description,
 	datePublished: post.data.date.toISOString(),
+	dateModified: (post.data.updated ?? post.data.date).toISOString(),
 	author: {
 		'@type': 'Person',
 		name: post.data.author,
@@ -67,7 +68,7 @@ const articleSchema = {
 	pathname={`/en/blog/${post.id.replace(/^en\//, '')}`}
 	ogType="article"
 	lang={lang}
-	article={{ publishedTime: post.data.date.toISOString(), tags: post.data.tags }}
+	article={{ publishedTime: post.data.date.toISOString(), modifiedTime: (post.data.updated ?? post.data.date).toISOString(), tags: post.data.tags }}
 >
 	<article class="article">
 		<p class="eyebrow">{t(lang, 'blog.postEyebrow')}</p>
@@ -96,6 +97,42 @@ const articleSchema = {
 		<div class="article-content">
 			<Content />
 		</div>
+
+		{
+			post.data.faq && post.data.faq.length > 0 && (
+				<section class="section post-faq">
+					<div class="section-heading">
+						<h2>{t(lang, 'blog.faq.title')}</h2>
+					</div>
+					<div class="faq-list">
+						{post.data.faq.map((item) => (
+							<details class="faq-item">
+								<summary>{item.q}</summary>
+								<p>{item.a}</p>
+							</details>
+						))}
+					</div>
+				</section>
+			)
+		}
+
+		{
+			post.data.howTo && post.data.howTo.length > 0 && (
+				<section class="section post-howto">
+					<div class="section-heading">
+						<h2>{t(lang, 'blog.howto.title')}</h2>
+					</div>
+					<ol class="howto-list">
+						{post.data.howTo.map((step) => (
+							<li class="howto-step">
+								<h3>{step.name}</h3>
+								<p>{step.text}</p>
+							</li>
+						))}
+					</ol>
+				</section>
+			)
+		}
 	</article>
 
 	{
@@ -126,3 +163,83 @@ const articleSchema = {
 
 	<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 </BaseLayout>
+
+<style>
+	.post-faq {
+		margin-top: 3rem;
+	}
+
+	.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.faq-item {
+		padding: 1rem 1.25rem;
+		background: var(--surface-bg);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		cursor: pointer;
+	}
+
+	.faq-item summary {
+		font-weight: 600;
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+
+	.faq-item p {
+		margin-top: 0.75rem;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--muted-text);
+	}
+
+	.post-howto {
+		margin-top: 3rem;
+	}
+
+	.howto-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		padding: 0;
+		list-style: none;
+		counter-reset: howto-counter;
+	}
+
+	.howto-step {
+		counter-increment: howto-counter;
+		padding: 1.25rem;
+		background: var(--surface-bg);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		position: relative;
+		padding-left: 3.5rem;
+	}
+
+	.howto-step::before {
+		content: counter(howto-counter);
+		position: absolute;
+		left: 1rem;
+		top: 1.25rem;
+		font-family: var(--font-heading);
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: var(--button-secondary-text);
+		line-height: 1;
+	}
+
+	.howto-step h3 {
+		font-size: 1rem;
+		margin: 0 0 0.35rem;
+	}
+
+	.howto-step p {
+		margin: 0;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--muted-text);
+	}
+</style>

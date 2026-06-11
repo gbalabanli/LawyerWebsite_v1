@@ -1,6 +1,6 @@
 ﻿---
-title: "Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları"
-description: "Şirket ortakları arasında çıkan anlaşmazlıklarda başvurulabilecek hukuki yöntemler: arabuluculuk, tahkim, azınlık hakları ve çıkarma davaları."
+title: "Ortaklık Anlaşmazlıklarında Arabuluculuk, Tahkim ve Önleyici Tedbirler"
+description: "Şirket ortakları arasında çıkan anlaşmazlıklarda arabuluculuk, tahkim, azınlık hakları ve önleyici tedbirler hakkında kapsamlı rehber."
 date: 2026-05-25
 author: "Av. Barış C. Balabanlı"
 tags: ["sirketler", "uyusmazlik", "ortaklik"]
