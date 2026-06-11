@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/Hero.astro';
+import Icon from '../../../components/Icon.astro';
+import Section from '../../../components/Section.astro';
+import Card from '../../../components/Card.astro';
+import CTA from '../../../components/CTA.astro';
+import { getCollection } from 'astro:content';
+import { helpDeskTriggerHref, siteConfig } from '../../../config/site';
+import { serviceAreas, type ServiceArea } from '../../../config/services';
+import { withBase } from '../../../utils/routing';
+import type { Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+	return serviceAreas.map((area) => ({
+		params: { slug: area.slug },
+		props: { area },
+	}));
+}
+
+const { area } = Astro.props as { area: ServiceArea };
+const lang: Lang = 'en';
+
+const allPosts = (await getCollection('posts'))
+	.filter((post) => (post.data.lang ?? 'tr') === 'tr' && post.data.tags.includes(area.tag))
+	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const relatedPosts = allPosts.slice(0, 4);
+---
+
+<BaseLayout
+	title={area.seoTitle}
+	description={area.seoDescription}
+	pathname={`/en/services/${area.slug}`}
+	lang={lang}
+>
+	<Hero
+		eyebrow={siteConfig.brand.name}
+		title={area.heroTitle}
+		summary={area.heroSummary}
+		primaryLabel="Get Legal Advice"
+		primaryHref={helpDeskTriggerHref}
+		secondaryLabel="All Practice Areas"
+		secondaryHref={withBase('/en/services')}
+	/>
+
+	<Section title={`${area.title} Practice Areas`} lead={`Our legal services in ${area.title.toLowerCase()} are listed below.`}>
+		<div class="area-sections">
+			{
+				area.sections.map((section) => (
+					<Card title={section.heading} text={section.text} span="span-6" />
+				))
+			}
+		</div>
+	</Section>
+
+	{
+		relatedPosts.length > 0 && (
+			<Section title={`Blog Posts About ${area.title}`} lead="Read our latest articles on this practice area.">
+				<div class="grid blog-links">
+					{
+						relatedPosts.map((post) => (
+							<article class="card span-6 post-card">
+								<h3>{post.data.title}</h3>
+								<p>{post.data.description}</p>
+								<a class="service-link" href={withBase(`/blog/${post.id.replace(/^tr\//, '')}`)}>
+									Read Article <Icon name="arrow-right" size={14} />
+								</a>
+							</article>
+						))
+					}
+				</div>
+			</Section>
+		)
+	}
+
+	<Section title="Frequently Asked Questions" lead={`Common questions about ${area.title.toLowerCase()}.`}>
+		<div class="faq-list">
+			{
+				area.faq.map((item) => (
+					<details class="faq-item" name="faq">
+						<summary class="faq-question">{item.q}</summary>
+						<div class="faq-answer">
+							<p>{item.a}</p>
+						</div>
+					</details>
+				))
+			}
+		</div>
+	</Section>
+
+	<CTA
+		title={`Get Legal Help in ${area.title}`}
+		text="Contact us via WhatsApp to discuss your legal matter and schedule a consultation."
+		buttonLabel="Get Legal Advice"
+		buttonHref={helpDeskTriggerHref}
+	/>
+</BaseLayout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: area.faq.map((item) => ({
+		'@type': 'Question',
+		name: item.q,
+		acceptedAnswer: {
+			'@type': 'Answer',
+			text: item.a,
+		},
+	})),
+})} />
+
+<style>
+	.area-sections {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: var(--space-4);
+	}
+
+	.blog-links {
+		row-gap: var(--space-4);
+	}
+
+	.post-card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.post-card h3 {
+		font-size: var(--font-size-base);
+		margin-bottom: 0.5rem;
+	}
+
+	.post-card p {
+		flex: 1;
+		font-size: 0.9rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.service-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: var(--button-secondary-text);
+		text-decoration: none;
+		align-self: flex-start;
+	}
+
+	.service-link:hover {
+		text-decoration: underline;
+	}
+
+	.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.faq-item {
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		background: var(--card-bg);
+		overflow: hidden;
+	}
+
+	.faq-item[open] {
+		background: var(--surface-bg);
+	}
+
+	.faq-question {
+		padding: 1rem 1.25rem;
+		font-family: var(--font-heading);
+		font-weight: 600;
+		font-size: 1rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+		user-select: none;
+		list-style: none;
+	}
+
+	.faq-question::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-question::after {
+		content: '';
+		display: inline-block;
+		width: 1.25rem;
+		height: 1.25rem;
+		background: currentColor;
+		mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat center;
+		mask-size: contain;
+		-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat center;
+		-webkit-mask-size: contain;
+		flex-shrink: 0;
+		color: var(--button-secondary-text);
+		transition: transform 0.2s;
+	}
+
+	.faq-item[open] .faq-question::after {
+		transform: rotate(180deg);
+	}
+
+	.faq-answer {
+		padding: 0 1.25rem 1rem;
+		font-size: 0.9rem;
+		line-height: 1.65;
+	}
+
+	.faq-answer p {
+		margin: 0;
+	}
+</style>
