@@ -3,7 +3,7 @@ export const translations = {
 		nav: {
 			home: 'Ana Sayfa',
 			about: 'Hakk\u0131mda',
-			services: 'Hizmetler',
+			services: 'Çalışma Alanları',
 			contact: '\u0130leti\u015fim',
 			blog: 'Blog',
 		},
@@ -15,7 +15,7 @@ export const translations = {
 			feeTariffs: 'Baro \u00dccret Tarifeleri',
 			privacy: 'Gizlilik Politikas\u0131',
 			disclaimer: 'Yasal Uyar\u0131',
-			practiceAreas: 'Hizmet Alanlar\u0131',
+			practiceAreas: 'Çalışma Alanları',
 			quickLinks: 'H\u0131zl\u0131 Linkler',
 			institutions: 'Yetkili Kurumlar',
 			liveSupport: 'Görü\u015fme Tarihi Ayarla',
@@ -44,7 +44,7 @@ export const translations = {
 				'A\u00e7\u0131k hukuki strateji, h\u0131zl\u0131 ileti\u015fim ve ilk g\u00f6r\u00fc\u015fmeden \u00e7\u00f6z\u00fcme kadar pratik ad\u0131mlar.',
 			primaryLabel: 'Dan\u0131\u015fmanl\u0131k Ba\u015flat',
 			secondaryLabel: 'Blog Oku',
-			practiceTitle: 'Hizmet Alanlar\u0131',
+			practiceTitle: 'Çalışma Alanları',
 			practiceLead: 'G\u00fcnl\u00fck hukuki ihtiya\u00e7lara y\u00f6nelik odakl\u0131 hukuki hizmetler.',
 			civilLitigation: 'Medeni Dava',
 			civilLitigationText:
@@ -68,7 +68,7 @@ export const translations = {
 				'Destek masas\u0131n\u0131 a\u00e7\u0131n, ad\u0131n\u0131z\u0131 ve \u00f6zetinizi payla\u015f\u0131n, ard\u0131ndan bilgileriniz \u00f6nceden doldurulmu\u015f olarak WhatsApp ile devam edin.',
 			ctaButton: 'Destek Masas\u0131n\u0131 A\u00e7',
 			faqTitle: 'S\u0131k\u00e7a Sorulanlar',
-			faqLead: 'Her hizmet alan\u0131m\u0131zla ilgili en \u00e7ok merak edilen sorular ve yan\u0131tlar\u0131.',
+			faqLead: 'Her çalışma alanımızla ilgili en çok merak edilen sorular ve yanıtları.',
 		},
 		about: {
 			eyebrow: 'Hakk\u0131mda',
@@ -151,7 +151,7 @@ export const translations = {
 		nav: {
 			home: 'Home',
 			about: 'About Me',
-			services: 'Services',
+			services: 'Practice Areas',
 			contact: 'Contact Me',
 			blog: 'Blog',
 		},

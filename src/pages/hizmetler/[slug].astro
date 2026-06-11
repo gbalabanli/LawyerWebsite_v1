@@ -39,11 +39,11 @@ const relatedPosts = allPosts.slice(0, 4);
 		summary={area.heroSummary}
 		primaryLabel="Danışmanlık Alın"
 		primaryHref={helpDeskTriggerHref}
-		secondaryLabel="Tüm Hizmetler"
+		secondaryLabel="Tüm Çalışma Alanları"
 		secondaryHref={withBase('/hizmetler')}
 	/>
 
-	<Section title={`${area.title} Hizmetlerimiz`} lead={`${area.title} alanında sunduğumuz hukuki hizmetleri aşağıda bulabilirsiniz.`}>
+	<Section title={`${area.title} Çalışma Alanlarımız`} lead={`${area.title} alanında sunduğumuz hukuki hizmetleri aşağıda bulabilirsiniz.`}>
 		<div class="area-sections">
 			{
 				area.sections.map((section) => (
