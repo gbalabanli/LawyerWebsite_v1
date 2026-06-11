@@ -113,13 +113,15 @@ const contactHref = isEn ? withBase('/en/contact') : withBase('/iletisim');
 	}
 
 	.not-found-btn--primary {
-		background: var(--button-secondary-text);
-		color: var(--button-secondary-bg);
-		border-color: var(--button-secondary-text);
+		background: var(--button-primary-bg);
+		color: var(--button-primary-text);
+		border-color: var(--button-primary-bg);
 	}
 
 	.not-found-btn--primary:hover {
 		opacity: 0.9;
+		background: var(--button-secondary-text);
+		border-color: var(--button-secondary-text);
 	}
 
 	.not-found-help {
