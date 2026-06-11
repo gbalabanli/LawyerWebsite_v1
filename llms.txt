@@ -1,0 +1,77 @@
+# Balabanlı Hukuk Bürosu
+
+> İstanbul merkezli Balabanlı Hukuk Bürosu, medeni hukuk, ticari hukuk, iş hukuku, fikri mülkiyet ve miras hukuku alanlarında avukatlık ve danışmanlık hizmetleri sunar. Av. Barış C. Balabanlı, bireysel ve kurumsal müvekkillerine stratejik hukuki çözümler sağlar.
+
+Hizmet alanları: aile hukuku, miras hukuku, şirketler hukuku, fikri mülkiyet hukuku, iş hukuku, gayrimenkul hukuku, ticaret hukuku, icra ve tahsilat hukuku, e-spor hukuku.
+
+## Blog Yazıları
+
+- [Anlaşmalı Boşanma Süreci ve Protokol Hazırlığı (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/anlasmali-bosanma-sureci-protokol-2026): Anlaşmalı boşanma nasıl olur? Şartlar, gerekli belgeler, boşanma protokolü ve 2026 güncel harçlar. Adım adım rehber.
+- [Anonim Şirket Kuruluşu 2026: Adım Adım Rehber](https://gbalabanli.github.io/LawyerWebsite_v1/blog/anonim-sirket-kurulusu-rehber-2026): Anonim şirket nasıl kurulur? 2026 güncel sermaye şartı, esas sözleşme hazırlığı, MERSİS başvurusu ve kuruluş masrafları. Adım adım rehber.
+- [Arabuluculuk Süreci Nedir, Nasıl İşler?](https://gbalabanli.github.io/LawyerWebsite_v1/blog/arabuluculuk-sureci-nedir-nasil-isler): Arabuluculuk nedir, nasıl işler? Zorunlu arabuluculuk hangi davalarda var, ücreti ne kadar? 2026 güncel rehber.
+- [Dava Öncesi Strateji: İlk Ne Hazırlanmalı?](https://gbalabanli.github.io/LawyerWebsite_v1/blog/dava-oncesi-strateji): Erken kanıt planlaması ve iletişim kayıtlarının dava açmadan önce konumunuzu nasıl güçlendirebileceği.
+- [E-Ticarette Marka İhlali: Korunma Yolları ve Hukuki Süreç (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/e-ticarette-marka-ihlali-korunma-yollari): E-ticarette marka ihlali nasıl tespit edilir, şikayet süreci nasıl işler? Trendyol, Amazon, Hepsiburada'da taklit ürüne karşı hukuki korunma rehberi.
+- [Endüstriyel Tasarım Tescili: Başvuru Süreci ve Ücretler (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/endustriyel-tasarim-tescili-sureci-2026): Endüstriyel tasarım tescili nedir, nasıl yapılır? 2026 başvuru ücretleri, yenilik ve ayırt edicilik şartı, marka ve patentten farkı.
+- [E-Spor Turnuva İkramiyesi Dağıtımında Hukuki Haklar](https://gbalabanli.github.io/LawyerWebsite_v1/blog/espor-ikramiye-dagitimi-hukuki-haklar): E-spor turnuvalarında kazanılan ikramiye ve ödüllerin dağıtımında oyuncu, takım ve organizatör arasındaki hukuki haklar ve sık karşılaşılan sorunlar.
+- [E-Spor Oyuncusu: İş Sözleşmesi mi, Hizmet Sözleşmesi mi?](https://gbalabanli.github.io/LawyerWebsite_v1/blog/espor-iscilik-hizmet-sozlesmesi-farki): E-spor oyuncularının kulüple kurduğu hukuki ilişkinin iş sözleşmesi mi yoksa hizmet sözleşmesi mi olduğu tartışması ve pratik sonuçları.
+- [E-Spor Sponsorluk Sözleşmesi Nasıl Olmalı?](https://gbalabanli.github.io/LawyerWebsite_v1/blog/espor-sponsorluk-sozlesmesi-nasil-olmali): E-spor takımları ve oyuncuları için sponsorluk sözleşmesinde yer alması gereken maddeler: marka kullanımı, performans kriterleri ve fesih hakları.
+- [E-Spor Sporcu Sözleşmesinde Olması Gereken 10 Madde](https://gbalabanli.github.io/LawyerWebsite_v1/blog/espor-sporcu-sozlesmesi-maddeleri): Profesyonel e-spor oyuncuları için sözleşmede mutlaka bulunması gereken on kritik madde: maaş, ikramiye, transfer, fesih ve daha fazlası.
+- [E-Spor Transferi: Hukuki Süreç ve Dikkat Edilmesi Gerekenler](https://gbalabanli.github.io/LawyerWebsite_v1/blog/espor-transfer-sozlesmesi-hukuki-surec): E-spor oyuncu transferinde sözleşme feshi, buyout bedeli, TESFED lisans işlemleri ve kulüpler arası anlaşma süreçlerine dair hukuki rehber.
+- [Fikri Mülkiyet Haklarının Şirkete Sermaye Olarak Konulması (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/fikri-mulkiyet-ayni-sermaye-sirket): Marka, patent ve tasarım gibi fikri mülkiyet hakları anonim ve limited şirketlere ayni sermaye olarak konulabilir. Şartlar, değerleme ve prosedür rehberi.
+- [Haksız İşten Çıkarılma: Dava Süreci ve Haklarınız](https://gbalabanli.github.io/LawyerWebsite_v1/blog/haksiz-isten-cikarilma-dava-sureci): Haksız işten çıkarıldınız mı? İşe iade davası, kıdem/ihbar tazminatı ve arabuluculuk süreci. Adım adım dava rehberi.
+- [Küçük İşletmeler için Hukuki Risk Kontrol Listesi](https://gbalabanli.github.io/LawyerWebsite_v1/blog/hukuki-risk-kontrol-listesi): Sözleşmeler, istihdam ve iç kontrolleri kapsayan küçük ekipler için aylık hukuki kontrol listesi.
+- [İcra Takibi Nasıl Başlatılır? Adım Adım Rehber](https://gbalabanli.github.io/LawyerWebsite_v1/blog/icra-takibi-nasil-baslatilir-adim-adim): İcra takibi nasıl başlatılır? Adım adım süreç, gerekli belgeler, 2026 harçları ve ödeme emri itiraz süresi. Alacağınızı tahsil edin.
+- [İhtarname Nasıl Çekilir? Adım Adım Rehber (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/ihtarname-nasil-cekilir-adim-adim-rehber): İhtarname nasıl çekilir, noter ücreti ne kadar, ihtarname örneği nasıl hazırlanır? Adım adım rehber ve 2026 güncel masraflar.
+- [Kıdem Tazminatı Hesaplama 2026: Haklarınız ve Tavan Tutarı](https://gbalabanli.github.io/LawyerWebsite_v1/blog/kidem-tazminati-hesaplama-2026-rehber): 2026 kıdem tazminatı nasıl hesaplanır? Güncel tavan tutarı, hesaplama formülü, örnekler ve tazminat alma şartları.
+- [Kira Artış Oranı Hesaplama 2026: Konut ve Ticari Kira](https://gbalabanli.github.io/LawyerWebsite_v1/blog/kira-artis-orani-hesaplama-2026-rehber): 2026 kira artış oranı nasıl hesaplanır? Konut ve ticari kira artışı, ÜFE/TÜFE oranları, uyarlama davası ve kira tespit davası.
+- [KOBİ'ler İçin Hukuki Risk Yönetimi Rehberi](https://gbalabanli.github.io/LawyerWebsite_v1/blog/kobiler-icin-hukuki-risk-yonetimi-rehberi): KOBİ'nizi bekleyen 7 kritik hukuki risk: sözleşme, iş hukuku, alacak, KVKK ve daha fazlası. Riskleri tanıyın, önleminizi alın.
+- [Limited Şirket Kuruluşu: Adım Adım Rehber (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/limited-sirket-kurulusu-adim-adim-rehber): Limited şirket kuruluşu 2026: adım adım başvuru süreci, gerekli belgeler, MERSİS kaydı ve güncel masraflar.
+- [Limited Şirket Müdür Değişikliği: Adım Adım Süreç](https://gbalabanli.github.io/LawyerWebsite_v1/blog/limited-sirket-mudur-degisikligi): Limited şirket müdür değişikliğinde izlenmesi gereken adımlar: genel kurul, istifa, ticaret sicil başvurusu ve gerekli belgeler.
+- [Limited Şirket Ortaklık Sözleşmesi: Olması Gereken Maddeler](https://gbalabanli.github.io/LawyerWebsite_v1/blog/limited-sirket-ortaklik-sozlesmesi-maddeler): Limited şirket ortaklık sözleşmesinde bulunması gereken kritik maddeler: kar paylaşımı, oy hakları, ayrılma ve uyuşmazlık çözüm yolları.
+- [Marka Hakkı İhlali: Dava Süreci ve Tazminat (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/marka-hakki-ihlali-dava-sureci-tazminat): Marka hakkı ihlali durumunda ne yapmalısınız? İhtiyati tedbir, tespit davası, tazminat ve ceza davası süreci — 2026 güncel rehber.
+- [Marka Hükümsüzlük Davası: İptal Şartları ve Dava Süreci (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/marka-hukumsuzluk-davasi-iptal-sartlari): Marka hükümsüzlük davası nedir, hangi sebeplerle açılır? Kullanmama, ayırt edicilik, kötüniyet ve dava süreci — 2026 güncel rehber.
+- [Marka Tescili Süreci ve Ücretleri (2026 Güncel Rehber)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/marka-tescili-sureci-ve-ucretleri-2026): Marka tescili nasıl yapılır? 2026 TÜRKPATENT ücretleri, başvuru adımları, Nice sınıfları, itiraz süreci ve markanızı koruma altına almanın hukuki avantajları.
+- [Marka ve Patent Vekilliği: Kimler Yapabilir, Nasıl Çalışır?](https://gbalabanli.github.io/LawyerWebsite_v1/blog/marka-ve-patent-vekilligi-kimler-yapabilir): Marka ve patent vekili kimdir, nasıl olunur? Avukatlar marka/patent vekili olabilir mi? Vekil ile çalışmanın avantajları ve seçim kriterleri.
+- [Mirasın Reddi (Reddi Miras): Süresi, Dilekçesi ve Sonuçları (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/mirasin-reddi-nedir-nasil-yapilir): Mirasın reddi nedir, kimler reddedebilir, süresi ne kadardır? Reddi miras dilekçesi, mirasın gerçek reddi ve yasal sonuçları — 2026 güncel rehber.
+- [Muhtıra ve Protesto Nedir? Farkları Nelerdir?](https://gbalabanli.github.io/LawyerWebsite_v1/blog/muhtira-ve-protesto-nedir-farklari): Muhtıra ile protesto arasındaki fark nedir? Protesto nasıl çekilir, süresi ne kadar, iptali mümkün mü? Ticari alacaklarda kritik rehber.
+- [Muris Muvazaası Davası: Mirastan Mal Kaçırma ve Tapu İptali (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/muris-muvazaasi-davasi-nedir): Muris muvazaası davası nedir, hangi şartlarda açılır? Mirastan mal kaçırma, tapu iptali, ispat yükü ve zamanaşımı — 2026 güncel rehber.
+- [Ödenmemiş Fatura Tahsilatı İçin Yasal Yollar](https://gbalabanli.github.io/LawyerWebsite_v1/blog/odenmemis-fatura-tahsilati-yasal-yollar): Ödenmemiş faturalar için yasal yollar: ihtarname, arabuluculuk ve icra takibi. Adım adım tahsilat rehberi ve 2026 güncel faiz oranları.
+- [Ortaklığın Giderilmesi Davası (İzale-i Şuyu): Süreç ve Satış (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/ortakligin-giderilmesi-davasi-izale-i-suyu): Ortaklığın giderilmesi davası nedir, nasıl açılır? İzale-i şuyu satış süreci, icra satış, aynen taksim, dava masrafları ve miras ortaklığı — 2026 güncel rehber.
+- [Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları](https://gbalabanli.github.io/LawyerWebsite_v1/blog/ortaklik-anlasmazligi-hukuki-cozum): Şirket ortakları arasında çıkan anlaşmazlıklarda başvurulabilecek hukuki yöntemler: arabuluculuk, tahkim, azınlık hakları ve çıkarma davaları.
+- [Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları](https://gbalabanli.github.io/LawyerWebsite_v1/blog/ortaklik-anlasmazliginda-hukuki-cozum-yollari): Şirket ortağınızla anlaşmazlık mı yaşıyorsunuz? Ortaklıktan çıkma, fesih, arabuluculuk ve dava seçenekleri. Hukuki çözüm rehberi.
+- [Patent Başvurusu Süreci ve Şartları (2026 Güncel Rehber)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/patent-basvurusu-sureci-sartlari-2026): Patent başvurusu nasıl yapılır? İncelemeli ve incelemesiz patent farkı, faydalı model, başvuru adımları, 2026 ücretleri ve TÜBİTAK patent desteği.
+- [Şirket Sözleşmesi Değişikliği: Prosedür ve Dikkat Edilmesi Gerekenler](https://gbalabanli.github.io/LawyerWebsite_v1/blog/sirket-sozlesmesi-degisikligi-prosedur): Limited veya anonim şirket esas sözleşme değişikliği süreci, genel kurul kararı, tescil başvurusu ve gerekli belgelere dair rehber.
+- [Şirket Yönetim Kurulu Sorumluluğu ve Hukuki Riskler](https://gbalabanli.github.io/LawyerWebsite_v1/blog/sirket-yonetim-kurulu-sorumlulugu): Anonim şirket yönetim kurulu üyelerinin görevleri, hukuki sorumlulukları ve karşılaşabilecekleri risklere dair pratik rehber.
+- [Sözleşme İhlali Durumunda Haklarınız ve Yapılması Gerekenler](https://gbalabanli.github.io/LawyerWebsite_v1/blog/sozlesme-ihlali-yapilmasi-gerekenler-haklar): Sözleşme ihlali durumunda ne yapmalısınız? Tazminat hakkı, fesih süreci ve yasal adımlar — pratik rehber ve örnek olaylarla anlatım.
+- [İmzalamadan Önce Sözleşme İnceleme Temelleri](https://gbalabanli.github.io/LawyerWebsite_v1/blog/sozlesme-inceleme-temelleri): Uyuşmazlıkları ve gizli yükümlülükleri azaltmak için hukuki sözleşmeleri inceleme uygulamalı kontrol listesi.
+- [Tenkis Davası Nedir? Saklı Pay ve Dava Süreci (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/tenkis-davasi-nedir-sakli-pay): Tenkis davası nedir, saklı pay oranları, dava şartları ve süresi. Miras bırakanın saklı payı ihlal eden tasarruflarının iptali — 2026 güncel rehber.
+- [Ticari Kira Sözleşmesinde Dikkat Edilmesi Gerekenler](https://gbalabanli.github.io/LawyerWebsite_v1/blog/ticari-kira-sozlesmesi-dikkat-edilmesi-gerekenler): İş yeri kira sözleşmesi yaparken dikkat edilmesi gerekenler: kefalet, kira artışı, tahliye taahhüdü ve TBK hükümleri. Pratik rehber.
+- [Ticari Sır Koruma Kanun Taslağı 2026: Şirketler İçin Yeni Dönem](https://gbalabanli.github.io/LawyerWebsite_v1/blog/ticari-sir-koruma-kanun-taslagi-2026): Ticari Sırların Korunması Hakkında Kanun Taslağı yayımlandı. Şirketlerin bilmesi gereken yeni yükümlülükler, koruma kapsamı ve uyum adımları.
+- [Tüketici Şikayeti Nasıl Yapılır? Hakem Heyeti Başvuru Rehberi](https://gbalabanli.github.io/LawyerWebsite_v1/blog/tuketici-sikayeti-nasil-yapilir-hakem-heyeti): Tüketici şikayeti nasıl yapılır? Hakem heyeti başvurusu, tüketici mahkemesi süreci, örnek dilekçe ve 2026 güncel parasal sınırlar.
+- [Uluslararası Marka Başvurusu: Madrid Protokolü Rehberi (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/uluslararasi-marka-basvurusu-madrid-protokolu): Yurtdışında markanızı nasıl korursunuz? Madrid Protokolü ile uluslararası marka tescili adımları, ücretleri ve stratejik ipuçları.
+- [Vasiyetname Türleri ve Geçerlilik Şartları (2026)](https://gbalabanli.github.io/LawyerWebsite_v1/blog/vasiyetname-turleri-gecerlilik-sartlari): Vasiyetname türleri nelerdir? Resmi vasiyetname, el yazısı vasiyetname, sözlü vasiyetname — her birinin geçerlilik şartları, şekil kuralları ve iptal sebepleri.
+- [Veraset İlamı (Mirasçılık Belgesi) Nasıl Alınır? 2026 Güncel Rehber](https://gbalabanli.github.io/LawyerWebsite_v1/blog/veraset-ilami-nasil-alinir-mirascilik-belgesi): Veraset ilamı nedir, nereden ve nasıl alınır? Noter veraset ilamı, Sulh Hukuk Mahkemesi başvurusu, gerekli belgeler ve e-Devlet sorgulama — 2026 adım adım rehber.
+
+## Hizmetler
+
+- [Aile Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/aile-hukuku): Aile Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [Miras Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/miras-hukuku): Miras Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [Şirketler Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/sirketler-hukuku): Şirketler Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [Fikri Mülkiyet](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/fikri-mulkiyet): Fikri Mülkiyet alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [İş Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/is-hukuku): İş Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [Gayrimenkul Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/gayrimenkul): Gayrimenkul Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [Ticaret Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/ticaret-hukuku): Ticaret Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [İcra ve Tahsilat](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/icra-tahsilat): İcra ve Tahsilat alanında hukuki danışmanlık ve dava takibi hizmetleri.
+- [E-Spor Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/espor): E-Spor Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
+
+## İletişim
+
+- Web: https://gbalabanli.github.io/LawyerWebsite_v1
+- E-posta: consult@bariscembalabanli.av.tr
+- WhatsApp: +905301178034
+- Adres: Eski Bağdat Caddesi Altıntepe 34840 İstanbul / Türkiye
+
+## Hakkımızda
+
+- [Hakkımızda](https://gbalabanli.github.io/LawyerWebsite_v1/hakkimda): Av. Barış C. Balabanlı hakkında detaylı bilgi.
+- [İletişim](https://gbalabanli.github.io/LawyerWebsite_v1/iletisim): Ofis bilgileri ve iletişim kanalları.
