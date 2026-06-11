@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Section from '../../components/Section.astro';
+import { helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { withBase } from '../../utils/routing';
+import type { Lang } from '../../i18n/ui';
+
+const lang: Lang = 'en';
+---
+
+<BaseLayout
+	title={`Page Not Found | ${siteConfig.brand.name}`}
+	description="The page you are looking for could not be found. Return to our homepage or contact us to find the right address."
+	pathname="/en/404"
+	lang={lang}
+>
+	<Section>
+		<div class="not-found">
+			<h1 class="not-found-code">404</h1>
+			<p class="not-found-lead">We couldn't find that page.</p>
+			<p class="not-found-text">It may have been removed, renamed, or is temporarily unavailable. Try one of the links below.</p>
+			<div class="not-found-links">
+				<a href={withBase('/en/')} class="not-found-btn not-found-btn--primary">Home</a>
+				<a href={withBase('/en/services')} class="not-found-btn">Practice Areas</a>
+				<a href={withBase('/en/blog')} class="not-found-btn">Blog</a>
+				<a href={withBase('/en/contact')} class="not-found-btn">Contact</a>
+			</div>
+			<p class="not-found-help">Need legal assistance? <a href={helpDeskTriggerHref} class="not-found-whatsapp">Reach us on WhatsApp</a>.</p>
+		</div>
+	</Section>
+</BaseLayout>
+
+<style>
+	.not-found {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: var(--space-8) var(--space-4);
+		max-width: 36rem;
+		margin: 0 auto;
+	}
+
+	.not-found-code {
+		font-size: clamp(4rem, 12vw, 7rem);
+		font-family: var(--font-heading);
+		font-weight: 700;
+		color: var(--button-secondary-text);
+		line-height: 1;
+		margin: 0 0 var(--space-3);
+	}
+
+	.not-found-lead {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin: 0 0 var(--space-2);
+	}
+
+	.not-found-text {
+		color: var(--color-muted);
+		margin: 0 0 var(--space-6);
+		font-size: 0.95rem;
+		max-width: 28rem;
+	}
+
+	.not-found-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		justify-content: center;
+		margin-bottom: var(--space-5);
+	}
+
+	.not-found-btn {
+		display: inline-block;
+		padding: 0.6rem 1.5rem;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		font-size: 0.9rem;
+		font-weight: 500;
+		text-decoration: none;
+		color: var(--text-color);
+		transition: background 0.2s, border-color 0.2s;
+	}
+
+	.not-found-btn:hover {
+		background: var(--card-bg);
+		border-color: var(--button-secondary-text);
+	}
+
+	.not-found-btn--primary {
+		background: var(--button-secondary-text);
+		color: var(--button-secondary-bg);
+		border-color: var(--button-secondary-text);
+	}
+
+	.not-found-btn--primary:hover {
+		opacity: 0.9;
+	}
+
+	.not-found-help {
+		font-size: 0.9rem;
+		color: var(--color-muted);
+		margin: 0;
+	}
+
+	.not-found-whatsapp {
+		color: var(--button-secondary-text);
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.not-found-whatsapp:hover {
+		text-decoration: underline;
+	}
+</style>
