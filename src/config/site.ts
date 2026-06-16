@@ -3,7 +3,7 @@ import { defaultLang, type Lang } from '../i18n/ui';
 import { t } from '../i18n/ui';
 import { translations } from '../i18n/translations';
 
-const publicSiteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://gbalabanli.github.io/LawyerWebsite_v1';
+const publicSiteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://bariscembalabanli.av.tr';
 
 export const siteConfig: SiteConfig = {
 	template: 'classic-legal',

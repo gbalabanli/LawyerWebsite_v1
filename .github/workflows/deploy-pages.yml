@@ -22,14 +22,21 @@ jobs:
           cache: npm
       - name: Resolve deploy env
         run: |
-          REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          OWNER="${GITHUB_REPOSITORY_OWNER}"
-          if [ "$REPO_NAME" = "${OWNER}.github.io" ]; then
+          if [ -f public/CNAME ]; then
+            CUSTOM_DOMAIN=$(cat public/CNAME | tr -d '[:space:]')
+            echo "Custom domain detected: ${CUSTOM_DOMAIN}"
             echo "BASE_PATH=/" >> "$GITHUB_ENV"
-            echo "PUBLIC_SITE_URL=https://${OWNER}.github.io" >> "$GITHUB_ENV"
+            echo "PUBLIC_SITE_URL=https://${CUSTOM_DOMAIN}" >> "$GITHUB_ENV"
           else
-            echo "BASE_PATH=/${REPO_NAME}" >> "$GITHUB_ENV"
-            echo "PUBLIC_SITE_URL=https://${OWNER}.github.io/${REPO_NAME}" >> "$GITHUB_ENV"
+            REPO_NAME="${GITHUB_REPOSITORY#*/}"
+            OWNER="${GITHUB_REPOSITORY_OWNER}"
+            if [ "$REPO_NAME" = "${OWNER}.github.io" ]; then
+              echo "BASE_PATH=/" >> "$GITHUB_ENV"
+              echo "PUBLIC_SITE_URL=https://${OWNER}.github.io" >> "$GITHUB_ENV"
+            else
+              echo "BASE_PATH=/${REPO_NAME}" >> "$GITHUB_ENV"
+              echo "PUBLIC_SITE_URL=https://${OWNER}.github.io/${REPO_NAME}" >> "$GITHUB_ENV"
+            fi
           fi
       - name: Install dependencies
         run: npm ci
