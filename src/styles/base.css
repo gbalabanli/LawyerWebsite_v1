@@ -176,6 +176,69 @@ img {
 	font-weight: var(--font-weight-normal);
 }
 
+@media (max-width: 719px) {
+	.container {
+		width: min(100% - 1.5rem, 1100px);
+	}
+
+	.header-row {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: center;
+		gap: 0.45rem 0.6rem;
+		padding: 0.55rem 0 0.45rem;
+	}
+
+	.brand {
+		min-width: 0;
+		font-size: 1rem;
+		line-height: 1.15;
+		letter-spacing: 0.01em;
+	}
+
+	.lang-switcher {
+		margin-left: 0;
+		font-size: var(--font-size-sm);
+		letter-spacing: 0.01em;
+	}
+
+	.lang-switcher a {
+		padding: 0.15rem 0.25rem;
+	}
+
+	.nav {
+		grid-column: 1 / -1;
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 0.25rem;
+		overflow-x: auto;
+		padding: 0.05rem 0 0.15rem;
+		scrollbar-width: none;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.nav::-webkit-scrollbar {
+		display: none;
+	}
+
+	.nav a {
+		flex: 0 0 auto;
+		padding: 0.35rem 0.5rem;
+		font-size: var(--font-size-sm);
+		line-height: 1.2;
+		white-space: nowrap;
+	}
+
+	.nav-dropdown > a::after {
+		width: 0.5rem;
+		height: 0.5rem;
+	}
+
+	.dropdown-menu {
+		display: none;
+	}
+}
+
 .main-content {
 	padding: var(--space-7) 0 var(--space-9);
 }
