@@ -1,6 +1,6 @@
 :root[data-template='classic-legal'] {
-	--font-heading: 'Merriweather', Georgia, serif;
-	--font-body: 'Source Serif 4', 'Times New Roman', serif;
+	--font-heading: Georgia, 'Times New Roman', serif;
+	--font-body: Georgia, 'Times New Roman', serif;
 	--font-size-xs: 0.78rem;
 	--font-size-sm: 0.85rem;
 	--font-size-base: 0.9rem;

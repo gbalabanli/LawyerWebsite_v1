@@ -13,7 +13,7 @@ export default defineConfig({
 	})],
 	compressHTML: true,
 	build: {
-		inlineStylesheets: 'auto',
+		inlineStylesheets: 'always',
 	},
 	i18n: {
 		defaultLocale: 'tr',
