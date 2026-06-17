@@ -1,5 +1,5 @@
 ---
-import { helpDeskTriggerHref, siteConfig } from '../config/site';
+import { helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../config/site';
 import HelpDeskPopup from '../components/HelpDeskPopup.astro';
 import Icon from '../components/Icon.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
@@ -189,7 +189,7 @@ const legalServiceSchema = {
 						<p class="footer-heading">{siteConfig.brand.name}</p>
 						<span class="footer-contact-row"><Icon name="map-pin" size={14} />{siteConfig.contact.address}</span>
 						<span class="footer-contact-row"><Icon name="mail" size={14} />{siteConfig.contact.email}</span>
-						<a class="btn btn-primary" href={helpDeskTriggerHref}><Icon name="message-circle" size={16} />{t(lang, 'footer.liveSupport')}</a>
+						<a class="btn btn-primary" href={helpDeskTriggerHref} aria-label={helpDeskTriggerAriaLabel}><Icon name="message-circle" size={16} />{t(lang, 'footer.liveSupport')}</a>
 						<p class="footer-version">{siteConfig.version}</p>
 					</div>
 					<div class="footer-col">

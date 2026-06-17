@@ -44,6 +44,7 @@ export const siteConfig: SiteConfig = {
 };
 
 export const helpDeskTriggerHref = '#help-desk';
+export const helpDeskTriggerAriaLabel = 'Destek masasını aç / Open help desk';
 
 export function getHelpDeskWhatsAppLink(
 	lang: Lang,

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Section from '../../components/Section.astro';
-import { helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../../config/site';
 import { withBase } from '../../utils/routing';
 import type { Lang } from '../../i18n/ui';
 
@@ -26,7 +26,7 @@ const lang: Lang = 'en';
 				<a href={withBase('/en/blog')} class="not-found-btn">Blog</a>
 				<a href={withBase('/en/contact')} class="not-found-btn">Contact</a>
 			</div>
-			<p class="not-found-help">Need legal assistance? <a href={helpDeskTriggerHref} class="not-found-whatsapp">Reach us on WhatsApp</a>.</p>
+			<p class="not-found-help">Need legal assistance? <a href={helpDeskTriggerHref} class="not-found-whatsapp" aria-label={helpDeskTriggerAriaLabel}>Reach us on WhatsApp</a>.</p>
 		</div>
 	</Section>
 </BaseLayout>

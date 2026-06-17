@@ -1,4 +1,6 @@
 ---
+import { helpDeskTriggerAriaLabel, helpDeskTriggerHref } from '../config/site';
+
 interface Props {
 	title: string;
 	text: string;
@@ -7,12 +9,13 @@ interface Props {
 }
 
 const { title, text, buttonLabel, buttonHref } = Astro.props;
+const buttonAriaLabel = buttonHref === helpDeskTriggerHref ? helpDeskTriggerAriaLabel : undefined;
 ---
 
 <section class="cta-box">
 	<h2>{title}</h2>
 	<p>{text}</p>
 	<div class="button-row">
-		<a class="btn btn-primary" href={buttonHref}>{buttonLabel}</a>
+		<a class="btn btn-primary" href={buttonHref} aria-label={buttonAriaLabel}>{buttonLabel}</a>
 	</div>
 </section>

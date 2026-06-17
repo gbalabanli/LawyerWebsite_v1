@@ -4,7 +4,7 @@ import Icon from '../components/Icon.astro';
 import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
 import CTA from '../components/CTA.astro';
-import { helpDeskTriggerHref, siteConfig } from '../config/site';
+import { helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../config/site';
 import { t } from '../i18n/ui';
 import type { Lang } from '../i18n/ui';
 
@@ -37,7 +37,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 			>
 				<div class="contact-card-icon"><Icon name="message-circle" size={28} /></div>
 				<div class="button-row">
-					<a class="btn btn-primary" href={helpDeskTriggerHref}>{t(lang, 'contact.primaryButton')}</a>
+					<a class="btn btn-primary" href={helpDeskTriggerHref} aria-label={helpDeskTriggerAriaLabel}>{t(lang, 'contact.primaryButton')}</a>
 				</div>
 			</Card>
 			<Card span="span-6" title={t(lang, 'contact.officeTitle')} text={t(lang, 'contact.officeText')}>
@@ -55,7 +55,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 			<Card title="Form Gönder" text="Hukuki danışmanlık talebinizi form doldurarak iletin, WhatsApp üzerinden yanıtlayalım.">
 				<div class="contact-card-icon"><Icon name="mail" size={28} /></div>
 				<div class="button-row">
-					<a class="btn btn-primary" href={helpDeskTriggerHref}>Formu Doldur</a>
+					<a class="btn btn-primary" href={helpDeskTriggerHref} aria-label={helpDeskTriggerAriaLabel}>Formu Doldur</a>
 				</div>
 			</Card>
 			<Card title={t(lang, 'contact.hoursTitle')} text={t(lang, 'contact.hoursText')}>
