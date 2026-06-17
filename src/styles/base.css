@@ -286,7 +286,7 @@ img {
 }
 
 .footer-version {
-	color: var(--color-muted);
+	color: var(--color-text);
 	font-size: 0.8rem;
 	margin-top: 0.5rem;
 }
