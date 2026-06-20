@@ -7,7 +7,7 @@ const publicSiteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://bariscembalaba
 
 export const siteConfig: SiteConfig = {
 	template: 'classic-legal',
-	version: 'v.0.0.1',
+	version: 'v.0.1.0',
 	brand: {
 		name: 'Balabanlı Hukuk Bürosu',
 		tagline: {

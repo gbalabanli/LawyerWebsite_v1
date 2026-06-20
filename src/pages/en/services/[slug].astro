@@ -7,12 +7,12 @@ import Card from '../../../components/Card.astro';
 import CTA from '../../../components/CTA.astro';
 import { getCollection } from 'astro:content';
 import { helpDeskTriggerHref, siteConfig } from '../../../config/site';
-import { serviceAreas, type ServiceArea } from '../../../config/services';
+import { getServiceAreas, getServicePostTags, type ServiceArea } from '../../../config/services';
 import { withBase } from '../../../utils/routing';
 import type { Lang } from '../../../i18n/ui';
 
 export function getStaticPaths() {
-	return serviceAreas.map((area) => ({
+	return getServiceAreas('en').map((area) => ({
 		params: { slug: area.slug },
 		props: { area },
 	}));
@@ -22,7 +22,7 @@ const { area } = Astro.props as { area: ServiceArea };
 const lang: Lang = 'en';
 
 const allPosts = (await getCollection('posts'))
-	.filter((post) => (post.data.lang ?? 'tr') === 'en' && post.data.tags.includes(area.tag))
+	.filter((post) => post.data.lang === 'en' && getServicePostTags(area).some((tag) => post.data.tags.includes(tag)))
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const relatedPosts = allPosts.slice(0, 4);
 ---
@@ -63,7 +63,7 @@ const relatedPosts = allPosts.slice(0, 4);
 							<article class="card span-6 post-card">
 								<h3>{post.data.title}</h3>
 								<p>{post.data.description}</p>
-								<a class="service-link" href={withBase(`/blog/${post.id.replace(/^tr\//, '')}`)}>
+								<a class="service-link" href={withBase(`/en/blog/${post.id.replace(/^en\//, '')}`)}>
 									Read Article <Icon name="arrow-right" size={14} />
 								</a>
 							</article>

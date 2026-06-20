@@ -24,6 +24,7 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang): str
 		'/': '/en/',
 		'/hakkimda': '/en/about',
 		'/iletisim': '/en/contact',
+		'/hizmetler': '/en/services',
 		'/blog': '/en/blog',
 	};
 
@@ -31,6 +32,7 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang): str
 		'/en/': '/',
 		'/en/about': '/hakkimda',
 		'/en/contact': '/iletisim',
+		'/en/services': '/hizmetler',
 		'/en/blog': '/blog',
 	};
 
@@ -41,6 +43,10 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang): str
 		if (currentPathname.startsWith('/blog/')) {
 			return '/en/blog';
 		}
+
+		if (currentPathname.startsWith('/hizmetler/')) {
+			return currentPathname.replace('/hizmetler/', '/en/services/');
+		}
 	}
 
 	if (targetLang === 'tr') {
@@ -49,6 +55,10 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang): str
 
 		if (currentPathname.startsWith('/en/blog/')) {
 			return '/blog';
+		}
+
+		if (currentPathname.startsWith('/en/services/')) {
+			return currentPathname.replace('/en/services/', '/hizmetler/');
 		}
 	}
 

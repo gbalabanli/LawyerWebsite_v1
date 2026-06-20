@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from '../config/site';
 import { withBase } from '../utils/routing';
-import { serviceAreas } from '../config/services';
+import { getServiceAreas } from '../config/services';
 
 interface Crumb {
 	href: string;
@@ -25,11 +25,18 @@ const pathMap: Record<string, Record<string, string>> = {
 	'/iletisim': { tr: 'İletişim', en: 'Contact' },
 	'/blog': { tr: 'Blog', en: 'Blog' },
 	'/hizmetler': { tr: 'Çalışma Alanları', en: 'Practice Areas' },
+	'/services': { tr: 'Çalışma Alanları', en: 'Practice Areas' },
 };
 
 const serviceLabelMap: Record<string, Record<string, string>> = {};
-for (const area of serviceAreas) {
+for (const area of getServiceAreas('tr')) {
 	serviceLabelMap[area.slug] = { tr: area.title, en: area.title };
+}
+for (const area of getServiceAreas('en')) {
+	serviceLabelMap[area.slug] = {
+		...(serviceLabelMap[area.slug] ?? { tr: area.title, en: area.title }),
+		en: area.title,
+	};
 }
 
 const segments = p.split('/').filter(Boolean);
@@ -52,8 +59,9 @@ if (segments.length > 0) {
 		}
 
 		if (label) {
+			const href = lang === 'en' ? `/en${accumulated}` : accumulated;
 			crumbs.push({
-				href: isLast ? '' : withBase(accumulated),
+				href: isLast ? '' : withBase(href),
 				label,
 			});
 		}

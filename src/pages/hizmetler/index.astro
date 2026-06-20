@@ -4,11 +4,12 @@ import Icon from '../../components/Icon.astro';
 import Section from '../../components/Section.astro';
 import CTA from '../../components/CTA.astro';
 import { helpDeskTriggerHref, siteConfig } from '../../config/site';
-import { serviceAreas } from '../../config/services';
+import { getServiceAreas } from '../../config/services';
 import { withBase } from '../../utils/routing';
 import type { Lang } from '../../i18n/ui';
 
 const lang: Lang = 'tr';
+const serviceAreas = getServiceAreas(lang);
 ---
 
 <BaseLayout
