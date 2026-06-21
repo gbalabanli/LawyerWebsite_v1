@@ -10,6 +10,9 @@ export const siteConfig: SiteConfig = {
 	version: 'v.0.1.0',
 	brand: {
 		name: 'Balabanlı Hukuk Bürosu',
+		nameByLang: {
+			en: 'BALABANLI Law',
+		},
 		tagline: {
 			tr: 'Her Hukuki Sorunda, Stratejik \u00c7\u00f6z\u00fcm Orta\u011f\u0131n\u0131z',
 			en: 'Strategic Legal Counsel for Individuals and Businesses',
@@ -27,11 +30,11 @@ export const siteConfig: SiteConfig = {
 		siteUrl: publicSiteUrl,
 		defaultTitle: {
 			tr: 'Balabanlı Hukuk Bürosu | Avukat Barış C. Balabanlı',
-			en: 'Balabanlı Law Office | Attorney Barış C. Balabanlı',
+			en: 'BALABANLI Law | Attorney Barış C. Balabanlı',
 		},
 		defaultDescription: {
 			tr: 'İstanbul merkezli Balabanlı Hukuk Bürosu, medeni hukuk ve ticari hukuk alanlarında uzman avukatlık hizmeti sunar.',
-			en: 'Balabanlı Law Office, based in Istanbul, provides expert legal services in civil and commercial law.',
+			en: 'BALABANLI Law, based in Istanbul, provides expert legal services in civil and commercial law.',
 		},
 		ogImage: '/images/og-default.jpg',
 	},
@@ -42,6 +45,10 @@ export const siteConfig: SiteConfig = {
 		address: 'Eski Bağdat Caddesi Altıntepe 34840 İstanbul / Türkiye',
 	},
 };
+
+export function getBrandName(lang: Lang): string {
+	return siteConfig.brand.nameByLang?.[lang] ?? siteConfig.brand.name;
+}
 
 export const helpDeskTriggerHref = '#help-desk';
 export const helpDeskTriggerAriaLabel = 'Destek masasını aç / Open help desk';

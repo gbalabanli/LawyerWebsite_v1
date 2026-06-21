@@ -1,15 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Section from '../../components/Section.astro';
-import { helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { getBrandName, helpDeskTriggerAriaLabel, helpDeskTriggerHref } from '../../config/site';
 import { withBase } from '../../utils/routing';
 import type { Lang } from '../../i18n/ui';
 
 const lang: Lang = 'en';
+const brandName = getBrandName(lang);
 ---
 
 <BaseLayout
-	title={`Page Not Found | ${siteConfig.brand.name}`}
+	title={`Page Not Found | ${brandName}`}
 	description="The page you are looking for could not be found. Return to our homepage or contact us to find the right address."
 	pathname="/en/404"
 	lang={lang}

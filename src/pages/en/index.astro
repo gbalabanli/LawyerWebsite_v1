@@ -4,16 +4,17 @@ import Hero from '../../components/Hero.astro';
 import Section from '../../components/Section.astro';
 import Card from '../../components/Card.astro';
 import CTA from '../../components/CTA.astro';
-import { helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { getBrandName, helpDeskTriggerHref, siteConfig } from '../../config/site';
 import { withBase } from '../../utils/routing';
 import { t } from '../../i18n/ui';
 import type { Lang } from '../../i18n/ui';
 
 const lang: Lang = 'en';
+const brandName = getBrandName(lang);
 ---
 
 <BaseLayout
-	title={`${t(lang, 'index.eyebrow')} | ${siteConfig.brand.name}`}
+	title={`${t(lang, 'index.eyebrow')} | ${brandName}`}
 	description="Istanbul-based lawyer for foreigners and businesses in Turkey, advising on immigration, real estate, citizenship, inheritance, company formation, and disputes."
 	pathname="/en/"
 	lang={lang}

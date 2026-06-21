@@ -1,5 +1,5 @@
 ---
-import { helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../config/site';
+import { getBrandName, helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../config/site';
 import HelpDeskPopup from '../components/HelpDeskPopup.astro';
 import Icon from '../components/Icon.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
@@ -7,7 +7,7 @@ import LangSwitcher from '../components/LangSwitcher.astro';
 import { withBase } from '../utils/routing';
 import { t, type Lang } from '../i18n/ui';
 import { translations } from '../i18n/translations';
-import { getAlternatePath } from '../i18n/utils';
+import { getEquivalentAlternatePath } from '../i18n/utils';
 import { getServiceAreas } from '../config/services';
 import '../styles/base.css';
 
@@ -54,17 +54,19 @@ const pathnameWithoutBase =
 		: pathname;
 
 const canonicalUrl = new URL(pathname, siteConfig.seo.siteUrl).toString();
-const xdefaultPath = lang === 'tr' ? pathname : getAlternatePath(pathnameWithoutBase, 'tr');
+const xdefaultPath = lang === 'tr' ? pathnameWithoutBase : (getEquivalentAlternatePath(pathnameWithoutBase, 'tr') ?? pathnameWithoutBase);
 const xdefaultUrl = new URL(
 	basePath !== '/' ? `${basePath}${xdefaultPath}`.replace(/\/+/g, '/') : xdefaultPath,
 	siteConfig.seo.siteUrl,
 ).toString();
 const altLang: Lang = lang === 'tr' ? 'en' : 'tr';
-const altPathRaw = getAlternatePath(pathnameWithoutBase, altLang);
-const alternateUrl = new URL(
-	basePath !== '/' ? `${basePath}${altPathRaw}`.replace(/\/+/g, '/') : altPathRaw,
-	siteConfig.seo.siteUrl,
-).toString();
+const altPathRaw = getEquivalentAlternatePath(pathnameWithoutBase, altLang);
+const alternateUrl = altPathRaw
+	? new URL(
+			basePath !== '/' ? `${basePath}${altPathRaw}`.replace(/\/+/g, '/') : altPathRaw,
+			siteConfig.seo.siteUrl,
+		).toString()
+	: null;
 
 const nav = [
 	{ href: lang === 'tr' ? '/' : '/en/', key: 'home' as const },
@@ -82,13 +84,14 @@ const faviconIco = withBase('/favicon.ico');
 const htmlLang = lang === 'tr' ? 'tr' : 'en';
 const ogLocale = translations[lang].seo.locale;
 const rightsText = translations[lang].footer.rights;
+const brandName = getBrandName(lang);
 
 const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID as string | undefined;
 
 const legalServiceSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'LegalService',
-	name: siteConfig.brand.name,
+	name: brandName,
 	description: siteConfig.seo.defaultDescription[lang],
 	url: siteConfig.seo.siteUrl,
 	email: siteConfig.contact.email,
@@ -113,9 +116,9 @@ const legalServiceSchema = {
 		{lastModified && <meta name="dateModified" content={lastModified} />}
 		<link rel="canonical" href={canonicalUrl} />
 		<link rel="alternate" hreflang={lang === 'tr' ? 'tr' : 'en'} href={canonicalUrl} />
-		<link rel="alternate" hreflang={altLang} href={alternateUrl} />
+		{alternateUrl && <link rel="alternate" hreflang={altLang} href={alternateUrl} />}
 		<link rel="alternate" hreflang="x-default" href={xdefaultUrl} />
-		<meta property="og:site_name" content={siteConfig.brand.name} />
+		<meta property="og:site_name" content={brandName} />
 		<meta property="og:type" content={ogType} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
@@ -150,7 +153,7 @@ const legalServiceSchema = {
 		<div class="site-shell">
 			<header class="site-header">
 				<div class="container header-row">
-					<a class="brand" href={withBase(lang === 'tr' ? '/' : '/en/')}>{siteConfig.brand.name}</a>
+					<a class="brand" href={withBase(lang === 'tr' ? '/' : '/en/')}>{brandName}</a>
 					<nav class="nav" aria-label="Primary">
 						{
 							nav.map((item) =>
@@ -187,7 +190,7 @@ const legalServiceSchema = {
 			<footer class="site-footer">
 				<div class="container footer-grid">
 					<div class="footer-col footer-brand">
-						<p class="footer-heading">{siteConfig.brand.name}</p>
+						<p class="footer-heading">{brandName}</p>
 						<span class="footer-contact-row"><Icon name="map-pin" size={14} />{siteConfig.contact.address}</span>
 						<span class="footer-contact-row"><Icon name="mail" size={14} />{siteConfig.contact.email}</span>
 						<a class="btn btn-primary" href={helpDeskTriggerHref} aria-label={helpDeskTriggerAriaLabel}><Icon name="message-circle" size={16} />{t(lang, 'footer.liveSupport')}</a>
@@ -220,7 +223,7 @@ const legalServiceSchema = {
 					</div>
 				</div>
 				<div class="container footer-bottom">
-					<p>&copy; {new Date().getFullYear()} {siteConfig.brand.name} — {rightsText}</p>
+					<p>&copy; {new Date().getFullYear()} {brandName} — {rightsText}</p>
 				</div>
 			</footer>
 		</div>

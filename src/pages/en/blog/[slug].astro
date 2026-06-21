@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CTA from '../../../components/CTA.astro';
-import { helpDeskTriggerHref, siteConfig } from '../../../config/site';
+import { getBrandName, helpDeskTriggerHref, siteConfig } from '../../../config/site';
 import { withBase } from '../../../utils/routing';
 import { t, getDateLocale, type Lang } from '../../../i18n/ui';
 
@@ -26,6 +26,7 @@ export async function getStaticPaths(): Promise<StaticPath[]> {
 }
 
 const lang: Lang = 'en';
+const brandName = getBrandName(lang);
 const { post } = Astro.props;
 const { Content, headings } = await render(post);
 
@@ -56,14 +57,14 @@ const articleSchema = {
 	},
 	publisher: {
 		'@type': 'Organization',
-		name: siteConfig.brand.name,
+		name: brandName,
 	},
 	mainEntityOfPage: `${siteConfig.seo.siteUrl}/en/blog/${post.id.replace(/^en\//, '')}`,
 };
 ---
 
 <BaseLayout
-	title={`${post.data.title} | ${siteConfig.brand.name}`}
+	title={`${post.data.title} | ${brandName}`}
 	description={post.data.description}
 	pathname={`/en/blog/${post.id.replace(/^en\//, '')}`}
 	ogType="article"

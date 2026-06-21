@@ -3,16 +3,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Section from '../../components/Section.astro';
 import Card from '../../components/Card.astro';
 import CTA from '../../components/CTA.astro';
-import { helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { getBrandName, helpDeskTriggerHref, siteConfig } from '../../config/site';
 import { withBase } from '../../utils/routing';
 import { t } from '../../i18n/ui';
 import type { Lang } from '../../i18n/ui';
 
 const lang: Lang = 'en';
+const brandName = getBrandName(lang);
 ---
 
 <BaseLayout
-	title={`${t(lang, 'about.eyebrow')} | ${siteConfig.brand.name}`}
+	title={`${t(lang, 'about.eyebrow')} | ${brandName}`}
 	description="Attorney Barış C. Balabanlı profile: legal education, professional memberships, working approach and practice focus in civil and commercial law. Istanbul-based attorney."
 	pathname="/en/about"
 	lang={lang}

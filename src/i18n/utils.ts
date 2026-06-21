@@ -1,4 +1,5 @@
 import { defaultLang, supportedLangs, type Lang } from './ui';
+import { getServiceAreaBySlug } from '../config/services';
 
 const routeMap: Record<Lang, Record<string, string>> = {
 	tr: {
@@ -20,6 +21,10 @@ export function getLocalizedPath(pageKey: string, lang: Lang): string {
 }
 
 export function getAlternatePath(currentPathname: string, targetLang: Lang): string {
+	return getEquivalentAlternatePath(currentPathname, targetLang) ?? getFallbackAlternatePath(currentPathname, targetLang);
+}
+
+export function getEquivalentAlternatePath(currentPathname: string, targetLang: Lang): string | null {
 	const trToEn: Record<string, string> = {
 		'/': '/en/',
 		'/hakkimda': '/en/about',
@@ -45,7 +50,8 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang): str
 		}
 
 		if (currentPathname.startsWith('/hizmetler/')) {
-			return currentPathname.replace('/hizmetler/', '/en/services/');
+			const slug = currentPathname.replace('/hizmetler/', '');
+			return getServiceAreaBySlug('en', slug) ? `/en/services/${slug}` : null;
 		}
 	}
 
@@ -58,11 +64,24 @@ export function getAlternatePath(currentPathname: string, targetLang: Lang): str
 		}
 
 		if (currentPathname.startsWith('/en/services/')) {
-			return currentPathname.replace('/en/services/', '/hizmetler/');
+			const slug = currentPathname.replace('/en/services/', '');
+			return getServiceAreaBySlug('tr', slug) ? `/hizmetler/${slug}` : null;
 		}
 	}
 
-	return '/';
+	return null;
+}
+
+function getFallbackAlternatePath(currentPathname: string, targetLang: Lang): string {
+	if (currentPathname.startsWith('/hizmetler/') || currentPathname.startsWith('/en/services/')) {
+		return targetLang === 'en' ? '/en/services' : '/hizmetler';
+	}
+
+	if (currentPathname.startsWith('/blog/') || currentPathname.startsWith('/en/blog/')) {
+		return targetLang === 'en' ? '/en/blog' : '/blog';
+	}
+
+	return targetLang === 'en' ? '/en/' : '/';
 }
 
 export function getAlternateLangs(currentLang: Lang): Lang[] {

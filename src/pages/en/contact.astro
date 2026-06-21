@@ -3,18 +3,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Section from '../../components/Section.astro';
 import Card from '../../components/Card.astro';
 import CTA from '../../components/CTA.astro';
-import { helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { getBrandName, helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../../config/site';
 import { t } from '../../i18n/ui';
 import type { Lang } from '../../i18n/ui';
 
 const lang: Lang = 'en';
+const brandName = getBrandName(lang);
 const mapsUrl = 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cab9ae529fa8d3:0x3626d5a13f4e3375';
 const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4%B1-515b2020a';
 ---
 
 <BaseLayout
-	title={`${t(lang, 'contact.eyebrow')} | ${siteConfig.brand.name}`}
-	description="Contact Balabanlı Law Office for legal consultation. Reach us via WhatsApp, email, or visit our Istanbul office to schedule an appointment with Attorney Barış C. Balabanlı."
+	title={`${t(lang, 'contact.eyebrow')} | ${brandName}`}
+	description="Contact BALABANLI Law for legal consultation. Reach us via WhatsApp, email, or visit our Istanbul office to schedule an appointment with Attorney Barış C. Balabanlı."
 	pathname="/en/contact"
 	lang={lang}
 	lastModified="2026-06-11"
@@ -22,7 +23,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 	<section class="hero">
 		<div>
 			<p class="eyebrow">{t(lang, 'contact.eyebrow')}</p>
-			<h1>{siteConfig.brand.name}</h1>
+			<h1>{brandName}</h1>
 			<p>{t(lang, 'contact.lead')}</p>
 		</div>
 	</section>
@@ -74,7 +75,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4
 <script type="application/ld+json" set:html={JSON.stringify({
 	'@context': 'https://schema.org',
 	'@type': 'ContactPage',
-	name: `Contact | ${siteConfig.brand.name}`,
-	description: 'Contact Balabanlı Law Office for legal consultation.',
+	name: `Contact | ${brandName}`,
+	description: 'Contact BALABANLI Law for legal consultation.',
 	url: `${siteConfig.seo.siteUrl}/en/contact`,
 })} />

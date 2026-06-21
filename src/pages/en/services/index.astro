@@ -3,18 +3,19 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Icon from '../../../components/Icon.astro';
 import Section from '../../../components/Section.astro';
 import CTA from '../../../components/CTA.astro';
-import { helpDeskTriggerHref, siteConfig } from '../../../config/site';
+import { getBrandName, helpDeskTriggerHref } from '../../../config/site';
 import { getServiceAreas } from '../../../config/services';
 import { withBase } from '../../../utils/routing';
 import type { Lang } from '../../../i18n/ui';
 
 const lang: Lang = 'en';
+const brandName = getBrandName(lang);
 const serviceAreas = getServiceAreas(lang);
 ---
 
 <BaseLayout
-	title={`Practice Areas | ${siteConfig.brand.name}`}
-	description="Balabanlı Law Office practice areas for foreigners and businesses in Turkey: immigration, real estate, citizenship, inheritance, company formation, and disputes."
+	title={`Practice Areas | ${brandName}`}
+	description="BALABANLI Law practice areas for foreigners and businesses in Turkey: immigration, real estate, citizenship, inheritance, company formation, and disputes."
 	pathname="/en/services"
 	lang={lang}
 	lastModified="2026-06-11"

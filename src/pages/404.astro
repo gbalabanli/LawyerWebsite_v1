@@ -1,16 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Section from '../components/Section.astro';
-import { helpDeskTriggerAriaLabel, helpDeskTriggerHref, siteConfig } from '../config/site';
+import { getBrandName, helpDeskTriggerAriaLabel, helpDeskTriggerHref } from '../config/site';
 import { withBase } from '../utils/routing';
 import type { Lang } from '../i18n/ui';
 
 const pathname = Astro.url.pathname;
 const isEn = pathname.startsWith('/en/');
 const lang: Lang = isEn ? 'en' : 'tr';
+const brandName = getBrandName(lang);
 
 const t = {
-	title: isEn ? `Page Not Found | ${siteConfig.brand.name}` : `Sayfa Bulunamadı | ${siteConfig.brand.name}`,
+	title: isEn ? `Page Not Found | ${brandName}` : `Sayfa Bulunamadı | ${brandName}`,
 	desc: isEn
 		? 'The page you are looking for could not be found. Return to our homepage or contact us to find the right address.'
 		: 'Aradığınız sayfa bulunamadı veya taşınmış olabilir. Ana sayfamıza dönerek veya bizimle iletişime geçerek doğru adrese yönlenebilirsiniz.',

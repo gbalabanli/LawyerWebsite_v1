@@ -6,7 +6,7 @@ import Section from '../../../components/Section.astro';
 import Card from '../../../components/Card.astro';
 import CTA from '../../../components/CTA.astro';
 import { getCollection } from 'astro:content';
-import { helpDeskTriggerHref, siteConfig } from '../../../config/site';
+import { getBrandName, helpDeskTriggerHref } from '../../../config/site';
 import { getServiceAreas, getServicePostTags, type ServiceArea } from '../../../config/services';
 import { withBase } from '../../../utils/routing';
 import type { Lang } from '../../../i18n/ui';
@@ -20,6 +20,7 @@ export function getStaticPaths() {
 
 const { area } = Astro.props as { area: ServiceArea };
 const lang: Lang = 'en';
+const brandName = getBrandName(lang);
 
 const allPosts = (await getCollection('posts'))
 	.filter((post) => post.data.lang === 'en' && getServicePostTags(area).some((tag) => post.data.tags.includes(tag)))
@@ -35,7 +36,7 @@ const relatedPosts = allPosts.slice(0, 4);
 	lastModified="2026-06-11"
 >
 	<Hero
-		eyebrow={siteConfig.brand.name}
+		eyebrow={brandName}
 		title={area.heroTitle}
 		summary={area.heroSummary}
 		primaryLabel="Get Legal Advice"

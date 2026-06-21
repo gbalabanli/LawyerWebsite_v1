@@ -7,6 +7,7 @@ export interface SiteConfig {
 	version: string;
 	brand: {
 		name: string;
+		nameByLang?: Partial<Record<Lang, string>>;
 		tagline: Record<Lang, string>;
 		aboutShort: Record<Lang, string>;
 		aboutLong: Record<Lang, string>;
