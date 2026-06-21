@@ -64,6 +64,40 @@ Hizmet alanları: aile hukuku, miras hukuku, şirketler hukuku, fikri mülkiyet 
 - [İcra ve Tahsilat](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/icra-tahsilat): İcra ve Tahsilat alanında hukuki danışmanlık ve dava takibi hizmetleri.
 - [E-Spor Hukuku](https://gbalabanli.github.io/LawyerWebsite_v1/hizmetler/espor): E-Spor Hukuku alanında hukuki danışmanlık ve dava takibi hizmetleri.
 
+## English Blog Posts
+
+- [Contract Review Basics Before You Sign](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/contract-review-basics-before-you-sign): A practical checklist for reviewing legal contracts to reduce disputes and hidden obligations.
+- [Turkey Residence Permit Rejected: Legal Options for Foreigners](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/turkey-residence-permit-rejected-legal-options-foreigners): What foreigners can do after a Turkey residence permit rejection, including deadlines, evidence review, appeal strategy, and legal options.
+- [Deportation Order in Turkey: How Foreigners Can Appeal](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/deportation-order-turkey-how-foreigners-can-appeal): A practical guide for foreigners facing a deportation order in Turkey, including urgent deadlines, evidence, entry bans, and legal review.
+- [Buying Property in Turkey as a Foreigner: Legal Checklist](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/buying-property-turkey-foreigner-legal-checklist): Legal checklist for foreigners buying property in Turkey, covering title deed checks, contracts, payments, power of attorney, and closing risks.
+- [Title Deed Due Diligence in Turkey: Tapu, Mortgages and Liens](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/title-deed-due-diligence-turkey-tapu-mortgages-liens): How foreign buyers can approach title deed due diligence in Turkey, including tapu records, mortgages, liens, annotations, and seller authority.
+- [Turkish Citizenship by Property Investment: Legal Process](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/turkish-citizenship-property-investment-legal-process): Legal overview of Turkish citizenship by property investment, including eligibility, title deed restriction, payment trail, documents, and risk review.
+- [Power of Attorney in Turkey for Foreign Property Buyers](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/power-of-attorney-turkey-foreign-property-buyers): What foreign property buyers should know before signing a Turkish power of attorney, including scope, risks, title transfer, and payment authority.
+- [Inheritance in Turkey for Foreign Heirs](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/inheritance-turkey-foreign-heirs): Guide for foreign heirs dealing with inheritance in Turkey, including property transfer, inheritance certificates, documents, taxes, and disputes.
+- [Certificate of Inheritance in Turkey for Foreigners](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/certificate-of-inheritance-turkey-foreigners): What foreign heirs should know about obtaining a certificate of inheritance in Turkey and using it for property, banking, and estate transfers.
+- [How Foreigners Can Open a Company in Turkey](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/how-foreigners-can-open-company-turkey): How foreigners can open a company in Turkey, including company type, documents, shareholder structure, registry steps, and work permit planning.
+- [Legal Risk Checklist for Small Businesses](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/legal-risk-checklist-for-small-businesses): A monthly legal checklist for small teams covering contracts, employment, and internal controls.
+- [Pre-Litigation Strategy: What to Prepare First](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/pre-litigation-strategy-what-to-prepare-first): How early evidence planning and communication records can improve your position before filing a case.
+- [Work Permit in Turkey for Foreign Company Owners](https://gbalabanli.github.io/LawyerWebsite_v1/en/blog/work-permit-turkey-foreign-company-owners): What foreign company owners should know about work permits in Turkey, employer filings, residence status, documents, and compliance risks.
+
+## English Practice Areas
+
+- [Family Law](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/aile-hukuku): Divorce, custody, support, marital property, and family settlement strategy.
+- [Inheritance Law](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/miras-hukuku): Inheritance certificates, wills, estate assets, reserved share claims, and inheritance disputes in Turkey.
+- [Corporate Law](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/sirketler-hukuku): Company formation, shareholder agreements, governance, share transfers, and business legal support.
+- [Intellectual Property](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/fikri-mulkiyet): Trademark, patent, design, licensing, enforcement, and brand protection matters.
+- [Employment Law](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/is-hukuku): Employment contracts, termination, severance, workplace disputes, and employer compliance.
+- [Real Estate Law](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/gayrimenkul): Property due diligence, title deed disputes, leases, eviction, and co-ownership disputes.
+- [Commercial Law](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/ticaret-hukuku): Commercial contracts, unpaid invoices, breach disputes, unfair competition, notices, and litigation planning.
+- [Debt Collection and Enforcement](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/icra-tahsilat): Payment orders, unpaid receivables, debtor objections, settlement, and enforcement proceedings in Turkey.
+- [Esports Law](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/espor): Player contracts, team agreements, transfers, sponsorships, prize money, and digital rights.
+- [Immigration Lawyer in Turkey](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/immigration-lawyer-turkey): Residence permits, rejected applications, deportation orders, entry bans, work permits, and legal status issues for foreigners in Turkey.
+- [Real Estate Lawyer in Turkey for Foreigners](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/real-estate-lawyer-turkey-foreigners): Property purchase due diligence, title deed checks, power of attorney review, payment risk, and transaction support for foreign buyers in Turkey.
+- [Turkish Citizenship Lawyer](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/turkish-citizenship-lawyer): Turkish citizenship by investment, property-based citizenship files, eligibility review, document planning, and application risk assessment.
+- [Inheritance Lawyer in Turkey for Foreigners](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/inheritance-lawyer-turkey-foreigners): Inheritance in Turkey for foreign heirs, Turkish property transfers, inheritance certificates, estate documents, and cross-border asset issues.
+- [Company Formation Lawyer in Turkey](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/company-formation-lawyer-turkey): Company setup in Turkey for foreigners, limited and joint-stock company structure, shareholder documents, signing authority, and work permit planning.
+- [International Divorce Lawyer in Turkey](https://gbalabanli.github.io/LawyerWebsite_v1/en/services/international-divorce-lawyer-turkey): Divorce in Turkey involving foreign spouses, recognition of foreign divorce judgments, custody issues, property concerns, and settlement planning.
+
 ## İletişim
 
 - Web: https://gbalabanli.github.io/LawyerWebsite_v1
