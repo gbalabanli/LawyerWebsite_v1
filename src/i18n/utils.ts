@@ -45,10 +45,6 @@ export function getEquivalentAlternatePath(currentPathname: string, targetLang: 
 		const mapped = trToEn[currentPathname];
 		if (mapped) return mapped;
 
-		if (currentPathname.startsWith('/blog/')) {
-			return '/en/blog';
-		}
-
 		if (currentPathname.startsWith('/hizmetler/')) {
 			const slug = currentPathname.replace('/hizmetler/', '');
 			return getServiceAreaBySlug('en', slug) ? `/en/services/${slug}` : null;
@@ -58,10 +54,6 @@ export function getEquivalentAlternatePath(currentPathname: string, targetLang: 
 	if (targetLang === 'tr') {
 		const mapped = enToTr[currentPathname];
 		if (mapped) return mapped;
-
-		if (currentPathname.startsWith('/en/blog/')) {
-			return '/blog';
-		}
 
 		if (currentPathname.startsWith('/en/services/')) {
 			const slug = currentPathname.replace('/en/services/', '');

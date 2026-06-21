@@ -4,17 +4,22 @@ import Section from '../../components/Section.astro';
 import Card from '../../components/Card.astro';
 import CTA from '../../components/CTA.astro';
 import { getBrandName, helpDeskTriggerHref, siteConfig } from '../../config/site';
+import { getServiceAreas } from '../../config/services';
 import { withBase } from '../../utils/routing';
 import { t } from '../../i18n/ui';
 import type { Lang } from '../../i18n/ui';
 
 const lang: Lang = 'en';
 const brandName = getBrandName(lang);
+const knowsAbout = getServiceAreas(lang).map((area) => ({
+	'@type': 'Thing',
+	name: area.title,
+}));
 ---
 
 <BaseLayout
 	title={`${t(lang, 'about.eyebrow')} | ${brandName}`}
-	description="Attorney Barış C. Balabanlı profile: legal education, professional memberships, working approach and practice focus in civil and commercial law. Istanbul-based attorney."
+	description="Attorney Baris C. Balabanli profile: legal education, professional memberships, working approach and practice focus in civil and commercial law."
 	pathname="/en/about"
 	lang={lang}
 	lastModified="2026-06-11"
@@ -25,7 +30,7 @@ const brandName = getBrandName(lang);
 			<h1>{t(lang, 'about.heroTitle')}</h1>
 			<p>{t(lang, 'about.heroSummary')}</p>
 		</div>
-		<img class="profile-photo" src={withBase('/images/profile.jpg')} alt="Attorney Bar\u0131\u015f C. Balabanl\u0131" width="160" height="160" loading="lazy" />
+		<img class="profile-photo" src={withBase('/images/profile.jpg')} alt="Attorney Baris C. Balabanli" width="160" height="160" loading="lazy" />
 	</section>
 
 	<Section title={t(lang, 'about.profileTitle')} lead={siteConfig.brand.aboutLong[lang]}>
@@ -70,23 +75,21 @@ const brandName = getBrandName(lang);
 <script type="application/ld+json" set:html={JSON.stringify({
 	'@context': 'https://schema.org',
 	'@type': 'Person',
-	name: 'Bar\u0131\u015f C. Balabanl\u0131',
-	jobTitle: 'Avukat',
+	name: 'Baris C. Balabanli',
+	givenName: 'Baris',
+	familyName: 'Balabanli',
+	jobTitle: 'Attorney',
 	description: siteConfig.brand.aboutLong.en,
 	url: `${siteConfig.seo.siteUrl}/en/about`,
+	email: siteConfig.contact.email,
+	telephone: siteConfig.contact.phoneDisplay,
 	image: new URL(withBase('/images/profile.jpg'), siteConfig.seo.siteUrl).toString(),
+	alumniOf: {
+		'@type': 'CollegeOrUniversity',
+		name: 'Kadir Has University Faculty of Law',
+	},
 	sameAs: [
 		'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4%B1-515b2020a',
 	],
-	knowsAbout: [
-		{ '@type': 'LegalService', name: 'Aile Hukuku' },
-		{ '@type': 'LegalService', name: 'Miras Hukuku' },
-		{ '@type': 'LegalService', name: 'Şirketler Hukuku' },
-		{ '@type': 'LegalService', name: 'Fikri Mülkiyet' },
-		{ '@type': 'LegalService', name: 'İş Hukuku' },
-		{ '@type': 'LegalService', name: 'Gayrimenkul Hukuku' },
-		{ '@type': 'LegalService', name: 'Ticaret Hukuku' },
-		{ '@type': 'LegalService', name: 'İcra ve Tahsilat' },
-		{ '@type': 'LegalService', name: 'E-Spor Hukuku' },
-	],
+	knowsAbout,
 })} />

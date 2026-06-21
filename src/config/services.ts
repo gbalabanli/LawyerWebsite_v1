@@ -430,30 +430,34 @@ export const serviceAreasTr: ServiceArea[] = [
 	},
 	{
 		slug: 'espor',
-		title: 'E-Spor Hukuku',
+		title: 'E-Spor Hukuku Avukatı',
 		tag: 'espor',
 		description:
-			'E-spor oyuncu sözleşmeleri, transfer süreçleri, sponsorluk anlaşmaları, turnuva ödül dağıtımı ve e-spor ekosistemindeki hukuki ihtiyaçlara yönelik danışmanlık.',
+			'E-spor avukatı desteğiyle oyuncu sözleşmeleri, takım anlaşmaları, sponsorluk, transfer, yayın hakları ve turnuva ödül uyuşmazlıklarında hukuki danışmanlık.',
 		icon: 'gamepad',
-		heroTitle: 'E-Spor Hukuku',
+		heroTitle: 'E-Spor Hukuku Avukatı',
 		heroSummary:
-			'E-spor oyuncu sözleşmeleri, transfer süreçleri, sponsorluk anlaşmaları ve turnuva ödül dağıtımı alanında uzman hukuki danışmanlık hizmeti sunuyoruz.',
+			'E-spor oyuncuları, takımlar, ajanslar ve sponsorlar için espor sözleşmesi, transfer, buyout, sponsorluk, yayın hakları ve turnuva ödül paylaşımı konularında hukuki danışmanlık sunuyoruz.',
 		sections: [
 			{
-				heading: 'E-Spor Oyuncu Sözleşmeleri',
-				text: 'Profesyonel e-spor oyuncuları ve kulüpler arasındaki sözleşmelerin hazırlanması ve incelenmesi hizmeti veriyoruz. Maaş, ikramiye, ödül paylaşımı, gizlilik, yayıncılık hakları ve fesih koşulları gibi kritik maddelerin sözleşmede yer almasını sağlıyoruz.',
+				heading: 'E-Spor Oyuncu ve Takım Sözleşmeleri',
+				text: 'Profesyonel e-spor oyuncuları, koçlar, yayıncılar ve takımlar arasındaki sözleşmelerin hazırlanması ve incelenmesi hizmeti veriyoruz. Maaş, ikramiye, ödül paylaşımı, gizlilik, yayın hakları, rekabet yasağı, davranış kuralları ve fesih koşulları gibi kritik maddelerin açık düzenlenmesini sağlıyoruz.',
 			},
 			{
 				heading: 'Transfer ve Buyout Süreçleri',
-				text: 'E-spor oyuncu transferlerinde sözleşme feshi, buyout bedeli belirleme, TESFED lisans işlemleri ve kulüpler arası anlaşma süreçlerinde hukuki danışmanlık sağlıyoruz. Transfer dönemlerinde oyuncu ve kulüp haklarının korunmasına yönelik stratejik danışmanlık veriyoruz.',
+				text: 'E-spor transfer sözleşmesi, buyout bedeli, sözleşme feshi, lisans işlemleri, roster değişiklikleri ve kulüpler arası anlaşma süreçlerinde hukuki danışmanlık sağlıyoruz. Transfer dönemlerinde oyuncu ve takım haklarının korunmasına yönelik strateji oluşturuyoruz.',
 			},
 			{
-				heading: 'Sponsorluk Anlaşmaları',
-				text: 'E-spor takımları ve oyuncuları için sponsorluk sözleşmelerinin hazırlanması ve müzakeresi sürecinde danışmanlık veriyoruz. Marka kullanımı, performans kriterleri, ödeme koşulları ve fesih hakları gibi maddelerin dengeli şekilde düzenlenmesini sağlıyoruz.',
+				heading: 'E-Spor Sponsorluk Sözleşmeleri',
+				text: 'E-spor takımları, oyuncuları, yayıncıları ve içerik üreticileri için sponsorluk sözleşmelerinin hazırlanması ve müzakeresi sürecinde danışmanlık veriyoruz. Marka kullanımı, görünürlük yükümlülükleri, performans kriterleri, ödeme koşulları, münhasırlık ve fesih hakları dengeli şekilde düzenlenmelidir.',
+			},
+			{
+				heading: 'Yayın, İçerik ve Fikri Mülkiyet Hakları',
+				text: 'Twitch, YouTube, Kick ve benzeri platformlardaki yayın gelirleri, içerik kullanım izinleri, oyuncu rumuzu, takım logosu, marka iş birlikleri ve dijital varlıklar için sözleşme dili oluşturuyoruz. Yayın haklarının kime ait olduğu baştan belirlenmelidir.',
 			},
 			{
 				heading: 'Turnuva Ödül Dağıtımı',
-				text: 'E-spor turnuvalarında kazanılan ikramiye ve ödüllerin dağıtımında oyuncu, takım ve organizatör arasındaki hukuki ilişkinin düzenlenmesi konusunda danışmanlık veriyoruz. Ödül paylaşım oranları ve ödeme takviminin sözleşmeye bağlanması uyuşmazlıkları önler.',
+				text: 'E-spor turnuvalarında kazanılan ikramiye ve ödüllerin dağıtımında oyuncu, takım ve organizatör arasındaki hukuki ilişkinin düzenlenmesi konusunda danışmanlık veriyoruz. Ödül paylaşım oranları, vergi kesintileri, ödeme takvimi ve ödemenin kime yapılacağı sözleşmeye bağlanmalıdır.',
 			},
 			{
 				heading: 'İş Sözleşmesi-Hizmet Sözleşmesi Ayrımı',
@@ -464,6 +468,10 @@ export const serviceAreasTr: ServiceArea[] = [
 			{
 				q: 'E-spor oyuncu sözleşmesinde hangi maddeler bulunmalıdır?',
 				a: 'Süre, ücret, ödül paylaşımı, gizlilik, yayıncılık hakları, fesih koşulları, rekabet yasağı ve uyuşmazlık çözüm maddeleri bulunmalıdır. Her maddenin açık ve anlaşılır şekilde düzenlenmesi önemlidir.',
+			},
+			{
+				q: 'E-spor avukatı hangi konularda destek verir?',
+				a: 'E-spor avukatı oyuncu sözleşmeleri, takım anlaşmaları, sponsorluk, transfer, buyout, yayın hakları, ödül paylaşımı, fesih ve uyuşmazlık çözümü konularında hukuki destek verir.',
 			},
 			{
 				q: 'E-spor oyuncusu işçi midir?',
@@ -478,9 +486,9 @@ export const serviceAreasTr: ServiceArea[] = [
 				a: 'Buyout bedeli, bir oyuncunun sözleşmesinin başka bir kulübe devri için ödenmesi gereken bedeldir. Sözleşmede buyout bedeli açıkça belirtilmemişse, taraflar serbestçe pazarlık yapar.',
 			},
 		],
-		seoTitle: 'E-Spor Hukuku Avukatı | Oyuncu Sözleşmeleri ve Transfer',
+		seoTitle: 'E-Spor Avukatı | Espor Sözleşmesi ve Sponsorluk',
 		seoDescription:
-			'E-spor oyuncu sözleşmeleri, transfer süreçleri, sponsorluk anlaşmaları ve turnuva ödül dağıtımında uzman e-spor avukatı. İstanbul merkezli hukuki danışmanlık hizmeti.',
+			'E-spor avukatı desteğiyle espor sözleşmesi, oyuncu ve takım anlaşmaları, sponsorluk, transfer, buyout ve yayın haklarında hukuki danışmanlık.',
 	},
 ];
 
@@ -860,33 +868,42 @@ export const serviceAreasEn: ServiceArea[] = [
 	},
 	{
 		slug: 'espor',
-		title: 'Esports Law',
+		title: 'Esports Lawyer in Turkey',
 		tag: 'esports-law',
+		relatedTags: ['esports-contracts', 'gaming-law', 'streamer-contracts', 'sponsorships'],
 		description:
-			'Player contracts, team agreements, sponsorships, transfers, prize distribution, streaming rights, and legal support for esports organizations.',
+			'Esports lawyer in Turkey for player contracts, team agreements, sponsorship deals, transfers, prize money, streaming rights, and gaming industry legal support.',
 		icon: 'gamepad',
-		heroTitle: 'Esports Law',
+		heroTitle: 'Esports Lawyer in Turkey',
 		heroSummary:
-			'We advise players, teams, agencies, and sponsors on esports contracts, transfers, sponsorships, prize allocation, and digital rights.',
+			'We advise esports players, teams, agencies, streamers, sponsors, and gaming businesses on contracts, transfers, buyouts, sponsorships, prize allocation, and digital rights in Turkey.',
 		sections: [
 			{
-				heading: 'Player and Team Contracts',
-				text: 'We prepare and review player, coach, creator, and team agreements covering compensation, bonuses, prize shares, conduct rules, confidentiality, termination, and dispute resolution.',
+				heading: 'Esports Player and Team Contracts',
+				text: 'We prepare and review esports player contracts, coach agreements, creator contracts, and team agreements covering compensation, bonuses, prize shares, conduct rules, confidentiality, exclusivity, termination, and dispute resolution.',
 			},
 			{
-				heading: 'Transfers and Buyouts',
-				text: 'We advise on transfer clauses, buyout terms, contract termination, roster changes, federation or league rules, and documentation between clubs or teams.',
+				heading: 'Transfers, Buyouts and Roster Changes',
+				text: 'We advise on transfer clauses, buyout terms, contract termination, roster changes, federation or league rules, and documentation between clubs, teams, players, and agents.',
 			},
 			{
-				heading: 'Sponsorships and Brand Deals',
-				text: 'We structure sponsorship, influencer, streaming, and brand partnership agreements with clear deliverables, usage rights, payment triggers, exclusivity, and termination rights.',
+				heading: 'Esports Sponsorship and Brand Deals',
+				text: 'We structure esports sponsorship agreements, influencer deals, streaming contracts, and brand partnerships with clear deliverables, usage rights, payment triggers, exclusivity, content approval, and termination rights.',
+			},
+			{
+				heading: 'Streamer, Content and Gaming Contracts',
+				text: 'We advise streamers, creators, gaming studios, agencies, and talent managers on platform revenue, content rights, channel obligations, IP ownership, image rights, sponsorship restrictions, and digital asset use.',
 			},
 			{
 				heading: 'Prize Money and Digital Rights',
-				text: 'We help teams and players document prize distribution, content rights, streaming obligations, platform revenue, and ownership of digital assets or media outputs.',
+				text: 'We help teams and players document prize distribution, tax or deduction language, content rights, streaming obligations, platform revenue, and ownership of digital assets or media outputs.',
 			},
 		],
 		faq: [
+			{
+				q: 'What does an esports lawyer in Turkey do?',
+				a: 'An esports lawyer in Turkey helps with player contracts, team agreements, sponsorships, transfers, buyouts, streaming rights, prize money, IP rights, termination, and dispute planning.',
+			},
 			{
 				q: 'What should be included in an esports player contract?',
 				a: 'Role, term, compensation, bonus and prize sharing, streaming obligations, sponsor duties, confidentiality, conduct rules, termination, and dispute resolution should be clear.',
@@ -900,9 +917,9 @@ export const serviceAreasEn: ServiceArea[] = [
 				a: 'Prize allocation should be written in advance, including percentages, payment deadlines, taxes or deductions, and who receives payment from the organizer.',
 			},
 		],
-		seoTitle: 'Esports Lawyer in Turkey | Player and Sponsorship Contracts',
+		seoTitle: 'Esports Lawyer Turkey | Gaming and Contract Lawyer',
 		seoDescription:
-			'Esports law services in Turkey for player contracts, team agreements, transfers, sponsorships, prize money, streaming rights, and digital deals.',
+			'Esports lawyer in Turkey for player contracts, team agreements, sponsorships, transfers, streamer contracts, gaming deals, prize money, and IP rights.',
 	},
 	{
 		slug: 'immigration-lawyer-turkey',

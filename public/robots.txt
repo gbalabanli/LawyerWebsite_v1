@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# AI Search Crawlers ? explicitly allowed for LLM visibility
+# AI Search Crawlers - explicitly allowed for LLM visibility
 User-agent: GPTBot
 Allow: /
 
@@ -26,4 +26,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://gbalabanli.github.io/LawyerWebsite_v1/sitemap-index.xml
+Sitemap: https://bariscembalabanli.av.tr/sitemap-index.xml

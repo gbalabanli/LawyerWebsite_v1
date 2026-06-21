@@ -61,6 +61,35 @@ const articleSchema = {
 	},
 	mainEntityOfPage: `${siteConfig.seo.siteUrl}/en/blog/${post.id.replace(/^en\//, '')}`,
 };
+
+const faqSchema = post.data.faq
+	? {
+			'@context': 'https://schema.org',
+			'@type': 'FAQPage',
+			mainEntity: post.data.faq.map((item) => ({
+				'@type': 'Question',
+				name: item.q,
+				acceptedAnswer: {
+					'@type': 'Answer',
+					text: item.a,
+				},
+			})),
+		}
+	: null;
+
+const howToSchema = post.data.howTo
+	? {
+			'@context': 'https://schema.org',
+			'@type': 'HowTo',
+			name: post.data.title,
+			step: post.data.howTo.map((step, i) => ({
+				'@type': 'HowToStep',
+				position: i + 1,
+				name: step.name,
+				text: step.text,
+			})),
+		}
+	: null;
 ---
 
 <BaseLayout
@@ -163,6 +192,8 @@ const articleSchema = {
 	/>
 
 	<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+	{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+	{howToSchema && <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />}
 </BaseLayout>
 
 <style>

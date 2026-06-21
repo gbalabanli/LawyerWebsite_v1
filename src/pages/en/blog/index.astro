@@ -1,9 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Icon from '../../../components/Icon.astro';
 import Section from '../../../components/Section.astro';
 import BlogCard from '../../../components/BlogCard.astro';
 import { getBrandName, siteConfig } from '../../../config/site';
+import { getServiceAreas } from '../../../config/services';
 import { withBase } from '../../../utils/routing';
 import { t, getDateLocale, type Lang } from '../../../i18n/ui';
 
@@ -14,6 +16,7 @@ const posts = (await getCollection('posts'))
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const allTags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 const dateLocale = getDateLocale(lang);
+const serviceAreas = getServiceAreas(lang);
 ---
 
 <BaseLayout
@@ -24,11 +27,23 @@ const dateLocale = getDateLocale(lang);
 >
 	<Section title={t(lang, 'blog.eyebrow')} lead={t(lang, 'blog.lead')}>
 		<div class="filters">
-			<input id="blog-search" class="input" type="search" placeholder={t(lang, 'blog.searchPlaceholder')} aria-label="Search blog posts" />
-			<select id="tag-filter" class="select" aria-label="Filter by tag">
-				<option value="">{t(lang, 'blog.allTags')}</option>
-				{allTags.map((tag) => <option value={tag}>{tag}</option>)}
-			</select>
+			<div class="filter-field">
+				<Icon name="search" size={16} />
+				<input id="blog-search" class="input" type="search" placeholder={t(lang, 'blog.searchPlaceholder')} aria-label="Search blog posts" />
+			</div>
+			<div class="filter-field">
+				<Icon name="filter" size={16} />
+				<select id="tag-filter" class="select" aria-label="Filter by tag">
+					<option value="">{t(lang, 'blog.allTags')}</option>
+					{allTags.map((tag) => <option value={tag}>{tag}</option>)}
+				</select>
+			</div>
+		</div>
+
+		<div class="service-index-links">
+			{serviceAreas.map((area) => (
+				<a class="service-tag-link" href={withBase(`/en/services/${area.slug}`)}>{area.title}</a>
+			))}
 		</div>
 
 		<div class="blog-list" id="blog-list">
@@ -68,10 +83,45 @@ const dateLocale = getDateLocale(lang);
 		url: `${siteConfig.seo.siteUrl}/en/blog`,
 	})} />
 
+	<style>
+		.service-index-links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+			margin-bottom: 2rem;
+		}
+
+		.service-tag-link {
+			font-size: 0.8rem;
+			padding: 0.25rem 0.75rem;
+			border: 1px solid var(--color-border);
+			border-radius: var(--radius-sm);
+			color: var(--color-text);
+			text-decoration: none;
+			transition: background 0.15s;
+		}
+
+		.service-tag-link:hover {
+			background: var(--surface-bg);
+		}
+
+		@media (min-width: 640px) {
+			.service-index-links {
+				margin-bottom: 2.5rem;
+			}
+		}
+	</style>
+
 	<script>
 		const searchEl = document.querySelector('#blog-search');
 		const tagEl = document.querySelector('#tag-filter');
 		const postEls = [...document.querySelectorAll('[data-post]')];
+
+		const params = new URLSearchParams(window.location.search);
+		const tagParam = params.get('tag');
+		if (tagParam && tagEl) {
+			tagEl.value = tagParam;
+		}
 
 		const applyFilter = () => {
 			const searchValue = (searchEl?.value || '').toLowerCase().trim();
@@ -89,6 +139,8 @@ const dateLocale = getDateLocale(lang);
 				item.style.display = matchesText && matchesTag ? 'block' : 'none';
 			}
 		};
+
+		applyFilter();
 
 		searchEl?.addEventListener('input', applyFilter);
 		tagEl?.addEventListener('change', applyFilter);
