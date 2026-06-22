@@ -7,7 +7,7 @@ tags: ["esports-law", "streamer-contracts", "gaming-law", "intellectual-property
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/espor"
+    href: "/en/services/esport"
   - text: "Streamer Contract Lawyer: What Gaming Creators Should Check"
     href: "/en/blog/streamer-contract-lawyer-gaming-creators"
 faq:

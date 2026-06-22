@@ -867,59 +867,59 @@ export const serviceAreasEn: ServiceArea[] = [
 			'Debt collection and enforcement services in Turkey for unpaid invoices, payment orders, debtor objections, receivables, and collection litigation.',
 	},
 	{
-		slug: 'espor',
+		slug: 'esport',
 		title: 'Esports Lawyer in Turkey',
 		tag: 'esports-law',
 		relatedTags: ['esports-contracts', 'gaming-law', 'streamer-contracts', 'sponsorships'],
 		description:
-			'Esports lawyer in Turkey for player contracts, team agreements, sponsorship deals, transfers, prize money, streaming rights, and gaming industry legal support.',
+			'Esports lawyer in Turkey for international players, teams, agencies, sponsors, creators, and gaming companies with Turkey-linked contracts or disputes.',
 		icon: 'gamepad',
-		heroTitle: 'Esports Lawyer in Turkey',
+		heroTitle: 'Esports Lawyer in Turkey for Global Clients',
 		heroSummary:
-			'We advise esports players, teams, agencies, streamers, sponsors, and gaming businesses on contracts, transfers, buyouts, sponsorships, prize allocation, and digital rights in Turkey.',
+			'We advise international esports players, teams, agencies, streamers, sponsors, and gaming businesses on Turkey-linked contracts, transfers, buyouts, sponsorships, prize allocation, digital rights, and dispute planning.',
 		sections: [
 			{
-				heading: 'Esports Player and Team Contracts',
-				text: 'We prepare and review esports player contracts, coach agreements, creator contracts, and team agreements covering compensation, bonuses, prize shares, conduct rules, confidentiality, exclusivity, termination, and dispute resolution.',
+				heading: 'Cross-Border Esports Contracts',
+				text: 'We prepare and review Turkey-linked esports player contracts, coach agreements, agency agreements, creator contracts, and team agreements for clients working across different countries, languages, currencies, and platforms.',
 			},
 			{
-				heading: 'Transfers, Buyouts and Roster Changes',
-				text: 'We advise on transfer clauses, buyout terms, contract termination, roster changes, federation or league rules, and documentation between clubs, teams, players, and agents.',
+				heading: 'Player Rights, Pay and Career Control',
+				text: 'We help players and representatives protect compensation, bonuses, prize shares, streaming revenue, image rights, sponsor duties, exclusivity limits, benching rules, termination rights, and post-contract freedom.',
 			},
 			{
-				heading: 'Esports Sponsorship and Brand Deals',
-				text: 'We structure esports sponsorship agreements, influencer deals, streaming contracts, and brand partnerships with clear deliverables, usage rights, payment triggers, exclusivity, content approval, and termination rights.',
+				heading: 'Transfers, Buyouts and International Roster Moves',
+				text: 'We advise on transfer clauses, buyout terms, contract release, roster changes, trial rights, federation or league rules, and documentation between clubs, teams, players, agencies, and sponsors.',
 			},
 			{
-				heading: 'Streamer, Content and Gaming Contracts',
-				text: 'We advise streamers, creators, gaming studios, agencies, and talent managers on platform revenue, content rights, channel obligations, IP ownership, image rights, sponsorship restrictions, and digital asset use.',
+				heading: 'Sponsorship, Streaming and Brand Deals',
+				text: 'We structure esports sponsorship agreements, influencer deals, streaming contracts, content campaigns, and brand partnerships with clear deliverables, usage rights, payment triggers, exclusivity, approval rules, and termination rights.',
 			},
 			{
-				heading: 'Prize Money and Digital Rights',
-				text: 'We help teams and players document prize distribution, tax or deduction language, content rights, streaming obligations, platform revenue, and ownership of digital assets or media outputs.',
+				heading: 'Gaming Businesses and Digital Rights',
+				text: 'We advise gaming studios, tournament operators, talent managers, and esports organizations on platform revenue, content rights, IP ownership, prize distribution, digital assets, marketplace issues, and dispute-ready contract records.',
 			},
 		],
 		faq: [
 			{
-				q: 'What does an esports lawyer in Turkey do?',
-				a: 'An esports lawyer in Turkey helps with player contracts, team agreements, sponsorships, transfers, buyouts, streaming rights, prize money, IP rights, termination, and dispute planning.',
+				q: 'Can international esports clients work with a lawyer in Turkey?',
+				a: 'Yes. International players, teams, agencies, sponsors, streamers, and gaming companies can seek Turkish legal support when a contract, party, payment, event, asset, or dispute is connected with Turkey.',
 			},
 			{
-				q: 'What should be included in an esports player contract?',
-				a: 'Role, term, compensation, bonus and prize sharing, streaming obligations, sponsor duties, confidentiality, conduct rules, termination, and dispute resolution should be clear.',
+				q: 'What does an esports lawyer in Turkey do for global clients?',
+				a: 'An esports lawyer in Turkey helps with Turkey-linked player contracts, team agreements, sponsorships, transfers, buyouts, streaming rights, prize money, IP rights, termination, negotiation, and dispute planning.',
 			},
 			{
-				q: 'Are esports players employees or independent contractors?',
-				a: 'The answer depends on control, working conditions, payment structure, exclusivity, and the real relationship between player and organization.',
+				q: 'What should international players check before signing?',
+				a: 'Players should check role, term, compensation, prize sharing, streaming obligations, sponsor duties, image rights, exclusivity, transfer limits, termination, governing law, language, and dispute venue.',
 			},
 			{
-				q: 'How should prize money be distributed?',
-				a: 'Prize allocation should be written in advance, including percentages, payment deadlines, taxes or deductions, and who receives payment from the organizer.',
+				q: 'Can esports contracts cover multiple countries?',
+				a: 'Yes. Cross-border contracts should clearly address governing law, jurisdiction, payment currency, tax or deduction language, notice rules, language priority, platform terms, and enforcement risks.',
 			},
 		],
-		seoTitle: 'Esports Lawyer Turkey | Gaming and Contract Lawyer',
+		seoTitle: 'Esports Lawyer in Turkey for Global Clients',
 		seoDescription:
-			'Esports lawyer in Turkey for player contracts, team agreements, sponsorships, transfers, streamer contracts, gaming deals, prize money, and IP rights.',
+			'Esports lawyer in Turkey for global players, teams, sponsors, streamers, agencies, gaming companies, contracts, transfers, prize money, and digital rights.',
 	},
 	{
 		slug: 'immigration-lawyer-turkey',

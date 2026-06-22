@@ -1,0 +1,23 @@
+---
+import { siteConfig } from '../../../config/site';
+import { withBase } from '../../../utils/routing';
+
+const targetPath = '/en/services/esport';
+const targetHref = withBase(targetPath);
+const canonicalUrl = new URL(targetPath, siteConfig.seo.siteUrl).toString();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, follow" />
+		<meta http-equiv="refresh" content={`0; url=${targetHref}`} />
+		<link rel="canonical" href={canonicalUrl} />
+		<title>Esports Lawyer in Turkey | Redirect</title>
+	</head>
+	<body>
+		<p>This page has moved. <a href={targetHref}>Continue to the Esports Lawyer in Turkey page.</a></p>
+	</body>
+</html>

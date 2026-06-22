@@ -7,7 +7,7 @@ tags: ["esports-law", "esports-contracts", "gaming-law", "disputes"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/espor"
+    href: "/en/services/esport"
   - text: "Esports Contract Lawyer: What Players Should Check Before Signing"
     href: "/en/blog/esports-contract-lawyer-before-signing"
 faq:

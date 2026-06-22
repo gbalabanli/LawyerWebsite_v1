@@ -7,7 +7,7 @@ tags: ["esports-law", "streamer-contracts", "gaming-law", "contracts"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/espor"
+    href: "/en/services/esport"
   - text: "Esports Sponsorship Agreement: Key Legal Terms to Review"
     href: "/en/blog/esports-sponsorship-agreement-key-terms"
 faq:
