@@ -11,7 +11,7 @@ export const siteConfig: SiteConfig = {
 	brand: {
 		name: 'Balabanlı Hukuk Bürosu',
 		nameByLang: {
-			en: 'BALABANLI Law',
+			en: 'Balabanli Law Firm',
 		},
 		tagline: {
 			tr: 'Her Hukuki Sorunda, Stratejik \u00c7\u00f6z\u00fcm Orta\u011f\u0131n\u0131z',
@@ -30,11 +30,11 @@ export const siteConfig: SiteConfig = {
 		siteUrl: publicSiteUrl,
 		defaultTitle: {
 			tr: 'Balabanlı Hukuk Bürosu | Avukat Barış C. Balabanlı',
-			en: 'BALABANLI Law | Attorney Barış C. Balabanlı',
+			en: 'Balabanli Law Firm | Attorney Barış C. Balabanlı',
 		},
 		defaultDescription: {
 			tr: 'İstanbul merkezli Balabanlı Hukuk Bürosu, medeni hukuk ve ticari hukuk alanlarında uzman avukatlık hizmeti sunar.',
-			en: 'BALABANLI Law, based in Istanbul, provides expert legal services in civil and commercial law.',
+			en: 'Balabanli Law Firm, based in Istanbul, provides expert legal services in civil and commercial law.',
 		},
 		ogImage: '/images/og-default.jpg',
 	},
