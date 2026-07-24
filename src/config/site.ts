@@ -40,7 +40,7 @@ export const siteConfig: SiteConfig = {
 	},
 	contact: {
 		phoneDisplay: '+90 555 123 45 67',
-		whatsappNumberE164: '905301178034',
+		whatsappNumberE164: '905399456085',
 		email: 'consult@bariscembalabanli.av.tr',
 		address: 'Eski Bağdat Caddesi Altıntepe 34840 İstanbul / Türkiye',
 	},
