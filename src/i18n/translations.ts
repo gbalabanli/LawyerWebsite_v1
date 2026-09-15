@@ -25,13 +25,14 @@ export const translations = {
 			eyebrow: 'Canl\u0131 Destek',
 			panelTitle: 'Hukuki Dan\u0131\u015fmanl\u0131k Ba\u015flat',
 			introText:
-				'Bir dakika yeterli — adınızı ve özeti paylaşın, WhatsApp mesajınız önceden doldurulur, daha hızlı yardım alırsınız.',
+				"WhatsApp'ı açın, sizi bekleyen hazır bir mesajla başlayın.",
 			nameLabel: 'Ad ve Soyad',
 			namePlaceholder: 'Aylin Y\u0131lmaz',
 			messageLabel: 'Mesaj\u0131n\u0131z',
 			messagePlaceholder:
 				'Hukuki konunuzu ve ne t\u00fcr yard\u0131ma ihtiyac\u0131n\u0131z oldu\u011funu k\u0131saca a\u00e7\u0131klay\u0131n.',
 			submitLabel: 'WhatsApp ile Devam Et',
+			shareWhatsApp: 'WhatsApp mesajı olarak paylaş',
 			closeLabel: 'Kapat',
 			overlayAriaLabel: 'Destek panelini kapat',
 			errorEmpty: 'L\u00fctfen ad\u0131n\u0131z\u0131 ve k\u0131sa bir mesaj ekleyin.',
@@ -175,7 +176,7 @@ export const translations = {
 			eyebrow: 'Live Help Desk',
 			panelTitle: 'Start Your Legal Intake',
 			introText:
-				'Just one minute — share your name and summary, your WhatsApp message is prefilled, so you get help faster.',
+				"Open WhatsApp, start with a ready message waiting for you.",
 			nameLabel: 'Name and Surname',
 			namePlaceholder: 'Aydin Yilmaz',
 			messageLabel: 'Your Message',
