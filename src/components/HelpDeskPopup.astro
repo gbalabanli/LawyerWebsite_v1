@@ -90,13 +90,16 @@ const ui = translations[lang].helpDesk;
 				<button type="submit" class="btn btn-primary" data-help-desk-submit>
 					{ui.submitLabel}
 				</button>
+				<button type="button" class="btn btn-secondary" data-help-desk-share>
+					{ui.shareWhatsApp}
+				</button>
 				<button type="button" class="btn btn-secondary" data-help-desk-close>
 					{ui.closeLabel}
 				</button>
 			</div>
 		</form>
 	</section>
-	<script define:vars={{ whatsappNumber: siteConfig.contact.whatsappNumberE164, intro: translations[lang].helpDesk.whatsappIntro, errorEmpty: translations[lang].helpDesk.errorEmpty, openingWhatsApp: translations[lang].helpDesk.openingWhatsApp }}>
+	<script define:vars={{ whatsappNumber: siteConfig.contact.whatsappNumberE164, intro: translations[lang].helpDesk.whatsappIntro, errorEmpty: translations[lang].helpDesk.errorEmpty, openingWhatsApp: translations[lang].helpDesk.openingWhatsApp, shareWhatsApp: translations[lang].helpDesk.shareWhatsApp || '' }}>
 		const root = document.querySelector('[data-help-desk-root]');
 
 		if (root instanceof HTMLElement) {
@@ -197,6 +200,25 @@ const ui = translations[lang].helpDesk;
 					setOpen(false);
 				}
 			});
+
+			if (shareWhatsApp) {
+				const shareButton = root.querySelector('[data-help-desk-share]');
+				if (shareButton instanceof HTMLButtonElement) {
+					shareButton.addEventListener('click', () => {
+						const fullName = fullNameInput instanceof HTMLInputElement ? fullNameInput.value.trim() : '';
+						const message = messageInput instanceof HTMLTextAreaElement ? messageInput.value.trim() : '';
+						if (!fullName || !message) {
+							setError(errorEmpty);
+							return;
+						}
+						const payload = [intro, `Name: ${fullName}`, `Page: ${window.location.href}`, 'Message:', message].join('\n');
+						navigator.clipboard.writeText(payload).then(() => {
+							shareButton.textContent = 'Kopyaland!';
+							setTimeout(() => { shareButton.textContent = shareWhatsApp; }, 2000);
+						});
+					});
+				}
+			}
 
 			if (
 				form instanceof HTMLFormElement &&
