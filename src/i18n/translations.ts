@@ -25,7 +25,7 @@ export const translations = {
 			eyebrow: 'Canl\u0131 Destek',
 			panelTitle: 'Hukuki Dan\u0131\u015fmanl\u0131k Ba\u015flat',
 			introText:
-				'Ad\u0131n\u0131z\u0131 ve k\u0131sa bir \u00f6zeti payla\u015f\u0131n. Bilgileriniz WhatsApp \u00fczerinden \u00f6nceden doldurulmu\u015f olarak a\u00e7\u0131lacakt\u0131r.',
+				'Bir dakika yeterli — adınızı ve özeti paylaşın, WhatsApp mesajınız önceden doldurulur, daha hızlı yardım alırsınız.',
 			nameLabel: 'Ad ve Soyad',
 			namePlaceholder: 'Aylin Y\u0131lmaz',
 			messageLabel: 'Mesaj\u0131n\u0131z',
@@ -175,7 +175,7 @@ export const translations = {
 			eyebrow: 'Live Help Desk',
 			panelTitle: 'Start Your Legal Intake',
 			introText:
-				'Share your full name and a short summary. We will open WhatsApp with your details prefilled.',
+				'Just one minute — share your name and summary, your WhatsApp message is prefilled, so you get help faster.',
 			nameLabel: 'Name and Surname',
 			namePlaceholder: 'Aydin Yilmaz',
 			messageLabel: 'Your Message',
