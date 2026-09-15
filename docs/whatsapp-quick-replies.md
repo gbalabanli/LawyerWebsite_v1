@@ -2,7 +2,7 @@
 
 Bu kılavuz, web sitesi üzerinden gelen WhatsApp mesajlarına hızlı ve tutarlı
 yanıt vermek için hazırlanmıştır. WhatsApp Business'ın "Hızlı Yanıtlar"
-özelliğine ekleyerek kullanın.
+özelliğine ekleyerek kullanın. Toplam 11 şablon bulunmaktadır.
 
 ## Kurulum
 
@@ -177,6 +177,55 @@ Saygılarımla,
 Av. Barış Cem Balabanlı
 ```
 
+## 11. Ücret Teklifi ve Masraf Özeti
+
+**Kısayol:** `/teklif`
+
+İlk görüşme sonrası veya sürecin netleşmesinde kullanılan şablon. Masraf kalemlerini ve vekalet ücretini şeffaf şekilde sunar:
+
+```
+[Ad] Bey/Hanım,
+
+Görüşmemiz ve durumunuzun değerlendirmesi sonucunda size aşağıdaki teklifi sunuyorum:
+
+━━━━━━━━━━━━━━━━━━━━
+VEKALET ÜCRETİ
+━━━━━━━━━━━━━━━━━━━━
+[Örn: Dava açma ve yürütme] .............. [tutar] ₺
+[Örn: İhtarname hazırlama ve gönderme] ... [tutar] ₺
+[Örn: Arabuluculuk süreci yönetimi] ...... [tutar] ₺
+
+━━━━━━━━━━━━━━━━━━━━
+MASRAF KALEMLERİ
+━━━━━━━━━━━━━━━━━━━━
+Mahkeme / harç masrafları ............... [tutar] ₺
+Bilirkişi ücreti (gerekirse) ............. [tutar] ₺
+Tebligat ve kargo giderleri .............. [tutar] ₺
+Diğer (otel, ulaşım vb.) ................ [tutar] ₺
+
+━━━━━━━━━━━━━━━━━━━━
+TOPLAM
+━━━━━━━━━━━━━━━━━━━━
+Vekalet ücreti + masraflar: ............. [toplam] ₺
+
+Ödeme planı: [Örn: %50 başlangıçta, %50 süreç sonunda]
+             [veya: Peşin / Taksit / Dava sonunda]
+
+Not: İlk görüşme ücreti değildir. Ücretlendirme,
+durumun netleşmesinin ardından belirlenmiştir.
+
+Sorularınız olursa buradan devam edebilirsiniz.
+
+Saygılarımla,
+Av. Barış Cem Balabanlı
+```
+
+**Notlar:**
+- Tutarsız veya güncel olmayan bilgi göndermeyin; tutarları her müşteriye özel güncelleyin
+- Masraflar dava türüne göre değişir; sabit değil, kişiselleştirilmiş olmalı
+- "Dava sonunda ödeme" seçeneği sunuyorsanız, bunu açıkça belirtin — dönüşüm için güçlü bir araçtır
+- Ücret teklifini WhatsApp'tan yazdıktan sonra imzalı sözleşme/vekaletname'i görüşmede sunun
+
 ---
 
 ## Akış Özeti
@@ -192,6 +241,8 @@ Site modalı → WhatsApp mesajı (önceden doldurulmuş)
         ↓
 /ucret  (gerekirse ücret bilgisi)
         ↓
+/teklif  (detaylı ücret ve masraf teklifi)
+        ↓
 /gorusme  (ücretsiz ilk görüşme planlama)
         ↓
 /tesekkur  (kapanış ve özet)
@@ -205,3 +256,4 @@ Yanıt yoksa → /takip24 → /takip72
 - Yanıt süresi dönüşümün en kritik faktörüdür
 - Her mesajda kişisel dil kullanın; şablonu olduğu gibi copy-paste etmeyin
 - Hukuki sonuç **garanti etmeyin**; "değerlendirebilirim", "öneririm" gibi dil kullanın
+- Ücret teklifi /teklif şablonunu gönderdikten sonra sözleşme/vekaletname'i yüz yüze görüşmede sunun
