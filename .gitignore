@@ -26,3 +26,6 @@ pnpm-debug.log*
 
 # playwright artifacts
 .playwright-mcp/
+
+# lawyer quick reply templates (private)
+docs/whatsapp-quick-replies.md
