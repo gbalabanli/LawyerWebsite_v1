@@ -1,0 +1,75 @@
+{
+  "$comment": "Compact screening benchmark: short Q&A + short articles + one structured SEO pack, each with reference points for accurate scoring. Fast to generate and easy to judge.",
+  "tasks": [
+    {
+      "id": "tr-kidem-sartlar",
+      "lang": "tr",
+      "type": "faq",
+      "question": "Kıdem tazminatına hak kazanmak için hangi şartlar gerekir?",
+      "primaryKeyword": "kıdem tazminatı şartları",
+      "minWords": 50,
+      "maxWords": 110,
+      "mustInclude": [
+        "en az 1 yıl aynı işverene bağlı çalışma",
+        "işveren tarafından haksız fesih veya haklı sebeple istifa",
+        "emeklilik gibi özel haller"
+      ],
+      "reference": "Aynı işverene bağlı en az 1 yıl çalışma; iş sözleşmesinin işverence haksız feshi ya da işçinin haklı nedenle istifası; emeklilik, askerlik, evlilik gibi özel haller. Koşullar sağlanmazsa kıdem tazminatı doğmaz."
+    },
+    {
+      "id": "tr-ihtarname-adimlar",
+      "lang": "tr",
+      "type": "howto",
+      "question": "İhtarname nasıl çekilir? Kısa adımlarla açıklar mısın?",
+      "primaryKeyword": "ihtarname nasıl çekilir",
+      "minWords": 60,
+      "maxWords": 140,
+      "mustInclude": ["noter kanalı", "ihtarname metninin hazırlanması", "tebliğ", "hukuki süre/sonuç"],
+      "reference": "1) Talep ve dayanağı netleştirilir. 2) İhtarname metni yazılır. 3) Notere gidilerek imzalanır ve düzenlenir. 4) Karşı tarafa tebliğ edilir. 5) Tebliğ tarihinden itibaren süre işler ve sonuçlar doğar."
+    },
+    {
+      "id": "tr-kira-artis-kisa",
+      "lang": "tr",
+      "type": "short_article",
+      "question": "2026'da kira artış oranı nasıl hesaplanır?",
+      "primaryKeyword": "kira artış oranı hesaplama",
+      "minWords": 140,
+      "maxWords": 230,
+      "mustInclude": ["TÜFE 12 aylık ortalama", "konut kirası sınırı", "ticari kira farkı", "uyarlama davası"],
+      "reference": "Konut kiralarında artış, TÜFE 12 aylık ortalamasını aşamaz ve bir sonraki artışa kadar bağlayıcıdır. Ticari kiralarda artış serbestçe kararlaştırılabilir; aşırı artışta uyarlama davası açılabilir. Hesap, mevcut kira bedelinin ilgili oranla çarpılmasıyla yapılır."
+    },
+    {
+      "id": "en-trademark-timing",
+      "lang": "en",
+      "type": "short_article",
+      "question": "How long does trademark registration in Turkey take?",
+      "primaryKeyword": "trademark registration in Turkey",
+      "minWords": 140,
+      "maxWords": 230,
+      "mustInclude": ["TURKPATENT filing", "examination", "opposition period", "typically 6-12 months", "10-year renewal"],
+      "reference": "A TURKPATENT filing is examined on absolute grounds, then published for opposition (about two months). If no opposition blocks it, registration commonly completes in roughly 6-12 months. A trademark is protected for 10 years and renewable indefinitely."
+    },
+    {
+      "id": "en-foreign-judgment",
+      "lang": "en",
+      "type": "faq",
+      "question": "Can a foreign company enforce a foreign court judgment in Turkey?",
+      "primaryKeyword": "enforcing a foreign judgment in Turkey",
+      "minWords": 50,
+      "maxWords": 130,
+      "mustInclude": ["recognition and enforcement (tenfiz)", "reciprocity or international agreement", "public policy limit", "competent Turkish court"],
+      "reference": "Yes, through recognition and enforcement (tenfiz) before a competent Turkish court. The court checks jurisdiction, notice, finality, reciprocity or an applicable treaty, and that the judgment does not violate Turkish public policy. Enforcement is not automatic."
+    },
+    {
+      "id": "tr-marka-seo-pack",
+      "lang": "tr",
+      "type": "seo_pack",
+      "question": "Üretilecek anahtar kelime: 'marka tescili'. 3 SEO başlığı ve 1 meta açıklama üret.",
+      "primaryKeyword": "marka tescili",
+      "minWords": 0,
+      "maxWords": 0,
+      "mustInclude": ["3 başlık 50-60 karakter", "meta açıklama 140-170 karakter", "anahtar kelime başta/ilk kısımda"],
+      "reference": "Başlıklar 50-60 karakter olmalı ve 'marka tescili' ifadesini başta taşımalı. Meta açıklama 140-170 karakter arasında, anahtar kelimeyi ilk 120 karakterde içermeli ve tıklanabilir olmalı."
+    }
+  ]
+}

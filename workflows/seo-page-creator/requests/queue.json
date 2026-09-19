@@ -1,0 +1,95 @@
+{
+  "$comment": "Batch 2: complete the escrow universe (5 remaining clusters) + TR borçlar/icra/sigorta. slug is optional; universe+clusterId pull keyword-universe context.",
+  "requests": [
+    {
+      "id": "escrow-m-a-turkey",
+      "lang": "en",
+      "title": "Escrow in Turkish M&A: SPA Clauses and Release",
+      "primaryKeyword": "escrow in Turkish M&A",
+      "serviceTag": "escrow",
+      "slug": "escrow-m-a-turkey",
+      "universe": "escrow",
+      "clusterId": "escrow-m-a-turkey",
+      "intent": "Buyers and sellers in Turkish share/deal transactions who want escrow as security in the SPA.",
+      "notes": "Cover escrow as a security mechanism in share purchase agreements (SPA): release mechanics, caps/baskets, warranty survival, competition clearance timing. Link to the escrow pillar and escrow agreement pages. No fabricated statute numbers."
+    },
+    {
+      "id": "escrow-account-turkish-commercial-law",
+      "lang": "en",
+      "title": "Escrow Accounts Under Turkish Commercial Law",
+      "primaryKeyword": "escrow account Turkish commercial law",
+      "serviceTag": "escrow",
+      "slug": "escrow-account-turkish-commercial-law",
+      "universe": "escrow",
+      "clusterId": "escrow-account-turkish-commercial-law",
+      "intent": "Businesses wanting to open and operate an escrow account in Turkey under commercial law.",
+      "notes": "Explain escrow accounts under the Turkish Commercial Code and banking rules: account opening, AML/KYC checks, movement of funds, and tax treatment. Keep framing cautious; do not invent article numbers."
+    },
+    {
+      "id": "secure-payment-system-turkey",
+      "lang": "en",
+      "title": "Turkey's Secure Payment System (Guvenli Odeme) Guide",
+      "primaryKeyword": "Secure Payment System Turkey",
+      "serviceTag": "escrow",
+      "slug": "secure-payment-system-turkey",
+      "universe": "escrow",
+      "clusterId": "secure-payment-system-turkey",
+      "intent": "Property buyers/sellers in Turkey asking about the state Secure Payment System for sale transactions.",
+      "notes": "Explain the Secure Payment System (Guvenli Odeme) in property sales, its scope, setup, and interaction with title transfer and citizenship files. Note that timing/implementation can change; avoid stating a definitive launch date as fact. Link to the escrow pillar and real estate pages."
+    },
+    {
+      "id": "lawyer-client-account-turkey",
+      "lang": "en",
+      "title": "Lawyer Client Accounts in Turkey as Escrow Alternatives",
+      "primaryKeyword": "lawyer client account Turkey",
+      "serviceTag": "escrow",
+      "slug": "lawyer-client-account-turkey",
+      "universe": "escrow",
+      "clusterId": "lawyer-client-account-turkey",
+      "intent": "Clients wondering whether funds can be held safely in a Turkish lawyer's client account instead of a bank escrow.",
+      "notes": "Explain how lawyer/law firm client accounts work, how funds are held and released, and protection from seizure under the Attorney Law and enforcement rules, in general terms. Link to the escrow agent and escrow pillar pages. Do not guarantee protection."
+    },
+    {
+      "id": "escrow-off-plan-property-turkey",
+      "lang": "en",
+      "title": "Escrow for Off-Plan Property in Turkey: Buyer Protection",
+      "primaryKeyword": "escrow off-plan property Turkey",
+      "serviceTag": "escrow",
+      "slug": "escrow-off-plan-property-turkey",
+      "universe": "escrow",
+      "clusterId": "escrow-off-plan-property-turkey",
+      "intent": "Foreign buyers considering off-plan/pre-construction property in Turkey who want payment protection.",
+      "notes": "Explain developer insolvency risk and how staged escrow payments tied to construction milestones, performance bonds, and completion guarantees can reduce risk in Turkey. Link to the real estate escrow and Secure Payment System pages."
+    },
+    {
+      "id": "borclar-hukuku",
+      "lang": "tr",
+      "title": "Borçlar Hukuku Nedir? Temel Kavramlar ve Dava Türleri",
+      "primaryKeyword": "borçlar hukuku",
+      "serviceTag": "borclar-hukuku",
+      "slug": "borclar-hukuku-nedir-temel-kavramlar",
+      "intent": "Borçlar hukukunun ne olduğunu, temel kavramlarını ve hangi davaları kapsadığını öğrenmek isteyen kişiler.",
+      "notes": "Bu bir pillar yazıdır: borç, sorumluluk, ifa, temerrüt, zamanaşımı, sözleşme ve haksız fiil gibi temel kavramları sade biçimde açıkla. İcra takibi, ödenmemiş fatura, itirazın iptali, menfi tespit ve sözleşme ihlali yazılarına iç bağlantı ver. Uydurma madde numarası verme."
+    },
+    {
+      "id": "menfi-tespit-davasi-evraklari",
+      "lang": "tr",
+      "title": "Menfi Tespit Davası: Gerekli Belgeler ve Süreç",
+      "primaryKeyword": "menfi tespit davası",
+      "serviceTag": "icra-tahsilat",
+      "slug": "menfi-tespit-davasi-gerekli-belgeler",
+      "intent": "Hakkında icra takibi başlatılan ve borçlu olmadığını ispatlamak için menfi tespit davası açmayı düşünen kişiler.",
+      "notes": "Menfi tespit davasının şartları, borçlu olmadığının tespiti, kötü niyet tazminatı, ihtiyati tedbir (takibin durdurulması) ve gerekli belgeleri ele al. İtirazın iptali, icra takibine itiraz ve borçlar hukuku yazılarına iç bağlantı ver."
+    },
+    {
+      "id": "sigorta-tahkim-komisyonu",
+      "lang": "tr",
+      "title": "Sigorta Tahkim Komisyonu Başvurusu Nasıl Yapılır?",
+      "primaryKeyword": "sigorta tahkim komisyonu",
+      "serviceTag": "sigorta-hukuku",
+      "slug": "sigorta-tahkim-komisyonu-basvurusu",
+      "intent": "Sigorta şirketiyle anlaşamayan ve tahkim yolunu araştıran sigortalılar (özellikle araç değer kaybı/hasar).",
+      "notes": "Sigorta Tahkim Komisyonu'na başvuru şartları, süreç, gerekli belgeler, süreler ve araç değer kaybı talepleriyle ilişkisini anlat. Araç değer kaybı yazısına iç bağlantı ver. Kesin sonuç taahhüdü verme."
+    }
+  ]
+}

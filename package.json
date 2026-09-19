@@ -9,7 +9,21 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "bench": "node benchmarks/seo-writer/src/index.ts",
+    "bench:probe": "node benchmarks/seo-writer/src/index.ts --stage probe",
+    "bench:short": "node benchmarks/seo-writer/src/index.ts --stage short",
+    "bench:generate": "node benchmarks/seo-writer/src/index.ts --stage generate",
+    "bench:metrics": "node benchmarks/seo-writer/src/index.ts --stage metrics --latest",
+    "bench:judge": "node benchmarks/seo-writer/src/index.ts --stage judge --latest",
+    "bench:review": "node benchmarks/seo-writer/src/index.ts --stage review --latest",
+    "bench:report": "node benchmarks/seo-writer/src/index.ts --stage report --latest",
+    "flow:probe": "node workflows/seo-page-creator/src/index.ts --stage probe",
+    "flow:create": "node workflows/seo-page-creator/src/index.ts --stage create",
+    "flow:create:push": "node workflows/seo-page-creator/src/index.ts --stage create --publish --push",
+    "flow:links": "node workflows/seo-page-creator/src/index.ts --stage links",
+    "flow:research": "node workflows/seo-page-creator/src/index.ts --stage research",
+    "flow:status": "node workflows/seo-page-creator/src/index.ts --stage status"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

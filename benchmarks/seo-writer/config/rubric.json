@@ -1,0 +1,75 @@
+{
+  "$comment": "Scoring definition. finalScore = judgeWeight*judgeScore + deterministicWeight*deterministicScore + agentWeight*agentScore. Weights are renormalized over whichever sources are available. Judge scores are 0-10 and scaled to 0-100.",
+  "finalWeights": {
+    "judge": 0.45,
+    "deterministic": 0.35,
+    "agent": 0.2
+  },
+  "judge": {
+    "scale": 10,
+    "criteria": [
+      {
+        "key": "search_intent",
+        "label": "Search intent match",
+        "weight": 0.15,
+        "guidance": "Does the article fully answer what someone searching this title wants? Covers the practical questions, next steps, and decision points."
+      },
+      {
+        "key": "onpage_seo",
+        "label": "On-page SEO",
+        "weight": 0.15,
+        "guidance": "Title and meta description length/quality, keyword placement in title, first paragraph, and at least one H2, descriptive H2s suitable for featured snippets, no keyword stuffing."
+      },
+      {
+        "key": "structure_readability",
+        "label": "Structure and readability",
+        "weight": 0.15,
+        "guidance": "Logical H2/H3 hierarchy, short paragraphs, bullet lists, scannable sections, clear transitions, appropriate length."
+      },
+      {
+        "key": "depth_accuracy",
+        "label": "Depth and factual accuracy",
+        "weight": 0.2,
+        "guidance": "Topical depth, concrete legal detail (law references, durations, conditions, exceptions), consistent internal logic, no fabricated citations or obviously wrong facts."
+      },
+      {
+        "key": "eeat_neutrality",
+        "label": "E-E-A-T and legal neutrality",
+        "weight": 0.15,
+        "guidance": "Professional, experience-informed tone. Legally neutral: no guaranteed outcomes, no promises of winning, no definitive-prediction language. Appropriate disclaimers where needed."
+      },
+      {
+        "key": "conversion_cta",
+        "label": "Persuasiveness and CTA",
+        "weight": 0.1,
+        "guidance": "Reader is guided toward a sensible next step (consultation/contact) without pressure, with a relevant and non-spammy call to action."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "guidance": "Concrete, non-generic content. Avoids boilerplate filler, repetitive phrasing, and copy-paste structure that adds no value."
+      }
+    ]
+  },
+  "deterministic": {
+    "checks": [
+      { "key": "titleLength", "label": "Title length 50-60 chars", "weight": 0.08 },
+      { "key": "descriptionLength", "label": "Meta description 140-170 chars", "weight": 0.08 },
+      { "key": "wordCount", "label": "Body 800-1500 words", "weight": 0.12 },
+      { "key": "h2Count", "label": "3-6 H2 sections", "weight": 0.08 },
+      { "key": "keywordInTitle", "label": "Keyword in title", "weight": 0.06 },
+      { "key": "keywordInDescription", "label": "Keyword in description", "weight": 0.05 },
+      { "key": "keywordInIntro", "label": "Keyword in first 100 words", "weight": 0.08 },
+      { "key": "keywordInHeading", "label": "Keyword in at least one H2", "weight": 0.06 },
+      { "key": "keywordDensity", "label": "Keyword density 0.5-2.5%", "weight": 0.05 },
+      { "key": "faq", "label": "FAQ block (>=3 Q/A)", "weight": 0.06 },
+      { "key": "lists", "label": "Uses bullet or numbered lists", "weight": 0.03 },
+      { "key": "internalLinks", "label": "At least one internal link", "weight": 0.05 },
+      { "key": "cta", "label": "Has a call to action", "weight": 0.04 },
+      { "key": "frontmatterValid", "label": "Valid required frontmatter", "weight": 0.06 },
+      { "key": "paragraphLength", "label": "Readable paragraph length", "weight": 0.03 },
+      { "key": "firstParagraph", "label": "Intro states problem and value", "weight": 0.05 }
+    ]
+  }
+}

@@ -29,3 +29,7 @@ pnpm-debug.log*
 
 # lawyer quick reply templates (private)
 docs/whatsapp-quick-replies.md
+
+# agent workflow/benchmark run artifacts (generated)
+workflows/**/output/
+benchmarks/**/output/

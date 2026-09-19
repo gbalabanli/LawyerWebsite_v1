@@ -1,0 +1,203 @@
+{
+  "topic": "escrow",
+  "lang": "en",
+  "pillar": {
+    "id": "escrow-in-turkey",
+    "title": "Escrow in Turkey: Legal Guide for Foreign Buyers",
+    "primaryKeyword": "escrow in Turkey",
+    "slug": "/en/blog/escrow-in-turkey"
+  },
+  "clusters": [
+    {
+      "id": "escrow-agreement-turkish-law",
+      "title": "Escrow Agreement in Turkish Law: Clauses & Enforceability",
+      "primaryKeyword": "escrow agreement in Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "Competitors explain that escrow agreements are sui generis under the Turkish Code of Obligations but none provide a clause-by-clause drafting checklist with release mechanics, trustee liability, and dispute resolution pathways.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/escrow-agent-turkey",
+        "/en/blog/secure-payment-system-turkey"
+      ]
+    },
+    {
+      "id": "escrow-agent-turkey",
+      "title": "Who Can Act as Escrow Agent in Turkey? Lawyer, Bank, Notary",
+      "primaryKeyword": "escrow agent in Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "Search results mention banks, lawyers, and notaries as possible escrow agents but no page clearly sets out who may lawfully act, licensing requirements, and the limits of each role under Turkish law.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/escrow-agreement-turkish-law",
+        "/en/blog/lawyer-client-account-turkey"
+      ]
+    },
+    {
+      "id": "escrow-real-estate-turkey",
+      "title": "Escrow for Real Estate in Turkey: Safe Payment Steps",
+      "primaryKeyword": "escrow for real estate in Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "transactional",
+      "gapNote": "Competitors describe simultaneous payment and title transfer at the Tapu Office but do not provide a step-by-step escrow-like payment workflow for foreign buyers, including bank blocked accounts and lawyer client accounts.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/secure-payment-system-turkey",
+        "/en/blog/lawyer-client-account-turkey"
+      ]
+    },
+    {
+      "id": "escrow-m-a-turkey",
+      "title": "Escrow in Turkish M&A: SPA Clauses and Release Mechanics",
+      "primaryKeyword": "escrow in Turkish M&A",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "commercial",
+      "gapNote": "Existing articles cover escrow as collateral in share purchase agreements but lack practical guidance on aligning escrow release with SPA caps, baskets, warranty survival, and competition clearance timing.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/escrow-agreement-turkish-law",
+        "/en/blog/escrow-agent-turkey"
+      ]
+    },
+    {
+      "id": "escrow-account-turkish-commercial-law",
+      "title": "Escrow Accounts Under Turkish Commercial Law",
+      "primaryKeyword": "escrow account Turkish commercial law",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "Competitors note that escrow accounts are governed by the Turkish Commercial Code and banking regulations but do not explain account opening, AML/KYC obligations, or tax treatment in a single practical guide.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/escrow-agreement-turkish-law",
+        "/en/blog/escrow-agent-turkey"
+      ]
+    },
+    {
+      "id": "secure-payment-system-turkey",
+      "title": "Turkey's Secure Payment System (Güvenli Ödeme) Explained",
+      "primaryKeyword": "Secure Payment System Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "news",
+      "gapNote": "Several competitors mention the new Secure Payment System and its postponement to October 1, 2026, but none provide a dedicated English guide covering scope, setup, and interaction with citizenship applications.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/escrow-real-estate-turkey",
+        "/en/blog/escrow-account-turkish-commercial-law"
+      ]
+    },
+    {
+      "id": "lawyer-client-account-turkey",
+      "title": "Lawyer Client Accounts in Turkey as Escrow Alternatives",
+      "primaryKeyword": "lawyer client account Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "Competitors mention attorney client accounts and protection under the Attorney Law and Enforcement and Bankruptcy Law but do not explain how funds are held, released, or protected from seizure in detail.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/escrow-agent-turkey",
+        "/en/blog/escrow-real-estate-turkey"
+      ]
+    },
+    {
+      "id": "escrow-off-plan-property-turkey",
+      "title": "Escrow for Off-Plan Property in Turkey: Buyer Protection",
+      "primaryKeyword": "escrow off-plan property Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "transactional",
+      "gapNote": "Competitors warn about developer insolvency and recommend escrow, performance bonds, and completion guarantees but do not explain how staged escrow payments tied to construction milestones actually work in Turkey.",
+      "internalLinks": [
+        "/en/blog/escrow-in-turkey",
+        "/en/blog/escrow-real-estate-turkey",
+        "/en/blog/secure-payment-system-turkey"
+      ]
+    }
+  ],
+  "competitors": [
+    {
+      "url": "https://turkestatelegal.com/articles/escrow-in-turkey-real-estate-guide/",
+      "title": "Escrow in Turkey: A Complete Guide for Foreign Buyers"
+    },
+    {
+      "url": "https://aslanattorney.com/property-purchase/",
+      "title": "Buy Property in Turkey: 2026 Legal Guide | Aslan Attorney"
+    },
+    {
+      "url": "https://rafetaslan.av.tr/en/escrow-and-payment-security-when-buying-property-in-antalya",
+      "title": "Escrow & Payment Security When Buying Property in Antalya - Antalya Lawyer for Foreigners | Rafet Aslan Law Firm"
+    },
+    {
+      "url": "https://www.oznurpartners.com/trustworthy-escrow-in-turkey/",
+      "title": "Trustworthy Escrow in Turkey for International Investors - International Law Firm"
+    },
+    {
+      "url": "https://turkestatelegal.com/turkish-escrow-service/",
+      "title": "Turkish Escrow Service for Real Estate Transactions"
+    },
+    {
+      "url": "http://www.firatfesihkaya.av.tr/turkish-real-estate-law-2026-the-most-important-legal-changes-every-foreign-buyer-should-know-2/",
+      "title": "Turkish Real Estate Law 2026: The Most Important Legal Changes Every Foreign Buyer Should Know - Fırat Fesih Kaya"
+    },
+    {
+      "url": "https://aslanattorney.com/real-estate-law-turkey/",
+      "title": "Real Estate Law in Turkey | Aslan Attorney"
+    },
+    {
+      "url": "https://kavlak.av.tr/escrow-agreement-definition-and-situation-in-turkish-law/",
+      "title": "Escrow Agreement: Definition And Situation In Turkish Law - Kavlak Law Firm"
+    },
+    {
+      "url": "https://www.kovar.av.tr/en/sample-escrow-clause-for-commercial-contracts/",
+      "title": "Sample Escrow Clause for Commercial Contracts"
+    },
+    {
+      "url": "https://istanbullawyerfirm.com/blog/escrow-accounts-turkey",
+      "title": "Escrow Accounts in Turkish Commercial Law"
+    },
+    {
+      "url": "https://virconlegal.com/term/escrow/",
+      "title": "What Is Escrow? Definition & Practice | Vircon"
+    },
+    {
+      "url": "https://www.celebilegal.com/escrow-agreements-in-turkey/",
+      "title": "Escrow in Turkey | Antalya Law Firm"
+    },
+    {
+      "url": "https://corpenza.com/en/escrow-arrangements-in-turkish-m-and-a-deals",
+      "title": "Escrow in Turkish M&A deals 2026 - Corpenza"
+    },
+    {
+      "url": "https://kilinclaw.com.tr/en/escrow-agreements-as-collateral-mechanisms-in-share-purchase-agreements/",
+      "title": "Escrow Agreements As Collateral Mechanisms In Share Purchase Agreements - Kılınç Hukuk & Danışmanlık"
+    },
+    {
+      "url": "https://www.celebilegal.com/escrow/",
+      "title": "Escrow Services in Turkey | Antalya Law Firm"
+    },
+    {
+      "url": "http://dnblegal.com.tr/tr/escrow-agreement-practices-in-turkey/",
+      "title": "Escrow Agreement Practices in Turkey -"
+    },
+    {
+      "url": "https://www.fo-consultancy.com/escrow-in-turkey/",
+      "title": "Escrow in Turkey: Ensuring Secure Transactions for Business | FOC"
+    },
+    {
+      "url": "https://www.karanfiloglu.av.tr/en/escrow-tapu-spk-valuation-cbi-legal-musts/",
+      "title": "Escrow, Tapu, SPK Valuation: CBI Legal Musts - English Speaking Turkish Lawyer Kaan Karanfiloglu"
+    },
+    {
+      "url": "https://chambers.com/articles/escrow-agreement-in-turkish-law-and-its-application-in-mergers-acquisitions",
+      "title": "Escrow Agreement in Turkish Law and Its Application in Mergers & Acquisitions | Article | Chambers and Partners"
+    }
+  ],
+  "generatedAt": "2026-09-19T11:19:52.933Z"
+}

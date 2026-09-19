@@ -1,0 +1,44 @@
+{
+  "$comment": "Writer + judge roster for seo-page-creator. Keys are resolved at runtime: (1) provider.apiKey, (2) env var apiKeyEnv, (3) ~/.config/opencode/opencode.json provider options. Never commit secrets here.",
+  "providers": {
+    "gemini": {
+      "baseURL": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "apiKeyEnv": "GEMINI_API_KEY",
+      "opencodeProvider": "gemini"
+    },
+    "deepseek": {
+      "baseURL": "https://api.deepseek.com",
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "opencodeProvider": "deepseek"
+    }
+  },
+  "defaults": {
+    "temperature": 0.6,
+    "maxTokens": 8192,
+    "timeoutMs": 180000
+  },
+  "writer": {
+    "id": "gemini-flash-lite-latest",
+    "provider": "gemini",
+    "label": "Gemini Flash Lite Latest",
+    "temperature": 0.6,
+    "maxTokens": 8192,
+    "timeoutMs": 180000
+  },
+  "writerFallback": {
+    "id": "deepseek-chat",
+    "provider": "deepseek",
+    "label": "DeepSeek V3 (writer fallback)",
+    "temperature": 0.6,
+    "maxTokens": 8192,
+    "timeoutMs": 180000
+  },
+  "judge": {
+    "id": "deepseek-chat",
+    "provider": "deepseek",
+    "label": "DeepSeek V3",
+    "temperature": 0,
+    "maxTokens": 3000,
+    "timeoutMs": 180000
+  }
+}

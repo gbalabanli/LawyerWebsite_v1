@@ -1,0 +1,28 @@
+{
+  "$comment": "Live keyword-universe research via Exa (mcporter). Each topic is expanded into a pillar + cluster map with competitor gaps, then consumed by the writer and judger.",
+  "exa": {
+    "bin": "mcporter",
+    "tool": "exa.web_search_exa",
+    "numResults": 8,
+    "timeoutMs": 120000
+  },
+  "synthesis": {
+    "maxCharsPerResult": 1500,
+    "maxCompetitors": 10
+  },
+  "topics": {
+    "escrow": {
+      "lang": "en",
+      "serviceTag": "escrow",
+      "pillarKeyword": "escrow in Turkey",
+      "objective": "Find law-firm and legal guides about escrow in Turkey. Extract sub-topics, escrow agreement clauses, who may lawfully act as an escrow agent/contractor (lawyer or legal firm authorization), costs, tax, enforceability, and unanswered questions. Prefer English-language Turkish law firm pages.",
+      "queries": [
+        "escrow in Turkey legal guide for foreign buyers",
+        "escrow agreement in Turkey lawyer contract clauses",
+        "who can act as escrow agent in Turkey lawyer notary bank authorization",
+        "escrow account Turkish commercial law code of obligations",
+        "escrow real estate Turkey tapu SPK valuation foreign buyer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$comment": "Input titles. Each entry needs id, title, lang (tr|en), primaryKeyword and serviceTag (matching src/config/services.ts). notes is optional. Add as many as you like; the runner uses every entry.",
+  "titles": [
+    {
+      "id": "ihtarname-nasil-cekilir",
+      "lang": "tr",
+      "title": "İhtarname Nedir, Nasıl Çekilir? 2026 Adım Adım Rehber",
+      "primaryKeyword": "ihtarname nasıl çekilir",
+      "serviceTag": "ticaret-hukuku",
+      "notes": "Noter kanalı, içerik zorunlulukları, tebliğ ve hukuki sonuçlar."
+    },
+    {
+      "id": "kira-artis-orani-hesaplama",
+      "lang": "tr",
+      "title": "Kira Artış Oranı Hesaplama 2026: Güncel Rehber",
+      "primaryKeyword": "kira artış oranı hesaplama",
+      "serviceTag": "gayrimenkul",
+      "notes": "Konut ve ticari kira ayrımı, TÜFE sınırı, uyarlama davası."
+    },
+    {
+      "id": "marka-tescili-sureci",
+      "lang": "tr",
+      "title": "Marka Tescili Süreci ve Ücretleri 2026",
+      "primaryKeyword": "marka tescili",
+      "serviceTag": "fikri-mulkiyet",
+      "notes": "Nice sınıfları, TÜRKPATENT başvurusu, itiraz ve yenileme."
+    },
+    {
+      "id": "trademark-registration-turkey",
+      "lang": "en",
+      "title": "How to Register a Trademark in Turkey: 2026 Guide",
+      "primaryKeyword": "trademark registration in Turkey",
+      "serviceTag": "intellectual-property",
+      "notes": "Nice classes, TURKPATENT filing, opposition, renewal."
+    },
+    {
+      "id": "enforcing-foreign-judgment-turkey",
+      "lang": "en",
+      "title": "Enforcing a Foreign Court Judgment in Turkey",
+      "primaryKeyword": "enforcing a foreign judgment in Turkey",
+      "serviceTag": "commercial-law",
+      "notes": "Recognition and enforcement (tenfiz), reciprocity, public policy."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$comment": "Small screening set for fast model ranking. Diverse: one TR informational guide, one EN procedural guide. Use titles/titles.json for the full run.",
+  "titles": [
+    {
+      "id": "kira-artis-orani-hesaplama",
+      "lang": "tr",
+      "title": "Kira Artış Oranı Hesaplama 2026: Güncel Rehber",
+      "primaryKeyword": "kira artış oranı hesaplama",
+      "serviceTag": "gayrimenkul",
+      "notes": "Konut/ticari ayrımı, TÜFE sınırı, uyarlama davası."
+    },
+    {
+      "id": "enforcing-foreign-judgment-turkey",
+      "lang": "en",
+      "title": "Enforcing a Foreign Court Judgment in Turkey",
+      "primaryKeyword": "enforcing a foreign judgment in Turkey",
+      "serviceTag": "commercial-law",
+      "notes": "Recognition and enforcement (tenfiz), reciprocity, public policy."
+    }
+  ]
+}

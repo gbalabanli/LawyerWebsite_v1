@@ -1,0 +1,13 @@
+{
+  "$comment": "Neutral judge for the top-3 re-rank. DeepSeek R1 is not a candidate (only DeepSeek V3 / deepseek-chat is), so no self-bias, and it is not subject to the Gemini free-tier quota.",
+  "allowSelfJudge": false,
+  "temperature": 0,
+  "runsPerJudge": 1,
+  "judges": [
+    {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "label": "DeepSeek R1"
+    }
+  ]
+}

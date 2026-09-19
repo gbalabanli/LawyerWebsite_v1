@@ -1,0 +1,12 @@
+{
+  "$comment": "Runtime policy. git.enabled is only honored when the CLI passes --publish; --push additionally pushes.",
+  "maxRounds": 4,
+  "autoEnglish": false,
+  "llmsFile": "public/llms.txt",
+  "siteUrl": "https://bariscembalabanli.av.tr",
+  "git": {
+    "enabled": true,
+    "remote": "origin",
+    "commitPrefix": "feat(seo):"
+  }
+}

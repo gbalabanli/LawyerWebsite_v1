@@ -1,0 +1,76 @@
+{
+  "$comment": "Round 2 — fresh tasks to test whether the top-ranked writers generalize. Same schema as short.json.",
+  "tasks": [
+    {
+      "id": "tr-ise-iade-sure",
+      "lang": "tr",
+      "type": "faq",
+      "question": "İşe iade davası açma süresi ne kadardır?",
+      "primaryKeyword": "işe iade davası süresi",
+      "minWords": 60,
+      "maxWords": 140,
+      "mustInclude": [
+        "fesih tebliğinden itibaren 1 ay içinde işverene başvuru",
+        "işverenin 20 gün içinde cevap vermesi",
+        "2 hafta içinde dava açılması",
+        "arabuluculuğun dava şartı olması"
+      ],
+      "reference": "Fesihten sonra işçi 1 ay içinde işverene işe iade başvurusu yapar; işveren 20 gün içinde yanıt vermez veya ret yanıtı verirse, başvuru tarihinden itibaren 2 hafta içinde dava açılır. İş uyuşmazlıklarında arabuluculuk dava şartıdır."
+    },
+    {
+      "id": "tr-limited-kurulus-adim",
+      "lang": "tr",
+      "type": "howto",
+      "question": "Limited şirket kuruluşu için hangi adımlar izlenir?",
+      "primaryKeyword": "limited şirket kuruluşu",
+      "minWords": 70,
+      "maxWords": 160,
+      "mustInclude": ["MERSİS başvurusu", "asgari sermaye", "esas sözleşme/noter işlemleri", "ticaret sicili tescili"],
+      "reference": "1) MERSİS üzerinden başvuru açılır. 2) Esas sözleşme hazırlanır ve noterde imzalanır. 3) Asgari sermaye (2024 itibarıyla 50.000 TL) ve ödeme koşulları sağlanır. 4) Ticaret siciline tescil yapılır. 5) Vergi dairesi ve diğer bildirimler tamamlanır."
+    },
+    {
+      "id": "tr-mirasin-reddi",
+      "lang": "tr",
+      "type": "short_article",
+      "question": "Mirasın reddi nasıl yapılır ve süresi nedir?",
+      "primaryKeyword": "mirasın reddi",
+      "minWords": 140,
+      "maxWords": 240,
+      "mustInclude": ["öğrenmeden itibaren 3 ay", "sulh hukuk mahkemesi", "gerçek red beyanı", "diğer mirasçılara bildirim"],
+      "reference": "Mirası reddetmek isteyen mirasçı, mirasın açıldığını öğrendiğinden itibaren 3 ay içinde sulh hukuk mahkemesine yazılı beyanla gerçek red yoluna gider. Mahkeme beyanı diğer mirasçılara bildirir. Süre geçtiğinde miras kayıtsız şartsız kabul edilmiş sayılır. Borçlardan sorumluluk, red halinde mirasın tasfiyesiyle sınırlıdır."
+    },
+    {
+      "id": "en-commercial-mediation",
+      "lang": "en",
+      "type": "short_article",
+      "question": "How does mandatory mediation work for commercial disputes in Turkey?",
+      "primaryKeyword": "mandatory mediation in Turkey",
+      "minWords": 140,
+      "maxWords": 240,
+      "mustInclude": ["commercial monetary claims", "condition precedent to filing", "typical three-week timeline", "enforceable settlement document"],
+      "reference": "For many commercial monetary claims, mediation is a condition precedent to filing a lawsuit (Turkish Commercial Code Art. 5/A). After the application, a mediator is appointed, and the process commonly concludes within about three weeks, extendable in limited cases. If no agreement is reached, the mediation report is filed with the lawsuit; a settlement document reached can be enforced as an official instrument."
+    },
+    {
+      "id": "en-evict-tenant",
+      "lang": "en",
+      "type": "faq",
+      "question": "What documents are needed to evict a tenant in Turkey?",
+      "primaryKeyword": "evict a tenant in Turkey",
+      "minWords": 60,
+      "maxWords": 150,
+      "mustInclude": ["lease agreement", "written notice or warning", "proof of delivery", "mediation or court route"],
+      "reference": "Useful documents include the written lease, a valid written notice (ihtar) where required, proof of delivery or notarized notification, payment records showing default or other evidence of the legal ground, and the mediation report where applicable before the eviction or enforcement route. The correct path depends on the lease and the reason for eviction."
+    },
+    {
+      "id": "tr-bosanma-seo-pack",
+      "lang": "tr",
+      "type": "seo_pack",
+      "question": "Üretilecek anahtar kelime: 'boşanma davası'. 3 SEO başlığı ve 1 meta açıklama üret.",
+      "primaryKeyword": "boşanma davası",
+      "minWords": 0,
+      "maxWords": 0,
+      "mustInclude": ["3 başlık 50-60 karakter", "meta açıklama 140-170 karakter", "anahtar kelime başta/ilk kısımda"],
+      "reference": "Başlıklar 50-60 karakter olmalı ve 'boşanma davası' ifadesini başta taşımalı. Meta açıklama 140-170 karakter arasında, anahtar kelimeyi ilk 120 karakterde içermeli ve tıklanabilir olmalı."
+    }
+  ]
+}

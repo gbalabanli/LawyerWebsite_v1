@@ -1,0 +1,67 @@
+{
+  "$comment": "Editorial rubric. Judge scores are 0-judgeScale. A page is approved only when verdict=pass AND score >= passThreshold AND no falseClaims remain.",
+  "judgeScale": 10,
+  "passThreshold": 7.6,
+  "judge": [
+    {
+      "key": "search_intent",
+      "label": "Search intent match",
+      "weight": 0.15,
+      "guidance": "Fully answers what someone searching this title wants: practical questions, steps, conditions, exceptions, decision points. No off-topic padding."
+    },
+    {
+      "key": "onpage_seo",
+      "label": "On-page SEO",
+      "weight": 0.15,
+      "guidance": "Title 50-60 chars with keyword front-loaded; description 140-170 chars with keyword in first 120; keyword in first 100 words and at least one H2; descriptive H2s; no keyword stuffing."
+    },
+    {
+      "key": "structure_readability",
+      "label": "Structure and readability",
+      "weight": 0.15,
+      "guidance": "Logical H2/H3 hierarchy without skipped levels; short paragraphs (2-4 sentences); bullet/numbered lists; scannable sections; appropriate length (800-1500 words)."
+    },
+    {
+      "key": "depth_accuracy",
+      "label": "Depth and factual accuracy",
+      "weight": 0.2,
+      "guidance": "Concrete legal detail (durations, conditions, exceptions) that is internally consistent. Specific statute numbers or case-law citations are NOT required and their absence must not be penalized; a correct, general, cautious guide is acceptable. Penalize invented statute numbers, invented case references, or wrong law as falseClaims."
+    },
+    {
+      "key": "eeat_neutrality",
+      "label": "E-E-A-T and legal neutrality",
+      "weight": 0.15,
+      "guidance": "Professional, experience-informed, measured tone. No guaranteed outcomes or outcome promises. Appropriate cautious phrasing and disclaimers where needed."
+    },
+    {
+      "key": "conversion_cta",
+      "label": "Persuasiveness and CTA",
+      "weight": 0.1,
+      "guidance": "Guides the reader to a sensible next step (consultation/contact) without pressure and without spammy repetition."
+    },
+    {
+      "key": "originality",
+      "label": "Originality",
+      "weight": 0.1,
+      "guidance": "Concrete, non-generic content. Avoids boilerplate filler and repetitive phrasing."
+    }
+  ],
+  "deterministic": [
+    { "key": "titleLength", "label": "Title length 50-60 chars", "weight": 0.08 },
+    { "key": "descriptionLength", "label": "Meta description 140-170 chars", "weight": 0.08 },
+    { "key": "wordCount", "label": "Body 800-1500 words", "weight": 0.12 },
+    { "key": "h2Count", "label": "3-6 H2 sections", "weight": 0.08 },
+    { "key": "keywordInTitle", "label": "Keyword in title", "weight": 0.06 },
+    { "key": "keywordInDescription", "label": "Keyword in description", "weight": 0.05 },
+    { "key": "keywordInIntro", "label": "Keyword in first 100 words", "weight": 0.08 },
+    { "key": "keywordInHeading", "label": "Keyword in at least one H2", "weight": 0.06 },
+    { "key": "keywordDensity", "label": "Keyword density 0.5-2.5%", "weight": 0.05 },
+    { "key": "faq", "label": "FAQ block (>=3 Q/A)", "weight": 0.06 },
+    { "key": "lists", "label": "Uses bullet or numbered lists", "weight": 0.03 },
+    { "key": "internalLinks", "label": "At least one internal link", "weight": 0.05 },
+    { "key": "cta", "label": "Has a call to action", "weight": 0.04 },
+    { "key": "frontmatterValid", "label": "Valid required frontmatter", "weight": 0.06 },
+    { "key": "paragraphLength", "label": "Readable paragraph length", "weight": 0.03 },
+    { "key": "firstParagraph", "label": "Intro states problem and value", "weight": 0.05 }
+  ]
+}
