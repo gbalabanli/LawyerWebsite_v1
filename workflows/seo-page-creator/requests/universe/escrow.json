@@ -119,6 +119,36 @@
         "/en/blog/escrow-real-estate-turkey",
         "/en/blog/secure-payment-system-turkey"
       ]
+    },
+    {
+      "id": "escrow-costs-tax",
+      "title": "Escrow Costs and Taxes in Turkey: What to Expect",
+      "primaryKeyword": "escrow costs Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "Competitors mention escrow fees and taxes but rarely break down who pays, how fees are structured, and the tax/stamp implications in one place.",
+      "internalLinks": ["/en/blog/escrow-in-turkey", "/en/blog/escrow-agreement-turkish-law", "/en/blog/escrow-account-turkish-commercial-law"]
+    },
+    {
+      "id": "escrow-enforceability",
+      "title": "Is Escrow Enforceable in Turkey? Legal Framework",
+      "primaryKeyword": "escrow enforceable Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "Escrow agreements are described as sui generis under the Turkish Code of Obligations, but no page explains enforceability, remedies, and what happens on breach.",
+      "internalLinks": ["/en/blog/escrow-in-turkey", "/en/blog/escrow-agreement-turkish-law", "/en/blog/escrow-agent-turkey"]
+    },
+    {
+      "id": "escrow-vs-earnest-money",
+      "title": "Escrow vs Earnest Money vs Deposit in Turkey",
+      "primaryKeyword": "escrow vs deposit Turkey",
+      "serviceTag": "escrow",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "Deposits, earnest money (kaparo), and escrow are often conflated; a clear comparison for Turkish transactions is missing.",
+      "internalLinks": ["/en/blog/escrow-in-turkey", "/en/blog/escrow-real-estate-turkey", "/en/blog/escrow-agreement-turkish-law"]
     }
   ],
   "competitors": [

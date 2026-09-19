@@ -1,95 +1,91 @@
 {
-  "$comment": "Batch 2: complete the escrow universe (5 remaining clusters) + TR borçlar/icra/sigorta. slug is optional; universe+clusterId pull keyword-universe context.",
+  "$comment": "Batch 3: escrow long-tail (costs, enforceability, vs deposit) + TR family/enforcement/tenancy gaps.",
   "requests": [
     {
-      "id": "escrow-m-a-turkey",
+      "id": "escrow-costs-tax",
       "lang": "en",
-      "title": "Escrow in Turkish M&A: SPA Clauses and Release",
-      "primaryKeyword": "escrow in Turkish M&A",
+      "title": "Escrow Costs and Taxes in Turkey: What to Expect",
+      "primaryKeyword": "escrow costs Turkey",
       "serviceTag": "escrow",
-      "slug": "escrow-m-a-turkey",
+      "slug": "escrow-costs-tax",
       "universe": "escrow",
-      "clusterId": "escrow-m-a-turkey",
-      "intent": "Buyers and sellers in Turkish share/deal transactions who want escrow as security in the SPA.",
-      "notes": "Cover escrow as a security mechanism in share purchase agreements (SPA): release mechanics, caps/baskets, warranty survival, competition clearance timing. Link to the escrow pillar and escrow agreement pages. No fabricated statute numbers."
+      "clusterId": "escrow-costs-tax",
+      "intent": "Parties budgeting for an escrow arrangement in Turkey who want to know fees and tax treatment.",
+      "notes": "Explain who typically pays escrow/service fees, how bank and lawyer fees are structured, and the general tax/stamp duty considerations. Avoid exact figures presented as certain; say they vary and should be confirmed. Link to the escrow pillar, agreement and account pages."
     },
     {
-      "id": "escrow-account-turkish-commercial-law",
+      "id": "escrow-enforceability",
       "lang": "en",
-      "title": "Escrow Accounts Under Turkish Commercial Law",
-      "primaryKeyword": "escrow account Turkish commercial law",
+      "title": "Is Escrow Enforceable in Turkey? Legal Framework",
+      "primaryKeyword": "escrow enforceable Turkey",
       "serviceTag": "escrow",
-      "slug": "escrow-account-turkish-commercial-law",
+      "slug": "escrow-enforceability",
       "universe": "escrow",
-      "clusterId": "escrow-account-turkish-commercial-law",
-      "intent": "Businesses wanting to open and operate an escrow account in Turkey under commercial law.",
-      "notes": "Explain escrow accounts under the Turkish Commercial Code and banking rules: account opening, AML/KYC checks, movement of funds, and tax treatment. Keep framing cautious; do not invent article numbers."
+      "clusterId": "escrow-enforceability",
+      "intent": "Clients asking whether an escrow agreement can be enforced in Turkey and what happens if a party breaches.",
+      "notes": "Explain that escrow is a sui generis contract under the Turkish Code of Obligations (6098), how breaches are remedied, and the role of courts/arbitration. Do not invent article numbers. Link to the escrow pillar and agreement pages."
     },
     {
-      "id": "secure-payment-system-turkey",
+      "id": "escrow-vs-earnest-money",
       "lang": "en",
-      "title": "Turkey's Secure Payment System (Guvenli Odeme) Guide",
-      "primaryKeyword": "Secure Payment System Turkey",
+      "title": "Escrow vs Earnest Money vs Deposit in Turkey",
+      "primaryKeyword": "escrow vs deposit Turkey",
       "serviceTag": "escrow",
-      "slug": "secure-payment-system-turkey",
+      "slug": "escrow-vs-earnest-money",
       "universe": "escrow",
-      "clusterId": "secure-payment-system-turkey",
-      "intent": "Property buyers/sellers in Turkey asking about the state Secure Payment System for sale transactions.",
-      "notes": "Explain the Secure Payment System (Guvenli Odeme) in property sales, its scope, setup, and interaction with title transfer and citizenship files. Note that timing/implementation can change; avoid stating a definitive launch date as fact. Link to the escrow pillar and real estate pages."
+      "clusterId": "escrow-vs-earnest-money",
+      "intent": "Buyers who need to understand the difference between escrow, earnest money (kaparo) and deposit.",
+      "notes": "Compare escrow, kaparo/earnest money, and deposits in Turkish transactions (especially real estate): purpose, who holds the money, refund rules, and risk. Link to the escrow pillar, escrow for real estate, and escrow agreement pages."
     },
     {
-      "id": "lawyer-client-account-turkey",
-      "lang": "en",
-      "title": "Lawyer Client Accounts in Turkey as Escrow Alternatives",
-      "primaryKeyword": "lawyer client account Turkey",
-      "serviceTag": "escrow",
-      "slug": "lawyer-client-account-turkey",
-      "universe": "escrow",
-      "clusterId": "lawyer-client-account-turkey",
-      "intent": "Clients wondering whether funds can be held safely in a Turkish lawyer's client account instead of a bank escrow.",
-      "notes": "Explain how lawyer/law firm client accounts work, how funds are held and released, and protection from seizure under the Attorney Law and enforcement rules, in general terms. Link to the escrow agent and escrow pillar pages. Do not guarantee protection."
-    },
-    {
-      "id": "escrow-off-plan-property-turkey",
-      "lang": "en",
-      "title": "Escrow for Off-Plan Property in Turkey: Buyer Protection",
-      "primaryKeyword": "escrow off-plan property Turkey",
-      "serviceTag": "escrow",
-      "slug": "escrow-off-plan-property-turkey",
-      "universe": "escrow",
-      "clusterId": "escrow-off-plan-property-turkey",
-      "intent": "Foreign buyers considering off-plan/pre-construction property in Turkey who want payment protection.",
-      "notes": "Explain developer insolvency risk and how staged escrow payments tied to construction milestones, performance bonds, and completion guarantees can reduce risk in Turkey. Link to the real estate escrow and Secure Payment System pages."
-    },
-    {
-      "id": "borclar-hukuku",
+      "id": "velayet-davasi",
       "lang": "tr",
-      "title": "Borçlar Hukuku Nedir? Temel Kavramlar ve Dava Türleri",
-      "primaryKeyword": "borçlar hukuku",
-      "serviceTag": "borclar-hukuku",
-      "slug": "borclar-hukuku-nedir-temel-kavramlar",
-      "intent": "Borçlar hukukunun ne olduğunu, temel kavramlarını ve hangi davaları kapsadığını öğrenmek isteyen kişiler.",
-      "notes": "Bu bir pillar yazıdır: borç, sorumluluk, ifa, temerrüt, zamanaşımı, sözleşme ve haksız fiil gibi temel kavramları sade biçimde açıkla. İcra takibi, ödenmemiş fatura, itirazın iptali, menfi tespit ve sözleşme ihlali yazılarına iç bağlantı ver. Uydurma madde numarası verme."
+      "title": "Velayet Davası Nasıl Açılır? 2026 Rehberi",
+      "primaryKeyword": "velayet davası",
+      "serviceTag": "aile-hukuku",
+      "slug": "velayet-davasi-nasil-acilir-2026",
+      "intent": "Çocuğun velayetini almak, değiştirmek veya kişisel ilişki düzenlemek isteyen ebeveynler.",
+      "notes": "Çocuğun üstün yararı ilkesi, velayet davasının açılması, görevli/yetkili mahkeme, deliller (pedagog/sosyal inceleme), kişisel ilişki ve velayetin değiştirilmesi şartlarını ele al. Çekişmeli ve anlaşmalı boşanma yazılarına iç bağlantı ver. Kesin sonuç vaadi kullanma."
     },
     {
-      "id": "menfi-tespit-davasi-evraklari",
+      "id": "mal-rejimi-tasfiyesi",
       "lang": "tr",
-      "title": "Menfi Tespit Davası: Gerekli Belgeler ve Süreç",
-      "primaryKeyword": "menfi tespit davası",
+      "title": "Mal Rejimi Tasfiyesi Davası Nasıl Açılır?",
+      "primaryKeyword": "mal rejimi tasfiyesi",
+      "serviceTag": "aile-hukuku",
+      "slug": "mal-rejimi-tasfiyesi-davasi-nasil-acilir",
+      "intent": "Boşanma veya ölüm sonrası edinilmiş malların paylaşımını isteyen kişiler.",
+      "notes": "Edinilmiş mallara katılma rejimi, kişisel/edinilmiş mal ayrımı, katılma alacağı, değer artış payı, zamanaşımı ve tasfiye davasının boşanmadan bağımsız görülmesi konularını ele al. Çekişmeli boşanma ve nafaka yazılarına iç bağlantı ver. Uydurma madde numarası kullanma."
+    },
+    {
+      "id": "haciz-islemleri",
+      "lang": "tr",
+      "title": "Haciz İşlemleri ve İtiraz Yolları Rehberi",
+      "primaryKeyword": "haciz işlemleri",
       "serviceTag": "icra-tahsilat",
-      "slug": "menfi-tespit-davasi-gerekli-belgeler",
-      "intent": "Hakkında icra takibi başlatılan ve borçlu olmadığını ispatlamak için menfi tespit davası açmayı düşünen kişiler.",
-      "notes": "Menfi tespit davasının şartları, borçlu olmadığının tespiti, kötü niyet tazminatı, ihtiyati tedbir (takibin durdurulması) ve gerekli belgeleri ele al. İtirazın iptali, icra takibine itiraz ve borçlar hukuku yazılarına iç bağlantı ver."
+      "slug": "haciz-islemleri-ve-itiraz-yollari",
+      "intent": "Hakkında haciz uygulanan veya haciz sürecini anlamak isteyen borçlular ve alacaklılar.",
+      "notes": "Haciz talebi ve işlemleri, menkul/gayrimenkul/maaş haczi, haczedilmezlik (kısmen haczedilemez mallar), hacze itiraz ve istihkak iddiası yollarını ele al. İcra takibi, itirazın iptali ve menfi tespit yazılarına iç bağlantı ver."
     },
     {
-      "id": "sigorta-tahkim-komisyonu",
+      "id": "tasarrufun-iptali-davasi",
       "lang": "tr",
-      "title": "Sigorta Tahkim Komisyonu Başvurusu Nasıl Yapılır?",
-      "primaryKeyword": "sigorta tahkim komisyonu",
-      "serviceTag": "sigorta-hukuku",
-      "slug": "sigorta-tahkim-komisyonu-basvurusu",
-      "intent": "Sigorta şirketiyle anlaşamayan ve tahkim yolunu araştıran sigortalılar (özellikle araç değer kaybı/hasar).",
-      "notes": "Sigorta Tahkim Komisyonu'na başvuru şartları, süreç, gerekli belgeler, süreler ve araç değer kaybı talepleriyle ilişkisini anlat. Araç değer kaybı yazısına iç bağlantı ver. Kesin sonuç taahhüdü verme."
+      "title": "Tasarrufun İptali Davası Nedir, Nasıl Açılır?",
+      "primaryKeyword": "tasarrufun iptali davası",
+      "serviceTag": "icra-tahsilat",
+      "slug": "tasarrufun-iptali-davasi-nedir",
+      "intent": "Borçlusunun mal kaçırdığını düşünen alacaklılar ve iptal davasının şartlarını arayan kişiler.",
+      "notes": "Tasarrufun iptali davasının şartları (aciz vesikası, borç doğuran işlem), tasarruf türleri (ivazsız/ivazlı), ispat, süreler ve davanın sonuçlarını ele al. İcra takibi ve haciz yazılarına iç bağlantı ver."
+    },
+    {
+      "id": "tahliye-davasi",
+      "lang": "tr",
+      "title": "Tahliye Davası: Sebepler ve Süreç Rehberi",
+      "primaryKeyword": "tahliye davası",
+      "serviceTag": "gayrimenkul",
+      "slug": "tahliye-davasi-sebepler-surec",
+      "intent": "Kiracısını tahliye etmek isteyen malikler ve tahliye sürecini anlamak isteyen kişiler.",
+      "notes": "İhtiyaç, yeniden inşa/imar, kira bedelinin ödenmemesi ve tahliye taahhüdüne dayalı tahliye sebeplerini; ihtarname, süreler, arabuluculuk dava şartı ve dava sürecini ele al. Kira tespit ve kiracı dosyası yazılarına iç bağlantı ver."
     }
   ]
 }
