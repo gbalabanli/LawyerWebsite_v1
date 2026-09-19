@@ -1,0 +1,41 @@
+{
+  "$comment": "Corporate-law pillar / company-formation cluster (EN). Pillar: existing /en/blog/how-foreigners-can-open-company-turkey. Universe: requests/universe/corporate.json.",
+  "requests": [
+    {
+      "id": "company-types-in-turkey-limited-vs-joint-stock",
+      "lang": "en",
+      "title": "Types of Companies in Turkey: Limited vs Joint Stock",
+      "primaryKeyword": "types of companies in Turkey",
+      "serviceTag": "company-formation",
+      "slug": "company-types-in-turkey-limited-vs-joint-stock",
+      "universe": "corporate",
+      "clusterId": "company-types-in-turkey-limited-vs-joint-stock",
+      "intent": "Foreign founders deciding which legal form to use for a new business in Turkey.",
+      "notes": "Cluster article under the corporate-law pillar (company formation in Turkey). Compare the limited liability company (limited sirket) and the joint-stock company (anonim sirket) for foreign founders: shareholders, liability, minimum capital approach, share transfer, governance (managers vs board), and suitability for trading, holding, startups, and outside investment. Briefly mention sole proprietorship, collective and commandite companies, branches, and liaison offices so the reader knows the alternatives. Add a short decision checklist. Do not present minimum capital amounts or fee figures as fixed facts; capital thresholds are set by law and can change, so say they should be confirmed before filing. Do not invent statute numbers. Internal links (use exact URLs): /en/services/company-formation-lawyer-turkey (Company Formation Lawyer in Turkey), /en/blog/how-foreigners-can-open-company-turkey, /en/blog/shareholder-agreement-turkey-foreign-owned-companies. No howTo section. Keep 4-5 H2 sections."
+    },
+    {
+      "id": "company-formation-cost-required-documents-turkey",
+      "lang": "en",
+      "title": "Company Formation Cost in Turkey: Fees and Documents",
+      "primaryKeyword": "company formation cost in Turkey",
+      "serviceTag": "company-formation",
+      "slug": "company-formation-cost-required-documents-turkey",
+      "universe": "corporate",
+      "clusterId": "company-formation-cost-required-documents-turkey",
+      "intent": "Founders budgeting for incorporation who need to know which documents are required and what drives cost.",
+      "notes": "Cluster article under the corporate-law pillar (company formation in Turkey). Explain the documents a founder normally needs (passport, Turkish tax number, address details, articles of association, notarised or consular documents, power of attorney if filing remotely, translations, and registry/tax forms) and the main cost components (notary and translation, trade registry and related official charges, capital contribution, accounting and tax setup, professional fees, and optional advisory work). Make clear that amounts vary by company type, capital, activity, document route, and chosen advisers, and that official charges are updated periodically and should be confirmed at the time of filing. Do not state exact prices as current facts. Explain at a high level how cost differs between a limited company and a joint-stock company. Include a howTo frontmatter array with exactly 3 steps for preparing documents and budget, and render each step as its own H2 heading; add at most two other H2 sections so the article has around 5 H2 headings total. Internal links (exact URLs): /en/services/company-formation-lawyer-turkey (Company Formation Lawyer in Turkey), /en/blog/how-foreigners-can-open-company-turkey, /en/blog/company-types-in-turkey-limited-vs-joint-stock."
+    },
+    {
+      "id": "company-formation-lawyer-in-turkey",
+      "lang": "en",
+      "title": "Company Formation Lawyer in Turkey: When to Hire",
+      "primaryKeyword": "company formation lawyer in Turkey",
+      "serviceTag": "company-formation",
+      "slug": "company-formation-lawyer-in-turkey",
+      "universe": "corporate",
+      "clusterId": "company-formation-lawyer-in-turkey",
+      "intent": "Foreign entrepreneurs deciding whether they need a lawyer or attorney for company setup and what tasks counsel handles.",
+      "notes": "Cluster article under the corporate-law pillar (company formation in Turkey). Explain what a company formation lawyer in Turkey actually does: choosing the right structure, reviewing shareholder structure, drafting articles of association, preparing and using a power of attorney for non-resident founders, coordinating notary, trade registry (MERSIS) and tax steps, defining signing authority, preparing a shareholder agreement, coordinating work permit and immigration timing, and supporting bank compliance and source-of-funds questions. Explain when self-filing is workable and when legal support is worth the cost (multiple shareholders, foreign corporate shareholder, regulated activity, remote founders, investment plans). Describe how a power of attorney is used and how to keep it narrow. Do not guarantee outcomes. Do not invent statute numbers or fees. Internal links (exact URLs): /en/services/company-formation-lawyer-turkey (Company Formation Lawyer in Turkey), /en/blog/how-foreigners-can-open-company-turkey, /en/blog/company-formation-cost-required-documents-turkey. No howTo section. Keep 4-5 H2 sections."
+    }
+  ]
+}

@@ -163,7 +163,8 @@ export async function runPipeline(opts: PipelineOptions): Promise<PipelineResult
 					? uni.pillar.slug.trim().replace(/^\/(?:en\/)?blog\//, '')
 					: slugify(uni.pillar?.title ?? '');
 				if (pillarSlug) allowedLinks.add(pillarSlug);
-				universeContext = formatUniverseContext(uni, request.clusterId, activeSlugs);
+				const linkableIds = new Set<string>([...existingByLang[request.lang], ...activeSlugs]);
+				universeContext = formatUniverseContext(uni, request.clusterId, linkableIds);
 				opts.onLog?.(`  universe: ${request.universe}${request.clusterId ? ` / ${request.clusterId}` : ''}`);
 			} else {
 				opts.onLog?.(`  universe "${request.universe}" not found — proceeding without`);

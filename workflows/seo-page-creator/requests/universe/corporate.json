@@ -1,0 +1,55 @@
+{
+  "topic": "corporate",
+  "lang": "en",
+  "pillar": {
+    "id": "how-foreigners-can-open-company-turkey",
+    "title": "How Foreigners Can Open a Company in Turkey",
+    "primaryKeyword": "company formation in Turkey",
+    "slug": "how-foreigners-can-open-company-turkey"
+  },
+  "clusters": [
+    {
+      "id": "company-types-in-turkey-limited-vs-joint-stock",
+      "title": "Types of Companies in Turkey: Limited vs Joint Stock",
+      "primaryKeyword": "types of companies in Turkey",
+      "serviceTag": "company-formation",
+      "lang": "en",
+      "intent": "informational",
+      "gapNote": "English guides list company types but rarely turn the choice into a practical decision framework for foreign founders covering capital, share transferability, governance, and investor readiness.",
+      "internalLinks": [
+        "/en/services/company-formation-lawyer-turkey",
+        "/en/blog/how-foreigners-can-open-company-turkey",
+        "/en/blog/shareholder-agreement-turkey-foreign-owned-companies"
+      ]
+    },
+    {
+      "id": "company-formation-cost-required-documents-turkey",
+      "title": "Company Formation Cost and Documents in Turkey",
+      "primaryKeyword": "company formation cost in Turkey",
+      "serviceTag": "company-formation",
+      "lang": "en",
+      "intent": "transactional",
+      "gapNote": "English guides on company formation in Turkey often give a step list without separating mandatory documents from optional professional support or explaining why cost varies by company type, capital, and document route.",
+      "internalLinks": [
+        "/en/services/company-formation-lawyer-turkey",
+        "/en/blog/how-foreigners-can-open-company-turkey",
+        "/en/blog/company-types-in-turkey-limited-vs-joint-stock"
+      ]
+    },
+    {
+      "id": "company-formation-lawyer-in-turkey",
+      "title": "Company Formation Lawyer in Turkey: When to Hire",
+      "primaryKeyword": "company formation lawyer in Turkey",
+      "serviceTag": "company-formation",
+      "lang": "en",
+      "intent": "commercial",
+      "gapNote": "English content explains the formation steps but rarely clarifies what an attorney actually handles, when self-filing is risky, and how a power of attorney is used by non-resident founders.",
+      "internalLinks": [
+        "/en/services/company-formation-lawyer-turkey",
+        "/en/blog/how-foreigners-can-open-company-turkey",
+        "/en/blog/company-formation-cost-required-documents-turkey"
+      ]
+    }
+  ],
+  "competitors": []
+}
