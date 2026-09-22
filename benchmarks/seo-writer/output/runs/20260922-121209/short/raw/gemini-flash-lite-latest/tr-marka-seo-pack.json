@@ -1,0 +1,11 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "modelLabel": "Gemini Flash Lite Latest",
+  "taskId": "tr-marka-seo-pack",
+  "lang": "tr",
+  "ok": true,
+  "answer": "{\"titles\":[\"Marka Tescili Nasıl Yapılır? Adım Adım Rehber\",\"Marka Tescili Başvurusu ve Gerekli Evraklar\",\"Marka Tescili Fiyatları ve Ücretleri 2024\"],\"description\":\"Marka tescili ile markanızı koruma altına alın! Başvuru süreci, gerekli evraklar ve tüm detaylar için uzman avukatlarımızdan destek alın.\"}",
+  "latencyMs": 1260,
+  "totalTokens": 272,
+  "createdAt": "2026-09-22T09:13:45.214Z"
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "modelLabel": "Gemini Flash Lite Latest",
+  "taskId": "tr-ihtarname-adimlar",
+  "lang": "tr",
+  "ok": true,
+  "answer": "İhtarname nasıl çekilir sorusunun yanıtı, yasal hakların korunması ve karşı tarafa bildirimde bulunulması açısından belirli adımların izlenmesini gerektirir. Süreç somut olaya göre değişebilir, ancak genel adımlar şunlardır:\n\n1. **Metnin Hazırlanması:** İhtarname metninde tarafların bilgileri, talepler, yasal dayanaklar ve süreler açıkça yer almalıdır.\n2. **Noter Seçimi:** İşlemin resmiyet kazanması için herhangi bir noterliğe başvurulur.\n3. **Nüsha Sayısı:** İhtarname noter tarafından genellikle üç nüsha olarak düzenlenir; biri muhataba gönderilir, biri noterde saklanır, diğeri ise sizde kalır.\n4. **Tebligat:** Noter aracılığıyla hazırlanan belge, PTT vasıtasıyla veya elektronik tebligat yoluyla karşı tarafa tebliğ edilir. \n\nHukuki hak kayıpları yaşamamak adına bu süreçte bir avukattan hukuki destek almak önem taşır.",
+  "latencyMs": 1765,
+  "totalTokens": 422,
+  "createdAt": "2026-09-22T09:13:45.613Z"
+}

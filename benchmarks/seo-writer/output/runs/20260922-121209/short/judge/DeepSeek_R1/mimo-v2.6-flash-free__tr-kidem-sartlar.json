@@ -1,0 +1,26 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "titleId": "tr-kidem-sartlar",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 3,
+    "completeness": 3,
+    "directness": 7,
+    "seo": 5,
+    "tone": 8
+  },
+  "reasons": {
+    "accuracy": "İşçinin haklı nedenle istifası yanlışlıkla kıdem tazminatı doğurmaz denmiş; emeklilik gibi özel haller belirtilmemiş.",
+    "completeness": "En az 1 yıl ve işverence haksız fesih var; haklı sebeple istifa yanlış, emeklilik/askerlik/evlilik gibi özel haller eksik.",
+    "directness": "Cevaba hemen giriyor, ancak Arabuluculuk önerisi ve genel ek açıklama gereksiz yer kaplıyor.",
+    "seo": "Anahtar ifade 'kıdem tazminatı şartları' birebir kullanılmamış; konuya yakın ifade var.",
+    "tone": "Profesyonel ve garanti vermeyen bir dil kullanılmış; genel hukuki öneri eklenmiş."
+  },
+  "redFlags": [
+    "İstifa ve haklı nedenle işçi feshi gibi durumlar genelde kıdem tazminatı doğurmaz ifadesi hatalıdır; haklı nedenle istifa kıdem tazminatına hak kazandırabilir.",
+    "Emeklilik, askerlik, evlilik gibi özel haller yerine belirsiz 'bazı fesih halleri' ifadesi kullanılmış.",
+    "Arabuluculuk sürecine başvurulması önerisi soruyla doğrudan ilgisiz ve gereksizdir."
+  ],
+  "latencyMs": 11147
+}

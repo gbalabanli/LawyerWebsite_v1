@@ -1,0 +1,22 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "titleId": "tr-ihtarname-adimlar",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 9,
+    "completeness": 7,
+    "directness": 8,
+    "seo": 9,
+    "tone": 10
+  },
+  "reasons": {
+    "accuracy": "Temel adımlar doğru; noter, metin ve tebliğ doğru şekilde belirtilmiş. Nüsha sayısı ve elektronik tebligat ifadesi genel kabul görebilir ancak her olayda değişebilir.",
+    "completeness": "Noter kanalı, ihtarname metninin hazırlanması ve tebliğ kapsanmış; ancak hukuki süre/sonuç adımı eksik.",
+    "directness": "Soruya doğrudan adımlarla yanıt veriyor; başlangıçta kısa bir açıklama var, ciddi filler sayılmaz.",
+    "seo": "Anahtar kelime doğal biçimde ilk cümlede kullanılmış, numaralı yapı snippet dostu ve anahtar kelime doldurma yok.",
+    "tone": "Profesyonel ve hukuki açıdan temkinli; garanti içeren bir ifade yok."
+  },
+  "redFlags": [],
+  "latencyMs": 11779
+}

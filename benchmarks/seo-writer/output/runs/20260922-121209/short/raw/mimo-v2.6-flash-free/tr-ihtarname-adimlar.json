@@ -1,0 +1,10 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "modelLabel": "MiMo v2.6 Flash (free, via OpenCode CLI)",
+  "taskId": "tr-ihtarname-adimlar",
+  "lang": "tr",
+  "ok": true,
+  "answer": "1. Noter, avukat veya posta yoluyla ihtarname çekilebilir; öncelikle alacak veya talep türü belirlenir.\n\n2. İhtarnamenin kimden kime, hangi borç/talep için ve hangi süre içinde yerine getirileceği açıkça yazılır.\n\n3. Borçlunun kimlik ve adres bilgileri doğru girilir; adres bilinmiyorsa ilgili kurumlardan teyit alınır.\n\n4. Belge, deliller ve varsa sözleşme eklenir; talep tutarı veya somut istem net ifade edilir.\n\n5. Noter aracılığıyla çekilen ihtarnamede harç ve masraflar ödenir, gönderi tebligat usulüne uygun ulaştırılır.\n\n6. Süre sonunda yanıt alınmazsa icra takibi veya dava gündeme gelebilir; süreç somut olaya göre değişebilir.",
+  "latencyMs": 16544,
+  "createdAt": "2026-09-22T09:13:43.854Z"
+}

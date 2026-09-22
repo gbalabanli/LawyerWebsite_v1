@@ -20,6 +20,12 @@
       "baseURL": "https://api.deepseek.com",
       "apiKeyEnv": "DEEPSEEK_API_KEY",
       "opencodeProvider": "deepseek"
+    },
+    "opencode": {
+      "baseURL": "https://opencode.ai/zen/v1",
+      "apiKeyEnv": "OPENCODE_API_KEY",
+      "opencodeProvider": "opencode",
+      "transport": "opencode-cli"
     }
   },
   "defaults": {
@@ -114,6 +120,14 @@
       "provider": "deepseek",
       "label": "DeepSeek V3",
       "tier": "paid",
+      "enabled": true,
+      "langs": ["tr", "en"]
+    },
+    {
+      "id": "mimo-v2.6-flash-free",
+      "provider": "opencode",
+      "label": "MiMo v2.6 Flash (free, via OpenCode CLI)",
+      "tier": "free",
       "enabled": true,
       "langs": ["tr", "en"]
     },

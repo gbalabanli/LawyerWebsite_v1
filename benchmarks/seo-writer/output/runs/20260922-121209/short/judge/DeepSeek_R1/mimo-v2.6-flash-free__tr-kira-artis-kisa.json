@@ -1,0 +1,23 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "titleId": "tr-kira-artis-kisa",
+  "judge": "DeepSeek R1",
+  "ok": false,
+  "error": "unparsable",
+  "scores": {
+    "accuracy": 0,
+    "completeness": 0,
+    "directness": 0,
+    "seo": 0,
+    "tone": 0
+  },
+  "reasons": {
+    "accuracy": "",
+    "completeness": "",
+    "directness": "",
+    "seo": "",
+    "tone": ""
+  },
+  "redFlags": [],
+  "latencyMs": 17198
+}

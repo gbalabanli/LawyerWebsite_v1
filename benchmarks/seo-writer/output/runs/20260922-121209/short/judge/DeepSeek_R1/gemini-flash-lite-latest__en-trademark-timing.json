@@ -1,0 +1,26 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "titleId": "en-trademark-timing",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 8,
+    "completeness": 5,
+    "directness": 7,
+    "seo": 8,
+    "tone": 9
+  },
+  "reasons": {
+    "accuracy": "Mostly correct on TÜRKPATENT examination, opposition, and no-guarantee caveat, but the stated 8-12 month timeline narrows the required 6-12 month range.",
+    "completeness": "Covers examination and opposition, but omits the required 10-year renewal and does not explicitly cover TURKPATENT filing as a step or the full 6-12 month range.",
+    "directness": "Answers immediately with the timeline, but includes extra caveats and a promotional line about hiring an IP professional.",
+    "seo": "Uses 'trademark registration in Turkey' naturally and gives a snippet-friendly direct timeframe.",
+    "tone": "Professional, neutral, and avoids guaranteed outcomes."
+  },
+  "redFlags": [
+    "Timeline stated as 8-12 months rather than the required 6-12 months",
+    "Promotional filler about working with a qualified intellectual property professional",
+    "No mention of the 10-year renewal term"
+  ],
+  "latencyMs": 10238
+}

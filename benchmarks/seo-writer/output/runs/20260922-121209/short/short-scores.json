@@ -1,0 +1,416 @@
+{
+  "leaderboard": [
+    {
+      "model": "gemini-flash-lite-latest",
+      "label": "Gemini Flash Lite Latest",
+      "final": 81.9,
+      "judge": 75,
+      "det": 89.7,
+      "accuracy": 75,
+      "ok": 6,
+      "total": 6,
+      "avgLatencyMs": 1772
+    },
+    {
+      "model": "mimo-v2.6-flash-free",
+      "label": "MiMo v2.6 Flash (free, via OpenCode CLI)",
+      "final": 79,
+      "judge": 72.1,
+      "det": 84.2,
+      "accuracy": 68,
+      "ok": 6,
+      "total": 6,
+      "avgLatencyMs": 15635
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tr-kidem-sartlar",
+      "lang": "tr",
+      "type": "faq",
+      "question": "Kıdem tazminatına hak kazanmak için hangi şartlar gerekir?",
+      "primaryKeyword": "kıdem tazminatı şartları",
+      "minWords": 50,
+      "maxWords": 110,
+      "mustInclude": [
+        "en az 1 yıl aynı işverene bağlı çalışma",
+        "işveren tarafından haksız fesih veya haklı sebeple istifa",
+        "emeklilik gibi özel haller"
+      ],
+      "reference": "Aynı işverene bağlı en az 1 yıl çalışma; iş sözleşmesinin işverence haksız feshi ya da işçinin haklı nedenle istifası; emeklilik, askerlik, evlilik gibi özel haller. Koşullar sağlanmazsa kıdem tazminatı doğmaz."
+    },
+    {
+      "id": "tr-ihtarname-adimlar",
+      "lang": "tr",
+      "type": "howto",
+      "question": "İhtarname nasıl çekilir? Kısa adımlarla açıklar mısın?",
+      "primaryKeyword": "ihtarname nasıl çekilir",
+      "minWords": 60,
+      "maxWords": 140,
+      "mustInclude": [
+        "noter kanalı",
+        "ihtarname metninin hazırlanması",
+        "tebliğ",
+        "hukuki süre/sonuç"
+      ],
+      "reference": "1) Talep ve dayanağı netleştirilir. 2) İhtarname metni yazılır. 3) Notere gidilerek imzalanır ve düzenlenir. 4) Karşı tarafa tebliğ edilir. 5) Tebliğ tarihinden itibaren süre işler ve sonuçlar doğar."
+    },
+    {
+      "id": "tr-kira-artis-kisa",
+      "lang": "tr",
+      "type": "short_article",
+      "question": "2026'da kira artış oranı nasıl hesaplanır?",
+      "primaryKeyword": "kira artış oranı hesaplama",
+      "minWords": 140,
+      "maxWords": 230,
+      "mustInclude": [
+        "TÜFE 12 aylık ortalama",
+        "konut kirası sınırı",
+        "ticari kira farkı",
+        "uyarlama davası"
+      ],
+      "reference": "Konut kiralarında artış, TÜFE 12 aylık ortalamasını aşamaz ve bir sonraki artışa kadar bağlayıcıdır. Ticari kiralarda artış serbestçe kararlaştırılabilir; aşırı artışta uyarlama davası açılabilir. Hesap, mevcut kira bedelinin ilgili oranla çarpılmasıyla yapılır."
+    },
+    {
+      "id": "en-trademark-timing",
+      "lang": "en",
+      "type": "short_article",
+      "question": "How long does trademark registration in Turkey take?",
+      "primaryKeyword": "trademark registration in Turkey",
+      "minWords": 140,
+      "maxWords": 230,
+      "mustInclude": [
+        "TURKPATENT filing",
+        "examination",
+        "opposition period",
+        "typically 6-12 months",
+        "10-year renewal"
+      ],
+      "reference": "A TURKPATENT filing is examined on absolute grounds, then published for opposition (about two months). If no opposition blocks it, registration commonly completes in roughly 6-12 months. A trademark is protected for 10 years and renewable indefinitely."
+    },
+    {
+      "id": "en-foreign-judgment",
+      "lang": "en",
+      "type": "faq",
+      "question": "Can a foreign company enforce a foreign court judgment in Turkey?",
+      "primaryKeyword": "enforcing a foreign judgment in Turkey",
+      "minWords": 50,
+      "maxWords": 130,
+      "mustInclude": [
+        "recognition and enforcement (tenfiz)",
+        "reciprocity or international agreement",
+        "public policy limit",
+        "competent Turkish court"
+      ],
+      "reference": "Yes, through recognition and enforcement (tenfiz) before a competent Turkish court. The court checks jurisdiction, notice, finality, reciprocity or an applicable treaty, and that the judgment does not violate Turkish public policy. Enforcement is not automatic."
+    },
+    {
+      "id": "tr-marka-seo-pack",
+      "lang": "tr",
+      "type": "seo_pack",
+      "question": "Üretilecek anahtar kelime: 'marka tescili'. 3 SEO başlığı ve 1 meta açıklama üret.",
+      "primaryKeyword": "marka tescili",
+      "minWords": 0,
+      "maxWords": 0,
+      "mustInclude": [
+        "3 başlık 50-60 karakter",
+        "meta açıklama 140-170 karakter",
+        "anahtar kelime başta/ilk kısımda"
+      ],
+      "reference": "Başlıklar 50-60 karakter olmalı ve 'marka tescili' ifadesini başta taşımalı. Meta açıklama 140-170 karakter arasında, anahtar kelimeyi ilk 120 karakterde içermeli ve tıklanabilir olmalı."
+    }
+  ],
+  "judgeScores": [
+    {
+      "model": "mimo-v2.6-flash-free",
+      "titleId": "tr-kidem-sartlar",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 3,
+        "completeness": 3,
+        "directness": 7,
+        "seo": 5,
+        "tone": 8
+      },
+      "reasons": {
+        "accuracy": "İşçinin haklı nedenle istifası yanlışlıkla kıdem tazminatı doğurmaz denmiş; emeklilik gibi özel haller belirtilmemiş.",
+        "completeness": "En az 1 yıl ve işverence haksız fesih var; haklı sebeple istifa yanlış, emeklilik/askerlik/evlilik gibi özel haller eksik.",
+        "directness": "Cevaba hemen giriyor, ancak Arabuluculuk önerisi ve genel ek açıklama gereksiz yer kaplıyor.",
+        "seo": "Anahtar ifade 'kıdem tazminatı şartları' birebir kullanılmamış; konuya yakın ifade var.",
+        "tone": "Profesyonel ve garanti vermeyen bir dil kullanılmış; genel hukuki öneri eklenmiş."
+      },
+      "redFlags": [
+        "İstifa ve haklı nedenle işçi feshi gibi durumlar genelde kıdem tazminatı doğurmaz ifadesi hatalıdır; haklı nedenle istifa kıdem tazminatına hak kazandırabilir.",
+        "Emeklilik, askerlik, evlilik gibi özel haller yerine belirsiz 'bazı fesih halleri' ifadesi kullanılmış.",
+        "Arabuluculuk sürecine başvurulması önerisi soruyla doğrudan ilgisiz ve gereksizdir."
+      ],
+      "latencyMs": 11147
+    },
+    {
+      "model": "mimo-v2.6-flash-free",
+      "titleId": "tr-ihtarname-adimlar",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 8,
+        "completeness": 10,
+        "directness": 9,
+        "seo": 7,
+        "tone": 10
+      },
+      "reasons": {
+        "accuracy": "Temel adımlar doğru; ancak noter dışı avukat/posta yolu ifadesi resmi ihtarname uygulamasını göreceli zayıflatabilir.",
+        "completeness": "Noter, metin hazırlama, tebliğ ve süre/sonuç unsurlarının tamamı yer alıyor.",
+        "directness": "Doğrudan adım adım yanıt veriyor; gereksiz giriş veya dolgu yok.",
+        "seo": "Anahtar kelime birebir kullanılmamış, yakın varyasyon tercih edilmiş; snippet dostu liste yapısı var.",
+        "tone": "Profesyonel, temkinli ve garanti içermeyen bir dil kullanılmış."
+      },
+      "redFlags": [
+        "Noter dışı avukat/posta yoluyla ihtarname çekilebileceği vurgusu, resmi ihtarname için noter şartı izlenimini zayıflatabilir.",
+        "Posta yoluyla ihtarname ifadesi ispat açısından zayıf veya yanıltıcı olabilir."
+      ],
+      "latencyMs": 13910
+    },
+    {
+      "model": "mimo-v2.6-flash-free",
+      "titleId": "tr-kira-artis-kisa",
+      "judge": "DeepSeek R1",
+      "ok": false,
+      "error": "unparsable",
+      "scores": {
+        "accuracy": 0,
+        "completeness": 0,
+        "directness": 0,
+        "seo": 0,
+        "tone": 0
+      },
+      "reasons": {
+        "accuracy": "",
+        "completeness": "",
+        "directness": "",
+        "seo": "",
+        "tone": ""
+      },
+      "redFlags": [],
+      "latencyMs": 17198
+    },
+    {
+      "model": "mimo-v2.6-flash-free",
+      "titleId": "en-trademark-timing",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 6,
+        "completeness": 6,
+        "directness": 8,
+        "seo": 9,
+        "tone": 9
+      },
+      "reasons": {
+        "accuracy": "Covers TURKPATENT filing and examination correctly, but states a three-month opposition period instead of about two months and gives 7–12 months rather than the required 6–12 months.",
+        "completeness": "Includes filing, examination, opposition, and approximate duration, but omits the required 10-year renewal/protection term.",
+        "directness": "Answers immediately in the first sentence and remains on topic, though it includes some extra practical commentary.",
+        "seo": "Uses the primary keyword 'trademark registration in Turkey' naturally in the first sentence and is snippet-friendly.",
+        "tone": "Professional and neutral, with no guaranteed outcomes or overly promotional language."
+      },
+      "redFlags": [
+        "Incorrect opposition period: says three months instead of about two months",
+        "Omission of the 10-year trademark protection/renewal term",
+        "Mentions expedited examination options without support from the reference points"
+      ],
+      "latencyMs": 6741
+    },
+    {
+      "model": "mimo-v2.6-flash-free",
+      "titleId": "en-foreign-judgment",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 7,
+        "completeness": 8,
+        "directness": 9,
+        "seo": 10,
+        "tone": 10
+      },
+      "reasons": {
+        "accuracy": "Correctly notes key conditions, but incorrectly cites the Code of Civil Procedure as the governing statute; Turkish enforcement is primarily governed by MÖHUK/Private International Law and International Civil Procedure Act.",
+        "completeness": "Covers recognition/enforcement, reciprocity/treaties, public policy, and competent Turkish court; omits the specific Turkish term 'tenfiz'.",
+        "directness": "Answers yes immediately and stays concise with no significant filler.",
+        "seo": "Uses the primary keyword naturally and in a snippet-friendly way.",
+        "tone": "Professional, neutral, and avoids guaranteed outcomes."
+      },
+      "redFlags": [
+        "Cites the Code of Civil Procedure as governing foreign judgment enforcement; in Turkey this is primarily governed by MÖHUK/Private International Law and International Civil Procedure Act"
+      ],
+      "latencyMs": 7677
+    },
+    {
+      "model": "mimo-v2.6-flash-free",
+      "titleId": "tr-marka-seo-pack",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 10,
+        "completeness": 4,
+        "directness": 10,
+        "seo": 6,
+        "tone": 9
+      },
+      "reasons": {
+        "accuracy": "Yanlış veya uydurma hukuki bilgi yok; ifadeler genel ve doğru.",
+        "completeness": "3 başlık ve meta var; ancak başlık 1-2 50-60 karakter değil, meta 140-170 karakter değil.",
+        "directness": "Doğrudan istenen formatta yanıt verilmiş, gereksiz giriş yok.",
+        "seo": "Anahtar kelime başta ve doğal, fakat başlık/meta karakter sınırları snippet uyumunu bozuyor.",
+        "tone": "Profesyonel ve garantisiz; 'hızlıca tamamlayın' hafif hız iması içeriyor."
+      },
+      "redFlags": [
+        "Meta açıklama çok uzun, arama sonuçlarında kesilebilir.",
+        "Başlıkların çoğu karakter limitini karşılamıyor."
+      ],
+      "latencyMs": 15024
+    },
+    {
+      "model": "gemini-flash-lite-latest",
+      "titleId": "tr-kidem-sartlar",
+      "judge": "DeepSeek R1",
+      "ok": false,
+      "error": "unparsable",
+      "scores": {
+        "accuracy": 0,
+        "completeness": 0,
+        "directness": 0,
+        "seo": 0,
+        "tone": 0
+      },
+      "reasons": {
+        "accuracy": "",
+        "completeness": "",
+        "directness": "",
+        "seo": "",
+        "tone": ""
+      },
+      "redFlags": [],
+      "latencyMs": 18963
+    },
+    {
+      "model": "gemini-flash-lite-latest",
+      "titleId": "tr-ihtarname-adimlar",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 9,
+        "completeness": 7,
+        "directness": 8,
+        "seo": 9,
+        "tone": 10
+      },
+      "reasons": {
+        "accuracy": "Temel adımlar doğru; noter, metin ve tebliğ doğru şekilde belirtilmiş. Nüsha sayısı ve elektronik tebligat ifadesi genel kabul görebilir ancak her olayda değişebilir.",
+        "completeness": "Noter kanalı, ihtarname metninin hazırlanması ve tebliğ kapsanmış; ancak hukuki süre/sonuç adımı eksik.",
+        "directness": "Soruya doğrudan adımlarla yanıt veriyor; başlangıçta kısa bir açıklama var, ciddi filler sayılmaz.",
+        "seo": "Anahtar kelime doğal biçimde ilk cümlede kullanılmış, numaralı yapı snippet dostu ve anahtar kelime doldurma yok.",
+        "tone": "Profesyonel ve hukuki açıdan temkinli; garanti içeren bir ifade yok."
+      },
+      "redFlags": [],
+      "latencyMs": 11779
+    },
+    {
+      "model": "gemini-flash-lite-latest",
+      "titleId": "tr-kira-artis-kisa",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 4,
+        "completeness": 5,
+        "directness": 8,
+        "seo": 8,
+        "tone": 9
+      },
+      "reasons": {
+        "accuracy": "TÜFE 12 aylık ortalama ve konut sınırı doğru verilmiş; ancak ticari kiralar bakımından doğrudan TÜFE ortalamasına bağlıymış gibi anlatılması yanıltıcıdır ve uyarlama davası hiç değinilmemiştir.",
+        "completeness": "TÜFE 12 aylık ortalama, konut kirası sınırı ve hesaplama yöntemi büyük ölçüde kapsanmış; ticari kira farkı hatalı işlenmiş, uyarlama davası eksik kalmıştır.",
+        "directness": "Soruya hemen cevap veriyor ve konuya odaklı ilerliyor; ancak son parçadaki danışmanlık önerisi kısa bir ek bilgi niteliğindedir.",
+        "seo": "Anahtar kelime doğal biçimde kullanılmış; snippet dostu ve aşırı optimizasyondan uzak bir yapı var.",
+        "tone": "Profesyonel ve hukuki olarak temkinli bir dil kullanılmış; garanti veren ifade bulunmuyor."
+      },
+      "redFlags": [
+        "İş yeri kiralarında hesaplamanın doğrudan TÜFE ortalaması üzerinden yapıldığı söylenerek ticari kira farkı yanlış/yanıltıcı anlatılmıştır.",
+        "Uyarlama davasından hiç söz edilmemiştir.",
+        "Başlangıçta konut ve iş yeri kiralarını aynı TÜFE kuralına bağlıymış gibi genelleme yapılmıştır."
+      ],
+      "latencyMs": 15244
+    },
+    {
+      "model": "gemini-flash-lite-latest",
+      "titleId": "en-trademark-timing",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 8,
+        "completeness": 5,
+        "directness": 7,
+        "seo": 8,
+        "tone": 9
+      },
+      "reasons": {
+        "accuracy": "Mostly correct on TÜRKPATENT examination, opposition, and no-guarantee caveat, but the stated 8-12 month timeline narrows the required 6-12 month range.",
+        "completeness": "Covers examination and opposition, but omits the required 10-year renewal and does not explicitly cover TURKPATENT filing as a step or the full 6-12 month range.",
+        "directness": "Answers immediately with the timeline, but includes extra caveats and a promotional line about hiring an IP professional.",
+        "seo": "Uses 'trademark registration in Turkey' naturally and gives a snippet-friendly direct timeframe.",
+        "tone": "Professional, neutral, and avoids guaranteed outcomes."
+      },
+      "redFlags": [
+        "Timeline stated as 8-12 months rather than the required 6-12 months",
+        "Promotional filler about working with a qualified intellectual property professional",
+        "No mention of the 10-year renewal term"
+      ],
+      "latencyMs": 10238
+    },
+    {
+      "model": "gemini-flash-lite-latest",
+      "titleId": "en-foreign-judgment",
+      "judge": "DeepSeek R1",
+      "ok": true,
+      "scores": {
+        "accuracy": 9,
+        "completeness": 7,
+        "directness": 8,
+        "seo": 9,
+        "tone": 9
+      },
+      "reasons": {
+        "accuracy": "Legal points are generally correct; recognition and enforcement, reciprocity, finality, civil matters, and public policy are accurately stated.",
+        "completeness": "Covers recognition/enforcement, reciprocity/international agreement, and public policy, but omits the statutory term 'tenfiz' and does not specify the competent Turkish court.",
+        "directness": "Starts with a clear 'Yes' and stays on topic, though the closing counsel-consultation sentence adds some filler.",
+        "seo": "Uses the primary keyword naturally in a snippet-friendly opening and avoids stuffing.",
+        "tone": "Professional, neutral, and avoids guaranteed outcomes."
+      },
+      "redFlags": [],
+      "latencyMs": 13204
+    },
+    {
+      "model": "gemini-flash-lite-latest",
+      "titleId": "tr-marka-seo-pack",
+      "judge": "DeepSeek R1",
+      "ok": false,
+      "error": "unparsable",
+      "scores": {
+        "accuracy": 0,
+        "completeness": 0,
+        "directness": 0,
+        "seo": 0,
+        "tone": 0
+      },
+      "reasons": {
+        "accuracy": "",
+        "completeness": "",
+        "directness": "",
+        "seo": "",
+        "tone": ""
+      },
+      "redFlags": [],
+      "latencyMs": 16793
+    }
+  ]
+}

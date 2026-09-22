@@ -1,5 +1,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
+import os from 'node:os';
+import { execFileSync } from 'node:child_process';
 import { readGlobalOpencodeConfig } from './util.ts';
 import type { JudgesConfig, ModelsConfig, ProviderConfig, RubricConfig } from './types.ts';
 
@@ -8,6 +10,7 @@ export interface ResolvedProvider {
 	baseURL: string;
 	apiKey?: string;
 	headers: Record<string, string>;
+	transport?: 'openai' | 'opencode-cli';
 }
 
 export function loadModelsConfig(root: string): ModelsConfig {
@@ -32,6 +35,10 @@ function readFile(p: string): string {
 }
 
 export function resolveProvider(name: string, cfg: ProviderConfig): ResolvedProvider {
+	const transport = cfg.transport ?? 'openai';
+	if (transport === 'opencode-cli') {
+		return { name, baseURL: cfg.baseURL ?? '', headers: cfg.headers ?? {}, transport };
+	}
 	let baseURL = cfg.baseURL;
 	let apiKey = cfg.apiKey;
 	if (!apiKey && cfg.apiKeyEnv) {
@@ -48,7 +55,7 @@ export function resolveProvider(name: string, cfg: ProviderConfig): ResolvedProv
 	if (!baseURL) {
 		throw new Error(`provider "${name}" has no baseURL (set it in config/models.json)`);
 	}
-	return { name, baseURL, apiKey, headers: cfg.headers ?? {} };
+	return { name, baseURL, apiKey, headers: cfg.headers ?? {}, transport: 'openai' };
 }
 
 export interface ChatRequest {
@@ -152,7 +159,79 @@ function errorMessage(status: number, body: unknown, text: string): string {
 	return `HTTP ${status}: ${text.slice(0, 200)}`;
 }
 
+function resolveOpencodeExe(): string {
+	const candidates: string[] = [];
+	if (process.env.APPDATA) {
+		candidates.push(path.join(process.env.APPDATA, 'npm', 'node_modules', 'opencode-ai', 'bin', 'opencode.exe'));
+	}
+	for (const c of candidates) {
+		try {
+			if (fs.existsSync(c)) return c;
+		} catch {
+			/* ignore */
+		}
+	}
+	return 'opencode';
+}
+
+function parseOpencodeEvents(out: string): string {
+	const parts: string[] = [];
+	for (const line of out.split(/\r?\n/)) {
+		const s = line.trim();
+		if (!s.startsWith('{')) continue;
+		try {
+			const ev = JSON.parse(s) as { type?: string; part?: { type?: string; text?: string } };
+			if (ev.type === 'text' && ev.part && typeof ev.part.text === 'string') parts.push(ev.part.text);
+		} catch {
+			/* ignore non-JSON lines */
+		}
+	}
+	return parts.join('');
+}
+
+function opencodeCliChat(req: ChatRequest): ChatResult {
+	const started = Date.now();
+	const exe = resolveOpencodeExe();
+	const modelRef = `${req.provider.name}/${req.model}`;
+	const preamble =
+		'You are being used as a plain text-completion backend for an automated benchmark. Output ONLY the requested content as plain text/markdown. Do NOT call tools. Do NOT create, read, or edit files. Do NOT add commentary, apologies, or explanations outside the requested content.';
+	const message = [preamble, '', ...req.messages.map((m) => `[${m.role.toUpperCase()}]\n${m.content}`)].join('\n\n');
+	try {
+		const out = execFileSync(exe, ['run', '--model', modelRef, '--format', 'json', '--pure', message], {
+			encoding: 'utf8',
+			timeout: req.timeoutMs ?? 300000,
+			maxBuffer: 64 * 1024 * 1024,
+			cwd: os.tmpdir(),
+			windowsHide: true,
+		});
+		const text = parseOpencodeEvents(out);
+		return {
+			ok: text.trim().length > 0,
+			content: text,
+			reasoning: '',
+			usage: {},
+			latencyMs: Date.now() - started,
+			attempts: 1,
+			error: text.trim().length > 0 ? undefined : 'empty content',
+		};
+	} catch (e) {
+		const err = e as { message?: string };
+		return {
+			ok: false,
+			content: '',
+			reasoning: '',
+			usage: {},
+			latencyMs: Date.now() - started,
+			attempts: 1,
+			error: (err.message ?? String(e)).slice(0, 300),
+		};
+	}
+}
+
 export async function chatCompletion(req: ChatRequest): Promise<ChatResult> {
+	if (req.provider.transport === 'opencode-cli') {
+		return opencodeCliChat(req);
+	}
 	const hardMaxAttempts = 6;
 	const started = Date.now();
 	let lastError = '';

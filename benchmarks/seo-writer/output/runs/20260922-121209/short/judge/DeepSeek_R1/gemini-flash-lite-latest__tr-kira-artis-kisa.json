@@ -1,0 +1,26 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "titleId": "tr-kira-artis-kisa",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 4,
+    "completeness": 5,
+    "directness": 8,
+    "seo": 8,
+    "tone": 9
+  },
+  "reasons": {
+    "accuracy": "TÜFE 12 aylık ortalama ve konut sınırı doğru verilmiş; ancak ticari kiralar bakımından doğrudan TÜFE ortalamasına bağlıymış gibi anlatılması yanıltıcıdır ve uyarlama davası hiç değinilmemiştir.",
+    "completeness": "TÜFE 12 aylık ortalama, konut kirası sınırı ve hesaplama yöntemi büyük ölçüde kapsanmış; ticari kira farkı hatalı işlenmiş, uyarlama davası eksik kalmıştır.",
+    "directness": "Soruya hemen cevap veriyor ve konuya odaklı ilerliyor; ancak son parçadaki danışmanlık önerisi kısa bir ek bilgi niteliğindedir.",
+    "seo": "Anahtar kelime doğal biçimde kullanılmış; snippet dostu ve aşırı optimizasyondan uzak bir yapı var.",
+    "tone": "Profesyonel ve hukuki olarak temkinli bir dil kullanılmış; garanti veren ifade bulunmuyor."
+  },
+  "redFlags": [
+    "İş yeri kiralarında hesaplamanın doğrudan TÜFE ortalaması üzerinden yapıldığı söylenerek ticari kira farkı yanlış/yanıltıcı anlatılmıştır.",
+    "Uyarlama davasından hiç söz edilmemiştir.",
+    "Başlangıçta konut ve iş yeri kiralarını aynı TÜFE kuralına bağlıymış gibi genelleme yapılmıştır."
+  ],
+  "latencyMs": 15244
+}

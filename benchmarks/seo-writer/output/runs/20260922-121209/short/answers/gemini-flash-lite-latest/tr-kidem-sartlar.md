@@ -1,0 +1,3 @@
+Kıdem tazminatı şartları arasında en temel kriter, aynı işverene bağlı iş yerinde en az bir yıl çalışmış olmaktır. Ayrıca iş sözleşmesinin 4857 sayılı İş Kanunu'nun 24. maddesinde belirtilen haklı nedenlerle işçi tarafından feshedilmesi veya işveren tarafından haklı nedenler dışında sonlandırılması gerekir.
+
+Erkek çalışanların askerlik hizmeti nedeniyle, kadın çalışanların ise evlilik tarihinden itibaren bir yıl içinde işten ayrılması da kıdem tazminatına hak kazandırır. Emeklilik şartlarını sağlayanlar da bu tazminatı alabilir. Ancak fesih sebebine ve çalışma geçmişine göre hukuki süreçler somut olaya göre değişebilir.

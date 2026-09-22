@@ -1,0 +1,11 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "modelLabel": "Gemini Flash Lite Latest",
+  "taskId": "tr-kidem-sartlar",
+  "lang": "tr",
+  "ok": true,
+  "answer": "Kıdem tazminatı şartları arasında en temel kriter, aynı işverene bağlı iş yerinde en az bir yıl çalışmış olmaktır. Ayrıca iş sözleşmesinin 4857 sayılı İş Kanunu'nun 24. maddesinde belirtilen haklı nedenlerle işçi tarafından feshedilmesi veya işveren tarafından haklı nedenler dışında sonlandırılması gerekir.\n\nErkek çalışanların askerlik hizmeti nedeniyle, kadın çalışanların ise evlilik tarihinden itibaren bir yıl içinde işten ayrılması da kıdem tazminatına hak kazandırır. Emeklilik şartlarını sağlayanlar da bu tazminatı alabilir. Ancak fesih sebebine ve çalışma geçmişine göre hukuki süreçler somut olaya göre değişebilir.",
+  "latencyMs": 1810,
+  "totalTokens": 337,
+  "createdAt": "2026-09-22T09:13:45.616Z"
+}

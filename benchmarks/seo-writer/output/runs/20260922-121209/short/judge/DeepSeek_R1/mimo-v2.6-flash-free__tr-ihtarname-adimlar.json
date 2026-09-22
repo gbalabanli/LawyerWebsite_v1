@@ -1,0 +1,25 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "titleId": "tr-ihtarname-adimlar",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 8,
+    "completeness": 10,
+    "directness": 9,
+    "seo": 7,
+    "tone": 10
+  },
+  "reasons": {
+    "accuracy": "Temel adımlar doğru; ancak noter dışı avukat/posta yolu ifadesi resmi ihtarname uygulamasını göreceli zayıflatabilir.",
+    "completeness": "Noter, metin hazırlama, tebliğ ve süre/sonuç unsurlarının tamamı yer alıyor.",
+    "directness": "Doğrudan adım adım yanıt veriyor; gereksiz giriş veya dolgu yok.",
+    "seo": "Anahtar kelime birebir kullanılmamış, yakın varyasyon tercih edilmiş; snippet dostu liste yapısı var.",
+    "tone": "Profesyonel, temkinli ve garanti içermeyen bir dil kullanılmış."
+  },
+  "redFlags": [
+    "Noter dışı avukat/posta yoluyla ihtarname çekilebileceği vurgusu, resmi ihtarname için noter şartı izlenimini zayıflatabilir.",
+    "Posta yoluyla ihtarname ifadesi ispat açısından zayıf veya yanıltıcı olabilir."
+  ],
+  "latencyMs": 13910
+}

@@ -1,0 +1,14 @@
+{
+  "run": "20260922-121209",
+  "createdAt": "2026-09-22T09:12:09.971Z",
+  "titlesFile": "C:\\Users\\Bora\\Desktop\\Workspace\\agents\\LawyerWebsite_v1\\benchmarks\\seo-writer\\titles\\quick.json",
+  "models": [
+    "mimo-v2.6-flash-free",
+    "gemini-flash-lite-latest"
+  ],
+  "repeats": 1,
+  "titles": [
+    "kira-artis-orani-hesaplama",
+    "enforcing-foreign-judgment-turkey"
+  ]
+}

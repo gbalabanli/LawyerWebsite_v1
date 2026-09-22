@@ -1,0 +1,22 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "titleId": "en-foreign-judgment",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 9,
+    "completeness": 7,
+    "directness": 8,
+    "seo": 9,
+    "tone": 9
+  },
+  "reasons": {
+    "accuracy": "Legal points are generally correct; recognition and enforcement, reciprocity, finality, civil matters, and public policy are accurately stated.",
+    "completeness": "Covers recognition/enforcement, reciprocity/international agreement, and public policy, but omits the statutory term 'tenfiz' and does not specify the competent Turkish court.",
+    "directness": "Starts with a clear 'Yes' and stays on topic, though the closing counsel-consultation sentence adds some filler.",
+    "seo": "Uses the primary keyword naturally in a snippet-friendly opening and avoids stuffing.",
+    "tone": "Professional, neutral, and avoids guaranteed outcomes."
+  },
+  "redFlags": [],
+  "latencyMs": 13204
+}

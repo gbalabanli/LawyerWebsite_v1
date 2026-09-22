@@ -1,0 +1,24 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "titleId": "en-foreign-judgment",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 7,
+    "completeness": 8,
+    "directness": 9,
+    "seo": 10,
+    "tone": 10
+  },
+  "reasons": {
+    "accuracy": "Correctly notes key conditions, but incorrectly cites the Code of Civil Procedure as the governing statute; Turkish enforcement is primarily governed by MÖHUK/Private International Law and International Civil Procedure Act.",
+    "completeness": "Covers recognition/enforcement, reciprocity/treaties, public policy, and competent Turkish court; omits the specific Turkish term 'tenfiz'.",
+    "directness": "Answers yes immediately and stays concise with no significant filler.",
+    "seo": "Uses the primary keyword naturally and in a snippet-friendly way.",
+    "tone": "Professional, neutral, and avoids guaranteed outcomes."
+  },
+  "redFlags": [
+    "Cites the Code of Civil Procedure as governing foreign judgment enforcement; in Turkey this is primarily governed by MÖHUK/Private International Law and International Civil Procedure Act"
+  ],
+  "latencyMs": 7677
+}

@@ -1,0 +1,10 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "modelLabel": "MiMo v2.6 Flash (free, via OpenCode CLI)",
+  "taskId": "en-foreign-judgment",
+  "lang": "en",
+  "ok": true,
+  "answer": "A foreign company can enforce a foreign court judgment in Turkey, provided the statutory conditions under the Code of Civil Procedure and applicable international treaties are satisfied. Enforcing a foreign judgment in Turkey requires Turkish courts to review reciprocity, the foreign court's jurisdiction, proper service of process, the finality of the decision, and compliance with Turkish public policy. Recognition and enforcement are pursued before competent Turkish civil courts through a defined procedure. Whether enforcement succeeds depends on the specific facts of the case.",
+  "latencyMs": 14797,
+  "createdAt": "2026-09-22T09:13:43.900Z"
+}

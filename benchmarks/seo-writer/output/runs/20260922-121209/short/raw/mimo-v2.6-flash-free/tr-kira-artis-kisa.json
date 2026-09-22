@@ -1,0 +1,10 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "modelLabel": "MiMo v2.6 Flash (free, via OpenCode CLI)",
+  "taskId": "tr-kira-artis-kisa",
+  "lang": "tr",
+  "ok": true,
+  "answer": "2026'da kira artış oranı hesaplama, Türkiye’de konut kiralarında TÜFE oranına göre yapılır ve 12 aylık ortalama TÜFE oranı esas alınır; bu oran yasal sınırı aşamaz. 2026 yılı için uygulanacak üst sınır, yıl içinde açıklanan resmî oranlara göre belirlenir ve taraflar bu oranın üzerinde zam yapamaz. Kira artış oranı hesaplama yapılırken önce mevcut kira bedeli bulunur, ilgili dönemdeki 12 aylık TÜFE artışıyla çarpılır ve çıkan tutar mevcut kiraya eklenir. Artış, kira yılının dolmasına en az 15 gün kala bildirilmelidir; aksi halde geçersiz sayılma ihtimali doğabilir. Sözleşmede aksi kararlaştırılsa bile yasal sınırın üzerindeki artış hükümsüzdür. İşyeri kiralarında ise kural farklıdır; oransal sınır genellikle uygulanmaz, ancak yenileme dönemlerinde mahkeme veya hakem heyeti belirleyebilir. Uygulamada bazen kira bedelinin sabit bırakılması ya da farklı usuller de görülebilir. Somut olaya göre değişebilir; dava, ihtar ve tahliye süreçlerinde hukuki danışmanlık alınması faydalıdır.",
+  "latencyMs": 20958,
+  "createdAt": "2026-09-22T09:13:43.856Z"
+}

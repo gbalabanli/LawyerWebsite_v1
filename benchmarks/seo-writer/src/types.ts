@@ -25,6 +25,7 @@ export interface ProviderConfig {
 	apiKeyEnv?: string;
 	opencodeProvider?: string;
 	headers?: Record<string, string>;
+	transport?: 'openai' | 'opencode-cli';
 }
 
 export interface ModelsConfig {

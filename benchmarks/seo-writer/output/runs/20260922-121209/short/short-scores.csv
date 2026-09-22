@@ -1,0 +1,3 @@
+model,label,final,judge,det,accuracy,ok,total
+gemini-flash-lite-latest,"Gemini Flash Lite Latest",81.9,75,89.7,75,6,6
+mimo-v2.6-flash-free,"MiMo v2.6 Flash (free, via OpenCode CLI)",79,72.1,84.2,68,6,6

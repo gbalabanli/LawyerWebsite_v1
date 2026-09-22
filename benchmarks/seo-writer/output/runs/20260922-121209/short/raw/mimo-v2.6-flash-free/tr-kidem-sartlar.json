@@ -1,0 +1,10 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "modelLabel": "MiMo v2.6 Flash (free, via OpenCode CLI)",
+  "taskId": "tr-kidem-sartlar",
+  "lang": "tr",
+  "ok": true,
+  "answer": "Kıdem tazminatına hak kazanmak için temel şartlar; en az bir yıl kesintisiz aynı işverene bağlı olarak çalışmak, iş sözleşmenin işveren tarafından haklı bir sebep olmaksızın feshedilmesi veya İş Kanunu'nda düzenlenen bazı fesih hallerinin gerçekleşmesidir. İstifa ve haklı nedenle işçi feshi gibi durumlar genelde kıdem tazminatı doğurmaz. Yargı kararları ve somut olaya göre değişebilir; hak kaybı yaşamamak için güncel mevzuata ve Arabuluculuk sürecine başvurulması önerilir.",
+  "latencyMs": 14650,
+  "createdAt": "2026-09-22T09:13:43.851Z"
+}

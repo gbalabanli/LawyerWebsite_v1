@@ -1,0 +1,25 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "titleId": "tr-marka-seo-pack",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 10,
+    "completeness": 4,
+    "directness": 10,
+    "seo": 6,
+    "tone": 9
+  },
+  "reasons": {
+    "accuracy": "Yanlış veya uydurma hukuki bilgi yok; ifadeler genel ve doğru.",
+    "completeness": "3 başlık ve meta var; ancak başlık 1-2 50-60 karakter değil, meta 140-170 karakter değil.",
+    "directness": "Doğrudan istenen formatta yanıt verilmiş, gereksiz giriş yok.",
+    "seo": "Anahtar kelime başta ve doğal, fakat başlık/meta karakter sınırları snippet uyumunu bozuyor.",
+    "tone": "Profesyonel ve garantisiz; 'hızlıca tamamlayın' hafif hız iması içeriyor."
+  },
+  "redFlags": [
+    "Meta açıklama çok uzun, arama sonuçlarında kesilebilir.",
+    "Başlıkların çoğu karakter limitini karşılamıyor."
+  ],
+  "latencyMs": 15024
+}

@@ -1,0 +1,26 @@
+{
+  "model": "mimo-v2.6-flash-free",
+  "titleId": "en-trademark-timing",
+  "judge": "DeepSeek R1",
+  "ok": true,
+  "scores": {
+    "accuracy": 6,
+    "completeness": 6,
+    "directness": 8,
+    "seo": 9,
+    "tone": 9
+  },
+  "reasons": {
+    "accuracy": "Covers TURKPATENT filing and examination correctly, but states a three-month opposition period instead of about two months and gives 7–12 months rather than the required 6–12 months.",
+    "completeness": "Includes filing, examination, opposition, and approximate duration, but omits the required 10-year renewal/protection term.",
+    "directness": "Answers immediately in the first sentence and remains on topic, though it includes some extra practical commentary.",
+    "seo": "Uses the primary keyword 'trademark registration in Turkey' naturally in the first sentence and is snippet-friendly.",
+    "tone": "Professional and neutral, with no guaranteed outcomes or overly promotional language."
+  },
+  "redFlags": [
+    "Incorrect opposition period: says three months instead of about two months",
+    "Omission of the 10-year trademark protection/renewal term",
+    "Mentions expedited examination options without support from the reference points"
+  ],
+  "latencyMs": 6741
+}

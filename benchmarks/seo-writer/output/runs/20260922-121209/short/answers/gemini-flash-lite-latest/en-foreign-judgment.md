@@ -1,0 +1,5 @@
+Yes, a foreign company can seek **enforcing a foreign judgment in Turkey**, provided that the Turkish courts grant an "exequatur" (recognition and enforcement order) through a formal legal process. 
+
+To successfully enforce the judgment, the Turkish court will review whether specific statutory requirements under Turkish Private International Law are met, including the existence of reciprocal enforcement treaties or de facto reciprocity between Turkey and the rendering country. 
+
+Furthermore, the judgment must be final, binding, and strictly related to civil law matters, while not violating Turkish public policy or the defendant’s right to a fair trial. Because success ultimately depends on the specific facts of each case, foreign companies should consult with qualified legal counsel in Turkey to navigate the procedural complexities.
