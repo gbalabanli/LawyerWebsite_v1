@@ -6,8 +6,8 @@ author: "Av. Barış C. Balabanlı"
 tags: ["aile-hukuku", "velayet-davası", "boşanma", "çocuk-hakları"]
 lang: "tr"
 links:
-  - { "text": "Çekişmeli Boşanma Davası Süreci ve Deliller", "href": "/blog/cekismeli-bosanma-davasi-surec-deliller-2026" }
-  - { "text": "Anlaşmalı Boşanma Süreci ve Protokol", "href": "/blog/anlasmali-bosanma-sureci-protokol-2026" }
+  - { "text": "Çekişmeli Boşanma Davası Süreci ve Deliller", "href": "/blog/cekismeli-bosanma-davasi-surec-deliller-2026/" }
+  - { "text": "Anlaşmalı Boşanma Süreci ve Protokol", "href": "/blog/anlasmali-bosanma-sureci-protokol-2026/" }
 faq:
   - q: "Velayet davası hangi mahkemede açılır?"
     a: "Velayet davaları, aile mahkemelerinin bulunduğu yerlerde Aile Mahkemesinde, aile mahkemesi bulunmayan yerlerde ise Asliye Hukuk Mahkemesinde aile mahkemesi sıfatıyla açılır."
@@ -26,7 +26,7 @@ howTo:
 
 Boşanma süreçlerinde veya boşanma sonrasında ebeveynleri en çok meşgul eden ve hukuki hassasiyet gerektiren konuların başında çocukların geleceği gelir. Çocuğun bakımına, eğitimine ve korunmasına dair hakları kapsayan bu süreçte, bir **velayet davası** gündeme geldiğinde tarafların izlemesi gereken adımları bilmesi büyük önem taşır. Bu rehberde, velayet davasının açılmasından sonuçlanmasına kadar dikkat edilmesi gerekenleri, yasal şartları ve sürecin işleyişini ele alacağız.
 
-Hukuki süreçlerin her somut olayda farklılık gösterebileceğini unutmamak gerekir. Özellikle boşanma aşamasındaki ebeveynler için [Çekişmeli Boşanma Davası Süreci ve Deliller](/blog/cekismeli-bosanma-davasi-surec-deliller-2026) yazımızda detaylı rehberlik bulabilirsiniz. Eğer süreç anlaşmalı ilerliyorsa, [Anlaşmalı Boşanma Sürecinde Protokol Düzenlenmesi](/blog/anlasmali-bosanma-sureci-protokol-2026) hakkındaki yazımız yol gösterici olacaktır.
+Hukuki süreçlerin her somut olayda farklılık gösterebileceğini unutmamak gerekir. Özellikle boşanma aşamasındaki ebeveynler için [Çekişmeli Boşanma Davası Süreci ve Deliller](/blog/cekismeli-bosanma-davasi-surec-deliller-2026/) yazımızda detaylı rehberlik bulabilirsiniz. Eğer süreç anlaşmalı ilerliyorsa, [Anlaşmalı Boşanma Sürecinde Protokol Düzenlenmesi](/blog/anlasmali-bosanma-sureci-protokol-2026/) hakkındaki yazımız yol gösterici olacaktır.
 
 ## Çocuğun Üstün Yararı İlkesi
 

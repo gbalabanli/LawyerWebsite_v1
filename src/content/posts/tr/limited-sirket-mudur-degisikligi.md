@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Limited Şirket Ortaklık Sözleşmesi: Olması Gereken Maddeler"
-    href: "/blog/limited-sirket-ortaklik-sozlesmesi-maddeler"
+    href: "/blog/limited-sirket-ortaklik-sozlesmesi-maddeler/"
 lang: "tr"
 slug: "limited-sirket-mudur-degisikligi"
 faq:

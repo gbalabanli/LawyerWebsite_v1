@@ -7,9 +7,9 @@ tags: ["esports-law", "esports-contracts", "gaming-law", "contracts"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Contract Review Basics Before You Sign"
-    href: "/en/blog/contract-review-basics-before-you-sign"
+    href: "/en/blog/contract-review-basics-before-you-sign/"
 faq:
   - q: "What should an esports player check before signing?"
     a: "The player should review salary, prize money, bonuses, streaming rights, sponsor duties, exclusivity, buyout, termination, and dispute resolution."

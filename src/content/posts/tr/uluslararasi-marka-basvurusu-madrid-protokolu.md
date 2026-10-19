@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["fikri-mulkiyet", "ticaret-hukuku"]
 links:
   - text: "Fikri Mülkiyet Hizmetlerimiz"
-    href: "/hizmetler/fikri-mulkiyet"
+    href: "/hizmetler/fikri-mulkiyet/"
   - text: "Marka Tescili Süreci ve Ücretleri (2026 Güncel Rehber)"
-    href: "/blog/marka-tescili-sureci-ve-ucretleri-2026"
+    href: "/blog/marka-tescili-sureci-ve-ucretleri-2026/"
 lang: "tr"
 faq:
   - q: "Madrid Protokolü nedir ve nasıl çalışır?"

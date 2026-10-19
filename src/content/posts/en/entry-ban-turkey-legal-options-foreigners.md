@@ -7,11 +7,11 @@ tags: ["immigration-law", "deportation", "entry-ban", "foreigners-law"]
 lang: "en"
 links:
   - text: "Immigration Lawyer in Turkey"
-    href: "/en/services/immigration-lawyer-turkey"
+    href: "/en/services/immigration-lawyer-turkey/"
   - text: "Deportation Order in Turkey: How Foreigners Can Appeal"
-    href: "/en/blog/deportation-order-turkey-how-foreigners-can-appeal"
+    href: "/en/blog/deportation-order-turkey-how-foreigners-can-appeal/"
   - text: "Turkey Residence Permit Rejected: Legal Options for Foreigners"
-    href: "/en/blog/turkey-residence-permit-rejected-legal-options-foreigners"
+    href: "/en/blog/turkey-residence-permit-rejected-legal-options-foreigners/"
 faq:
   - q: "Can an entry ban in Turkey be challenged?"
     a: "Depending on the legal basis, timing, evidence, and immigration history, an entry ban may be reviewed through administrative or court remedies."

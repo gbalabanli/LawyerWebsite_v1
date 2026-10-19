@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Limited Şirket Kuruluşu: Adım Adım Rehber (2026)"
-    href: "/blog/limited-sirket-kurulusu-adim-adim-rehber"
+    href: "/blog/limited-sirket-kurulusu-adim-adim-rehber/"
 lang: "tr"
 faq:
   - q: "Anonim şirket kurmak için 2026'da en az ne kadar sermaye gerekir?"

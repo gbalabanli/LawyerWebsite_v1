@@ -6,9 +6,9 @@ author: "Av. Baris C. Balabanli"
 tags: [ "escrow", "escrow-enforceability", "legal-framework", "turkish-law" ]
 lang: "en"
 links:
-  - { "text": "Escrow in Turkey: Legal Guide for Foreign Buyers", "href": "/en/blog/escrow-in-turkey" }
-  - { "text": "Escrow Costs and Taxes in Turkey: What to Expect", "href": "/en/blog/escrow-costs-tax" }
-  - { "text": "Escrow vs Earnest Money vs Deposit in Turkey", "href": "/en/blog/escrow-vs-earnest-money" }
+  - { "text": "Escrow in Turkey: Legal Guide for Foreign Buyers", "href": "/en/blog/escrow-in-turkey/" }
+  - { "text": "Escrow Costs and Taxes in Turkey: What to Expect", "href": "/en/blog/escrow-costs-tax/" }
+  - { "text": "Escrow vs Earnest Money vs Deposit in Turkey", "href": "/en/blog/escrow-vs-earnest-money/" }
 faq:
   - q: "Are escrow agreements legally enforceable in Turkey?"
     a: "Yes, escrow agreements are legally binding and enforceable in Turkey when structured correctly as sui generis contracts under the Turkish Code of Obligations, provided they contain clear, lawful release conditions and are drafted with precise legal oversight."
@@ -39,7 +39,7 @@ For an escrow arrangement to be genuinely enforceable before Turkish authorities
 
 When a breach occurs—such as a party wrongfully refusing to confirm the fulfillment of conditions or an escrow agent improperly withholding funds—parties must rely on standard civil law remedies. Because escrow agents act under a mandate or custody framework, any unauthorized release or refusal to release in line with instructions can trigger civil liability for damages.
 
-If a dispute arises over whether a condition precedent has been met, neither party can simply seize the funds unilaterally. The aggrieved party must typically initiate a legal action through the Turkish civil courts or seek interim injunctions to freeze the disputed balance pending a final judicial determination. This underscores why comprehensive guidance on broader frameworks, such as understanding general practices detailed in our [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey), can prevent costly post-signature disputes. When budgeting for such transactions, parties should also account for operational overheads by reviewing [Escrow Costs and Taxes in Turkey: What to Expect](/en/blog/escrow-costs-tax), and differentiate their instruments using insights from [Escrow vs Earnest Money vs Deposit in Turkey](/en/blog/escrow-vs-earnest-money).
+If a dispute arises over whether a condition precedent has been met, neither party can simply seize the funds unilaterally. The aggrieved party must typically initiate a legal action through the Turkish civil courts or seek interim injunctions to freeze the disputed balance pending a final judicial determination. This underscores why comprehensive guidance on broader frameworks, such as understanding general practices detailed in our [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey/), can prevent costly post-signature disputes. When budgeting for such transactions, parties should also account for operational overheads by reviewing [Escrow Costs and Taxes in Turkey: What to Expect](/en/blog/escrow-costs-tax/), and differentiate their instruments using insights from [Escrow vs Earnest Money vs Deposit in Turkey](/en/blog/escrow-vs-earnest-money/).
 
 ## Interaction with the Turkish Secure Payment System
 

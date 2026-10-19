@@ -7,9 +7,9 @@ tags: ["sigorta-hukuku", "arac-deger-kaybi", "trafik-kazasi", "tazminat-davasi"]
 lang: "tr"
 links:
   - text: "Sigorta Hukuku ve Dava Öncesi Strateji"
-    href: "/blog/dava-oncesi-strateji"
+    href: "/blog/dava-oncesi-strateji/"
   - text: "İhtarname Nasıl Çekilir Adım Adım Rehber"
-    href: "/blog/ihtarname-nasil-cekilir-adim-adim-rehber"
+    href: "/blog/ihtarname-nasil-cekilir-adim-adim-rehber/"
 faq:
   - q: "Araç değer kaybı nedir?"
     a: "Araç değer kaybı, kaza geçiren bir motorlu taşıtın onarılsa bile piyasa rayicindeki ikinci el değerinde meydana gelen azalmaları ifade eder."
@@ -23,7 +23,7 @@ faq:
 
 Trafik kazaları, araç sahipleri için hem maddi hem de manevi açıdan yıpratıcı süreçlerin başında gelir. Kaza sonrasında aracınız yetkili veya özel servislerde kusursuz bir şekilde onarılsa dahi, tramer kaydında görünen kaza geçmişi nedeniyle ikinci el piyasasındaki rayiç bedelinde düşüş yaşanır. İşte bu finansal kaybın telafi edilmesi için **araç değer kaybı davası** gündeme gelir. Bu yazıda, kazazedelerin hak arama sürecinde bilmesi gerekenleri, başvuru şartlarını ve izlenmesi gereken yasal adımları detaylıca ele alacağız.
 
-Hukuki süreçlerin karmaşık yapısı ve hak kaybına uğramamak adına atılacak adımların bilinçli planlanması gerekir. Dava öncesi strateji belirlemek ve doğru adımları atmak için [Sigorta Hukuku ve Dava Öncesi Strateji](/blog/dava-oncesi-strateji) sayfamızı inceleyebilirsiniz.
+Hukuki süreçlerin karmaşık yapısı ve hak kaybına uğramamak adına atılacak adımların bilinçli planlanması gerekir. Dava öncesi strateji belirlemek ve doğru adımları atmak için [Sigorta Hukuku ve Dava Öncesi Strateji](/blog/dava-oncesi-strateji/) sayfamızı inceleyebilirsiniz.
 
 ## Araç Değer Kaybı Nedir ve Şartları Nelerdir?
 
@@ -45,7 +45,7 @@ Süreçte ihtiyaç duyulan temel belgeler şunlardır:
 * **Ruhsat Fotokopisi:** Aracın mülkiyet bilgilerini kanıtlayan belge.
 * **Değer Kaybı Hesaplama Raporu:** Uzman bir bilirkişi tarafından hazırlanan, kaybın miktarını gösteren rapor (zorunlu olmamakla birlikte başvuruyu güçlendirir).
 
-Eksiksiz bir dosya hazırlamak ve sigorta şirketine resmi talebi iletmek için [İhtarname Nasıl Çekilir Adım Adım Rehber](/blog/ihtarname-nasil-cekilir-adim-adim-rehber) içeriğimizden faydalanabilirsiniz.
+Eksiksiz bir dosya hazırlamak ve sigorta şirketine resmi talebi iletmek için [İhtarname Nasıl Çekilir Adım Adım Rehber](/blog/ihtarname-nasil-cekilir-adim-adim-rehber/) içeriğimizden faydalanabilirsiniz.
 
 ## Kusur Oranı ve Tazminat Miktarının Hesaplanması
 

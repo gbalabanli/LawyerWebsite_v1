@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["icra-tahsilat", "ticari-hukuk"]
 links:
   - text: "İcra ve Tahsilat Hizmetlerimiz"
-    href: "/hizmetler/icra-tahsilat"
+    href: "/hizmetler/icra-tahsilat/"
   - text: "İhtarname Nasıl Çekilir? Adım Adım Rehber (2026)"
-    href: "/blog/ihtarname-nasil-cekilir-adim-adim-rehber"
+    href: "/blog/ihtarname-nasil-cekilir-adim-adim-rehber/"
 lang: "tr"
 faq:
   - q: "Muhtıra ile protesto arasındaki temel fark nedir?"

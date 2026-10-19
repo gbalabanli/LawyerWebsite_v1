@@ -11,11 +11,11 @@ tags:
 lang: "tr"
 links:
   - text: "kira-tespit-davasi-nasil-acilir-2026"
-    href: "/blog/kira-tespit-davasi-nasil-acilir-2026"
+    href: "/blog/kira-tespit-davasi-nasil-acilir-2026/"
   - text: "kiraci-dosyasinda-bulunmasi-gereken-belgeler"
-    href: "/blog/kiraci-dosyasinda-bulunmasi-gereken-belgeler"
+    href: "/blog/kiraci-dosyasinda-bulunmasi-gereken-belgeler/"
   - text: "arabuluculuk-sureci-nedir-nasil-isler"
-    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler"
+    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler/"
 faq:
   - q: "Tahliye davası hangi mahkemede açılır?"
     a: "Tahliye davalarında görevli mahkeme Sulh Hukuk Mahkemesidir. Yetkili mahkeme ise kural olarak taşınmazın bulunduğu yer mahkemesidir."
@@ -27,7 +27,7 @@ faq:
     a: "Evet, kira ilişkilerinden kaynaklanan uyuşmazlıklarda dava açmadan önce arabulucuya başvurulması zorunlu bir dava şartıdır."
 ---
 
-Gayrimenkul sahipleri ile kiracılar arasında yaşanan uyuşmazlıkların çözümünde **tahliye davası**, hukuki yolların başında gelir. Mülk sahibinin taşınmazını geri alabilmesi için kanunda öngörülen haklı sebeplerden birine dayanması ve bu süreci usulüne uygun yürütmesi şarttır. Bu yazıda, tahliye davası açma sebepleri, yasal süreler, arabuluculuk zorunluluğu ve dava sürecinin aşamaları detaylıca ele alınmaktadır. Somut olaylar farklılık gösterebileceğinden, hak kaybı yaşamamak adına profesyonel destek almak önem taşır. Süreç hakkında detaylı bilgi edinmek için [kiraci-dosyasinda-bulunmasi-gereken-belgeler](/blog/kiraci-dosyasinda-bulunmasi-gereken-belgeler) sayfasını inceleyebilirsiniz.
+Gayrimenkul sahipleri ile kiracılar arasında yaşanan uyuşmazlıkların çözümünde **tahliye davası**, hukuki yolların başında gelir. Mülk sahibinin taşınmazını geri alabilmesi için kanunda öngörülen haklı sebeplerden birine dayanması ve bu süreci usulüne uygun yürütmesi şarttır. Bu yazıda, tahliye davası açma sebepleri, yasal süreler, arabuluculuk zorunluluğu ve dava sürecinin aşamaları detaylıca ele alınmaktadır. Somut olaylar farklılık gösterebileceğinden, hak kaybı yaşamamak adına profesyonel destek almak önem taşır. Süreç hakkında detaylı bilgi edinmek için [kiraci-dosyasinda-bulunmasi-gereken-belgeler](/blog/kiraci-dosyasinda-bulunmasi-gereken-belgeler/) sayfasını inceleyebilirsiniz.
 
 ## Görevli ve Yetkili Mahkeme
 
@@ -43,7 +43,7 @@ Taahhüt edilen tarihte taşınmaz tahliye edilmezse, malikin iki farklı hukuki
 - Taahhüt tarihinden itibaren **bir aylık süre içinde** icra takibi başlatmak,
 - Veya aynı bir aylık süre içerisinde doğrudan Sulh Hukuk Mahkemesinde tahliye davası açmak.
 
-Bu bir aylık sürenin kaçırılması durumunda, o taahhütnameye dayanılarak tahliye talep etme hakkı düşer. Benzer şekilde, kira bedellerinin düzenli ödenmemesi durumunda da [kira-tespit-davasi-nasil-acilir-2026](/blog/kira-tespit-davasi-nasil-acilir-2026) süreçleri gibi ek hukuki adımlar gündeme gelebilir.
+Bu bir aylık sürenin kaçırılması durumunda, o taahhütnameye dayanılarak tahliye talep etme hakkı düşer. Benzer şekilde, kira bedellerinin düzenli ödenmemesi durumunda da [kira-tespit-davasi-nasil-acilir-2026](/blog/kira-tespit-davasi-nasil-acilir-2026/) süreçleri gibi ek hukuki adımlar gündeme gelebilir.
 
 ## Kira Bedelinin Ödenmemesi ve İki Haklı İhtar
 
@@ -75,7 +75,7 @@ Kira ilişkilerinden kaynaklanan uyuşmazlıklarda, dava açmadan önce arabuluc
 Arabuluculuk süreci, tarafların bir araya gelerek anlaşmazlığı mahkemeye taşımadan çözmesini amaçlar:
 - Başvuru, uyuşmazlığın bulunduğu yer adliyesindeki arabuluculuk bürosuna yapılır.
 - Süreç genellikle birkaç hafta içinde tamamlanır; tarafların anlaşması halinde tutanak düzenlenir.
-- Anlaşma sağlanamaması durumunda ise son tutanak düzenlenir ve bu belge ile dava açma hakkı kazanılmış olur. Daha fazla detay için [arabuluculuk-sureci-nedir-nasil-isler](/blog/arabuluculuk-sureci-nedir-nasil-isler) sayfasını inceleyebilirsiniz.
+- Anlaşma sağlanamaması durumunda ise son tutanak düzenlenir ve bu belge ile dava açma hakkı kazanılmış olur. Daha fazla detay için [arabuluculuk-sureci-nedir-nasil-isler](/blog/arabuluculuk-sureci-nedir-nasil-isler/) sayfasını inceleyebilirsiniz.
 
 ## Sıkça Sorulan Sorular
 

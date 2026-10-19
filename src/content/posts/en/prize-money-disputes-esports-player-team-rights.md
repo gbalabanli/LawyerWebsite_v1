@@ -7,9 +7,9 @@ tags: ["esports-law", "esports-contracts", "gaming-law", "disputes"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Esports Contract Lawyer: What Players Should Check Before Signing"
-    href: "/en/blog/esports-contract-lawyer-before-signing"
+    href: "/en/blog/esports-contract-lawyer-before-signing/"
 faq:
   - q: "Why do esports prize money disputes happen?"
     a: "They happen when contracts do not clearly define prize percentages, deductions, payment deadlines, taxes, substitutes, coaches, and who receives organizer payments."

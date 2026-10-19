@@ -7,13 +7,13 @@ tags: ["esports-law", "esports-contracts", "gaming-law", "contracts", "player-ri
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Signing an Esports Contract? Legal Terms to Check"
-    href: "/en/blog/esports-contract-lawyer-before-signing"
+    href: "/en/blog/esports-contract-lawyer-before-signing/"
   - text: "Esports Player Contract Lawyer: Terms to Negotiate"
-    href: "/en/blog/esports-player-contract-lawyer-terms-negotiate"
+    href: "/en/blog/esports-player-contract-lawyer-terms-negotiate/"
   - text: "Who Owns Your Esports Image and Streaming Rights?"
-    href: "/en/blog/esports-image-rights-streaming-rights-checklist"
+    href: "/en/blog/esports-image-rights-streaming-rights-checklist/"
 faq:
   - q: "When should an esports player contact a lawyer?"
     a: "A player should contact a lawyer before signing a team, agency, sponsorship, streaming, transfer, or buyout agreement, and before accepting major changes to pay, roster status, or rights."

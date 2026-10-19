@@ -7,7 +7,7 @@ tags: ["immigration-law", "residence-permit", "foreigners-law"]
 lang: "en"
 links:
   - text: "Immigration Lawyer in Turkey"
-    href: "/en/services/immigration-lawyer-turkey"
+    href: "/en/services/immigration-lawyer-turkey/"
 faq:
   - q: "Can a rejected residence permit be challenged in Turkey?"
     a: "Legal remedies may be available, but the correct route depends on the rejection reason, the permit type, the deadline, and the applicant's immigration history."

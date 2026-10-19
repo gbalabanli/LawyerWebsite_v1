@@ -7,11 +7,11 @@ tags: ["company-formation", "corporate-law", "business-law", "contracts"]
 lang: "en"
 links:
   - text: "Company Formation Lawyer in Turkey"
-    href: "/en/services/company-formation-lawyer-turkey"
+    href: "/en/services/company-formation-lawyer-turkey/"
   - text: "How Foreigners Can Open a Company in Turkey"
-    href: "/en/blog/how-foreigners-can-open-company-turkey"
+    href: "/en/blog/how-foreigners-can-open-company-turkey/"
   - text: "Work Permit in Turkey for Foreign Company Owners"
-    href: "/en/blog/work-permit-turkey-foreign-company-owners"
+    href: "/en/blog/work-permit-turkey-foreign-company-owners/"
 faq:
   - q: "Do foreign shareholders need a shareholder agreement in Turkey?"
     a: "A shareholder agreement is not always mandatory, but it is often useful when a company has multiple shareholders, foreign investors, operational partners, or planned exits."

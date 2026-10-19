@@ -9,8 +9,8 @@ tags:
   - dava hazırlığı
 lang: "tr"
 links:
-  - { "text": "kira-tespit-davasi-nasil-acilir-2026", "href": "/blog/kira-tespit-davasi-nasil-acilir-2026" }
-  - { "text": "ihtarname-nasil-cekilir-adim-adim-rehber", "href": "/blog/ihtarname-nasil-cekilir-adim-adim-rehber" }
+  - { "text": "kira-tespit-davasi-nasil-acilir-2026", "href": "/blog/kira-tespit-davasi-nasil-acilir-2026/" }
+  - { "text": "ihtarname-nasil-cekilir-adim-adim-rehber", "href": "/blog/ihtarname-nasil-cekilir-adim-adim-rehber/" }
 faq:
   - q: "Kiracı dosyası belgeleri neden önemlidir?"
     a: "Tahliye, alacak ve kira tespit davalarında hak kaybı yaşamamak ve ispat yükünü yerine getirmek için eksiksiz bir dosya şarttır."
@@ -28,7 +28,7 @@ Somut olayda hak iddia edebilmek için sadece sözlü anlaşmalara güvenmek mü
 
 Kiracı dosyasının temelini oluşturan en önemli belge, taraflar arasında imzalanan yazılı kira sözleşmesidir. Kira sözleşmesinin yazılı olma zorunluluğu kanunen sıkı bir şekil şartına bağlanmamış olsa da, ispat kolaylığı açısından yazılı sözleşme şarttır. Sözleşmede kiralanan taşınmazın adresi, demirbaş listesi, kira bedeli, ödeme şekli ve artış koşulları net bir şekilde yazılmalıdır.
 
-Sözleşmenin yanı sıra, kiracının ve varsa kefilin kimlik fotokopileri, iletişim bilgileri ve tebligat adresleri dosyada bulunmalıdır. Özellikle ileride açılacak olası bir icra takibinde veya ihtarname gönderiminde kiracının güncel adres bilgisine sahip olmak, sürecin uzamasını engeller. Ayrıca kira artış uyuşmazlıkları için [kira-tespit-davasi-nasil-acilir-2026](/blog/kira-tespit-davasi-nasil-acilir-2026) başlıklı yazımızı inceleyebilir, güncel oran hesaplamaları hakkında bilgi edinebilirsiniz.
+Sözleşmenin yanı sıra, kiracının ve varsa kefilin kimlik fotokopileri, iletişim bilgileri ve tebligat adresleri dosyada bulunmalıdır. Özellikle ileride açılacak olası bir icra takibinde veya ihtarname gönderiminde kiracının güncel adres bilgisine sahip olmak, sürecin uzamasını engeller. Ayrıca kira artış uyuşmazlıkları için [kira-tespit-davasi-nasil-acilir-2026](/blog/kira-tespit-davasi-nasil-acilir-2026/) başlıklı yazımızı inceleyebilir, güncel oran hesaplamaları hakkında bilgi edinebilirsiniz.
 
 ## Tahliye Taahhütnamesi ve Geçerlilik Şartları
 
@@ -42,7 +42,7 @@ Eksik veya hatalı düzenlenen taahhütnameler tahliye sürecini sekteye uğrata
 
 ## İhtarname Süreçleri ve Ödeme Kayıtları
 
-Kira borcunu ödemeyen veya sözleşmeye aykırı davranan kiracılara karşı gönderilen ihtarnameler, dava ön koşulu olarak büyük önem taşır. İhtarname aşamasında [ihtarname-nasil-cekilir-adim-adim-rehber](/blog/ihtarname-nasil-cekilir-adim-adim-rehber) içeriğimizden faydalanabilirsiniz. Dosyada bulunması gereken ihtarname türleri şunlardır:
+Kira borcunu ödemeyen veya sözleşmeye aykırı davranan kiracılara karşı gönderilen ihtarnameler, dava ön koşulu olarak büyük önem taşır. İhtarname aşamasında [ihtarname-nasil-cekilir-adim-adim-rehber](/blog/ihtarname-nasil-cekilir-adim-adim-rehber/) içeriğimizden faydalanabilirsiniz. Dosyada bulunması gereken ihtarname türleri şunlardır:
 
 *   **Temerrüt İhtarnamesi:** Kira bedelinin ödenmemesi durumunda çekilen bu ihtarnamede, konut ve çatılı işyerleri için kiracıya en az 30 günlük yasal ödeme süresi tanınmalıdır. Süre sonunda ödeme yapılmazsa tahliye davası veya icra takibi yolu açılır.
 *   **Haklı İhtar İhtarnamesi:** Bir kira yılı içinde kirasını ödemediği için haklı ihtar çekilen kiracıya karşı, aynı yıl içinde ikinci haklı ihtarın tebliğ edilmesi durumunda yeni kira döneminde tahliye yolu açılabilir.

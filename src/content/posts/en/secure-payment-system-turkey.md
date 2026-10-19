@@ -10,8 +10,8 @@ tags:
   - "foreign buyers"
 lang: "en"
 links:
-  - { "text": "Escrow Account Under Turkish Commercial Law", "href": "/en/blog/escrow-account-turkish-commercial-law" }
-  - { "text": "Escrow in Turkish M&A: SPA Clauses and Release Mechanics", "href": "/en/blog/escrow-m-a-turkey" }
+  - { "text": "Escrow Account Under Turkish Commercial Law", "href": "/en/blog/escrow-account-turkish-commercial-law/" }
+  - { "text": "Escrow in Turkish M&A: SPA Clauses and Release Mechanics", "href": "/en/blog/escrow-m-a-turkey/" }
 faq:
   - q: "What is the Secure Payment System (Güvenli Ödeme) in Turkey?"
     a: "It is an intermediary transaction model used during real estate sales to hold purchase funds safely in a designated bank or authorized payment institution account until the title deed (Tapu) transfer is completed."
@@ -47,7 +47,7 @@ Engaging with the Secure Payment System Turkey requires attention to practical d
 
 * **Transaction Fees:** Intermediary banks and payment institutions charge nominal service fees or commission percentages for holding and releasing the funds. Parties must clarify beforehand whether the buyer or seller bears this cost.
 * **Processing Timelines:** While digital verification speeds up the process, bank clearing times, system downtimes, and document verifications can introduce minor delays. Transactions should be initiated well in advance of the scheduled Tapu appointment.
-* **Cancellations and Failed Transfers:** If the property transfer cannot be completed due to missing documents, legal encumbrances, or a mutual decision by the parties, the Tapu office aborts the transaction. In such scenarios, the financial institution releases the locked funds back to the buyer's originating account, though administrative reversal times apply. For broader corporate or commercial transaction alternatives, you can review details on an [escrow account under Turkish commercial law](/en/blog/escrow-account-turkish-commercial-law).
+* **Cancellations and Failed Transfers:** If the property transfer cannot be completed due to missing documents, legal encumbrances, or a mutual decision by the parties, the Tapu office aborts the transaction. In such scenarios, the financial institution releases the locked funds back to the buyer's originating account, though administrative reversal times apply. For broader corporate or commercial transaction alternatives, you can review details on an [escrow account under Turkish commercial law](/en/blog/escrow-account-turkish-commercial-law/).
 
 ## Special Considerations for Foreign Buyers and Citizenship Files
 
@@ -55,7 +55,7 @@ Foreign nationals buying property in Turkey face additional layers of compliance
 
 Under current regulations, foreign buyers must exchange foreign currency into Turkish Liras through a Turkish bank, obtaining a Foreign Exchange Document (DÖB) prior to the Tapu transfer. Furthermore, official property valuation reports are mandatory for foreign-to-foreign or foreigner-to-citizen transactions. When utilizing secure payment channels, the payment trail must perfectly align with the DÖB and the figures reported in the title deed application. 
 
-For investors pursuing citizenship through real estate investment, maintaining an unbroken, auditable financial trail is vital. Any mismatch between the funds deposited into the secure payment account, the official valuation, and the DÖB can trigger administrative rejections during the citizenship evaluation process. For complex multi-party deals or corporate asset acquisitions, alternative mechanisms such as those discussed in [escrow in Turkish M&A](/en/blog/escrow-m-a-turkey) may also warrant consideration.
+For investors pursuing citizenship through real estate investment, maintaining an unbroken, auditable financial trail is vital. Any mismatch between the funds deposited into the secure payment account, the official valuation, and the DÖB can trigger administrative rejections during the citizenship evaluation process. For complex multi-party deals or corporate asset acquisitions, alternative mechanisms such as those discussed in [escrow in Turkish M&A](/en/blog/escrow-m-a-turkey/) may also warrant consideration.
 
 ## Frequently Asked Questions
 

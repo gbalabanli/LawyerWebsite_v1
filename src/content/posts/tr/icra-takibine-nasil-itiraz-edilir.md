@@ -7,9 +7,9 @@ tags: ["icra-tahsilat", "borc", "dilekce", "uyap"]
 lang: "tr"
 links:
   - text: "İcra Takibi Nasıl Başlatılır Adım Adım"
-    href: "/blog/icra-takibi-nasil-baslatilir-adim-adim"
+    href: "/blog/icra-takibi-nasil-baslatilir-adim-adim/"
   - text: "Ödenmemiş Fatura Tahsilatı Yasal Yollar"
-    href: "/blog/odenmemis-fatura-tahsilati-yasal-yollar"
+    href: "/blog/odenmemis-fatura-tahsilati-yasal-yollar/"
 faq:
   - q: "İcra takibine itiraz süresi ne kadardır?"
     a: "Ödeme emrinin borçluya tebliğ edildiği günden itibaren 7 gündür. Bu süre hak düşürücü niteliktedir."
@@ -74,7 +74,7 @@ Gelişen teknoloji sayesinde icra dairelerine gitmeden de **icra takibine itiraz
 
 Süresinde ve usulüne uygun olarak yapılan borca itiraz, başka hiçbir mahkeme kararına gerek kalmaksızın **icra takibini kendiliğinden durdurur**. İcra müdürü, süresinde yapılan itiraz sonrasında haciz işlemlerini durdurmak zorundadır. Ancak bu durum borcun tamamen ortadan kalktığı anlamına gelmez; yalnızca icra takibinin devamını durdurur.
 
-Kambiyo senetlerine (çek, bono, poliçe) mahsus takiplerde ise imzaya itiraz, genel haciz yoluyla takiplerden farklı olarak doğrudan İcra Mahkemesine yapılır. İmzaya itirazın takibi durdurabilmesi için mahkemeden bu yönde bir karar alınması veya senedin imzasının borçluya ait olmadığının açıkça tespiti gerekebilir. Sürecin detayları için [İcra Takibi Nasıl Başlatılır Adım Adım](/blog/icra-takibi-nasil-baslatilir-adim-adim) rehberimizi inceleyebilirsiniz. Benzer şekilde ticari alacaklarda [Ödenmemiş Fatura Tahsilatı Yasal Yollar](/blog/odenmemis-fatura-tahsilati-yasal-yollar) başlıklı yazımızdan da faydalanabilirsiniz.
+Kambiyo senetlerine (çek, bono, poliçe) mahsus takiplerde ise imzaya itiraz, genel haciz yoluyla takiplerden farklı olarak doğrudan İcra Mahkemesine yapılır. İmzaya itirazın takibi durdurabilmesi için mahkemeden bu yönde bir karar alınması veya senedin imzasının borçluya ait olmadığının açıkça tespiti gerekebilir. Sürecin detayları için [İcra Takibi Nasıl Başlatılır Adım Adım](/blog/icra-takibi-nasil-baslatilir-adim-adim/) rehberimizi inceleyebilirsiniz. Benzer şekilde ticari alacaklarda [Ödenmemiş Fatura Tahsilatı Yasal Yollar](/blog/odenmemis-fatura-tahsilati-yasal-yollar/) başlıklı yazımızdan da faydalanabilirsiniz.
 
 ## İtirazın İptali ve Kötü Niyet Tazminatı Riski
 

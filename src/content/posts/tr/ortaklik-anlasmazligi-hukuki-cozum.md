@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler", "uyusmazlik", "ortaklik"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları"
-    href: "/blog/ortaklik-anlasmazliginda-hukuki-cozum-yollari"
+    href: "/blog/ortaklik-anlasmazliginda-hukuki-cozum-yollari/"
 lang: "tr"
 slug: "ortaklik-anlasmazligi-hukuki-cozum"
 faq:

@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "verify:seo": "node scripts/verify-seo.mjs",
     "astro": "astro",
     "bench": "node benchmarks/seo-writer/src/index.ts",
     "bench:probe": "node benchmarks/seo-writer/src/index.ts --stage probe",

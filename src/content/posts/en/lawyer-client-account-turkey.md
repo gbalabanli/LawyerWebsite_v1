@@ -10,8 +10,8 @@ tags: [
 ]
 lang: "en"
 links: [
-  { "text": "Contract Review Basics", "href": "/en/blog/contract-review-basics" },
-  { "text": "Escrow Account Turkish Commercial Law", "href": "/en/blog/escrow-account-turkish-commercial-law" }
+  { "text": "Contract Review Basics", "href": "/en/blog/contract-review-basics-before-you-sign/" },
+  { "text": "Escrow Account Turkish Commercial Law", "href": "/en/blog/escrow-account-turkish-commercial-law/" }
 ]
 faq: [
   {
@@ -47,7 +47,7 @@ Typically, the process follows a structured sequence:
 - **Milestone Achievement:** The parties submit proof that the underlying contractual obligation—such as a title deed transfer, contract execution, or service completion—has occurred.
 - **Release:** Upon joint confirmation or the fulfillment of unilateral conditions specified in the agreement, the attorney releases the funds to the beneficiary.
 
-Because these steps are governed by private contract law, the exact timing and documentation requirements can be tailored to the specific needs of the transaction. For further details on drafting secure agreements, you can review our guide on [Contract Review Basics](/en/blog/contract-review-basics).
+Because these steps are governed by private contract law, the exact timing and documentation requirements can be tailored to the specific needs of the transaction. For further details on drafting secure agreements, you can review our guide on [Contract Review Basics](/en/blog/contract-review-basics-before-you-sign/).
 
 ## Protection from Seizure and Risks
 
@@ -55,7 +55,7 @@ One of the primary concerns for foreign parties is whether deposited funds are s
 
 Because client funds are legally recognized as belonging to the principal (the client) rather than the agent (the attorney), a personal creditor of the lawyer cannot attach or seize money sitting in a properly segregated client account. However, this protection is contingent upon strict adherence to administrative separation. If client funds are commingled with the law firm's operational revenues, distinguishing protected assets becomes significantly harder, creating legal vulnerabilities. 
 
-It is important to note that while structural safeguards exist, no mechanism is entirely devoid of risk. Disputes regarding whether a condition has been met can lead to temporary injunctions or legal challenges. For corporate and commercial contexts, alternative mechanisms like those discussed under [Escrow Account Turkish Commercial Law](/en/blog/escrow-account-turkish-commercial-law) may offer complementary protections.
+It is important to note that while structural safeguards exist, no mechanism is entirely devoid of risk. Disputes regarding whether a condition has been met can lead to temporary injunctions or legal challenges. For corporate and commercial contexts, alternative mechanisms like those discussed under [Escrow Account Turkish Commercial Law](/en/blog/escrow-account-turkish-commercial-law/) may offer complementary protections.
 
 ## Comparative Advantages and Limitations
 

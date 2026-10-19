@@ -7,7 +7,7 @@ tags: ["immigration-law", "deportation", "foreigners-law"]
 lang: "en"
 links:
   - text: "Immigration Lawyer in Turkey"
-    href: "/en/services/immigration-lawyer-turkey"
+    href: "/en/services/immigration-lawyer-turkey/"
 faq:
   - q: "Can a deportation order be appealed in Turkey?"
     a: "A deportation order may be challenged through the legally available route within the applicable deadline. The decision and service date should be reviewed immediately."

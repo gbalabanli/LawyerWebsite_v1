@@ -7,11 +7,11 @@ tags: ["esports-law", "esports-contracts", "gaming-law", "contracts"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Signing an Esports Contract? Legal Terms to Check"
-    href: "/en/blog/esports-contract-lawyer-before-signing"
+    href: "/en/blog/esports-contract-lawyer-before-signing/"
   - text: "Can an Esports Buyout Block Your Next Team?"
-    href: "/en/blog/esports-transfer-buyout-clauses-legal-risks"
+    href: "/en/blog/esports-transfer-buyout-clauses-legal-risks/"
 faq:
   - q: "What should an esports player negotiate before signing?"
     a: "Players should review salary, bonuses, prize money, streaming rights, image rights, sponsor duties, exclusivity, team house rules, transfer rights, buyouts, and termination."

@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Limited Şirket Müdür Değişikliği Süreci"
-    href: "/blog/limited-sirket-mudur-degisikligi"
+    href: "/blog/limited-sirket-mudur-degisikligi/"
 lang: "tr"
 faq:
   - q: "Limited şirket kurmak için 2026'da ne kadar sermaye gerekir?"

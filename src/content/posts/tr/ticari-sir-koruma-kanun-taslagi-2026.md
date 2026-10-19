@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["fikri-mulkiyet", "sirketler-hukuku"]
 links:
   - text: "Fikri Mülkiyet Hizmetlerimiz"
-    href: "/hizmetler/fikri-mulkiyet"
+    href: "/hizmetler/fikri-mulkiyet/"
   - text: "Fikri Mülkiyet Haklarının Şirkete Sermaye Olarak Konulması (2026)"
-    href: "/blog/fikri-mulkiyet-ayni-sermaye-sirket"
+    href: "/blog/fikri-mulkiyet-ayni-sermaye-sirket/"
 lang: "tr"
 faq:
   - q: "Hangi bilgiler ticari sır sayılır?"

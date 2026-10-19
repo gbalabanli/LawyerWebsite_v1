@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku", "sozlesme"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Limited Şirket Müdür Değişikliği: Adım Adım Süreç"
-    href: "/blog/limited-sirket-mudur-degisikligi"
+    href: "/blog/limited-sirket-mudur-degisikligi/"
 lang: "tr"
 slug: "limited-sirket-ortaklik-sozlesmesi-maddeler"
 faq:

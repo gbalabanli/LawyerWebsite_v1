@@ -7,7 +7,7 @@ tags: ["real-estate-foreigners", "real-estate", "property-law", "foreign-buyers"
 lang: "en"
 links:
   - text: "Real Estate Lawyer in Turkey for Foreign Buyers"
-    href: "/en/services/real-estate-lawyer-turkey-foreigners"
+    href: "/en/services/real-estate-lawyer-turkey-foreigners/"
 faq:
   - q: "What is tapu in Turkey?"
     a: "Tapu is the Turkish title deed record showing registered ownership and property details. It should be checked before a real estate purchase."

@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["fikri-mulkiyet", "sirketler-hukuku"]
 links:
   - text: "Fikri Mülkiyet Hizmetlerimiz"
-    href: "/hizmetler/fikri-mulkiyet"
+    href: "/hizmetler/fikri-mulkiyet/"
   - text: "Patent Başvurusu Süreci ve Şartları (2026 Güncel Rehber)"
-    href: "/blog/patent-basvurusu-sureci-sartlari-2026"
+    href: "/blog/patent-basvurusu-sureci-sartlari-2026/"
 lang: "tr"
 faq:
   - q: "Endüstriyel tasarım tescili ne kadar sürede sonuçlanır?"

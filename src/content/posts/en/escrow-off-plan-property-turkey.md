@@ -6,8 +6,8 @@ author: "Av. Baris C. Balabanli"
 tags: ["escrow", "real estate", "property law", "foreign investment"]
 lang: "en"
 links:
-  - { "text": "Secure Payment System Turkey", "href": "/en/blog/secure-payment-system-turkey" }
-  - { "text": "Escrow Account Turkish Commercial Law", "href": "/en/blog/escrow-account-turkish-commercial-law" }
+  - { "text": "Secure Payment System Turkey", "href": "/en/blog/secure-payment-system-turkey/" }
+  - { "text": "Escrow Account Turkish Commercial Law", "href": "/en/blog/escrow-account-turkish-commercial-law/" }
 faq:
   - q: "What is the main risk of buying off-plan property in Turkey?"
     a: "The primary risks include developer insolvency, construction delays, failure to deliver the title deed (Tapu), and the developer using buyer funds for unrelated projects before completion."
@@ -19,7 +19,7 @@ faq:
 
 Purchasing real estate before construction begins can offer attractive entry prices and high appreciation potential, but it also exposes buyers to significant financial hazards. For foreign investors looking into **escrow off-plan property Turkey** transactions, understanding how to structure payment security is essential to avoid losing capital if a project stalls. Without proper legal safeguards, buyers often hand over large sums upfront with little leverage if the developer faces financial distress or construction delays.
 
-This article explores the unique vulnerabilities of pre-construction real estate purchases in Turkey, why traditional direct-transfer methods fail to protect buyers, and how implementing structured payment mechanisms mitigates these risks. Whether you are navigating a luxury development on the Mediterranean coast or an urban project in Istanbul, putting the right safeguards in place is critical. For broader property acquisition steps, you can review our guide on the [Secure Payment System Turkey](/en/blog/secure-payment-system-turkey), which highlights official payment channels used in Turkish real estate transactions.
+This article explores the unique vulnerabilities of pre-construction real estate purchases in Turkey, why traditional direct-transfer methods fail to protect buyers, and how implementing structured payment mechanisms mitigates these risks. Whether you are navigating a luxury development on the Mediterranean coast or an urban project in Istanbul, putting the right safeguards in place is critical. For broader property acquisition steps, you can review our guide on the [Secure Payment System Turkey](/en/blog/secure-payment-system-turkey/), which highlights official payment channels used in Turkish real estate transactions.
 
 ## Understanding Developer Insolvency and Pre-Construction Risks
 
@@ -43,7 +43,7 @@ Each milestone should require independent verification, such as a report from a 
 
 Beyond staged disbursements, sophisticated off-plan transactions often incorporate financial instruments like performance bonds and bank guarantees. A performance bond is a surety issued by a bank or insurance company that compensates the buyer if the developer fails to fulfill the contractual construction obligations.
 
-Similarly, a completion guarantee ensures that if the original developer goes bankrupt or abandons the site, the issuing institution will finance a replacement contractor to finish the building. While these instruments are more common in large-scale commercial projects, negotiating for corporate guarantees or parent-company backing can offer an extra layer of security for high-value residential investments. For corporate governance context regarding commercial entities, you may also examine insights on [Escrow Account Turkish Commercial Law](/en/blog/escrow-account-turkish-commercial-law).
+Similarly, a completion guarantee ensures that if the original developer goes bankrupt or abandons the site, the issuing institution will finance a replacement contractor to finish the building. While these instruments are more common in large-scale commercial projects, negotiating for corporate guarantees or parent-company backing can offer an extra layer of security for high-value residential investments. For corporate governance context regarding commercial entities, you may also examine insights on [Escrow Account Turkish Commercial Law](/en/blog/escrow-account-turkish-commercial-law/).
 
 ## Implementing Escrow Mechanics in Turkey
 

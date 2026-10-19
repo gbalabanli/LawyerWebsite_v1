@@ -131,8 +131,11 @@ This file defines project-specific execution and editing guidance for agents wor
 - Turkish pages live at `/` (no prefix), English at `/en/`.
 
 **Canonical URL:**
-- Auto-generated from `pathname` prop + `siteConfig.seo.siteUrl`.
+- Auto-generated from `pathname` prop + `siteConfig.seo.siteUrl`, normalized through `toCanonicalPath()` in `src/utils/routing.ts`.
+- **Always use the trailing-slash form** (`/blog/example/`). The static build emits directory-style URLs, and GitHub Pages 301-redirects the extensionless variant to it. A canonical without the trailing slash points at a redirect and blocks indexing.
+- `withBase()` applies the same normalization to internal links, so write page links as `withBase('/blog/example')` (or `/blog/example`) and the helper adds the slash. Never hand-append a slash for file assets (e.g. `/favicon.svg`).
 - No manual canonical tag needed unless the page is intentionally a duplicate (avoid this).
+- Run `npm run verify:seo` after `npm run build` to catch canonical/og:hreflang/link regressions.
 - The 404 pages now use `robots="noindex, nofollow"` and are excluded from the sitemap.
 
 ## 6) Deploy and environment assumptions

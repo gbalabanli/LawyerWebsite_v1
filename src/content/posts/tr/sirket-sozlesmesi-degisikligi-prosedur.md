@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Şirket Yönetim Kurulu Sorumluluğu ve Hukuki Riskler"
-    href: "/blog/sirket-yonetim-kurulu-sorumlulugu"
+    href: "/blog/sirket-yonetim-kurulu-sorumlulugu/"
 lang: "tr"
 slug: "sirket-sozlesmesi-degisikligi-prosedur"
 faq:

@@ -10,10 +10,10 @@ tags: [
 ]
 lang: "tr"
 links: [
-  { "text": "İcra Takibi Nasıl Başlatılır Adım Adım", "href": "/blog/icra-takibi-nasil-baslatilir-adim-adim" },
-  { "text": "İcra Takibine Nasıl İtiraz Edilir", "href": "/blog/icra-takibine-nasil-itiraz-edilir" },
-  { "text": "İtirazın İptali Davası Hazırlık", "href": "/blog/itirazinin-iptali-davasi-hazirlik" },
-  { "text": "Menfi Tespit Davası Gerekli Belgeler", "href": "/blog/menfi-tespit-davasi-gerekli-belgeler" }
+  { "text": "İcra Takibi Nasıl Başlatılır Adım Adım", "href": "/blog/icra-takibi-nasil-baslatilir-adim-adim/" },
+  { "text": "İcra Takibine Nasıl İtiraz Edilir", "href": "/blog/icra-takibine-nasil-itiraz-edilir/" },
+  { "text": "İtirazın İptali Davası Hazırlık", "href": "/blog/itirazin-iptali-davasi-hazirlik/" },
+  { "text": "Menfi Tespit Davası Gerekli Belgeler", "href": "/blog/menfi-tespit-davasi-gerekli-belgeler/" }
 ]
 faq: [
   {
@@ -39,9 +39,9 @@ Borçlu ile alacaklı arasındaki hukuki ilişkilerin ödeme aşamasında tıkan
 
 ## İcra Takibinin Kesinleşmesi ve Haciz Talebi
 
-Haciz işlemlerinin hukuken başlayabilmesi için öncelikle ortada kesinleşmiş bir icra takibi bulunmalıdır. Alacaklı tarafından başlatılan takipte, borçluya ödeme emri tebliğ edilir. Borçlu, yasal süre içinde borca veya imziya itiraz etmezse ya da yapılan itiraz mahkeme veya icra dairesi kararıyla bertaraf edilirse (örneğin <anniksi="/blog/itirazinin-iptali-davasi-hazirlik">itirazın iptali davası</anniksi> sonucunda), takip kesinleşir. Takibin kesinleşmesinin ardından alacaklı, yetkili icra dairesine başvurarak haciz talep etme hakkını elde eder. 
+Haciz işlemlerinin hukuken başlayabilmesi için öncelikle ortada kesinleşmiş bir icra takibi bulunmalıdır. Alacaklı tarafından başlatılan takipte, borçluya ödeme emri tebliğ edilir. Borçlu, yasal süre içinde borca veya imziya itiraz etmezse ya da yapılan itiraz mahkeme veya icra dairesi kararıyla bertaraf edilirse (örneğin [itirazın iptali davası](/blog/itirazin-iptali-davasi-hazirlik/) sonucunda), takip kesinleşir. Takibin kesinleşmesinin ardından alacaklı, yetkili icra dairesine başvurarak haciz talep etme hakkını elde eder. 
 
-Haciz talebi, alacaklının veya vekilinin icra müdürlüğüne yönelttiği yazılı veya elektronik bir talep ile gerçekleşir. İcra müdürlüğü, kanuni şartların oluştuğunu tespit ettikten sonra borçlunun malvarlığı üzerinde haciz tatbik etmek üzere memur görevlendirir. Bu aşamada, <anniksi="/blog/icra-takibine-nasil-itiraz-edilir">icra takibine nasıl itiraz edilir</anniksi> sorusunun yanıtı, borcun doğuş aşamasındaki savunma hakları açısından kritik bir öneme sahiptir. Takip kesinleşmeden doğrudan haciz aşamasına geçilmesi hukuka aykırıdır.
+Haciz talebi, alacaklının veya vekilinin icra müdürlüğüne yönelttiği yazılı veya elektronik bir talep ile gerçekleşir. İcra müdürlüğü, kanuni şartların oluştuğunu tespit ettikten sonra borçlunun malvarlığı üzerinde haciz tatbik etmek üzere memur görevlendirir. Bu aşamada, [icra takibine nasıl itiraz edilir](/blog/icra-takibine-nasil-itiraz-edilir/) sorusunun yanıtı, borcun doğuş aşamasındaki savunma hakları açısından kritik bir öneme sahiptir. Takip kesinleşmeden doğrudan haciz aşamasına geçilmesi hukuka aykırıdır.
 
 ## Menkul, Gayrimenkul ve Maaş Haczi Uygulamaları
 
@@ -66,7 +66,7 @@ Eğer haczedilmesi mümkün olmayan bir mal üzerine hukuka aykırı şekilde ha
 
 Haciz işlemleri sırasında borçlunun adresinde bulunan malların borçluya değil, üçüncü bir kişiye ait olması durumunda istihkak iddiası gündeme gelir. Haciz esnasında hazır bulunan üçüncü kişi bu iddiayı ileri sürebileceği gibi, haciz tutanağını sonradan öğrendiğinde de süresi içinde icra dairesine bildirebilir.
 
-İstihkak iddiası ileri sürüldüğünde icra müdürlüğü taraflara (alacaklı ve üçüncü kişiye) süreler verir. Üçüncü kişinin iddiasını ispat yükü bulunmaktadır. Alacaklı bu iddiayı kabul etmezse, dosya icra mahkemesine intikal eder ve yargılama yoluyla malın kime ait olduğu tespit edilir. Bu süreçte <anniksi="/blog/menfi-tespit-davasi-gerekli-belgeler">menfi tespit davası</anniksi> gibi hukuki mekanizmalar da borçlunun borç miktarını ve hukuki durumunu netleştirmesinde sıklıkla başvurduğu yollardandır.
+İstihkak iddiası ileri sürüldüğünde icra müdürlüğü taraflara (alacaklı ve üçüncü kişiye) süreler verir. Üçüncü kişinin iddiasını ispat yükü bulunmaktadır. Alacaklı bu iddiayı kabul etmezse, dosya icra mahkemesine intikal eder ve yargılama yoluyla malın kime ait olduğu tespit edilir. Bu süreçte [menfi tespit davası](/blog/menfi-tespit-davasi-gerekli-belgeler/) gibi hukuki mekanizmalar da borçlunun borç miktarını ve hukuki durumunu netleştirmesinde sıklıkla başvurduğu yollardandır.
 
 ## Hacze İtiraz Yolları ve İcra Mahkemesi Süreci
 

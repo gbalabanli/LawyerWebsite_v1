@@ -12,9 +12,9 @@ tags: [
 lang: "en"
 links:
   - text: "Escrow in Turkey: Legal Guide for Foreign Buyers"
-    href: "/en/blog/escrow-in-turkey"
+    href: "/en/blog/escrow-in-turkey/"
   - text: "Real Estate Law Services"
-    href: "/en/services/real-estate-law"
+    href: "/en/services/gayrimenkul/"
 faq:
   - q: "What is the biggest risk when buying property in Turkey without escrow?"
     a: "The primary risk is transferring funds directly to the seller before the title deed (Tapu) is officially registered in your name, leaving you vulnerable if the seller backs out or third-party claims arise."
@@ -34,7 +34,7 @@ This guide outlines the core mechanics of securing your property transaction, ex
 
 Under standard Turkish real estate practice, ownership legally transfers only upon registration at the Tapu Office. However, sellers naturally hesitate to sign over the property title without confirming receipt of full payment, while buyers are equally reluctant to wire large sums before the property is registered in their name. This structural gap creates a high-stakes standoff. 
 
-Direct wire transfers executed directly to a seller's personal bank account prior to the appointment leave the buyer with limited recourse if complications arise. Conversely, carrying physical cash to the registry office carries both practical risks and compliance hurdles under local financial regulations. To bridge this gap, structured financial instruments and legal safeguards must be established well in advance of the closing date. For a comprehensive overview of general protective mechanisms, you can review our detailed guide on [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey).
+Direct wire transfers executed directly to a seller's personal bank account prior to the appointment leave the buyer with limited recourse if complications arise. Conversely, carrying physical cash to the registry office carries both practical risks and compliance hurdles under local financial regulations. To bridge this gap, structured financial instruments and legal safeguards must be established well in advance of the closing date. For a comprehensive overview of general protective mechanisms, you can review our detailed guide on [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey/).
 
 ## Exploring Financial Protection Mechanisms
 
@@ -64,7 +64,7 @@ Immediately following successful registration at the Tapu Office, the official l
 
 Foreign buyers must also navigate strict regulatory compliance regarding currency exchange. Turkish regulations require foreign buyers to exchange foreign currency into Turkish Liras through a licensed Turkish bank prior to the title transfer, resulting in the issuance of a Foreign Exchange Document. Coordinating this currency conversion step with your escrow or blocked account strategy ensures that your financial paperwork aligns seamlessly with land registry requirements.
 
-Because property regulations and banking practices frequently evolve, working with qualified professionals is essential. To explore how our firm can assist you throughout the acquisition process, please visit our [Real Estate Law Services](/en/services/real-estate-law) page.
+Because property regulations and banking practices frequently evolve, working with qualified professionals is essential. To explore how our firm can assist you throughout the acquisition process, please visit our [Real Estate Law Services](/en/services/gayrimenkul/) page.
 
 ## Conclusion
 

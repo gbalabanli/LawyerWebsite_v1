@@ -7,9 +7,9 @@ tags: ["esports-law", "streamer-contracts", "gaming-law", "contracts"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Esports Sponsorship Agreement: Key Legal Terms to Review"
-    href: "/en/blog/esports-sponsorship-agreement-key-terms"
+    href: "/en/blog/esports-sponsorship-agreement-key-terms/"
 faq:
   - q: "Do streamers need written contracts?"
     a: "Yes. Sponsorship, management, platform, content production, and revenue-share deals should be written because payment, exclusivity, and content rights can create disputes."

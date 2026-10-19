@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["icra-tahsilat", "dava-sureci"]
 links:
   - text: "İcra ve Tahsilat Hukuku Hizmetlerimiz"
-    href: "/hizmetler/icra-tahsilat"
+    href: "/hizmetler/icra-tahsilat/"
   - text: "Ödenmemiş Fatura Tahsilatı İçin Yasal Yollar"
-    href: "/blog/odenmemis-fatura-tahsilati-yasal-yollar"
+    href: "/blog/odenmemis-fatura-tahsilati-yasal-yollar/"
 lang: "tr"
 faq:
   - q: "İlamsız icra takibi ile ilamlı icra takibi arasındaki fark nedir?"

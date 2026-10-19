@@ -7,11 +7,11 @@ tags: ["work-permit", "immigration-law", "employment-law", "foreigners-law"]
 lang: "en"
 links:
   - text: "Immigration Lawyer in Turkey"
-    href: "/en/services/immigration-lawyer-turkey"
+    href: "/en/services/immigration-lawyer-turkey/"
   - text: "Employment Law"
-    href: "/en/services/is-hukuku"
+    href: "/en/services/is-hukuku/"
   - text: "Work Permit in Turkey for Foreign Company Owners"
-    href: "/en/blog/work-permit-turkey-foreign-company-owners"
+    href: "/en/blog/work-permit-turkey-foreign-company-owners/"
 faq:
   - q: "Can a Turkey work permit rejection be challenged?"
     a: "A rejection may be challenged or followed by a corrected new application depending on the reason, deadline, employer eligibility, foreigner's status, and available evidence."

@@ -10,11 +10,11 @@ tags:
 lang: "en"
 links:
   - text: "Inheritance in Turkey for Foreign Heirs"
-    href: "/en/blog/inheritance-turkey-foreign-heirs"
+    href: "/en/blog/inheritance-turkey-foreign-heirs/"
   - text: "Certificate of Inheritance in Turkey for Foreigners"
-    href: "/en/blog/certificate-of-inheritance-turkey-foreigners"
+    href: "/en/blog/certificate-of-inheritance-turkey-foreigners/"
   - text: "Inheritance and Family Law Services"
-    href: "/en/services/family-law"
+    href: "/en/services/aile-hukuku/"
 faq:
   - q: "Does Turkey use the term barrister for legal representation in inheritance matters?"
     name: "Does Turkey use the term barrister for legal representation in inheritance matters?"
@@ -37,7 +37,7 @@ Furthermore, cross-border estates require a careful analysis of private internat
 
 ## Obtaining the Certificate of Inheritance (Veraset İlamı)
 
-The foundational step in any Turkish estate proceeding is obtaining a Certificate of Inheritance, known locally as a *veraset ilamı*. This official document establishes who the legal heirs are and defines their respective shares in the estate. For detailed guidance on this initial procedure, you can read more about obtaining a [Certificate of Inheritance in Turkey for Foreigners](/en/blog/certificate-of-inheritance-turkey-foreigners).
+The foundational step in any Turkish estate proceeding is obtaining a Certificate of Inheritance, known locally as a *veraset ilamı*. This official document establishes who the legal heirs are and defines their respective shares in the estate. For detailed guidance on this initial procedure, you can read more about obtaining a [Certificate of Inheritance in Turkey for Foreigners](/en/blog/certificate-of-inheritance-turkey-foreigners/).
 
 To secure this certificate, a formal petition must be submitted to a Turkish civil court of peace or, in straightforward cases, through a designated notary public. If the deceased was a foreign citizen, the process requires certified and apostilled vital statistics documents from the home country, such as a birth or death certificate, accompanied by sworn Turkish translations. If documents originate from a country that is not a party to the Apostille Convention, consular legalization at the Turkish embassy or consulate in that country becomes mandatory. 
 
@@ -45,9 +45,9 @@ To secure this certificate, a formal petition must be submitted to a Turkish civ
 
 Once the certificate of inheritance is issued, the legal heirs gain the right to access and administer the estate. However, inheriting an estate in Turkey means taking on both assets and liabilities. If there is a suspicion of heavy debts or insolvency, heirs must act quickly. Statutory heirs generally have a strict **three-month period** to formally reject an inheritance (*reddi miras*) if they wish to avoid inheriting the deceased's debts. This period begins on the day the heir realistically learns of the death and their status as an heir.
 
-Beyond rejection timelines, potential claimants or disinherited relatives should keep in mind that contesting a will or filing legal claims regarding statutory reserved portions (*saklı pay*) is subject to specific statutory limitations, often running from the date the plaintiff becomes aware of the infringement. For a broader overview of how these rules impact non-resident beneficiaries, review our comprehensive resource on [Inheritance in Turkey for Foreign Heirs](/en/blog/inheritance-turkey-foreign-heirs).
+Beyond rejection timelines, potential claimants or disinherited relatives should keep in mind that contesting a will or filing legal claims regarding statutory reserved portions (*saklı pay*) is subject to specific statutory limitations, often running from the date the plaintiff becomes aware of the infringement. For a broader overview of how these rules impact non-resident beneficiaries, review our comprehensive resource on [Inheritance in Turkey for Foreign Heirs](/en/blog/inheritance-turkey-foreign-heirs/).
 
-If you are currently facing cross-border estate complexities, deadlines, or disputes regarding property in Turkey, professional guidance can make a substantial difference. You can reach out directly to our team via our [Inheritance and Family Law Services](/en/services/family-law) page to discuss your specific situation.
+If you are currently facing cross-border estate complexities, deadlines, or disputes regarding property in Turkey, professional guidance can make a substantial difference. You can reach out directly to our team via our [Inheritance and Family Law Services](/en/services/aile-hukuku/) page to discuss your specific situation.
 
 ## Turkish Inheritance Tax and Financial Obligations
 

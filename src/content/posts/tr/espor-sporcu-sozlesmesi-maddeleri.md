@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["espor", "sozlesme"]
 links:
   - text: "E-Spor Hizmetlerimiz"
-    href: "/hizmetler/espor"
+    href: "/hizmetler/espor/"
   - text: "E-Spor Turnuva İkramiyesi Dağıtımında Hukuki Haklar"
-    href: "/blog/espor-ikramiye-dagitimi-hukuki-haklar"
+    href: "/blog/espor-ikramiye-dagitimi-hukuki-haklar/"
 lang: "tr"
 slug: "espor-sporcu-sozlesmesi-maddeleri"
 faq:

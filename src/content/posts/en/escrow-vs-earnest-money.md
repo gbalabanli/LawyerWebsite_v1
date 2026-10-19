@@ -11,8 +11,8 @@ tags: [
 ]
 lang: "en"
 links:
-  - { "text": "Escrow Costs and Taxes in Turkey: What to Expect", "href": "/en/blog/escrow-costs-tax" }
-  - { "text": "Is Escrow Enforceable in Turkey? Legal Framework", "href": "/en/blog/escrow-enforceability" }
+  - { "text": "Escrow Costs and Taxes in Turkey: What to Expect", "href": "/en/blog/escrow-costs-tax/" }
+  - { "text": "Is Escrow Enforceable in Turkey? Legal Framework", "href": "/en/blog/escrow-enforceability/" }
 faq:
   - { "q": "What is the main difference between earnest money (kaparo) and a deposit?", "a": "Earnest money or kaparo generally acts as a sign of commitment and can function as liquidated damages or part payment depending on the contract, whereas standard deposits are often fully refundable security guarantees, such as for rentals." }
   - { "q": "Are deposits legally protected in Turkey?", "a": "Protection depends heavily on how the agreement is structured in writing. Unregulated cash handovers to sellers or landlords carry severe legal and practical risks if disputes arise." }
@@ -32,7 +32,7 @@ If the buyer walks away without a legally valid excuse, the seller frequently cl
 
 Security deposits serve an entirely different purpose compared to earnest money. Most commonly utilized in residential or commercial lease agreements, a deposit acts as a financial cushion for the landlord against unpaid rent, property damage, or utility debts left behind by the tenant. 
 
-Under standard Turkish rental practices, security deposits should ideally be held transparently or placed in a dedicated account, though many landlords request cash or direct bank transfers. The return of a deposit depends on the property condition upon the tenant's exit and the settlement of all final utility bills. Disputes often arise when landlords deduct arbitrary amounts for normal wear and tear, necessitating a clear inventory checklist signed at check-in. For those navigating broader financial obligations, understanding [Escrow Costs and Taxes in Turkey: What to Expect](/en/blog/escrow-costs-tax) helps clarify transaction overheads.
+Under standard Turkish rental practices, security deposits should ideally be held transparently or placed in a dedicated account, though many landlords request cash or direct bank transfers. The return of a deposit depends on the property condition upon the tenant's exit and the settlement of all final utility bills. Disputes often arise when landlords deduct arbitrary amounts for normal wear and tear, necessitating a clear inventory checklist signed at check-in. For those navigating broader financial obligations, understanding [Escrow Costs and Taxes in Turkey: What to Expect](/en/blog/escrow-costs-tax/) helps clarify transaction overheads.
 
 ## Escrow vs Deposit Turkey: Key Differences Compared
 
@@ -42,7 +42,7 @@ To choose the correct mechanism for your transaction, it is vital to contrast ho
 - **Refund and Forfeiture Rules:** Standard rental deposits are refundable upon lease termination subject to property condition checks. *Kaparo* is typically forfeited by the buyer if they default, or returned (sometimes doubled) if the seller defaults. Escrow funds are strictly released only when verifiable contractual conditions, such as a Title Deed (*Tapu*) transfer, are fully satisfied.
 - **Risk Profile:** Direct deposits and unverified *kaparo* payments carry high counterparty risk, as the recipient may spend the funds or refuse to return them. Escrow arrangements drastically reduce this risk by keeping funds out of the direct control of either party until obligations are fulfilled.
 
-For a deeper dive into the legal safeguards governing these arrangements, you can review details on whether [Is Escrow Enforceable in Turkey? Legal Framework](/en/blog/escrow-enforceability) applies to your specific transaction structure.
+For a deeper dive into the legal safeguards governing these arrangements, you can review details on whether [Is Escrow Enforceable in Turkey? Legal Framework](/en/blog/escrow-enforceability/) applies to your specific transaction structure.
 
 ## Choosing the Right Mechanism: Deposit vs Escrow vs Secure Payment System
 

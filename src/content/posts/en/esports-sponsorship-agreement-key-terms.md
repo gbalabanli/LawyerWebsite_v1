@@ -7,9 +7,9 @@ tags: ["esports-law", "sponsorships", "gaming-law", "contracts"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Esports Contract Lawyer: What Players Should Check Before Signing"
-    href: "/en/blog/esports-contract-lawyer-before-signing"
+    href: "/en/blog/esports-contract-lawyer-before-signing/"
 faq:
   - q: "What is the most important clause in an esports sponsorship agreement?"
     a: "The deliverables clause is usually the most important because it defines what the team, player, streamer, or event organizer must actually provide."

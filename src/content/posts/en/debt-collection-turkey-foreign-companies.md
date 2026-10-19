@@ -7,11 +7,11 @@ tags: ["debt-collection", "commercial-law", "business-law", "litigation"]
 lang: "en"
 links:
   - text: "Debt Collection and Enforcement"
-    href: "/en/services/icra-tahsilat"
+    href: "/en/services/icra-tahsilat/"
   - text: "Commercial Law"
-    href: "/en/services/ticaret-hukuku"
+    href: "/en/services/ticaret-hukuku/"
   - text: "Pre-Litigation Strategy: What to Prepare First"
-    href: "/en/blog/pre-litigation-strategy-what-to-prepare-first"
+    href: "/en/blog/pre-litigation-strategy-what-to-prepare-first/"
 faq:
   - q: "Can a foreign company collect unpaid invoices in Turkey?"
     a: "Yes. A foreign company may pursue unpaid receivables in Turkey, but evidence, contract terms, debtor location, governing law, and enforcement route should be reviewed."

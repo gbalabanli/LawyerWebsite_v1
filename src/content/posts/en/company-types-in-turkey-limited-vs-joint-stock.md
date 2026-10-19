@@ -10,11 +10,11 @@ tags:
 lang: "en"
 links:
   - text: "How Foreigners Can Open a Company in Turkey"
-    href: "/en/blog/how-foreigners-can-open-company-turkey"
+    href: "/en/blog/how-foreigners-can-open-company-turkey/"
   - text: "Company Formation Lawyer in Turkey"
-    href: "/en/services/company-formation-lawyer-turkey"
+    href: "/en/services/company-formation-lawyer-turkey/"
   - text: "Shareholder Agreement for Turkish Companies"
-    href: "/en/blog/shareholder-agreement-turkey-foreign-owned-companies"
+    href: "/en/blog/shareholder-agreement-turkey-foreign-owned-companies/"
 faq:
   - q: "What is the difference between a limited company and a joint-stock company in Turkey?"
     a: "The main differences lie in minimum capital requirements, share transfer procedures, management structures, and suitability for outside investment or public offerings."
@@ -26,9 +26,9 @@ faq:
     a: "Yes, Turkish law permits structural conversions, allowing a growing limited company to transform into a joint-stock company when business needs or fundraising require it."
 ---
 
-Choosing the right legal form is one of the most critical decisions for foreign founders launching a business. When evaluating the primary types of companies in Turkey, most international investors focus on two main corporate structures: the Limited Liability Company (Limited Şirket) and the Joint-Stock Company (Anonim Şirket). Understanding how these entities differ regarding liability, governance, capital requirements, and share transfers helps ensure your enterprise starts on a solid legal foundation. For a broad roadmap on setting up your enterprise, you can review our guide on [How Foreigners Can Open a Company in Turkey](/en/blog/how-foreigners-can-open-company-turkey).
+Choosing the right legal form is one of the most critical decisions for foreign founders launching a business. When evaluating the primary types of companies in Turkey, most international investors focus on two main corporate structures: the Limited Liability Company (Limited Şirket) and the Joint-Stock Company (Anonim Şirket). Understanding how these entities differ regarding liability, governance, capital requirements, and share transfers helps ensure your enterprise starts on a solid legal foundation. For a broad roadmap on setting up your enterprise, you can review our guide on [How Foreigners Can Open a Company in Turkey](/en/blog/how-foreigners-can-open-company-turkey/).
 
-This article breaks down the legal characteristics of both structures, examines alternative entity types, and provides a decision checklist. Because navigating Turkish commercial regulations requires careful attention to detail, working with a qualified [Company Formation Lawyer in Turkey](/en/services/company-formation-lawyer-turkey) is strongly advised before filing registration documents.
+This article breaks down the legal characteristics of both structures, examines alternative entity types, and provides a decision checklist. Because navigating Turkish commercial regulations requires careful attention to detail, working with a qualified [Company Formation Lawyer in Turkey](/en/services/company-formation-lawyer-turkey/) is strongly advised before filing registration documents.
 
 ## Main Types of Companies in Turkey for Foreign Founders
 
@@ -44,7 +44,7 @@ To choose the correct vehicle among the available types of companies in Turkey, 
 
 * **Shareholders and Ownership:** An LLC can be formed by one or more real persons or legal entities. A JSC can also be established by a single shareholder (individual or corporate) and allows for an unrestricted number of shareholders.
 * **Liability and Public Debts:** In both structures, shareholders generally enjoy limited liability restricted to their subscribed capital contributions. However, founders must note important liability exceptions regarding public debts. Under Turkish law, if a company fails to pay its public liabilities—such as corporate taxes or social security premium debts—and the company assets are insufficient, directors or certain shareholders may face secondary liability for these unpaid public obligations depending on their management role and share status.
-* **Share Transfers:** Transferring shares in an LLC requires a formal notarial contract, the approval of the general assembly, and registration in the trade registry, making the process more formal and controlled. In contrast, transferring shares in a JSC is significantly easier, usually requiring simple endorsement of share certificates or book-entry transfers without mandatory notary intervention, unless restricted by the articles of association or a [Shareholder Agreement for Turkish Companies](/en/blog/shareholder-agreement-turkey-foreign-owned-companies).
+* **Share Transfers:** Transferring shares in an LLC requires a formal notarial contract, the approval of the general assembly, and registration in the trade registry, making the process more formal and controlled. In contrast, transferring shares in a JSC is significantly easier, usually requiring simple endorsement of share certificates or book-entry transfers without mandatory notary intervention, unless restricted by the articles of association or a [Shareholder Agreement for Turkish Companies](/en/blog/shareholder-agreement-turkey-foreign-owned-companies/).
 * **Governance and Management:** An LLC is managed by one or more directors (managers), at least one of whom must typically be appointed with management authority. A JSC is managed by a Board of Directors, which must consist of at least one member (individual or legal entity), making it more suitable for corporate governance models involving diverse stakeholders.
 
 ## Alternative Legal Structures and Representative Offices

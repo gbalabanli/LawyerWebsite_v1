@@ -59,7 +59,7 @@ const articleSchema = {
 		'@type': 'Organization',
 		name: brandName,
 	},
-	mainEntityOfPage: `${siteConfig.seo.siteUrl}/en/blog/${post.id.replace(/^en\//, '')}`,
+	mainEntityOfPage: `${siteConfig.seo.siteUrl}/en/blog/${post.id.replace(/^en\//, '')}/`,
 };
 
 const faqSchema = post.data.faq

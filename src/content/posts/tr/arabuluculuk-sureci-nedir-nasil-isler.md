@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["dava-sureci", "alternatif-cozum"]
 links:
   - text: "Dava ve Sözleşmeler Hizmetlerimiz"
-    href: "/hizmetler"
+    href: "/hizmetler/"
   - text: "Dava Öncesi Strateji: İlk Ne Hazırlanmalı?"
-    href: "/blog/dava-oncesi-strateji"
+    href: "/blog/dava-oncesi-strateji/"
 lang: "tr"
 faq:
   - q: "Hangi davalarda arabuluculuk zorunludur?"

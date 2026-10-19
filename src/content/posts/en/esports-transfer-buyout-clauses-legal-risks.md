@@ -7,9 +7,9 @@ tags: ["esports-law", "esports-contracts", "gaming-law", "contracts"]
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Esports Contract Lawyer: What Players Should Check Before Signing"
-    href: "/en/blog/esports-contract-lawyer-before-signing"
+    href: "/en/blog/esports-contract-lawyer-before-signing/"
 faq:
   - q: "What is a buyout clause in esports?"
     a: "A buyout clause states the amount or process required for a player to leave one team and join another before the contract term ends."

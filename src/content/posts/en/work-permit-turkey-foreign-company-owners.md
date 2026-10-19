@@ -7,9 +7,9 @@ tags: ["company-formation", "work-permit", "immigration-law", "corporate-law"]
 lang: "en"
 links:
   - text: "Company Formation Lawyer in Turkey"
-    href: "/en/services/company-formation-lawyer-turkey"
+    href: "/en/services/company-formation-lawyer-turkey/"
   - text: "Immigration Lawyer in Turkey"
-    href: "/en/services/immigration-lawyer-turkey"
+    href: "/en/services/immigration-lawyer-turkey/"
 faq:
   - q: "Can a foreign company owner work in Turkey without a work permit?"
     a: "Foreigners who actively work in Turkey generally need proper work authorization. Company ownership alone should not be treated as permission to work."

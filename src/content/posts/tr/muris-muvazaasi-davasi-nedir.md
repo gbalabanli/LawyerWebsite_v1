@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["miras-hukuku", "dava-sureci"]
 links:
   - text: "Miras Hukuku Hizmetlerimiz"
-    href: "/hizmetler/miras-hukuku"
+    href: "/hizmetler/miras-hukuku/"
   - text: "Tenkis Davası Nedir? Saklı Pay ve Dava Süreci (2026)"
-    href: "/blog/tenkis-davasi-nedir-sakli-pay"
+    href: "/blog/tenkis-davasi-nedir-sakli-pay/"
 lang: "tr"
 faq:
   - q: "Muris muvazaası davası hangi mahkemede açılır?"

@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["tuketici-haklari", "dava-sureci"]
 links:
   - text: "Ticaret Hukuku Hizmetlerimiz"
-    href: "/hizmetler/ticaret-hukuku"
+    href: "/hizmetler/ticaret-hukuku/"
   - text: "Sözleşme İhlali Durumunda Haklarınız ve Yapılması Gerekenler"
-    href: "/blog/sozlesme-ihlali-yapilmasi-gerekenler-haklar"
+    href: "/blog/sozlesme-ihlali-yapilmasi-gerekenler-haklar/"
 lang: "tr"
 faq:
   - q: "Tüketici hakem heyetine nasıl başvurulur?"

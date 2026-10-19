@@ -7,9 +7,9 @@ tags: ["sigorta-hukuku", "tuketici", "arac-deger-kaybi"]
 lang: "tr"
 links:
   - text: "Araç Değer Kaybı Davası"
-    href: "/blog/arac-deger-kaybi-davasi-surec-tazminat"
+    href: "/blog/arac-deger-kaybi-davasi-surec-tazminat/"
   - text: "Dava Öncesi Strateji"
-    href: "/blog/dava-oncesi-strateji"
+    href: "/blog/dava-oncesi-strateji/"
 faq:
   - q: "Sigorta Tahkim Komisyonu'na kimler başvurabilir?"
     a: "Sigorta sözleşmesinden yararlanan lehtarlar, sigortalılar veya zarar gören üçüncü kişiler, sigorta şirketi ile aralarındaki uyuşmazlıkta komisyona başvurabilirler."
@@ -19,7 +19,7 @@ faq:
     a: "Süreç, uyuşmazlığın niteliğine, dosyadaki belgelerin eksiksiz olmasına ve komisyonun iş yüküne bağlı olarak somut olay bazında değişiklik gösterir."
 ---
 
-Sigorta şirketleri ile yaşanan anlaşmazlıklar, poliçe sahipleri ve zarar gören vatandaşlar için uzun ve yıpratıcı bir sürece dönüşebilir. Mahkemelerin iş yükü ve yargılama sürelerinin uzunluğu göz önüne alındığında, alternatif uyuşmazlık çözüm yolları büyük bir önem kazanmaktadır. Bu noktada **sigorta tahkim komisyonu**, sigorta hukukundan kaynaklanan uyuşmazlıkların hızlı, etkin ve adil bir şekilde çözüme kavuşturulması amacıyla kurulan özel bir merci olarak öne çıkar. Özellikle trafik kazaları sonrası gündeme gelen zararlar ve [araç değer kaybı davası](/blog/arac-deger-kaybi-davasi-surec-tazminat) talepleri için bu mekanizma sıklıkla tercih edilmektedir.
+Sigorta şirketleri ile yaşanan anlaşmazlıklar, poliçe sahipleri ve zarar gören vatandaşlar için uzun ve yıpratıcı bir sürece dönüşebilir. Mahkemelerin iş yükü ve yargılama sürelerinin uzunluğu göz önüne alındığında, alternatif uyuşmazlık çözüm yolları büyük bir önem kazanmaktadır. Bu noktada **sigorta tahkim komisyonu**, sigorta hukukundan kaynaklanan uyuşmazlıkların hızlı, etkin ve adil bir şekilde çözüme kavuşturulması amacıyla kurulan özel bir merci olarak öne çıkar. Özellikle trafik kazaları sonrası gündeme gelen zararlar ve [araç değer kaybı davası](/blog/arac-deger-kaybi-davasi-surec-tazminat/) talepleri için bu mekanizma sıklıkla tercih edilmektedir.
 
 Bu yazıda, sigorta tahkim komisyonu başvurusu nasıl yapılır, hangi şartlar aranır ve süreç boyunca nelere dikkat edilmelidir sorularının yanıtlarını bulabilirsiniz. Somut olayın özelliklerine göre değişebilecek detaylar göz önünde bulundurularak hazırlanan bu rehber, başvuru aşamasında yol gösterici olmayı amaçlamaktadır.
 
@@ -32,7 +32,7 @@ Komisyona başvurma hakkı bulunan başlıca kişiler şunlardır:
 - Sigortadan menfaati bulunan sigortalılar ve lehtarlar,
 - Trafik kazası gibi durumlarda sigorta şirketinden tazminat talep etme hakkına sahip olan zarar gören üçüncü kişiler.
 
-Sistemin en büyük avantajı, mahkeme süreçlerine kıyasla daha kısa sürede sonuç alabilme imkânı sunmasıdır. Ancak başvurunun geçerli olabilmesi için mevzuatta aranan ön şartların eksiksiz yerine getirilmesi hayati önem taşır. Doğru bir [dava öncesi strateji](/blog/dava-oncesi-strateji) belirlemek, hak kaybı yaşanmasının önüne geçecektir.
+Sistemin en büyük avantajı, mahkeme süreçlerine kıyasla daha kısa sürede sonuç alabilme imkânı sunmasıdır. Ancak başvurunun geçerli olabilmesi için mevzuatta aranan ön şartların eksiksiz yerine getirilmesi hayati önem taşır. Doğru bir [dava öncesi strateji](/blog/dava-oncesi-strateji/) belirlemek, hak kaybı yaşanmasının önüne geçecektir.
 
 ## Başvuru Öncesi Zorunlu Şartlar ve İlk Adımlar
 

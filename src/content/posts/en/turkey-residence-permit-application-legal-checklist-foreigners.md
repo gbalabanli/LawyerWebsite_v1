@@ -7,11 +7,11 @@ tags: ["immigration-law", "residence-permit", "foreigners-law"]
 lang: "en"
 links:
   - text: "Immigration Lawyer in Turkey"
-    href: "/en/services/immigration-lawyer-turkey"
+    href: "/en/services/immigration-lawyer-turkey/"
   - text: "Turkey Residence Permit Rejected: Legal Options for Foreigners"
-    href: "/en/blog/turkey-residence-permit-rejected-legal-options-foreigners"
+    href: "/en/blog/turkey-residence-permit-rejected-legal-options-foreigners/"
   - text: "Deportation Order in Turkey: How Foreigners Can Appeal"
-    href: "/en/blog/deportation-order-turkey-how-foreigners-can-appeal"
+    href: "/en/blog/deportation-order-turkey-how-foreigners-can-appeal/"
 faq:
   - q: "What should foreigners check before applying for a Turkey residence permit?"
     a: "Foreigners should review permit type, passport validity, entry history, address proof, health insurance, financial evidence, appointment records, and prior immigration issues before filing."

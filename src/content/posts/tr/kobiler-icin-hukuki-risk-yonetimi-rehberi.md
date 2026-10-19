@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Küçük İşletmeler için Hukuki Risk Kontrol Listesi"
-    href: "/blog/hukuki-risk-kontrol-listesi"
+    href: "/blog/hukuki-risk-kontrol-listesi/"
 lang: "tr"
 faq:
   - q: "KOBİ'lerde en sık karşılaşılan hukuki risk nedir?"

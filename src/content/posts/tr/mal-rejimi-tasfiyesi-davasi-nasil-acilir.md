@@ -7,9 +7,9 @@ tags: ["aile-hukuku", "mal-rejimi", "bosanma", "katilma-alacagi"]
 lang: "tr"
 links:
   - text: "Çekişmeli Boşanma Davası"
-    href: "/blog/cekismeli-bosanma-davasi-surec-deliller-2026"
+    href: "/blog/cekismeli-bosanma-davasi-surec-deliller-2026/"
   - text: "Anlaşmalı Boşanma Süreci"
-    href: "/blog/anlasmali-bosanma-sureci-protokol-2026"
+    href: "/blog/anlasmali-bosanma-sureci-protokol-2026/"
 faq:
   - q: "Mal rejimi tasfiyesi davası ne zaman açılabilir?"
     a: "Mal rejimi tasfiyesi davası, boşanma davasının kesinleşmesinden sonra açılabileceği gibi, boşanma davası ile birlikte veya boşanma davası devam ederken de açılabilir (genellikle ayrı bir dava olarak görülür veya tefrik edilir)."

@@ -10,9 +10,9 @@ tags:
 lang: "tr"
 links:
   - text: "Anlaşmalı Boşanma Süreci ve Protokol"
-    href: "/blog/anlasmali-bosanma-sureci-protokol-2026"
+    href: "/blog/anlasmali-bosanma-sureci-protokol-2026/"
   - text: "Aile Hukuku Hizmetlerimiz"
-    href: "/hizmetler/aile-hukuku"
+    href: "/hizmetler/aile-hukuku/"
 faq:
   - q: "Çekişmeli boşanma davası ne kadar sürer?"
     a: "Çekişmeli boşanma davası; mahkemelerin iş yükü, tanık dinletme süreleri, adli tıp raporları ve dosyanın kapsamına göre genellikle 1.5 ila 3 yıl arasında sürebilmektedir. Somut olayın özelliklerine göre bu süre uzayabilir veya kısalabilir."
@@ -71,4 +71,4 @@ Sürdürülmekte olan dava boyunca tedbir nafakası, karar kesinleştikten sonra
 
 ---
 
-Çekişmeli boşanma davası, hak kayıplarının yaşanmaması ve sürecin en az zararla tamamlanması adına hukuki bilgi ve strateji gerektiren bir süreçtir. Haklarınızı korumak, doğru delilleri sunmak ve dava sürecini profesyonelce yönetmek için [Aile Hukuku Hizmetlerimiz](/hizmetler/aile-hukuku) sayfamızı inceleyebilir ve hukuki danışmanlık almak için ofisimizle iletişime geçebilirsiniz.
+Çekişmeli boşanma davası, hak kayıplarının yaşanmaması ve sürecin en az zararla tamamlanması adına hukuki bilgi ve strateji gerektiren bir süreçtir. Haklarınızı korumak, doğru delilleri sunmak ve dava sürecini profesyonelce yönetmek için [Aile Hukuku Hizmetlerimiz](/hizmetler/aile-hukuku/) sayfamızı inceleyebilir ve hukuki danışmanlık almak için ofisimizle iletişime geçebilirsiniz.

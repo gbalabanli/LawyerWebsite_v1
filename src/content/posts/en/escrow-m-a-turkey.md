@@ -7,9 +7,9 @@ tags: ["escrow", "mergers and acquisitions", "corporate law", "turkish commercia
 lang: "en"
 links:
   - text: "Escrow Accounts Under Turkish Commercial Law"
-    href: "/en/blog/escrow-account-turkish-commercial-law"
+    href: "/en/blog/escrow-account-turkish-commercial-law/"
   - text: "Contract Review Basics"
-    href: "/en/blog/contract-review-basics"
+    href: "/en/blog/contract-review-basics-before-you-sign/"
 faq:
   - q: "What is the typical size of an escrow account in Turkish M&A transactions?"
     a: "Escrow amounts typically range from 10% to 20% of the total purchase price, depending on the perceived risks identified during due diligence and the financial health of the target company."

@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["miras-hukuku", "dava-sureci"]
 links:
   - text: "Miras Hukuku Hizmetlerimiz"
-    href: "/hizmetler/miras-hukuku"
+    href: "/hizmetler/miras-hukuku/"
   - text: "Muris Muvazaası Davası: Mirastan Mal Kaçırma ve Tapu İptali (2026)"
-    href: "/blog/muris-muvazaasi-davasi-nedir"
+    href: "/blog/muris-muvazaasi-davasi-nedir/"
 lang: "tr"
 faq:
   - q: "İzale-i şuyu davası hangi mahkemede açılır?"

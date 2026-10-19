@@ -10,9 +10,9 @@ tags:
 lang: "en"
 links:
   - text: "Escrow in Turkey: Legal Guide for Foreign Buyers"
-    href: "/en/blog/escrow-in-turkey"
+    href: "/en/blog/escrow-in-turkey/"
   - text: "Who Can Act as Escrow Agent in Turkey? Lawyer, Bank, Notary"
-    href: "/en/blog/escrow-agent-turkey"
+    href: "/en/blog/escrow-agent-turkey/"
 faq:
   - q: "Are escrow agreements legally recognized in Turkey?"
     a: "Yes, escrow agreements are legally recognized as mixed or sui generis contracts under the Turkish Code of Obligations, provided they do not violate mandatory statutory rules, public order, or morality."
@@ -25,13 +25,13 @@ howTo: []
 
 Drafting an effective **escrow agreement in Turkey** requires careful attention to local legal frameworks, particularly when foreign parties, cross-border payments, or high-value assets are involved. Whether you are closing a commercial transaction, transferring shares, or securing real estate funds, understanding how these agreements operate under Turkish law is essential to protect your interests. This article explains the legal nature of escrow arrangements in Turkey, provides a clause-by-clause drafting checklist, and outlines key enforceability considerations.
 
-Under Turkish law, escrow arrangements do not have a single dedicated statute bearing the exact title "escrow." Instead, they are typically structured as **sui generis (unique) or mixed contracts** under the **Turkish Code of Obligations**. Because Turkish law permits contractual freedom within statutory boundaries, parties can tailor these agreements to deposit funds, documents, or shares with a neutral third party. For a broader overview of how these mechanisms fit into domestic transactions, you can review our detailed guide on [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey).
+Under Turkish law, escrow arrangements do not have a single dedicated statute bearing the exact title "escrow." Instead, they are typically structured as **sui generis (unique) or mixed contracts** under the **Turkish Code of Obligations**. Because Turkish law permits contractual freedom within statutory boundaries, parties can tailor these agreements to deposit funds, documents, or shares with a neutral third party. For a broader overview of how these mechanisms fit into domestic transactions, you can review our detailed guide on [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey/).
 
 ## Legal Nature of Escrow Agreements Under Turkish Law
 
 Because an escrow arrangement involves placing assets in the hands of a neutral intermediary until specific conditions are met, it often combines elements of agency, safekeeping, and conditional obligations. The **Turkish Code of Obligations** governs these underlying legal concepts. 
 
-The primary challenge in drafting an escrow agreement in Turkey lies in balancing the control retained by the principal parties with the independent duties of the intermediary. If an agreement lacks clear mechanical triggers, a dispute can lead to prolonged court intervention. Furthermore, selecting the right intermediary is vital; for a detailed analysis of who can legally and practically hold funds or documents, see our companion resource on [Who Can Act as Escrow Agent in Turkey? Lawyer, Bank, Notary](/en/blog/escrow-agent-turkey).
+The primary challenge in drafting an escrow agreement in Turkey lies in balancing the control retained by the principal parties with the independent duties of the intermediary. If an agreement lacks clear mechanical triggers, a dispute can lead to prolonged court intervention. Furthermore, selecting the right intermediary is vital; for a detailed analysis of who can legally and practically hold funds or documents, see our companion resource on [Who Can Act as Escrow Agent in Turkey? Lawyer, Bank, Notary](/en/blog/escrow-agent-turkey/).
 
 ## Essential Clauses Checklist for an Escrow Agreement in Turkey
 

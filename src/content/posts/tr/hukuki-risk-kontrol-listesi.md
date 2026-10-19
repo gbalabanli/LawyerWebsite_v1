@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["ticaret-hukuku", "uyum", "risk-yonetimi"]
 links:
   - text: "Ticaret Hukuku Hizmetlerimiz"
-    href: "/hizmetler/ticaret-hukuku"
+    href: "/hizmetler/ticaret-hukuku/"
   - text: "KOBİ'ler İçin Hukuki Risk Yönetimi Rehberi"
-    href: "/blog/kobiler-icin-hukuki-risk-yonetimi-rehberi"
+    href: "/blog/kobiler-icin-hukuki-risk-yonetimi-rehberi/"
 lang: "tr"
 faq:
   - q: "Sözleşmelerimin yenileme tarihlerini nasıl takip etmeliyim?"

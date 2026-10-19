@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["espor", "sozlesme"]
 links:
   - text: "E-Spor Hizmetlerimiz"
-    href: "/hizmetler/espor"
+    href: "/hizmetler/espor/"
   - text: "E-Spor Sporcu Sözleşmesinde Olması Gereken 10 Madde"
-    href: "/blog/espor-sporcu-sozlesmesi-maddeleri"
+    href: "/blog/espor-sporcu-sozlesmesi-maddeleri/"
 lang: "tr"
 slug: "espor-ikramiye-dagitimi-hukuki-haklar"
 faq:

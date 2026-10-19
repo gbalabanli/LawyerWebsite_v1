@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["fikri-mulkiyet", "sirketler-hukuku"]
 links:
   - text: "Fikri Mülkiyet Hukuku Hizmetlerimiz"
-    href: "/hizmetler/fikri-mulkiyet"
+    href: "/hizmetler/fikri-mulkiyet/"
   - text: "Marka Hakkı İhlali Durumunda Ne Yapılmalı?"
-    href: "/blog/marka-hakki-ihlali-dava-sureci-tazminat"
+    href: "/blog/marka-hakki-ihlali-dava-sureci-tazminat/"
 lang: "tr"
 faq:
   - q: "Marka tescili ne kadar sürer?"

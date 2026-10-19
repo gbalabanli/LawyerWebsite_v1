@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sozlesme", "dava-sureci"]
 links:
   - text: "Dava ve Sözleşmeler Hizmetlerimiz"
-    href: "/hizmetler"
+    href: "/hizmetler/"
   - text: "İmzalamadan Önce Sözleşme İnceleme Temelleri"
-    href: "/blog/sozlesme-inceleme-temelleri"
+    href: "/blog/sozlesme-inceleme-temelleri/"
 lang: "tr"
 faq:
   - q: "Sözleşme ihlalinde ilk olarak ne yapmalıyım?"

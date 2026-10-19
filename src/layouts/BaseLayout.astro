@@ -4,7 +4,7 @@ import HelpDeskPopup from '../components/HelpDeskPopup.astro';
 import Icon from '../components/Icon.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import LangSwitcher from '../components/LangSwitcher.astro';
-import { withBase } from '../utils/routing';
+import { toCanonicalPath, withBase } from '../utils/routing';
 import { t, type Lang } from '../i18n/ui';
 import { translations } from '../i18n/translations';
 import { getEquivalentAlternatePath } from '../i18n/utils';
@@ -53,17 +53,17 @@ const pathnameWithoutBase =
 		? pathname.slice(basePath.length - 1)
 		: pathname;
 
-const canonicalUrl = new URL(pathname, siteConfig.seo.siteUrl).toString();
+const canonicalUrl = new URL(toCanonicalPath(pathname), siteConfig.seo.siteUrl).toString();
 const xdefaultPath = lang === 'tr' ? pathnameWithoutBase : (getEquivalentAlternatePath(pathnameWithoutBase, 'tr') ?? pathnameWithoutBase);
 const xdefaultUrl = new URL(
-	basePath !== '/' ? `${basePath}${xdefaultPath}`.replace(/\/+/g, '/') : xdefaultPath,
+	toCanonicalPath(basePath !== '/' ? `${basePath}${xdefaultPath}`.replace(/\/+/g, '/') : xdefaultPath),
 	siteConfig.seo.siteUrl,
 ).toString();
 const altLang: Lang = lang === 'tr' ? 'en' : 'tr';
 const altPathRaw = getEquivalentAlternatePath(pathnameWithoutBase, altLang);
 const alternateUrl = altPathRaw
 	? new URL(
-			basePath !== '/' ? `${basePath}${altPathRaw}`.replace(/\/+/g, '/') : altPathRaw,
+			toCanonicalPath(basePath !== '/' ? `${basePath}${altPathRaw}`.replace(/\/+/g, '/') : altPathRaw),
 			siteConfig.seo.siteUrl,
 		).toString()
 	: null;

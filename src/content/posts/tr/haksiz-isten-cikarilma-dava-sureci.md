@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["is-hukuku", "dava-sureci"]
 links:
   - text: "İş Hukuku Hizmetlerimiz"
-    href: "/hizmetler/is-hukuku"
+    href: "/hizmetler/is-hukuku/"
   - text: "Kıdem Tazminatı Hesaplama 2026: Haklarınız ve Tavan Tutarı"
-    href: "/blog/kidem-tazminati-hesaplama-2026-rehber"
+    href: "/blog/kidem-tazminati-hesaplama-2026-rehber/"
 lang: "tr"
 faq:
   - q: "Haksız işten çıkarıldıktan sonra ne kadar sürede dava açmalıyım?"

@@ -12,9 +12,9 @@ tags: [
 lang: "en"
 links:
   - text: "Escrow in Turkey: Legal Guide for Foreign Buyers"
-    href: "/en/blog/escrow-in-turkey"
+    href: "/en/blog/escrow-in-turkey/"
   - text: "Escrow for Real Estate in Turkey: Safe Payment Steps"
-    href: "/en/blog/escrow-real-estate-turkey"
+    href: "/en/blog/escrow-real-estate-turkey/"
 faq:
   - q: "Can a foreign national use a lawyer as an escrow agent in Turkey?"
     a: "Yes, foreign buyers and sellers can engage a Turkish lawyer or law firm to hold funds in a designated client trust account under specific written instructions."
@@ -43,7 +43,7 @@ Each option carries unique procedural safeguards and compliance requirements. Pa
 
 Under Turkish law, registered attorneys and law firms are authorized to hold client funds in connection with legal services. While lawyers do not act as commercial escrow agents in the Anglo-American sense, they utilize specialized client trust accounts to manage transaction proceeds securely. 
 
-When a lawyer acts in this capacity, funds are segregated from the lawyer's operational accounts. The attorney disburses the money strictly according to a detailed, signed escrow instruction or joint agreement outlining exact conditions—such as the issuance of a title deed or corporate share transfer. If you are navigating property acquisitions, you can read more about how secure payment steps integrate with legal safeguards in our guide on [Escrow for Real Estate in Turkey: Safe Payment Steps](/en/blog/escrow-real-estate-turkey). Furthermore, broader foundational principles are outlined in our primary [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey).
+When a lawyer acts in this capacity, funds are segregated from the lawyer's operational accounts. The attorney disburses the money strictly according to a detailed, signed escrow instruction or joint agreement outlining exact conditions—such as the issuance of a title deed or corporate share transfer. If you are navigating property acquisitions, you can read more about how secure payment steps integrate with legal safeguards in our guide on [Escrow for Real Estate in Turkey: Safe Payment Steps](/en/blog/escrow-real-estate-turkey/). Furthermore, broader foundational principles are outlined in our primary [Escrow in Turkey: Legal Guide for Foreign Buyers](/en/blog/escrow-in-turkey/).
 
 The primary advantage of using a lawyer is bespoke legal oversight. The lawyer can verify closing documents, check encumbrances, and ensure that conditions are met before releasing funds. However, lawyers are bound by strict professional ethics and anti-money laundering rules, requiring thorough source-of-funds documentation.
 

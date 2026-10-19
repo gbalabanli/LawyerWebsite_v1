@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["espor", "sozlesme"]
 links:
   - text: "E-Spor Hizmetlerimiz"
-    href: "/hizmetler/espor"
+    href: "/hizmetler/espor/"
   - text: "E-Spor Transferi: Hukuki Süreç ve Dikkat Edilmesi Gerekenler"
-    href: "/blog/espor-transfer-sozlesmesi-hukuki-surec"
+    href: "/blog/espor-transfer-sozlesmesi-hukuki-surec/"
 lang: "tr"
 slug: "espor-sponsorluk-sozlesmesi-nasil-olmali"
 faq:

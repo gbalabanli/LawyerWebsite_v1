@@ -7,7 +7,7 @@ tags: ["real-estate-foreigners", "real-estate", "foreign-buyers"]
 lang: "en"
 links:
   - text: "Real Estate Lawyer in Turkey for Foreign Buyers"
-    href: "/en/services/real-estate-lawyer-turkey-foreigners"
+    href: "/en/services/real-estate-lawyer-turkey-foreigners/"
 faq:
   - q: "Can foreigners buy real estate in Turkey?"
     a: "Foreigners can generally buy real estate in Turkey subject to eligibility, location restrictions, land registry rules, and transaction-specific checks."

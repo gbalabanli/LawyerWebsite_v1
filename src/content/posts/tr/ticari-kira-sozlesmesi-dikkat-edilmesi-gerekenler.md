@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["gayrimenkul", "sozlesme"]
 links:
   - text: "Gayrimenkul Hizmetlerimiz"
-    href: "/hizmetler/gayrimenkul"
+    href: "/hizmetler/gayrimenkul/"
   - text: "Kira Artış Oranı Hesaplama 2026: Konut ve Ticari Kira"
-    href: "/blog/kira-artis-orani-hesaplama-2026-rehber"
+    href: "/blog/kira-artis-orani-hesaplama-2026-rehber/"
 lang: "tr"
 faq:
   - q: "Ticari kira artış oranı nasıl hesaplanır?"

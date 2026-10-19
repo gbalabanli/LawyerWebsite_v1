@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["espor", "is-hukuku", "sozlesme"]
 links:
   - text: "E-Spor Hizmetlerimiz"
-    href: "/hizmetler/espor"
+    href: "/hizmetler/espor/"
   - text: "E-Spor Sponsorluk Sözleşmesi Nasıl Olmalı?"
-    href: "/blog/espor-sponsorluk-sozlesmesi-nasil-olmali"
+    href: "/blog/espor-sponsorluk-sozlesmesi-nasil-olmali/"
 lang: "tr"
 slug: "espor-iscilik-hizmet-sozlesmesi-farki"
 faq:

@@ -10,8 +10,8 @@ tags: [
 ]
 lang: "en"
 links: [
-  { "text": "Escrow in Turkish M&A", "href": "/en/blog/escrow-m-a-turkey" },
-  { "text": "Turkey's Secure Payment System (Güvenli Ödeme) Explained", "href": "/en/blog/secure-payment-system-turkey" }
+  { "text": "Escrow in Turkish M&A", "href": "/en/blog/escrow-m-a-turkey/" },
+  { "text": "Turkey's Secure Payment System (Güvenli Ödeme) Explained", "href": "/en/blog/secure-payment-system-turkey/" }
 ]
 faq: [
   {
@@ -37,7 +37,7 @@ Commercial parties frequently confuse a true escrow setup with standard blocked 
 
 Under Turkish practice, business owners often default to asking banks for a standard "blocked account" (*bloke hesap*) or a commercial pledge. However, a true escrow arrangement differs fundamentally in its tripartite nature. While a blocked account typically places a unilateral hold on funds at the request of one account holder, a genuine escrow account involves an independent escrow agent—often a commercial bank or authorized financial institution—holding funds pursuant to strict instructions agreed upon by both the payer and the payee. 
 
-Funds in a true escrow account cannot be unilaterally frozen or withdrawn by either party. Release requires joint written instructions or the objective verification of milestone documents specified in the foundational agreement. This distinction matters greatly when structuring mergers, acquisitions, or high-value asset purchases, as it dictates how disputes and fund releases are handled. You can review specific release mechanics in our detailed guide on [Escrow in Turkish M&A](/en/blog/escrow-m-a-turkey).
+Funds in a true escrow account cannot be unilaterally frozen or withdrawn by either party. Release requires joint written instructions or the objective verification of milestone documents specified in the foundational agreement. This distinction matters greatly when structuring mergers, acquisitions, or high-value asset purchases, as it dictates how disputes and fund releases are handled. You can review specific release mechanics in our detailed guide on [Escrow in Turkish M&A](/en/blog/escrow-m-a-turkey/).
 
 ## How an Escrow Account Works Under Turkish Commercial Law
 
@@ -48,7 +48,7 @@ The operational lifecycle generally follows three main stages:
 * **Deposit of Funds:** The buyer deposits the purchase price or security amount into the designated segregated account.
 * **Verification and Release:** Upon presentation of agreed compliance documents—such as commercial registry certificates, board resolutions, or shipping receipts—the agent disburses the funds to the seller.
 
-For smaller digital transactions or specific real estate deals, alternative mechanisms like the official [Turkey's Secure Payment System (Güvenli Ödeme) Explained](/en/blog/secure-payment-system-turkey) may also serve as a streamlined statutory alternative.
+For smaller digital transactions or specific real estate deals, alternative mechanisms like the official [Turkey's Secure Payment System (Güvenli Ödeme) Explained](/en/blog/secure-payment-system-turkey/) may also serve as a streamlined statutory alternative.
 
 ## MASAK Compliance, AML, and KYC Obligations
 

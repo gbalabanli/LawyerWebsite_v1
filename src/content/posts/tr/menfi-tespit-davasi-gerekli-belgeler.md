@@ -7,11 +7,11 @@ tags: ["icra-tahsilat", "menfi tespit", "icra hukuku", "borçlar hukuku"]
 lang: "tr"
 links:
   - text: "İcra Takibine Nasıl İtiraz Edilir"
-    href: "/blog/icra-takibine-nasil-itiraz-edilir"
+    href: "/blog/icra-takibine-nasil-itiraz-edilir/"
   - text: "İtirazın İptali Davası Hazırlık"
-    href: "/blog/itirazin-iptali-davasi-hazirlik"
+    href: "/blog/itirazin-iptali-davasi-hazirlik/"
   - text: "Borçlar Hukuku Nedir Temel Kavramlar"
-    href: "/blog/borclar-hukuku-nedir-temel-kavramlar"
+    href: "/blog/borclar-hukuku-nedir-temel-kavramlar/"
 faq:
   - q: "Menfi tespit davası açmak icra takibini kendiliğinden durdurur mu?"
     a: "Hayır, menfi tespit davası açmak doğrudan icra takibini durdurmaz. Takibin durdurulabilmesi için mahkemeden ayrıca ihtiyati tedbir kararı talep edilmesi ve genellikle alacağın yüzde on beşinden az olmamak üzere teminat yatırılması gerekir."
@@ -32,13 +32,13 @@ howTo:
 
 Hakkınızda haksız bir icra takibi başlatıldığında ya da aslında borçlu olmadığınız halde elinizde bir ödeme belgesi bulunmadığında karşı karşıya kaldığınız ekonomik ve psikolojik baskı oldukça yıpratıcı olabilir. Hukuk sistemimizde bu tür durumlarla başa çıkabilmek ve borçlu olmadığını mahkeme önünde resmi olarak tescil ettirmek amacıyla **menfi tespit davası** yolu öngörülmüştür. Bu yazımızda, söz konusu davanın hukuki şartlarını, takip sürecine etkilerini, ihtiyaç duyulan belgeleri ve izlenmesi gereken adımları detaylıca ele alacağız.
 
-Borçlar hukuku ve icra hukuku dinamikleri, kişilerin hak kayıpları yaşamaması için katı usul kurallarına bağlanmıştır. Daha önce başlatılmış bir icra takibine karşı adım atmadan önce, temel kavramları öğrenmek ve genel bir değerlendirme yapmak için [Borçlar Hukuku Nedir Temel Kavramlar](/blog/borclar-hukuku-nedir-temel-kavramlar) başlıklı içeriğimizi inceleyebilirsiniz.
+Borçlar hukuku ve icra hukuku dinamikleri, kişilerin hak kayıpları yaşamaması için katı usul kurallarına bağlanmıştır. Daha önce başlatılmış bir icra takibine karşı adım atmadan önce, temel kavramları öğrenmek ve genel bir değerlendirme yapmak için [Borçlar Hukuku Nedir Temel Kavramlar](/blog/borclar-hukuku-nedir-temel-kavramlar/) başlıklı içeriğimizi inceleyebilirsiniz.
 
 ## Menfi Tespit Davası Nedir ve Hangi Amaçla Açılır?
 
 Menfi tespit davası, bir borç ilişkisinde borçlu konumunda gösterilen kişinin, alacaklıya karşı böyle bir borcunun bulunmadığının (veya borcun sona erdiğinin, zamanaşımına uğradığının) mahkeme kararıyla tespit edilmesi için açtığı bir tespit davası türüdür. Bu dava, borçlu olunduğunun iddia edildiği her an, icra takibinden önce veya takip başladıktan sonra açılabilir.
 
-Uygulamada sıklıkla karıştırılan [İcra Takibine Nasıl İtiraz Edilir](/blog/icra-takibine-nasil-itiraz-edilir) süreci ile menfi tespit davası birbirinden farklı hukuki mekanizmalardır. İtiraz, icra dairesine yapılan idari bir başvuru iken; menfi tespit, doğrudan mahkemeye hitaben yazılan ve genel mahkemelerde görülen bir eda-tespit niteliğinde dava sürecidir. Alacaklının açtığı [İtirazın İptali Davası Hazırlık](/blog/itirazin-iptali-davasi-hazirlik) aşamaları ile de benzerlik gösterse de, burada inisiyatif tamamen borçludadır.
+Uygulamada sıklıkla karıştırılan [İcra Takibine Nasıl İtiraz Edilir](/blog/icra-takibine-nasil-itiraz-edilir/) süreci ile menfi tespit davası birbirinden farklı hukuki mekanizmalardır. İtiraz, icra dairesine yapılan idari bir başvuru iken; menfi tespit, doğrudan mahkemeye hitaben yazılan ve genel mahkemelerde görülen bir eda-tespit niteliğinde dava sürecidir. Alacaklının açtığı [İtirazın İptali Davası Hazırlık](/blog/itirazin-iptali-davasi-hazirlik/) aşamaları ile de benzerlik gösterse de, burada inisiyatif tamamen borçludadır.
 
 ## Menfi Tespit Davasının Şartları ve Kapsamı
 

@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["miras-hukuku"]
 links:
   - text: "Miras Hukuku Hizmetlerimiz"
-    href: "/hizmetler/miras-hukuku"
+    href: "/hizmetler/miras-hukuku/"
   - text: "Mirasın Reddi (Reddi Miras): Süresi, Dilekçesi ve Sonuçları (2026)"
-    href: "/blog/mirasin-reddi-nedir-nasil-yapilir"
+    href: "/blog/mirasin-reddi-nedir-nasil-yapilir/"
 lang: "tr"
 faq:
   - q: "Veraset ilamı nereden alınır?"

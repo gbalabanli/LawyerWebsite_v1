@@ -7,7 +7,7 @@ tags: ["inheritance-foreigners", "inheritance-law", "foreign-heirs"]
 lang: "en"
 links:
   - text: "Inheritance Lawyer in Turkey for Foreigners"
-    href: "/en/services/inheritance-lawyer-turkey-foreigners"
+    href: "/en/services/inheritance-lawyer-turkey-foreigners/"
 faq:
   - q: "Can foreign heirs inherit Turkish property?"
     a: "Foreign heirs may inherit Turkish assets, but title transfer depends on heirship documents, eligibility, tax steps, registry process, and property-specific issues."

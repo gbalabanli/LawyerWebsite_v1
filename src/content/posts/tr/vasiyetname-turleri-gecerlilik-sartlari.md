@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["miras-hukuku"]
 links:
   - text: "Miras Hukuku Hizmetlerimiz"
-    href: "/hizmetler/miras-hukuku"
+    href: "/hizmetler/miras-hukuku/"
   - text: "Veraset İlamı (Mirasçılık Belgesi) Nasıl Alınır? 2026 Güncel Rehber"
-    href: "/blog/veraset-ilami-nasil-alinir-mirascilik-belgesi"
+    href: "/blog/veraset-ilami-nasil-alinir-mirascilik-belgesi/"
 lang: "tr"
 faq:
   - q: "Vasiyetname türleri nelerdir?"

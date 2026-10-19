@@ -7,9 +7,9 @@ tags: ["gayrimenkul", "kira tespit davasi", "hukuk", "dava rehberi"]
 lang: "tr"
 links:
   - text: "Arabuluculuk Süreci Nedir Nasıl İşler"
-    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler"
+    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler/"
   - text: "Kira Artış Oranı Hesaplama 2026 Rehber"
-    href: "/blog/kira-artis-orani-hesaplama-2026-rehber"
+    href: "/blog/kira-artis-orani-hesaplama-2026-rehber/"
 faq:
   - q: "Kira tespit davası hangi durumlarda açılabilir?"
     a: "Kira sözleşmesinin kurulmasından itibaren en az 5 yıl geçmiş olması veya 5 yıldan uzun süreli sözleşmelerde 5 yıllık dönemin tamamlanmış olması şartıyla, tarafların yeni dönem kira bedelinde anlaşamaması durumunda açılabilir."
@@ -34,13 +34,13 @@ Kira bedelinin piyasa koşullarının çok altında kalması durumunda ev sahipl
 
 Kira tespit davası, konut ve çatılı işyeri kiralarında, kiralananın rayiç bedelin altında kalması ya da tarafların yeni dönem artış oranında mutabık kalmaması halinde hakimin müdahalesiyle yeni kira bedelinin tespiti için açılan bir hukuk davasıdır. Bu davanın açılabilmesi için Türk Borçlar Kanunu kapsamında belirli ön şartların gerçekleşmiş olması zorunludur.
 
-Somut olayda en temel şartlardan biri süre unsurudur. Kanun gereğince, kira bedelinin tespiti için kira sözleşmesinin üzerinden en az 5 yıl geçmesi veya 5 yıldan uzun süreli sözleşmelerde 5 yıllık dönemin tamamlanmış olması aranır. 5 yıldan kısa süreli sözleşmelerde bu süre dolmadan tespit davası açılamaz. Ayrıca, tarafların dava açma iradelerini zamanında ortaya koymaları gerekir. Süreç hakkında detaylı bilgi edinmek için [Kira Artış Oranı Hesaplama 2026 Rehber](/blog/kira-artis-orani-hesaplama-2026-rehber) başlıklı yazımızı inceleyebilirsiniz.
+Somut olayda en temel şartlardan biri süre unsurudur. Kanun gereğince, kira bedelinin tespiti için kira sözleşmesinin üzerinden en az 5 yıl geçmesi veya 5 yıldan uzun süreli sözleşmelerde 5 yıllık dönemin tamamlanmış olması aranır. 5 yıldan kısa süreli sözleşmelerde bu süre dolmadan tespit davası açılamaz. Ayrıca, tarafların dava açma iradelerini zamanında ortaya koymaları gerekir. Süreç hakkında detaylı bilgi edinmek için [Kira Artış Oranı Hesaplama 2026 Rehber](/blog/kira-artis-orani-hesaplama-2026-rehber/) başlıklı yazımızı inceleyebilirsiniz.
 
 ## 5 Yıl Kuralı ve Süre Sınırları
 
 Kira tespit davalarında en sık karşılaşılan hatalardan biri, süre hesaplamasının yanlış yapılmasıdır. Türk Borçlar Kanunu'nun 344. maddesi uyarınca, 5 yıldan uzun süreli veya 5 yıllık kuralı işletilemeyen sözleşmelerde doğrudan tespit davası açılamaz. 5 yıllık süre dolduktan sonraki her yeni kira yılında, hakim tarafından emsal kira bedelleri göz önünde bulundurularak hakkaniyete uygun yeni bir bedel belirlenir.
 
-Dava açma süresi ise yine kritik bir öneme sahiptir. TBK m.345 hükmüne göre davanın, yeni kira döneminin başlangıcından en geç 30 gün önce açılması veya bu süre içinde kiralayana veya kiracıya yazılı ihtar gönderilmiş olması gerekir. İhtarname, dava açma süresini uzatmaz; ancak süresinde gönderilen ihtar, davanın izleyen yeni kira dönemi sonuna kadar her zaman açılabilmesine imkan tanır. İhtarın şekli ve süreci hakkında ön bilgi sahibi olmak isterseniz [Arabuluculuk Süreci Nedir Nasıl İşler](/blog/arabuluculuk-sureci-nedir-nasil-isler) sayfasını ziyaret edebilirsiniz.
+Dava açma süresi ise yine kritik bir öneme sahiptir. TBK m.345 hükmüne göre davanın, yeni kira döneminin başlangıcından en geç 30 gün önce açılması veya bu süre içinde kiralayana veya kiracıya yazılı ihtar gönderilmiş olması gerekir. İhtarname, dava açma süresini uzatmaz; ancak süresinde gönderilen ihtar, davanın izleyen yeni kira dönemi sonuna kadar her zaman açılabilmesine imkan tanır. İhtarın şekli ve süreci hakkında ön bilgi sahibi olmak isterseniz [Arabuluculuk Süreci Nedir Nasıl İşler](/blog/arabuluculuk-sureci-nedir-nasil-isler/) sayfasını ziyaret edebilirsiniz.
 
 ## Zorunlu Arabuluculuk ve Dava Şartları
 

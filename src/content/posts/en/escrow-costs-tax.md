@@ -11,9 +11,9 @@ tags: [
 ]
 lang: "en"
 links: [
-  { "text": "Escrow in Turkey: Legal Guide for Foreign Buyers", "href": "/en/blog/escrow-in-turkey" },
-  { "text": "Escrow Agreement in Turkish Law: Clauses & Enforceability", "href": "/en/blog/escrow-agreement-turkish-law" },
-  { "text": "Lawyer Client Accounts in Turkey as Escrow Alternatives", "href": "/en/blog/lawyer-client-account-turkey" }
+  { "text": "Escrow in Turkey: Legal Guide for Foreign Buyers", "href": "/en/blog/escrow-in-turkey/" },
+  { "text": "Escrow Agreement in Turkish Law: Clauses & Enforceability", "href": "/en/blog/escrow-agreement-turkish-law/" },
+  { "text": "Lawyer Client Accounts in Turkey as Escrow Alternatives", "href": "/en/blog/lawyer-client-account-turkey/" }
 ]
 faq: [
   {

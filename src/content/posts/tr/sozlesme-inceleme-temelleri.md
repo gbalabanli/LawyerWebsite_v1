@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sozlesmeler", "risk-yonetimi", "ticaret-hukuku"]
 links:
   - text: "Dava ve Sözleşmeler Hizmetlerimiz"
-    href: "/hizmetler"
+    href: "/hizmetler/"
   - text: "Sözleşme İhlali Durumunda Haklarınız ve Yapılması Gerekenler"
-    href: "/blog/sozlesme-ihlali-yapilmasi-gerekenler-haklar"
+    href: "/blog/sozlesme-ihlali-yapilmasi-gerekenler-haklar/"
 lang: "tr"
 faq:
   - q: "Sözleşme imzalamadan önce hangi maddeler mutlaka kontrol edilmeli?"

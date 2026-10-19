@@ -7,11 +7,11 @@ tags: ["citizenship-law", "citizenship", "investment", "real-estate-foreigners"]
 lang: "en"
 links:
   - text: "Turkish Citizenship Lawyer"
-    href: "/en/services/turkish-citizenship-lawyer"
+    href: "/en/services/turkish-citizenship-lawyer/"
   - text: "Turkish Citizenship by Property Investment: Legal Process"
-    href: "/en/blog/turkish-citizenship-property-investment-legal-process"
+    href: "/en/blog/turkish-citizenship-property-investment-legal-process/"
   - text: "Title Deed Due Diligence in Turkey: Tapu, Mortgages and Liens"
-    href: "/en/blog/title-deed-due-diligence-turkey-tapu-mortgages-liens"
+    href: "/en/blog/title-deed-due-diligence-turkey-tapu-mortgages-liens/"
 faq:
   - q: "Why does payment trail matter for Turkish citizenship by investment?"
     a: "Payment trail helps show that the investment was made through traceable, eligible, and documented transfers that match the property, buyer, seller, and official records."

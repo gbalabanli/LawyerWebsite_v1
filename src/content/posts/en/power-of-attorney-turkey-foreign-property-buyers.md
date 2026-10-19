@@ -7,7 +7,7 @@ tags: ["real-estate-foreigners", "foreign-buyers", "property-law"]
 lang: "en"
 links:
   - text: "Real Estate Lawyer in Turkey for Foreign Buyers"
-    href: "/en/services/real-estate-lawyer-turkey-foreigners"
+    href: "/en/services/real-estate-lawyer-turkey-foreigners/"
 faq:
   - q: "Can a foreign buyer purchase property in Turkey by power of attorney?"
     a: "Yes, a properly prepared power of attorney can allow a representative to complete transaction steps, but the authority should be limited and reviewed."

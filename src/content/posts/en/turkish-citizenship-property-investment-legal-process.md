@@ -7,9 +7,9 @@ tags: ["citizenship-law", "citizenship", "investment", "real-estate-foreigners"]
 lang: "en"
 links:
   - text: "Turkish Citizenship Lawyer"
-    href: "/en/services/turkish-citizenship-lawyer"
+    href: "/en/services/turkish-citizenship-lawyer/"
   - text: "Real Estate Lawyer in Turkey for Foreign Buyers"
-    href: "/en/services/real-estate-lawyer-turkey-foreigners"
+    href: "/en/services/real-estate-lawyer-turkey-foreigners/"
 faq:
   - q: "Is every property purchase suitable for citizenship?"
     a: "No. The property, value, payment trail, title restriction, buyer eligibility, and documents must meet the applicable citizenship requirements."

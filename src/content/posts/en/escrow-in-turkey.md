@@ -10,11 +10,11 @@ tags:
 lang: "en"
 links:
   - text: "Escrow Agreement in Turkish Law: Clauses & Enforceability"
-    href: "/en/blog/escrow-agreement-turkish-law"
+    href: "/en/blog/escrow-agreement-turkish-law/"
   - text: "Who Can Act as Escrow Agent in Turkey? Lawyer, Bank, Notary"
-    href: "/en/blog/escrow-agent-turkey"
+    href: "/en/blog/escrow-agent-turkey/"
   - text: "Escrow for Real Estate in Turkey: Safe Payment Steps"
-    href: "/en/blog/escrow-real-estate-turkey"
+    href: "/en/blog/escrow-real-estate-turkey/"
 faq:
   - q: "Is an American-style escrow company common in Turkey?"
     a: "No. Unlike common-law jurisdictions, Turkey does not have independent, corporate commercial escrow companies operating under state licensing solely for holding transactional funds."
@@ -30,7 +30,7 @@ Navigating cross-border transactions can be daunting, especially when trying to 
 
 Under Turkish law, independent, standalone commercial escrow companies—such as those common in the United States or the UK—do not exist as a standard regulatory category. Instead, transactional security is achieved through specific contractual structures, tripartite agreements, or specialized banking mechanisms. When you implement an escrow in Turkey, you rely on a combination of the Turkish Code of Obligations rules governing agency, trusts, and third-party beneficiary contracts. 
 
-Because standard commercial banks in Turkey rarely offer bespoke escrow holding services for private real estate or commercial transactions, foreign buyers must structure these arrangements carefully. For further details on drafting the underlying contract, consult our guide on the [Escrow Agreement in Turkish Law: Clauses & Enforceability](/en/blog/escrow-agreement-turkish-law). Tailored contractual clauses must precisely define what constitutes a successful milestone, thereby preventing either party from arbitrarily withholding or demanding funds.
+Because standard commercial banks in Turkey rarely offer bespoke escrow holding services for private real estate or commercial transactions, foreign buyers must structure these arrangements carefully. For further details on drafting the underlying contract, consult our guide on the [Escrow Agreement in Turkish Law: Clauses & Enforceability](/en/blog/escrow-agreement-turkish-law/). Tailored contractual clauses must precisely define what constitutes a successful milestone, thereby preventing either party from arbitrarily withholding or demanding funds.
 
 ## Who Can Legally Hold Funds?
 
@@ -40,7 +40,7 @@ One of the most critical aspects of setting up a secure transaction is determini
 * **Turkish Notaries:** While notaries facilitate official transfers and draft property purchase promises, their capacity to hold long-term funds across complex milestones is strictly limited.
 * **Commercial Banks:** Banks offer specialized secure payment channels for specific transactions, though their flexibility depends heavily on the asset class.
 
-For an in-depth breakdown of professional qualifications and institutional limitations, review our analysis on [Who Can Act as Escrow Agent in Turkey? Lawyer, Bank, Notary](/en/blog/escrow-agent-turkey). Choosing the right agent ensures that your capital remains insulated from the seller's personal or corporate liabilities.
+For an in-depth breakdown of professional qualifications and institutional limitations, review our analysis on [Who Can Act as Escrow Agent in Turkey? Lawyer, Bank, Notary](/en/blog/escrow-agent-turkey/). Choosing the right agent ensures that your capital remains insulated from the seller's personal or corporate liabilities.
 
 ## Step-by-Step Process for Using Escrow in Turkey
 
@@ -52,7 +52,7 @@ Executing a secure transaction requires a strict chronological sequence to ensur
 4. **Verifying Documentation:** The escrow agent verifies official registry records or completion certificates to confirm that all contractual preconditions have been met.
 5. **Releasing the Funds:** Upon successful verification, the agent transfers the funds to the seller's verified bank account, and the transaction concludes.
 
-For property-specific procedures, read our targeted breakdown on [Escrow for Real Estate in Turkey: Safe Payment Steps](/en/blog/escrow-real-estate-turkey), which highlights land registry integration and title transfer timing.
+For property-specific procedures, read our targeted breakdown on [Escrow for Real Estate in Turkey: Safe Payment Steps](/en/blog/escrow-real-estate-turkey/), which highlights land registry integration and title transfer timing.
 
 ## Practical Timing, Costs, and Failure Scenarios
 

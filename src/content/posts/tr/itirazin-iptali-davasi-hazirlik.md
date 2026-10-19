@@ -10,13 +10,13 @@ tags:
 lang: "tr"
 links:
   - text: "icra-takibi-nasil-baslatilir-adim-adim"
-    href: "/blog/icra-takibi-nasil-baslatilir-adim-adim"
+    href: "/blog/icra-takibi-nasil-baslatilir-adim-adim/"
   - text: "icra-takibine-nasil-itiraz-edilir"
-    href: "/blog/icra-takibine-nasil-itiraz-edilir"
+    href: "/blog/icra-takibine-nasil-itiraz-edilir/"
   - text: "arabuluculuk-sureci-nedir-nasil-isler"
-    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler"
+    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler/"
   - text: "odenmemis-fatura-tahsilati-yasal-yollar"
-    href: "/blog/odenmemis-fatura-tahsilati-yasal-yollar"
+    href: "/blog/odenmemis-fatura-tahsilati-yasal-yollar/"
 faq:
   - q: "İtirazın iptali davası açma süresi ne kadardır?"
     a: "İtirazın iptali davası, borçlunun itiraz ettiğinin alacaklıya tebliğ edildiği tarihten itibaren 1 yıllık hak düşürücü süre içinde açılmalıdır."
@@ -96,4 +96,4 @@ Alacağın likit (belli, hesaplanabilir) olması ve borçlunun haksız yere taki
 
 ---
 
-İtirazın iptali davası süreci, hukuki teknik bilgi ve titiz takip gerektiren karmaşık bir süreçtir. Hak kaybı yaşamamak ve alacağınızı en kısa sürede tahsil edebilmek için profesyonel hukuki destek almanız önem arz eder. İcra ve alacak tahsilatı süreçlerinizle ilgili danışmanlık almak için [İletişim](/iletisim) sayfamız üzerinden büromuzla bağlantıya geçebilirsiniz.
+İtirazın iptali davası süreci, hukuki teknik bilgi ve titiz takip gerektiren karmaşık bir süreçtir. Hak kaybı yaşamamak ve alacağınızı en kısa sürede tahsil edebilmek için profesyonel hukuki destek almanız önem arz eder. İcra ve alacak tahsilatı süreçlerinizle ilgili danışmanlık almak için [İletişim](/iletisim/) sayfamız üzerinden büromuzla bağlantıya geçebilirsiniz.

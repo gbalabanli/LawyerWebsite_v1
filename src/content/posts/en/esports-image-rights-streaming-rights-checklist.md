@@ -7,9 +7,9 @@ tags: ["esports-law", "streamer-contracts", "gaming-law", "intellectual-property
 lang: "en"
 links:
   - text: "Esports Lawyer in Turkey"
-    href: "/en/services/esport"
+    href: "/en/services/esport/"
   - text: "Streamer Contract Lawyer: What Gaming Creators Should Check"
-    href: "/en/blog/streamer-contract-lawyer-gaming-creators"
+    href: "/en/blog/streamer-contract-lawyer-gaming-creators/"
 faq:
   - q: "What are image rights in esports?"
     a: "Image rights cover use of a player's name, nickname, face, voice, signature, jersey image, likeness, social content, match footage, and public persona."

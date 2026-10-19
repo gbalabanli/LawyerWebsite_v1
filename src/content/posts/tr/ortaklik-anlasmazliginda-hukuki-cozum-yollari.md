@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["sirketler-hukuku", "dava-sureci"]
 links:
   - text: "Şirketler Hukuku Hizmetlerimiz"
-    href: "/hizmetler/sirketler-hukuku"
+    href: "/hizmetler/sirketler-hukuku/"
   - text: "Ortaklık Anlaşmazlığında Hukuki Çözüm Yolları"
-    href: "/blog/ortaklik-anlasmazligi-hukuki-cozum"
+    href: "/blog/ortaklik-anlasmazligi-hukuki-cozum/"
 lang: "tr"
 faq:
   - q: "Ortaklık anlaşmazlığında hangi hukuki yollara başvurulabilir?"

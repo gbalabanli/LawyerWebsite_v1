@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["gayrimenkul"]
 links:
   - text: "Gayrimenkul Hizmetlerimiz"
-    href: "/hizmetler/gayrimenkul"
+    href: "/hizmetler/gayrimenkul/"
   - text: "Ticari Kira Sözleşmesinde Dikkat Edilmesi Gerekenler"
-    href: "/blog/ticari-kira-sozlesmesi-dikkat-edilmesi-gerekenler"
+    href: "/blog/ticari-kira-sozlesmesi-dikkat-edilmesi-gerekenler/"
 lang: "tr"
 faq:
   - q: "Konut kirasına 2026 yılında en fazla yüzde kaç zam yapılabilir?"

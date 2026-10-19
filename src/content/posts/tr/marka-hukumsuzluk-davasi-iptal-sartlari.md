@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["fikri-mulkiyet", "dava-sureci"]
 links:
   - text: "Fikri Mülkiyet Hizmetlerimiz"
-    href: "/hizmetler/fikri-mulkiyet"
+    href: "/hizmetler/fikri-mulkiyet/"
   - text: "Marka Hakkı İhlali: Dava Süreci ve Tazminat (2026)"
-    href: "/blog/marka-hakki-ihlali-dava-sureci-tazminat"
+    href: "/blog/marka-hakki-ihlali-dava-sureci-tazminat/"
 lang: "tr"
 faq:
   - q: "Marka hükümsüzlük davası hangi mahkemede açılır?"

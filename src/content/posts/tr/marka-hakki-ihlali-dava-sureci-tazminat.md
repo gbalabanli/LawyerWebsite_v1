@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["fikri-mulkiyet", "dava-sureci"]
 links:
   - text: "Fikri Mülkiyet Hizmetlerimiz"
-    href: "/hizmetler/fikri-mulkiyet"
+    href: "/hizmetler/fikri-mulkiyet/"
   - text: "Marka Hükümsüzlük Davası: İptal Şartları ve Dava Süreci (2026)"
-    href: "/blog/marka-hukumsuzluk-davasi-iptal-sartlari"
+    href: "/blog/marka-hukumsuzluk-davasi-iptal-sartlari/"
 lang: "tr"
 faq:
   - q: "Marka hakkı ihlalinde hangi tazminat türleri talep edilebilir?"

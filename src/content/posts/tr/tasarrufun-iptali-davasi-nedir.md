@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["icra-tahsilat", "borçlar hukuku", "dava süreci"]
 lang: "tr"
 links:
-  - { "text": "İcra Takibi Nasıl Başlatılır Adım Adım", "href": "/blog/icra-takibi-nasil-baslatilir-adim-adim" }
-  - { "text": "Haciz İşlemleri ve İtiraz Yolları", "href": "/blog/haciz-islemleri-ve-itiraz-yollari" }
-  - { "text": "Borçlar Hukuku Nedir Temel Kavramlar", "href": "/blog/borclar-hukuku-nedir-temel-kavramlar" }
+  - { "text": "İcra Takibi Nasıl Başlatılır Adım Adım", "href": "/blog/icra-takibi-nasil-baslatilir-adim-adim/" }
+  - { "text": "Haciz İşlemleri ve İtiraz Yolları", "href": "/blog/haciz-islemleri-ve-itiraz-yollari/" }
+  - { "text": "Borçlar Hukuku Nedir Temel Kavramlar", "href": "/blog/borclar-hukuku-nedir-temel-kavramlar/" }
 faq:
   - { "q": "Tasarrufun iptali davasını kimler açabilir?", "a": "Borçlusu hakkında kesin veya geçici aciz vesikası almış olan ve alacağı bu vesikadan önce doğmuş bulunan tüm alacaklılar bu davayı açabilir." }
   - { "q": "Tasarrufun iptali davası açmak için hak düşürücü süre ne kadardır?", "a": "Bu dava, iptale tabi tasarrufun gerçekleştiği tarihten itibaren beş yıllık hak düşürücü süre içinde açılmalıdır." }
@@ -20,15 +20,15 @@ howTo:
   - { "name": "İcra Mahkemesinde Davanın Görülmesi", "text": "Asliye Ticaret veya Asliye Hukuk Mahkemelerinde dosyanın incelenmesi ve haciz hakkının kurulması." }
 ---
 
-Alacaklıların en büyük kâbuslarından biri, borçlunun borcunu ödememek amacıyla üzerine kayıtlı taşınmaz, araç veya şirket hissesi gibi mal varlıklarını üçüncü kişilere devretmesidir. Borçlunun bu tür hukuki işlemleriyle alacaklılarını zarara uğratmasının önüne geçmek için hukuk sistemimizde bazı koruma mekanizmaları öngörülmüştür. Bu kapsamda gündeme gelen **tasarrufun iptali davası**, alacaklının alacağına kavuşabilmesi için borçlunun yaptığı bazı mal devir işlemlerinin hükümsüz sayılmasını sağlayan kritik bir hukuki yoldur. Alacaklılar, öncelikle doğru bir [icra takibi nasıl başlatılır adım adım](/blog/icra-takibi-nasil-baslatilir-adim-adim) süreci işletmeli ve ardından sonuç alamadıkları durumlarda bu dava alternatifini değerlendirmelidir.
+Alacaklıların en büyük kâbuslarından biri, borçlunun borcunu ödememek amacıyla üzerine kayıtlı taşınmaz, araç veya şirket hissesi gibi mal varlıklarını üçüncü kişilere devretmesidir. Borçlunun bu tür hukuki işlemleriyle alacaklılarını zarara uğratmasının önüne geçmek için hukuk sistemimizde bazı koruma mekanizmaları öngörülmüştür. Bu kapsamda gündeme gelen **tasarrufun iptali davası**, alacaklının alacağına kavuşabilmesi için borçlunun yaptığı bazı mal devir işlemlerinin hükümsüz sayılmasını sağlayan kritik bir hukuki yoldur. Alacaklılar, öncelikle doğru bir [icra takibi nasıl başlatılır adım adım](/blog/icra-takibi-nasil-baslatilir-adim-adim/) süreci işletmeli ve ardından sonuç alamadıkları durumlarda bu dava alternatifini değerlendirmelidir.
 
-Bu kapsamlı rehberde, tasarrufun iptali davasının ne olduğunu, hangi şartlarda açılabileceğini, dava sürecinin işleyişini ve dikkat edilmesi gereken hukuki detayları bulabilirsiniz. Somut olayın özelliklerine göre [haciz işlemleri ve itiraz yolları](/blog/haciz-islemleri-ve-itiraz-yollari) ile birlikte yürütülen bu süreç, titizlik gerektiren teknik bir alandır.
+Bu kapsamlı rehberde, tasarrufun iptali davasının ne olduğunu, hangi şartlarda açılabileceğini, dava sürecinin işleyişini ve dikkat edilmesi gereken hukuki detayları bulabilirsiniz. Somut olayın özelliklerine göre [haciz işlemleri ve itiraz yolları](/blog/haciz-islemleri-ve-itiraz-yollari/) ile birlikte yürütülen bu süreç, titizlik gerektiren teknik bir alandır.
 
 ## Tasarrufun İptali Davası Nedir ve Hangi Amaçla Açılır?
 
 Tasarrufun iptali davası, borçlunun alacaklılarından mal kaçırmak amacıyla mal varlığını azaltıcı nitelikte yaptığı karşılıksız veya gözle görülür şekilde değerinin altında devir işlemlerinin, alacaklı açısından geçersiz sayılmasını sağlayan bir icra ve iflas hukuku davasıdır. Burada amaç, söz konusu malın fiilen borçlunun mülkiyetine geri dönmesi değildir. Temel amaç, alacaklının o mal üzerinde haciz ve satış hakkı elde etmesini sağlamaktır.
 
-Yani mahkeme davayı kabul ettiğinde, taşınmaz veya araç üçüncü kişinin üzerindedir ancak alacaklı sanki o mal hala borçlunun mülkiyetindeymiş gibi haciz koydurabilir ve satışını isteyebilir. Bu yönüyle [borçlar hukuku nedir temel kavramlar](/blog/borclar-hukuku-nedir-temel-kavramlar) başlığı altında incelenen genel muvazaa davalarından farklıdır; daha dar ve özel şartlara bağlanmıştır.
+Yani mahkeme davayı kabul ettiğinde, taşınmaz veya araç üçüncü kişinin üzerindedir ancak alacaklı sanki o mal hala borçlunun mülkiyetindeymiş gibi haciz koydurabilir ve satışını isteyebilir. Bu yönüyle [borçlar hukuku nedir temel kavramlar](/blog/borclar-hukuku-nedir-temel-kavramlar/) başlığı altında incelenen genel muvazaa davalarından farklıdır; daha dar ve özel şartlara bağlanmıştır.
 
 ## Tasarrufun İptali Davasının Ön Şartları Nelerdir?
 
@@ -77,4 +77,4 @@ Hayır. Dava kazanıldığında mal borçluya iade edilmez; sadece o malın üze
 
 ---
 
-Borçlunun mal kaçırma girişimleriyle başa çıkmak ve alacağınızı tahsil etmek hukuki uzmanlık gerektiren stratejik bir süreçtir. Tasarrufun iptali davası ve icra hukuku süreçlerinizde hak kaybı yaşamamak ve hukuki destek almak için [iletişim](/iletisim) sayfamız üzerinden büromuzla bağlantıya geçebilirsiniz.
+Borçlunun mal kaçırma girişimleriyle başa çıkmak ve alacağınızı tahsil etmek hukuki uzmanlık gerektiren stratejik bir süreçtir. Tasarrufun iptali davası ve icra hukuku süreçlerinizde hak kaybı yaşamamak ve hukuki destek almak için [iletişim](/iletisim/) sayfamız üzerinden büromuzla bağlantıya geçebilirsiniz.

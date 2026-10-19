@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["company-formation", "corporate-law", "foreign-investors", "business-setup"]
 lang: "en"
 links:
-  - { "text": "Company Formation Lawyer in Turkey", "href": "/en/services/company-formation-lawyer-turkey" }
-  - { "text": "How Foreigners Can Open a Company in Turkey", "href": "/en/blog/how-foreigners-can-open-company-turkey" }
-  - { "text": "Types of Companies in Turkey: Limited vs Joint Stock", "href": "/en/blog/company-types-in-turkey-limited-vs-joint-stock" }
+  - { "text": "Company Formation Lawyer in Turkey", "href": "/en/services/company-formation-lawyer-turkey/" }
+  - { "text": "How Foreigners Can Open a Company in Turkey", "href": "/en/blog/how-foreigners-can-open-company-turkey/" }
+  - { "text": "Types of Companies in Turkey: Limited vs Joint Stock", "href": "/en/blog/company-types-in-turkey-limited-vs-joint-stock/" }
 faq:
   - q: "What are the main components of company formation cost in Turkey?"
     a: "The main costs include official trade registry fees, notarization and sworn translation expenses, initial capital contributions, mandatory accounting retainer fees, and optional professional service fees."
@@ -25,7 +25,7 @@ howTo:
     text: "Submit the incorporation application through the centralized MERSIS system, complete digital and physical registry signatures, and retain a professional to manage compliance."
 ---
 
-Navigating the financial and administrative landscape of establishing a business in a new jurisdiction requires careful financial planning. When evaluating the total company formation cost in Turkey, founders often face unexpected expenses ranging from sworn translations to mandatory registry duties and initial capital commitments. This article outlines the essential documents required for incorporation, breaks down the core financial components, and highlights how factors like corporate structure and documentation routes impact your overall budget. For specialized assistance, you can consult a qualified [Company Formation Lawyer in Turkey](/en/services/company-formation-lawyer-turkey) to ensure all compliance milestones are met smoothly.
+Navigating the financial and administrative landscape of establishing a business in a new jurisdiction requires careful financial planning. When evaluating the total company formation cost in Turkey, founders often face unexpected expenses ranging from sworn translations to mandatory registry duties and initial capital commitments. This article outlines the essential documents required for incorporation, breaks down the core financial components, and highlights how factors like corporate structure and documentation routes impact your overall budget. For specialized assistance, you can consult a qualified [Company Formation Lawyer in Turkey](/en/services/company-formation-lawyer-turkey/) to ensure all compliance milestones are met smoothly.
 
 ## Gathering and Certifying Required Identification and Corporate Documents
 
@@ -47,10 +47,10 @@ Budgeting accurately requires looking beyond flat-rate estimates, as official fe
 
 * **Official Registry and Chamber Fees:** Incorporating a business involves statutory filing fees paid to the Trade Registry Office, publication fees in the Turkish Trade Registry Gazette, and mandatory contributions to local chambers of commerce.
 * **Notary Public Expenses:** Verifying signatures, issuing powers of attorney, and certifying passport copies or lease agreements incur official notary tariffs based on document page counts and value.
-* **Minimum Capital Requirements:** Turkish law mandates a statutory minimum capital threshold. While limited liability companies and joint-stock companies differ in their baseline requirements (as further detailed in our guide on [types of companies in Turkey](/en/blog/company-types-in-turkey-limited-vs-joint-stock)), founders must deposit a portion or all of this capital into a provisional bank account during setup.
+* **Minimum Capital Requirements:** Turkish law mandates a statutory minimum capital threshold. While limited liability companies and joint-stock companies differ in their baseline requirements (as further detailed in our guide on [types of companies in Turkey](/en/blog/company-types-in-turkey-limited-vs-joint-stock/)), founders must deposit a portion or all of this capital into a provisional bank account during setup.
 * **Accounting and Tax Setup:** Retaining a certified public accountant (*Serbest Muhasebeci Mali Müşavir*) is mandatory for all Turkish entities. Initial setup includes power of attorney registration for the accountant, monthly retainer agreements, and digital tax portal credentials.
 
-Because these amounts vary by company type, proposed capital size, business activity sector, and the chosen document route, founders should always verify current official tariffs with their legal counsel just prior to filing. To explore broader strategic entry routes, review our foundational guide on [how foreigners can open a company in Turkey](/en/blog/how-foreigners-can-open-company-turkey).
+Because these amounts vary by company type, proposed capital size, business activity sector, and the chosen document route, founders should always verify current official tariffs with their legal counsel just prior to filing. To explore broader strategic entry routes, review our foundational guide on [how foreigners can open a company in Turkey](/en/blog/how-foreigners-can-open-company-turkey/).
 
 ## Executing the Filing via Registry Systems and Professional Support
 

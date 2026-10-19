@@ -7,7 +7,7 @@ tags: ["company-formation", "corporate-law", "business-law", "work-permit"]
 lang: "en"
 links:
   - text: "Company Formation Lawyer in Turkey"
-    href: "/en/services/company-formation-lawyer-turkey"
+    href: "/en/services/company-formation-lawyer-turkey/"
 faq:
   - q: "Can a foreigner open a company in Turkey?"
     a: "Yes. Foreigners can establish companies in Turkey, but formation documents, tax registration, signing authority, and work permit planning should be reviewed."

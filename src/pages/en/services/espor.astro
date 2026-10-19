@@ -1,10 +1,10 @@
 ---
 import { siteConfig } from '../../../config/site';
-import { withBase } from '../../../utils/routing';
+import { toCanonicalPath, withBase } from '../../../utils/routing';
 
 const targetPath = '/en/services/esport';
 const targetHref = withBase(targetPath);
-const canonicalUrl = new URL(targetPath, siteConfig.seo.siteUrl).toString();
+const canonicalUrl = new URL(toCanonicalPath(targetPath), siteConfig.seo.siteUrl).toString();
 ---
 
 <!doctype html>

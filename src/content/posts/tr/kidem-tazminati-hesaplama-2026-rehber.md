@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["is-hukuku", "tazminat"]
 links:
   - text: "İş Hukuku Hizmetlerimiz"
-    href: "/hizmetler/is-hukuku"
+    href: "/hizmetler/is-hukuku/"
   - text: "Haksız İşten Çıkarılma: Dava Süreci ve Haklarınız"
-    href: "/blog/haksiz-isten-cikarilma-dava-sureci"
+    href: "/blog/haksiz-isten-cikarilma-dava-sureci/"
 lang: "tr"
 faq:
   - q: "Kıdem tazminatı almak için kaç yıl çalışmak gerekir?"

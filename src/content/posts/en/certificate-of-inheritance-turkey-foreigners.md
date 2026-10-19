@@ -7,7 +7,7 @@ tags: ["inheritance-foreigners", "inheritance-law", "foreign-heirs"]
 lang: "en"
 links:
   - text: "Inheritance Lawyer in Turkey for Foreigners"
-    href: "/en/services/inheritance-lawyer-turkey-foreigners"
+    href: "/en/services/inheritance-lawyer-turkey-foreigners/"
 faq:
   - q: "What is a certificate of inheritance?"
     a: "It is a document identifying legal heirs and inheritance shares, often needed before estate assets can be transferred or managed."

@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["aile-hukuku"]
 links:
   - text: "Aile Hukuku Hizmetlerimiz"
-    href: "/hizmetler/aile-hukuku"
+    href: "/hizmetler/aile-hukuku/"
   - text: "Mal Rejimi Tasfiyesi Hakkında Detaylı Bilgi"
-    href: "/blog/muris-muvazaasi-davasi-nedir"
+    href: "/blog/muris-muvazaasi-davasi-nedir/"
 lang: "tr"
 faq:
   - q: "Anlaşmalı boşanma kaç duruşmada biter?"

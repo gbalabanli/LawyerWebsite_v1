@@ -58,7 +58,7 @@ const articleSchema = {
 		'@type': 'Person',
 		name: post.data.author,
 		jobTitle: 'Avukat',
-		url: `${siteConfig.seo.siteUrl}/hakkimda`,
+		url: `${siteConfig.seo.siteUrl}/hakkimda/`,
 		sameAs: [
 			'https://www.linkedin.com/in/bar%C4%B1%C5%9F-cem-balabanl%C4%B1-515b2020a',
 		],
@@ -68,7 +68,7 @@ const articleSchema = {
 		'@type': 'Organization',
 		name: siteConfig.brand.name,
 	},
-	mainEntityOfPage: `${siteConfig.seo.siteUrl}/blog/${post.id.replace(/^tr\//, '')}`,
+	mainEntityOfPage: `${siteConfig.seo.siteUrl}/blog/${post.id.replace(/^tr\//, '')}/`,
 };
 
 const faqSchema = post.data.faq

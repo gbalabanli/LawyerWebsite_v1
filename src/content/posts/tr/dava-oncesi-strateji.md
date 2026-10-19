@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["dava", "kanit", "medeni-hukuk"]
 links:
   - text: "Dava ve Sözleşmeler Hizmetlerimiz"
-    href: "/hizmetler"
+    href: "/hizmetler/"
   - text: "Arabuluculuk Süreci Nedir, Nasıl İşler?"
-    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler"
+    href: "/blog/arabuluculuk-sureci-nedir-nasil-isler/"
 lang: "tr"
 faq:
   - q: "Dava öncesinde hangi belgeler mutlaka saklanmalıdır?"

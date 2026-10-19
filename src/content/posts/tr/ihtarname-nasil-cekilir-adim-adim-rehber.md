@@ -6,9 +6,9 @@ author: "Av. Barış C. Balabanlı"
 tags: ["icra-tahsilat", "dava-sureci"]
 links:
   - text: "İcra ve Tahsilat Hizmetlerimiz"
-    href: "/hizmetler/icra-tahsilat"
+    href: "/hizmetler/icra-tahsilat/"
   - text: "İcra Takibi Nasıl Başlatılır? Adım Adım Rehber"
-    href: "/blog/icra-takibi-nasil-baslatilir-adim-adim"
+    href: "/blog/icra-takibi-nasil-baslatilir-adim-adim/"
 lang: "tr"
 faq:
   - q: "İhtarname çekmek için avukata ihtiyacım var mı?"
