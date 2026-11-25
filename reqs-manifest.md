@@ -167,3 +167,13 @@ moves out of the header and into the menu list.
 - AI/SEO signals: 140 pages, 546 JSON-LD blocks, 0 parse/required-field errors; LegalService 139, Article 103, FAQPage 126, HowTo 37 (4 empty howTo frontmatter arrays now correctly omit the node), BreadcrumbList 135.
 - Canonical 140/140 with trailing slash; og:image 139/140 (the one exception is the noindex redirect stub); x-default 139; sitemap 137 URLs without 404/stub; robots.txt lists GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Google-Extended, Bytespider, Applebot-Extended + sitemap; llms.txt 129 links, 0 missing from build.
 - Content guard: `git diff -- src/content src/i18n public/llms.txt` empty.
+
+---
+
+# Round 6 — TOC containment + mobile language row (approved 2026-11-25)
+
+- [x] REQ-24 — Sticky TOC is confined to the article body: `<aside class="toc">` is wrapped in `.toc-rail`, which is the grid item in column 1 and stretches to the content row. The sticky aside now stops at the end of the body instead of overlapping the full-width links/FAQ/HowTo sections.
+  - Desktop 1440: rail height 2183 = content height; at scroll 2400 the TOC is already moving out (top -30), no intersection with `.post-links`, `.post-faq`, `.post-howto`, `.cta-box`.
+  - ≤900: rail + TOC become full-width static above the content (335px wide at 390), no overflow.
+- [x] REQ-25 — Mobile menu TR/EN row: the inactive cell was baseline-aligned by the nav-row rule, so its label sat 16px higher than the active cell. Both cells now use `inline-flex` + `align-items:center` + identical mono/uppercase metrics; text tops are equal (425/425 at 390px).
+- [x] REQ-26 — QA: build 140 pages, `verify:seo` PASS, structural audit clean, screenshots `r6-toc-stop-1440.png`, `r6-toc-sticky-1440.png`, `r6-menu-lang-390.png`.

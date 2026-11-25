@@ -786,8 +786,16 @@
 	}
 }
 
-:root[data-template='editorial-2026'] .article .toc {
+/* Sticky TOC rail: the wrapper is the grid item and stretches to the article
+   body row, so the sticky aside stops at the end of the content instead of
+   travelling over the full-width links/FAQ/HowTo sections below. */
+:root[data-template='editorial-2026'] .article .toc-rail {
 	grid-column: 1;
+	align-self: stretch;
+	min-width: 0;
+}
+
+:root[data-template='editorial-2026'] .article .toc {
 	position: sticky;
 	top: calc(76px + 1.5rem);
 	align-self: start;
@@ -1602,6 +1610,10 @@
 		grid-column: 1 / -1;
 	}
 
+	:root[data-template='editorial-2026'] .article .toc-rail {
+		grid-column: 1 / -1;
+	}
+
 	:root[data-template='editorial-2026'] .article .toc {
 		grid-column: 1 / -1;
 		position: static;
@@ -2203,22 +2215,25 @@
 
 	:root[data-template='editorial-2026'] .mobile-nav-lang .lang-switcher a,
 	:root[data-template='editorial-2026'] .mobile-nav-lang .lang-switcher-item > span {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 		min-width: 56px;
 		min-height: 44px;
-		font-size: 0.75rem;
-	}
-
-	/* .mobile-nav-list a is a descendant selector, so it also matches the TR/EN
-	   links and would hand them the 1.05rem nav-row padding plus the heading
-	   face. Restore the R2 mono control so the two cells stay identical. */
-	:root[data-template='editorial-2026'] .mobile-nav-lang .lang-switcher a {
 		padding: 0 0.5rem;
 		font-family: var(--font-mono, 'IBM Plex Mono', ui-monospace, Consolas, monospace);
+		font-size: 0.75rem;
 		font-weight: 500;
 		line-height: 1;
 		letter-spacing: 0.08em;
-		justify-content: center;
+		text-transform: uppercase;
 		color: var(--color-muted, #5f5b51);
+		text-decoration: none;
+	}
+
+	:root[data-template='editorial-2026'] .mobile-nav-lang .lang-switcher-item[data-active='true'] > span {
+		background: #6d5a17;
+		color: #f3efdf;
 	}
 }
 

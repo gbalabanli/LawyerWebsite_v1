@@ -122,12 +122,14 @@ const howToSchema = post.data.howTo && post.data.howTo.length > 0
 
 		{
 			headings.length > 0 && (
-				<aside class="toc">
-					<h2>{t(lang, 'blog.contents')}</h2>
-					<ul>
-						{headings.map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}
-					</ul>
-				</aside>
+				<div class="toc-rail">
+					<aside class="toc">
+						<h2>{t(lang, 'blog.contents')}</h2>
+						<ul>
+							{headings.map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}
+						</ul>
+					</aside>
+				</div>
 			)
 		}
 
