@@ -28,14 +28,14 @@ Patent, teknik bir buluşu belirli süreyle koruma altına alan sınai mülkiyet
 
 ## Patent türleri nelerdir?
 
-İncelemeli patent (7 yıl koruma, araştırma + inceleme raporu şartı), incelemesiz patent (7 yıl koruma, sadece araştırma raporu) ve faydalı model (10 yıl koruma, sadece yenilik şartı, buluş basamağı aranmaz) olmak üzere üç tür bulunur.
+İncelemeli patent (20 yıl koruma, araştırma + inceleme raporu şartı), incelemesiz patent (20 yıl koruma, sadece araştırma raporu) ve faydalı model (10 yıl koruma, sadece yenilik şartı, buluş basamağı aranmaz) olmak üzere üç tür bulunur.
 
 **Patent türleri karşılaştırması:**
 
 | Tür | Koruma Süresi | Araştırma | İnceleme | Buluş Basamağı |
 |---|---|---|---|---|
-| İncelemeli patent | 7 yıl (3. yıl + 4. yıl) | Gerekli | Gerekli | Aranır |
-| İncelemesiz patent | 7 yıl | Gerekli | Gerekmez | Aranır |
+| İncelemeli patent | 20 yıl | Gerekli | Gerekli | Aranır |
+| İncelemesiz patent | 20 yıl | Gerekli | Gerekmez | Aranır |
 | Faydalı model | 10 yıl | Gerekmez | Gerekmez | Aranmaz |
 
 **Faydalı model:** Patentten daha düşük koruma standardı olan bu model, özellikle KOBİ'ler ve bireysel mucitler için uygundur. Sadece yenilik şartı aranır, buluş basamağı gerekmez. Başvuru süreci daha kısa ve daha ucuzdur.

@@ -229,3 +229,54 @@ Screenshots: `.screenshots/editorial/r7-post-top-1440.png`, `r7-post-table-fixed
 - İlk dakikadaki 404'ler CDN önbellek yayılımıydı; tekrar denemede 200.
 
 **Not:** 2026 kira yardımı tutarları ve %90 inşaat seviyesi uygulaması için metinlerde teyit uyarısı var; yayın sonrası resmî kaynak kontrolü önerilir.
+
+
+## Round 8 — Fikri mülkiyet / dava odaklı 8 yazı (v0.1.7)
+
+Hedef: Google TR arama talebi yüksek, arşivde karşılığı olmayan 8 marka/patent/tasarım başlığı. Ortak standart: 1.300–1.700 kelime, H1 yok, 5 SSS, 5 HowTo adımı (adlar H2 ile birebir), 3 iç link, `fikri-mulkiyet` tag'i, 140–170 karakter description, CTA + bilgilendirme cümlesi, gerçek UTF-8.
+
+- [x] REQ-34: `marka-iptali-kullanmama.md` — Marka İptali Davası: Kullanmama Nedeniyle İptal (2026)
+- [x] REQ-35: `patent-ihlali-davasi.md` — Patent İhlali Davası: Tespit, Tazminat ve İhtiyati Tedbir
+- [x] REQ-36: `tasarim-hakki-ihlali-davasi.md` — Tasarım Hakkı İhlali Davası: Tespit ve Tazminat (2026)
+- [x] REQ-37: `marka-itirazi-iptal-davasi.md` — Marka İtirazı ve İtirazın İptali Davası: Süre ve Dilekçe
+- [x] REQ-38: `marka-basvurusu-reddi-dava.md` — Marka Başvurusu Reddi: Ret Nedenleri ve Dava Yolu (2026)
+- [x] REQ-39: `marka-iptali-hukumsuzluk-farki.md` — Marka İptali mi Hükümsüzlük mü? Farklar ve Dava Yolu
+- [x] REQ-40: `marka-devri-uyusmazligi.md` — Marka Devri Uyuşmazlığı: Sözleşme, Vekaletname ve Dava
+- [x] REQ-41: `marka-lisans-uyusmazliklari.md` — Marka Lisans Sözleşmesi: Maddeler ve Uyuşmazlıklar
+- [x] REQ-42: `public/llms.txt` — 8 yeni satır alfabetik, mevcut satırlar değişmeden
+- [x] REQ-43: QA — kapsam denetimi, build, verify:seo, audit, schema, iç link, Playwright 1440/390
+- [ ] REQ-44: Yayın — commit, tag v0.1.7, push, deploy, canlı doğrulama
+
+DAG: REQ-34..41 birbirinden bağımsız (paralel); REQ-42 → REQ-43 → REQ-44.
+
+Doğrulanmış hukuki çerçeve (worker brieflerine işlendi):
+- SMK m.9/1 (5 yıl ciddi kullanım), m.26 (iptal; 10.01.2024'ten beri TÜRKPATENT), m.27 (iptalin etkisi), m.25 (hükümsüzlük, m.25/6 sessiz kalma), m.25/7 + m.29/2 (kullanmama def'i)
+- SMK m.5/m.6 (mutlak/nispi ret), m.17 (üçüncü kişi görüşü), m.18 (2 ay itiraz), m.19 (kullanım ispatı), m.20 (karara itiraz/YİDK), m.156 (Ankara FSHHM)
+- SMK m.29/m.30 (marka tecavüzü/ceza), m.141 (patent tecavüzü), m.149 (talepler), m.150–151 (tazminat/hesap), m.159 (ihtiyati tedbir)
+- SMK m.81 (tasarım tecavüzü; ceza yok), m.148 (devir/lisans yazılı şekil), m.24 (marka lisansı, inhisari/alt lisans)
+
+
+### Verification log (round 8)
+
+Kapsam (`.logs/r8-coverage.cjs`) — 8/8 dosya, **0 hata**
+- Kelime: 1.316–1.574 (hedef 1.300–1.700); description 146–155; title 50–57.
+- Her dosyada 5 SSS, 4–5 HowTo adımı (adlar H2 ile birebir), 3 frontmatter linki, tablo, CTA + bilgilendirme cümlesi.
+- `fikri-mulkiyet` tag'i 8/8; `\uXXXX` yok; gövdede H1 ve SSS bölümü yok.
+
+Build / SEO
+- `npm run build` → 153 sayfa (145 → 153), exit 0.
+- `npm run verify:seo` → PASS, sitemap 150 URL (142 → 150), canonical eksik 0.
+- Audit: 0 duplicate ID, 0 başlık atlaması, 0 eksik alt (tek istisna noindex e-spor stub).
+- `llms.txt`: 134 → 142 yol; 8 satır eklendi, silme 0.
+
+Schema / link
+- JSON-LD: Article 116 (+8), FAQPage 139 (+8), HowTo 50 (+8), LegalService 152, BreadcrumbList 148; hata 0.
+- 8/8 sayfada Article + FAQPage + HowTo; 5 FAQ entity; 4–5 HowTo step; trailing-slash canonical; kırık iç link 0.
+
+Rendering (Playwright, local dist 1440/390)
+- 4 örnek yazıda 1 H1, TOC rail, 5 SSS, HowTo adımları; tablo 704/704 px sığıyor; yatay taşma 0; console 0 hata.
+- Mobil 390: tablo kendi içinde kayıyor (339/335), sayfa taşmıyor.
+- Screenshots: `.screenshots/editorial/r8-post-1440.png`, `r8-table-1440.png`, `r8-post-390.png`.
+
+Ek düzeltme
+- Mevcut `patent-basvurusu-sureci-sartlari-2026.md` içinde patent koruma süresi "7 yıl" yazıyordu; SMK m.101/1 uyarınca **20 yıl** olarak düzeltildi (faydalı model 10 yıl kaldı).
