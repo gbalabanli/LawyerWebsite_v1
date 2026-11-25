@@ -89,7 +89,8 @@ const htmlLang = lang === 'tr' ? 'tr' : 'en';
 const ogLocale = translations[lang].seo.locale;
 const rightsText = translations[lang].footer.rights;
 const brandName = getBrandName(lang);
-const [brandLead, ...brandRest] = brandName.split(' ');
+const [brandLeadRaw, ...brandRest] = brandName.split(' ');
+const brandLead = lang === 'en' ? brandLeadRaw.toUpperCase() : brandLeadRaw;
 const brandSub = brandRest.join(' ');
 
 const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID as string | undefined;
