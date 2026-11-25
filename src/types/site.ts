@@ -1,6 +1,6 @@
 import type { Lang } from '../i18n/ui';
 
-export type TemplateName = 'classic-legal' | 'modern-minimal';
+export type TemplateName = 'classic-legal' | 'modern-minimal' | 'editorial-2026';
 
 export interface SiteConfig {
 	template: TemplateName;

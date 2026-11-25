@@ -71,7 +71,7 @@ const articleSchema = {
 	mainEntityOfPage: `${siteConfig.seo.siteUrl}/blog/${post.id.replace(/^tr\//, '')}/`,
 };
 
-const faqSchema = post.data.faq
+const faqSchema = post.data.faq && post.data.faq.length > 0
 	? {
 			'@context': 'https://schema.org',
 			'@type': 'FAQPage',
@@ -86,7 +86,7 @@ const faqSchema = post.data.faq
 		}
 	: null;
 
-const howToSchema = post.data.howTo
+const howToSchema = post.data.howTo && post.data.howTo.length > 0
 	? {
 			'@context': 'https://schema.org',
 			'@type': 'HowTo',

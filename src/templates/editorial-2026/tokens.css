@@ -1,0 +1,84 @@
+/* ============================================================
+   editorial-2026 - design tokens
+   Light theme only. No dark-theme override by design.
+   Palette: warm paper (#eae7df), near-black ink (#16150f),
+   olive accent (#6d5a17), hairline stone borders (#8a8477).
+   Consumed by src/styles/base.css and this folder's layout.css.
+
+   Contrast evidence (WCAG 2.1, computed, not estimated):
+     ink / paper        #16150f on #eae7df = 14.80:1  (AAA body)
+     muted / paper      #5f5b51 on #eae7df =  5.48:1  (AA body)
+     olive / paper      #6d5a17 on #eae7df =  5.44:1  (AA body, links + eyebrow)
+     cream / olive      #f3efdf on #6d5a17 =  5.83:1  (AA body, primary button)
+     border / paper     #8a8477 on #eae7df =  3.01:1  (AA non-text UI)
+   Text colors are opaque hex only - never translucent.
+   ============================================================ */
+
+:root[data-template='editorial-2026'] {
+	/* ---- typography ---- */
+	--font-heading: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-body: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Consolas, monospace;
+	--font-size-xs: 0.6875rem;
+	--font-size-sm: 0.75rem;
+	--font-size-base: 1.0625rem;
+	--font-size-md: 1rem;
+	--font-size-lg: 1.125rem;
+	--font-size-xl: 1.5rem;
+	--font-size-2xl: 2rem;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 600;
+	--line-height-tight: 1.02;
+	--line-height-normal: 1.6;
+	--line-height-relaxed: 1.75;
+	--letter-spacing-tight: -0.03em;
+	--letter-spacing-normal: 0;
+	--letter-spacing-wide: 0.12em;
+
+	/* ---- surfaces ---- */
+	--page-bg: #eae7df;
+	--surface-bg: #f1efe8;
+	--card-bg: #f1efe8;
+	--header-bg: rgb(234 231 223 / 92%);
+	--footer-bg: #eae7df;
+
+	/* ---- ink ---- */
+	--color-text: #16150f;
+	--color-muted: #5f5b51;
+	--color-border: #8a8477;
+
+	/* ---- navigation ---- */
+	--nav-active-bg: #d9d4c7;
+
+	/* ---- eyebrow / kicker ---- */
+	--eyebrow-bg: transparent;
+	--eyebrow-text: #6d5a17;
+
+	/* ---- buttons ---- */
+	--button-primary-bg: #6d5a17;
+	--button-primary-text: #f3efdf;
+	--button-secondary-border: #8a8477;
+	--button-secondary-text: #16150f;
+
+	/* ---- pills / tags ---- */
+	--pill-bg: transparent;
+	--pill-text: #2e2c24;
+
+	/* ---- form fields ---- */
+	--input-bg: #fbf9f4;
+
+	/* ---- shape: flat editorial, hairline corners ---- */
+	--radius-sm: 2px;
+	--radius-md: 2px;
+	--radius-lg: 2px;
+
+	/* ---- spacing scale ---- */
+	--space-4: 1rem;
+	--space-5: 1rem;
+	--space-6: 1.5rem;
+	--space-7: 3rem;
+	--space-8: 4.5rem;
+	--space-9: 6rem;
+}

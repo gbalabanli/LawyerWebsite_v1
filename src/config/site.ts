@@ -6,8 +6,8 @@ import { translations } from '../i18n/translations';
 const publicSiteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://bariscembalabanli.av.tr';
 
 export const siteConfig: SiteConfig = {
-	template: 'classic-legal',
-	version: 'v.0.1.0',
+	template: 'editorial-2026',
+	version: 'v0.1.5',
 	brand: {
 		name: 'Balabanlı Hukuk Bürosu',
 		nameByLang: {
@@ -36,7 +36,7 @@ export const siteConfig: SiteConfig = {
 			tr: 'İstanbul merkezli Balabanlı Hukuk Bürosu, medeni hukuk ve ticari hukuk alanlarında uzman avukatlık hizmeti sunar.',
 			en: 'Balabanli Law Firm, based in Istanbul, provides expert legal services in civil and commercial law.',
 		},
-		ogImage: '/images/og-default.jpg',
+		ogImage: '/images/og-editorial.jpg',
 	},
 	contact: {
 		phoneDisplay: '+90 555 123 45 67',

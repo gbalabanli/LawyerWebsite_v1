@@ -19,13 +19,13 @@ const serviceAreas = getServiceAreas(lang);
 	lang={lang}
 	lastModified="2026-06-11"
 >
-	<Section title="Çalışma Alanlarımız" lead="Aşağıda hukuki danışmanlık ve dava takibi sunduğumuz başlıca alanları bulabilirsiniz. Her çalışma alanı hakkında detaylı bilgi için ilgili sayfayı ziyaret edebilirsiniz.">
+	<Section title="Çalışma Alanlarımız" lead="Aşağıda hukuki danışmanlık ve dava takibi sunduğumuz başlıca alanları bulabilirsiniz. Her çalışma alanı hakkında detaylı bilgi için ilgili sayfayı ziyaret edebilirsiniz." headingLevel="h1">
 		<div class="grid service-grid">
 			{
 				serviceAreas.map((area) => (
 					<article class="card span-4 service-card">
 						<div class="service-icon-wrap"><Icon name={area.icon} /></div>
-						<h3>{area.title}</h3>
+						<h2>{area.title}</h2>
 						<p>{area.description}</p>
 						<a class="service-link" href={withBase(`/hizmetler/${area.slug}`)}>
 							Detaylı Bilgi <Icon name="arrow-right" size={14} />
@@ -68,7 +68,7 @@ const serviceAreas = getServiceAreas(lang);
 		padding: 0.25rem;
 	}
 
-	.service-card h3 {
+	.service-card h2 {
 		margin-bottom: 0.5rem;
 	}
 

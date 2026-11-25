@@ -1,16 +1,22 @@
 ---
 interface Props {
-	title: string;
+	title?: string;
 	lead?: string;
+	headingLevel?: 'h1' | 'h2';
 }
 
-const { title, lead } = Astro.props;
+const { title, lead, headingLevel = 'h2' } = Astro.props;
+const Heading = headingLevel;
 ---
 
 <section class="section">
-	<div class="section-heading">
-		<h2>{title}</h2>
-		{lead && <p class="section-lead">{lead}</p>}
-	</div>
+	{
+		(title || lead) && (
+			<div class="section-heading">
+				{title && <Heading>{title}</Heading>}
+				{lead && <p class="section-lead">{lead}</p>}
+			</div>
+		)
+	}
 	<slot />
 </section>

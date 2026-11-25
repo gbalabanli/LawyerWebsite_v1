@@ -10,14 +10,18 @@ import { translations } from '../i18n/translations';
 import { getEquivalentAlternatePath } from '../i18n/utils';
 import { getServiceAreas } from '../config/services';
 import '../styles/base.css';
+import '../templates/editorial-2026/fonts.css';
 
 const activeTemplate = siteConfig.template;
 if (activeTemplate === 'classic-legal') {
 	await import('../templates/classic-legal/tokens.css');
 	await import('../templates/classic-legal/layout.css');
-} else {
+} else if (activeTemplate === 'modern-minimal') {
 	await import('../templates/modern-minimal/tokens.css');
 	await import('../templates/modern-minimal/layout.css');
+} else {
+	await import('../templates/editorial-2026/tokens.css');
+	await import('../templates/editorial-2026/layout.css');
 }
 
 interface Props {
@@ -85,6 +89,8 @@ const htmlLang = lang === 'tr' ? 'tr' : 'en';
 const ogLocale = translations[lang].seo.locale;
 const rightsText = translations[lang].footer.rights;
 const brandName = getBrandName(lang);
+const [brandLead, ...brandRest] = brandName.split(' ');
+const brandSub = brandRest.join(' ');
 
 const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID as string | undefined;
 
@@ -154,7 +160,10 @@ const legalServiceSchema = {
 		<div class="site-shell">
 			<header class="site-header">
 				<div class="container header-row">
-					<a class="brand" href={withBase(lang === 'tr' ? '/' : '/en/')}>{brandName}</a>
+					<a class="brand" href={withBase(lang === 'tr' ? '/' : '/en/')} aria-label={brandName}>
+						<span class="brand-name">{brandLead}</span>
+						{brandSub && <span class="brand-sub">{brandSub}</span>}
+					</a>
 					<nav class="nav" aria-label="Primary">
 						{
 							nav.map((item) =>
@@ -179,7 +188,19 @@ const legalServiceSchema = {
 							)
 						}
 					</nav>
-					<LangSwitcher lang={lang} pathname={pathnameWithoutBase} />
+					<div class="header-tools">
+						<LangSwitcher lang={lang} pathname={pathnameWithoutBase} />
+						<button
+							class="menu-btn"
+							type="button"
+							data-menu-toggle
+							aria-expanded="false"
+							aria-controls="mobile-nav"
+							aria-label={lang === 'tr' ? 'Menü' : 'Menu'}
+						>
+							<span></span><span></span><span></span>
+						</button>
+					</div>
 				</div>
 			</header>
 			<main class="main-content">
@@ -228,6 +249,98 @@ const legalServiceSchema = {
 				</div>
 			</footer>
 		</div>
+		<div class="mobile-nav" id="mobile-nav" data-mobile-nav inert aria-hidden="true">
+			<nav aria-label={lang === 'tr' ? 'Mobil menü' : 'Mobile menu'}>
+				<ul class="mobile-nav-list">
+					{
+						nav.map((item, index) => (
+							<li>
+								<a
+									href={withBase(item.href)}
+									aria-current={
+										item.key === 'services'
+											? pathnameWithoutBase.startsWith('/hizmetler') || pathnameWithoutBase.startsWith('/en/services')
+												? 'page'
+												: undefined
+											: pathnameWithoutBase === item.href
+												? 'page'
+												: undefined
+									}
+								>
+									<span>{t(lang, `nav.${item.key}`)}</span>
+									<span class="mobile-nav-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+								</a>
+							</li>
+						))
+					}
+					<li class="mobile-nav-lang">
+						<LangSwitcher lang={lang} pathname={pathnameWithoutBase} />
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<script>
+			(() => {
+				const button = document.querySelector('[data-menu-toggle]');
+				const panel = document.getElementById('mobile-nav');
+				if (!(button instanceof HTMLButtonElement) || !(panel instanceof HTMLElement)) {
+					return;
+				}
+
+				const setMenu = (open, moveFocus = true) => {
+					document.body.classList.toggle('menu-open', open);
+					button.setAttribute('aria-expanded', String(open));
+					panel.toggleAttribute('inert', !open);
+					panel.setAttribute('aria-hidden', String(!open));
+					if (!moveFocus) {
+						return;
+					}
+					if (open) {
+						const first = panel.querySelector('a');
+						if (first instanceof HTMLElement) {
+							requestAnimationFrame(() => first.focus());
+						}
+					} else {
+						button.focus();
+					}
+				};
+
+				button.addEventListener('click', () => {
+					setMenu(!document.body.classList.contains('menu-open'));
+				});
+
+				panel.addEventListener('click', (event) => {
+					if (event.target instanceof Element && event.target.closest('a')) {
+						setMenu(false, false);
+					}
+				});
+
+				document.addEventListener('keydown', (event) => {
+					if (event.key === 'Escape' && document.body.classList.contains('menu-open')) {
+						setMenu(false);
+					}
+				});
+
+				const desktop = window.matchMedia('(min-width: 720px)');
+				desktop.addEventListener('change', (event) => {
+					if (event.matches) {
+						setMenu(false, false);
+					}
+				});
+
+				setMenu(false, false);
+			})();
+		</script>
 		<HelpDeskPopup lang={lang} />
+		<a
+			class="whatsapp-fab"
+			href={`https://wa.me/${siteConfig.contact.whatsappNumberE164}?text=${encodeURIComponent(translations[lang].helpDesk.whatsappIntro)}`}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label={translations[lang].contact.whatsappButton}
+		>
+			<Icon name="whatsapp" size={24} />
+			<span class="whatsapp-fab-label">WhatsApp</span>
+		</a>
 	</body>
 </html>

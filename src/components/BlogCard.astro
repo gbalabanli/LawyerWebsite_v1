@@ -14,7 +14,7 @@ const { title, description, dateText, author, tags, href } = Astro.props;
 ---
 
 <article class="card blog-card">
-	<h3><a href={href}>{title}</a></h3>
+	<h2><a href={href}>{title}</a></h2>
 	<p>{description}</p>
 	<div class="blog-meta">
 		<span><Icon name="calendar" size={14} />{dateText}</span>

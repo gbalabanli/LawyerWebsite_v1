@@ -20,13 +20,13 @@ const serviceAreas = getServiceAreas(lang);
 	lang={lang}
 	lastModified="2026-06-11"
 >
-	<Section title="Our Practice Areas" lead="Legal services for foreigners, investors, families, and businesses with matters in Turkey. Visit each page for detailed information.">
+	<Section title="Our Practice Areas" lead="Legal services for foreigners, investors, families, and businesses with matters in Turkey. Visit each page for detailed information." headingLevel="h1">
 		<div class="grid service-grid">
 			{
 				serviceAreas.map((area) => (
 					<article class="card span-4 service-card">
 						<div class="service-icon-wrap"><Icon name={area.icon} /></div>
-						<h3>{area.title}</h3>
+						<h2>{area.title}</h2>
 						<p>{area.description}</p>
 						<a class="service-link" href={withBase(`/en/services/${area.slug}`)}>
 							Learn More <Icon name="arrow-right" size={14} />
@@ -69,7 +69,7 @@ const serviceAreas = getServiceAreas(lang);
 		padding: 0.25rem;
 	}
 
-	.service-card h3 {
+	.service-card h2 {
 		margin-bottom: 0.5rem;
 	}
 
