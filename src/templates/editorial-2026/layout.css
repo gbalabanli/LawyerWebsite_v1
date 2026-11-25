@@ -952,7 +952,7 @@
 	letter-spacing: 0.08em;
 	color: var(--color-muted, #5f5b51);
 	border-bottom-color: #16150f;
-	white-space: nowrap;
+	white-space: normal;
 }
 
 :root[data-template='editorial-2026'] .article-content blockquote {

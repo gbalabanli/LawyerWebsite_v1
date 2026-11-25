@@ -177,3 +177,44 @@ moves out of the header and into the menu list.
   - ≤900: rail + TOC become full-width static above the content (335px wide at 390), no overflow.
 - [x] REQ-25 — Mobile menu TR/EN row: the inactive cell was baseline-aligned by the nav-row rule, so its label sat 16px higher than the active cell. Both cells now use `inline-flex` + `align-items:center` + identical mono/uppercase metrics; text tops are equal (425/425 at 390px).
 - [x] REQ-26 — QA: build 140 pages, `verify:seo` PASS, structural audit clean, screenshots `r6-toc-stop-1440.png`, `r6-toc-sticky-1440.png`, `r6-menu-lang-390.png`.
+
+---
+
+# Round 7 — Gayrimenkul içerik kümesi (approved 2026-11-25)
+
+Goal: 5 comprehensive Turkish blog posts (1.300–1.700 words each) on real-estate law,
+with FAQ/HowTo frontmatter, internal links and `gayrimenkul` tagging, then llms.txt + QA.
+
+## Requirements
+
+- [x] REQ-27 — `kentsel-donusum-kira-yardimi-2026.md` — 1.676 kelime, 12 H2, 5 SSS, 4 adımlı HowTo, 2026 tutar tablosu, 3 link.
+- [x] REQ-28 — `kentsel-donusum-kat-malikleri-karari-pay-satisi.md` — 1.459 kelime, 11 H2, 5 SSS, 4 adımlı HowTo, nisap tablosu, 3 link.
+- [x] REQ-29 — `kat-karsiligi-insaat-sozlesmesi-10-madde.md` — 1.493 kelime, 11 H2, 5 SSS, 5 adımlı HowTo, 10 maddelik liste + ödeme/tapu tablosu, 3 link.
+- [x] REQ-30 — `muteahhit-gecikme-tazminati-fesih.md` — 1.463 kelime, 9 H2, 5 SSS, 5 adımlı HowTo, 3 link.
+- [x] REQ-31 — `guvenli-odeme-sistemi-tapu-2026.md` — 1.719 kelime, 15 H2, 5 SSS, 5 adımlı HowTo, “kim ne yapar” tablosu, 2 link.
+- [x] REQ-32 — `public/llms.txt`: 5 yeni satır alfabetik olarak eklendi; mevcut satırlar değişmedi (`git diff` 5 insertions).
+- [x] REQ-33 — QA tamam (aşağıdaki kayıt).
+
+## Verification log (round 7)
+
+Coverage (`.logs/coverage.cjs`)
+- 5/5 files: 1.459–1.719 kelime, description 143–155, 5 SSS, 3/3/3/3/2 frontmatter link, `gayrimenkul` tag’i, CTA + bilgilendirme cümlesi, `\uXXXX` yok. **0 hata.**
+- HowTo adları gövdede H2 olarak birebir; “Nama Ifa” yazımı “Nama İfa” olarak düzeltildi.
+
+Build / SEO
+- `npm run build` → 145 sayfa, exit 0.
+- `npm run verify:seo` → PASS (sitemap 142 URL, yeni 5 yazı dahil; canonical/hreflang/link temiz).
+- Structural audit: 0 başlık atlaması, 0 duplicate ID, 0 eksik alt (tek istisna noindex `en/services/espor` stub).
+
+AI / schema signals
+- 571 JSON-LD bloğu, 0 hata: Article 108 (+5), FAQPage 131 (+5), HowTo 42 (+5), LegalService 144, BreadcrumbList 140.
+- Her yeni sayfada Article + FAQPage + HowTo, 1 H1, trailing-slash canonical, description 143–155; kırık iç link 0.
+- `llms.txt`: 134 yol, 0 eksik (129 → 134).
+
+Rendering
+- Yeni yazıda TOC rail + sticky, 5 SSS, 4 HowTo adımı, tablo; 1440 ve 390’da yatay taşma 0, konsol 0 hata.
+- Tablo başlıkları için `th { white-space: normal }` yapıldı (layout.css): masaüstünde tablo 704/704 px sığıyor, mobilde 369/335 px kendi içinde kayıyor; sayfa taşmıyor. 4 tablolu yazının tamamı doğrulandı.
+
+Screenshots: `.screenshots/editorial/r7-post-top-1440.png`, `r7-post-table-fixed-1440.png`, `r7-post-full-390.png`.
+
+**Durum:** içerik ve QA tamam; commit/tag/deploy yapılmadı (editöryel onay bekliyor).
