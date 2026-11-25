@@ -217,4 +217,15 @@ Rendering
 
 Screenshots: `.screenshots/editorial/r7-post-top-1440.png`, `r7-post-table-fixed-1440.png`, `r7-post-full-390.png`.
 
-**Durum:** içerik ve QA tamam; commit/tag/deploy yapılmadı (editöryel onay bekliyor).
+**Yayın (v0.1.6):** onay sonrası yayınlandı.
+
+- Commit: `c1737dd` — "feat(content): add 5 gayrimenkul law guides and fix table headers" (9 dosya, 903 ekleme).
+- Tag: `v0.1.6` (annotated). `v0.1.5` taşınmadı; geçmiş sürüm korunuyor.
+- Push: `main` 6d803b1..c1737dd + yeni tag.
+- Deploy: run [45674610404](https://github.com/gbalabanli/LawyerWebsite_v1/actions/runs/45674610404) — success; gh-pages head `fc59638`, Pages build `built`.
+- Canlı doğrulama (https://bariscembalabanli.av.tr): 5/5 URL 200; her sayfada 1 H1, 5 SSS, HowTo adımları, Article + FAQPage + HowTo + LegalService + BreadcrumbList; trailing-slash canonical; description 143–155; sitemap ve llms.txt içinde 5/5.
+- Footer sürümü `v0.1.6`; WhatsApp linki mevcut.
+- Playwright canlı kontrol (1440/390): TOC rail, SSS, HowTo, tablo; yatay taşma 0, konsol 0 hata.
+- İlk dakikadaki 404'ler CDN önbellek yayılımıydı; tekrar denemede 200.
+
+**Not:** 2026 kira yardımı tutarları ve %90 inşaat seviyesi uygulaması için metinlerde teyit uyarısı var; yayın sonrası resmî kaynak kontrolü önerilir.
