@@ -245,7 +245,7 @@ Hedef: Google TR arama talebi yüksek, arşivde karşılığı olmayan 8 marka/p
 - [x] REQ-41: `marka-lisans-uyusmazliklari.md` — Marka Lisans Sözleşmesi: Maddeler ve Uyuşmazlıklar
 - [x] REQ-42: `public/llms.txt` — 8 yeni satır alfabetik, mevcut satırlar değişmeden
 - [x] REQ-43: QA — kapsam denetimi, build, verify:seo, audit, schema, iç link, Playwright 1440/390
-- [ ] REQ-44: Yayın — commit, tag v0.1.7, push, deploy, canlı doğrulama
+- [x] REQ-44: Yayın — commit, tag v0.1.7, push, deploy, canlı doğrulama
 
 DAG: REQ-34..41 birbirinden bağımsız (paralel); REQ-42 → REQ-43 → REQ-44.
 
@@ -280,3 +280,13 @@ Rendering (Playwright, local dist 1440/390)
 
 Ek düzeltme
 - Mevcut `patent-basvurusu-sureci-sartlari-2026.md` içinde patent koruma süresi "7 yıl" yazıyordu; SMK m.101/1 uyarınca **20 yıl** olarak düzeltildi (faydalı model 10 yıl kaldı).
+
+
+**Yayın (v0.1.7):** onay sonrası yayınlandı.
+
+- Commit: `2698a83` — "feat(content): add 8 IP litigation guides and fix patent term" (12 dosya).
+- Tag: `v0.1.7` (annotated); `v0.1.6` korunuyor.
+- Deploy: run [45681444035](https://github.com/gbalabanli/LawyerWebsite_v1/actions/runs/45681444035) — success.
+- Canlı doğrulama: 8/8 URL 200; her sayfada 1 H1, 5 SSS, 4–5 HowTo adımı, Article + FAQPage + HowTo + LegalService + BreadcrumbList; trailing-slash canonical; description 146–155; sitemap (150 URL) ve llms.txt (142 yol) içinde 8/8.
+- Footer `v0.1.7`; Playwright canlı 1440/390: TOC rail, SSS, HowTo, tablo; taşma 0, console 0 hata.
+- Screenshots: `r8-live-1440.png`, `r8-post-390.png`, `r8-table-1440.png`.
