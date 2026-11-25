@@ -83,7 +83,7 @@ const servicesBase = lang === 'tr' ? '/hizmetler' : '/en/services';
 const localizedServiceAreas = getServiceAreas(lang);
 const ogImageRaw = ogImage || siteConfig.seo.ogImage;
 const ogImageUrl = ogImageRaw?.startsWith('http') ? ogImageRaw : new URL(withBase(ogImageRaw), siteConfig.seo.siteUrl).toString();
-const iconVersion = 'v=2';
+const iconVersion = 'v=3';
 const faviconSvg = withBase(`/favicon.svg?${iconVersion}`);
 const faviconIco = withBase(`/favicon.ico?${iconVersion}`);
 const appleTouchIcon = withBase(`/apple-touch-icon.png?${iconVersion}`);
