@@ -83,8 +83,10 @@ const servicesBase = lang === 'tr' ? '/hizmetler' : '/en/services';
 const localizedServiceAreas = getServiceAreas(lang);
 const ogImageRaw = ogImage || siteConfig.seo.ogImage;
 const ogImageUrl = ogImageRaw?.startsWith('http') ? ogImageRaw : new URL(withBase(ogImageRaw), siteConfig.seo.siteUrl).toString();
-const faviconSvg = withBase('/favicon.svg');
-const faviconIco = withBase('/favicon.ico');
+const iconVersion = 'v=2';
+const faviconSvg = withBase(`/favicon.svg?${iconVersion}`);
+const faviconIco = withBase(`/favicon.ico?${iconVersion}`);
+const appleTouchIcon = withBase(`/apple-touch-icon.png?${iconVersion}`);
 const htmlLang = lang === 'tr' ? 'tr' : 'en';
 const ogLocale = translations[lang].seo.locale;
 const rightsText = translations[lang].footer.rights;
@@ -144,9 +146,9 @@ const legalServiceSchema = {
 				<meta property="article:tag" content={tag} />
 			))
 		}
-		<link rel="icon" type="image/svg+xml" href={faviconSvg} />
-		<link rel="icon" href={faviconIco} />
-		<link rel="apple-touch-icon" href={withBase('/apple-touch-icon.png')} />
+		<link rel="icon" type="image/svg+xml" sizes="any" href={faviconSvg} />
+		<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href={faviconIco} />
+		<link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
 		{
 			ga4Id && (
 				<>
